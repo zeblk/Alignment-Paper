@@ -3,7 +3,7 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
-\usepackage[a4, margin=0.9in]{geometry}
+\usepackage[margin=0.9in]{geometry}
 \usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{parskip}
@@ -22,7 +22,8 @@
 
 
 \title{Alignment, Boundaries, Contextualization}
-% \author{Zeb Kurth-Nelson$^{1}$*, Steve Sullivan$^2$*}
+\author{}
+%\author{Zeb Kurth-Nelson$^{1}$*, Steve Sullivan$^2$*}
 % \date{
 % {\small
 % $^1$Max Planck UCL Centre for Computational Psychiatry and Ageing Research, London, UK \\
@@ -250,7 +251,7 @@ By allowing formalism at the small scale (i.e., by allowing entities to become m
 
 \section{Art: boundaries support spontaneous novelty}
 
-The best art escapes simple definition. It encourages many interpretations and metaphors. People find meaning in it that's intimately connected to the uniqueness of their own lives. With some great art these meanings continue to evolve even across centuries. For Kant, `aesthetic ideas', unlike `concepts', could not be adequately expressed in words; aesthetic ideas gave rise to endless interpretive play \citep{kant1790critik}. Schiller similarly emphasized that the meaning in art `unfolds in freedom': it is not pinned down to one definition only \citep{schiller1795aesthetische}. Eco agrees that great art is `open', offering multiple interpretations, and he goes a step farther to argue that openness should not be confused with vagueness or randomness. A well-crafted work invites interpretive possibilities rather than collapsing into chaos or relativism \citep{eco1962opera}. 
+The best art escapes simple definition. It encourages many interpretations and metaphors. People find meaning in it that's intimately connected to the uniqueness of their own lives. With some great art these meanings continue to evolve even across centuries. For Kant, `aesthetic ideas', unlike `concepts', could not be adequately expressed in words; aesthetic ideas gave rise to endless interpretive play \citep{kant1781critik}. Schiller similarly emphasized that the meaning in art `unfolds in freedom': it is not pinned down to one definition only \citep{schiller1795aesthetische}. Eco agrees that great art is `open', offering multiple interpretations, and he goes a step farther to argue that openness should not be confused with vagueness or randomness. A well-crafted work invites interpretive possibilities rather than collapsing into chaos or relativism \citep{eco1962opera}. 
 
 Like with the other living systems we've explored, our experience of art becomes impoverished if a single interpretation or metaphor dominates at the expense of others. A physical artwork -- the oil on a canvas, the notes on a staff, the words on a page -- can be one of the most extraordinary forms of semi-permeable boundary in the living world. An artist wraps the subtlety of their experience into a form that interacts with the viewer. When an individual or a society starts to interpret it, the pressures to try to reduce it to a particular understanding are resisted by the structure of the art itself \citep{gadamer1960wahrheit, barthes1970sz, wimsatt1946intentional, empson1930seven}. The consequence is a proliferation of new depth and internal meaning.
 
@@ -572,7 +573,7 @@ There is no single, universally agreed definition of the alignment problem. Most
 
 However, as soon as we try to specify what we value, it becomes clear that it is difficult or impossible to capture what we intend \citep{krakovna2020specification, russell2019human, grossman1986costs, hadfield2019incomplete, zhuang2020consequences, gabriel2020artificial, wiener1960some}. Bostrom proposes some compelling thought experiments to illustrate this problem \citep{bostrom2014superintelligence}. Imagine our value function places weight on finding a cure for cancer. A super-powerful AI faithfully trying to optimize for our stated wishes could create cancers in millions of humans in order to perform experiments and rapidly find a cure. Or, imagine that our value function places weight on the subjective human experience of wellbeing. Achieving this stated objective might be most efficiently achieved by imprisoning humans and directly stimulating the neurons that trigger the experience of wellbeing. 
 
-These thought experiments are not isolated examples. It is in general difficult or impossible to write down a suitable value function because each concept, model or formalism is only an imperfect proxy \citep{kant1781critique, plato2002apology, aristotle2019nicomachean, wittgenstein1922tractatus, heidegger1998humanism, kuhn1970structure}. When we use concepts or formalisms to try to specify values, we are inevitably missing things. This results in the core problem identified in Section 1 of this paper: if AI does too good a job of organizing the world around a particular framing of values, then the richness of the world is homogenized to that framing. 
+These thought experiments are not isolated examples. It is in general difficult or impossible to write down a suitable value function because each concept, model or formalism is only an imperfect proxy \citep{kant1781critik, plato2002apology, aristotle2019nicomachean, wittgenstein1922tractatus, heidegger1998humanism, kuhn1970structure}. When we use concepts or formalisms to try to specify values, we are inevitably missing things. This results in the core problem identified in Section 1 of this paper: if AI does too good a job of organizing the world around a particular framing of values, then the richness of the world is homogenized to that framing. 
 
 With this perspective, we can turn the tables on the alignment problem. Instead of figuring out exactly what we value and trying to do a really good job of optimizing for that, the problem is to place boundaries on optimization for any particular conceptualization. 
 
@@ -736,9 +737,6 @@ Importance of modularity and compositionality. Link to genes.
 
 Ken Stanley's modular stepping stones to complexity \citep{woolley2011deleterious}. Modular discovery, with heating-cooling cycles, facilitates generalizable, robust solutions. As opposed to optimizing for a particular objective, which leads to fragile, overly-complex solutions, like codependent genes that haven't been broken up by recombination. A diverse array of modular parts can later be called on and rearranged to solve new problems.
 
-More ideas here: https://podcasts.apple.com/gb/podcast/open-ended-ai-the-key-to-superhuman-intelligence-prof/id1510472996?i=1000671830914
-
-
 Divergent evolution (i.e., search for diversity rather than a particular objective) increases evolvability (i.e., meta-learning) \citep{wilder2015reconciling}.
 
 However, note that any definition of `diversity' itself is a kind of fixed objective. Real evolution isn't optimizing for any particular notion of diversity. 
@@ -843,9 +841,6 @@ For AI, the capacity to contextualize its own processes as partial truths. Not h
 % Some of the most influential theories of Borderline Personality Disorder (BPD) posit that its core pathology is lack of stable boundaries. Without mature boundaries, individuals with BPD collapse on judging people and events in all-or-none moralistic terms (``all good" versus ``all bad", like cartoon heroes and villains) \citep{kernberg1975borderline, linehan1993cognitive}. 
 
 
-% John Bowlby's attachment theory~\cite{bowlby1969, mcleod2017, cherry2023}. Bowlby proposed that infants have an innate need to form a strong emotional bond with a primary caregiver. When a caregiver is consistently responsive and available, they serve as a "secure base" from which the child can explore the world~\cite{bowlby1969, mcleod2017}. This secure base functions as the foundational external boundary. The reliability of the caregiver's presence provides the safety and security necessary for the child to venture out, experience manageable challenges, and paradoxically, develop the internal boundaries required for independence and a stable sense of self. Conversely, when caregiving is inconsistent, neglectful, or abusive, it can lead to insecure attachment styles that directly impair the development of healthy boundaries~\cite{cherry2023, attachmentproject2023, clarity2023}.
-
-% Development of self-identity: Susan Harter ~\citep{harter1999construction}. In early childhood, the self-concept is concrete and fragmented, based on observable characteristics and specific behaviors such as, "I can run fast" or "I have brown hair"~\cite{vanDrunen2021, harter2015}. The young child's cognitive limitations prevent the formation of an integrated, overarching sense of self. As cognitive abilities mature in middle childhood, children begin to use social comparison and can integrate specific behaviors into more generalized trait labels like "I am smart" or "I am good at sports"~\cite{harter2015, harter1999}. This marks the formation of more sophisticated internal organization. Finally, in adolescence, the capacity for abstract thought allows for the construction of a "formal theory of the self," where disparate traits and social roles are integrated into higher-order abstractions like "I am an intelligent person" or "I am a loyal friend"~\cite{harter2012, vanDrunen2021}.
 
 
 
