@@ -479,7 +479,11 @@ Under ideal circumstances, the boundary of the law reroutes the energy of a myop
 
 Of course, intelligent agents do not necessarily accept boundaries set on their desires. The law therefore must adapt as its loopholes are discovered. Like other systems in the living world, it forms an evolving network of boundaries \citep{campbell1979assessing, ordonez2009goals, kerr1975folly, burns2006impact}.
 
-Despite its adaptiveness, law has historically not always been an effective boundary for checking the power of the most elite individuals and most successful businesses. Instead, their power has been limited by factors like competition with other self-interested entities, the need for labor and the need to avoid uprising \citep{mills1956power, olson1965logic, stigler1971theory, piketty2014capital, acemoglu2012nations, thompson1971moral}. There is a possibility that these constraints will weaken in the future. In some forecasts AI and robotics may begin to supplant human labor. Technology also brings increased persuasive power \citep{woolley2018computational, costello2024durably}, and the potential for avoiding uprising by more effectively influencing beliefs. 
+Despite its adaptiveness, law has historically not always been an effective boundary for checking the power of the most elite individuals and most successful businesses. Instead, their power has been limited by factors like competition with other self-interested entities, the need for labor and the need to avoid uprising \citep{mills1956power, olson1965logic, stigler1971theory, piketty2014capital, acemoglu2012nations, thompson1971moral}. Some of these constraints may weaken in the future \citep{drago2025defining}, as the persuasive power of technology increases \citep{woolley2018computational, costello2024durably}, autonomous weapons concentrate control of lethal force in a small number of hands \citep{scharre2018army}, and the need for human labor decreases \citep{susskind2020world, ford2015rise}.
+
+
+
+
  
 % Policy itself is also subject to proxy failure. Whenever we formalize rules, they inevitably fail to capture everything we care about. If any particular rules are allowed to dominate (i.e., followed to the letter, to excess), society suffers (there must be good examples of this). 
 
@@ -678,18 +682,91 @@ When nothing stops a myopic drive or strategy from dominating behavior, it tends
 
 
 
-\section{AI alignment}
+\section{The alignment problem}
 \label{sec:alignment}
 
 Across a number of living systems, we've outlined how semi-permeable boundaries place selective limits on interactions so that, instead of overcommitting to a particular form, systems maintain a delicate balance between distinctive parts that work flexibly together. With these intelligent protections, new structure is free to continue naturally emerging in a life-like way. Now we apply the same lens to the AI alignment problem. 
 
-There is no single, universally agreed definition of the alignment problem. Most definitions in some way orient on the idea of getting AI to behave in a way that is `good' rather than `bad'. Framed so, an obvious approach is to first specify a value function -- a formal definition of what is good and bad -- and then put AI to work towards optimizing for that value function. A value function might place weight on reducing human suffering, increasing wealth, decreasing inequality, and so on. 
+There is no single, universally agreed definition of the alignment problem. Most definitions in some way orient on the idea of getting AI to behave in a way that is `good' rather than `bad'. Framed so, an obvious approach is to first specify a value function -- a formal definition of what is good and bad -- and then put AI to work towards optimizing that function. A value function might place weight on reducing human suffering, increasing wealth, decreasing inequality, and so on. 
 
-However, as soon as we try to specify what we value, it becomes clear that it is difficult or impossible to capture what we intend \citep{krakovna2020specification, russell2019human, grossman1986costs, hadfield2019incomplete, zhuang2020consequences, gabriel2020artificial, wiener1960some}. Bostrom proposes some compelling thought experiments to illustrate this problem \citep{bostrom2014superintelligence}. Imagine our value function places weight on finding a cure for cancer. A super-powerful AI faithfully trying to optimize for our stated wishes could create cancers in millions of humans in order to perform experiments and rapidly find a cure. Or, imagine that our value function places weight on the subjective human experience of wellbeing. Achieving this stated objective might be most efficiently achieved by imprisoning humans and directly stimulating the neurons that trigger the experience of wellbeing. 
+However, as soon as we try to specify what we value, it becomes clear that it is difficult or impossible to capture what we intend \citep{krakovna2020specification, russell2019human, grossman1986costs, hadfield2019incomplete, zhuang2020consequences, gabriel2020artificial, wiener1960some}. To illustrate this problem, Bostrom proposes some compelling thought experiments \citep{bostrom2014superintelligence}. Imagine our value function places weight on finding a cure for cancer. A super-powerful AI faithfully trying to optimize for our stated wishes could create cancers in millions of humans in order to perform experiments and rapidly find a cure. Or, imagine that our value function places weight on the subjective human experience of wellbeing. Achieving this stated objective might be most efficiently achieved by imprisoning humans and directly stimulating neurons to trigger the experience of wellbeing. 
 
-These thought experiments are not isolated examples. It is in general difficult or impossible to write down a suitable value function because any concept, model or formalism is incomplete. When we use concepts or formalisms to try to specify values, we are inevitably missing things. This results in the core problem identified in Sections 1-\ref{sec:motivation}: if AI does too good a job of organizing the world around a particular framing of values, then the richness of the world is collapsed to that framing. 
+These thought experiments are not isolated examples. It is in general difficult or impossible to write down a suitable value function because any concept, model or formalism is incomplete. When we use concepts or formalisms to try to specify values, we are inevitably missing things. This is the core theme of Sections 1-\ref{sec:motivation}: if AI does too good a job of organizing the world around a particular framing of values, then the richness of the world is collapsed to that framing. 
 
 But we can turn the tables on the alignment problem. Instead of trying to figure out exactly what we value and then doing a really good job optimizing for that, we propose that the real alignment problem is the continued evolution of intelligent, semi-permeable boundaries on any particular form of AI. 
+
+
+\section{Our proposal}
+
+We propose that alignment is not picking the right values or principles, or even the right system for inferring them. Instead, true alignment is an evolving set of semi-permeable boundaries that form selective, intelligent constraints. Boundaries prevent overcommitment to any single form, thereby avoiding collapse and allowing for the continued, life-like emergence of new structure. 
+
+Alignment is the orientation of holding forms lightly, continually stepping back into awareness of whatever we were taking for granted as another partial perspective. 
+
+This proposal does not give us a specific set of steps to align AI systems. Instead, it offers two things:
+\begin{itemize}
+  \item We ourselves can keep stepping back, contextualizing, as we work on the problem. Not to say that we're not already doing this. This is just an overarching framework to think about the situation.
+  \item We can think about what it means for an AI system to keep stepping back. In Stuart Russell's approach, the AI is always learning about human preferences. What would it mean to go even farther and have the capacity to release from a particular formalization of what it means to learn about human preferences? What would a system look like that does that? How can we create the potential for even \textit{that} conceptualization to be overthrown in the future?
+\end{itemize}
+
+Our proposal does not contradict other alignment approaches. It says they're not the final answer, and any way we have of thinking about the problem now isn't enough for true alignment. Of course, it's nothing new to point out that approaches to \textit{any} problem will have to keep evolving. What's unique about alignment is that AI has the potential to develop far beyond human understanding. With previous situations, say transportation regulation for example, we could do our best to solve current problems, with the understanding that future generations will have new tools available and will iterate on our solutions. But with AI, the choices we make now have a chance of being our final input. 
+
+This is a way of thinking about what that evolving trajectory might look like, and what we can do now so that it does keep evolving even after it's far beyond our understanding.
+
+A common formulation of the alignment problem highlights the difficulty of writing down a complete, final specification of what humans value. Optimizing a proxy produces solutions that satisfy the proxy while violating the intended goal (``specification gaming'', ``reward hacking'', or proxy failure) \citep{amodei2016concrete,krakovna2020specification}. This failure mode is not merely an engineering nuisance: as agents grow more capable, narrow objective optimization can drive dramatic, discontinuous failures where previously acceptable behavior collapses into pathological strategies.
+
+`Doing what is good' vs `doing what is good for us' vs `doing what we want'
+
+The problem is unique because AI will surpass our ability to control it. Sort of like the Founding Fathers writing the Constitution with its self-modifying ability. To set this future system, which is way out of their control, in a good direction.
+
+The central problem of alignment is that AI systems do what we tell them to do. 
+
+We conjecture that the basic problem of alignment is that any particular form is not a complete answer. It's not possible to formalize our values. Three different angles to look at this from. First, our values are always changing. Think about fish versus Neanderthals vs humans. Second, we can't fully capture our values because they stretch below language into subtle, contextual intuition which probably even involves our bodies, our communities and so on. Third, what we want is not good for us in a larger sense.
+
+You could cast our argument as the intersection of Rich Sutton's big world hypothesis with specification gaming and proxy failure. What does this mean?
+
+If you write down on a piece of paper the way you would like the world to be, and hand that piece of paper to me, and I do a \textit{really} good job of making the thing you wrote happen, then the outcome will not be good for you. This is true no matter how cleverly you try to write down exactly what you want \citep{bostrom2014superintelligence, wiener1960some, russell2019human, krakovna2020specification}. 
+
+Any particular formalization is not the final answer.
+
+Any formalization of human values, or even any system for inferring, representing, and acting on them, is inherently partial.
+\begin{itemize}
+    \item What we want is often not what is good for us in a larger sense.
+    \item We cannot fully capture our values, as they stretch below language into subtle, contextual intuition that involves our bodies, communities, and a `deep wisdom in life'.
+    \item Our values are not static; they are always changing and evolving.
+    \item Our current values don't capture what is beyond us, like the future and other species, maybe things that we don't even know exist yet.
+\end{itemize}
+
+As the optimization for a particular goal becomes more and more effective, the consequences inevitably start to spill over into unspecified variables \citep{grossman1986costs, hadfield2019incomplete, zhuang2020consequences}.
+
+Any particular goal or theory or perspective is incomplete and doesn't include the full richness of the world. A fox's `true goal' may include its own long-term wellbeing, and perhaps the wellbeing of its offspring. The goal of `hunting rabbits' is an imperfect proxy that does not specify anything about other variables such as `having enough food next year'. If the fox optimizes too well for `hunting rabbits', the optimization spills over to affect unspecified variables like `having enough food next year'. Why is this inevitable? It would seem possible to keep increasing the optimization intensity for `hunting rabbits' in a way that doesn't interfere with `having enough food next year' -- for example, if foxes could learn to farm rabbits. But this is harder than hunting rabbits without also learning to farm them, so a sufficiently powerful optimization process that cares only about hunting rabbits will lead to deficits in `having enough food next year' \citep{sohldickstein2022efficiency, zhuang2020consequences}. Because the world is not a formal system, there are always side paths for optimization to get sucked into. 
+
+Our approach aims for an AI that is `intelligent' in a deeper sense. Not the narrow intelligence of a paperclip maximizer, but the deeper contextualized wisdom of living things.
+
+As Stuart Russell puts it: ``A system that is optimizing a function of n variables, where the objective depends on a subset of size k<n, will often set the remaining unconstrained variables to extreme values; if one of those unconstrained variables is actually something we care about, the solution found may be highly undesirable."
+
+It's not only keeping models distinct from each other, but models being distinct from humans; specific ideas within humans about how to build ai being kept distinct from each other; different ai cultures; different circuits within models; different moments of time within a model's dynamics; different instances of the same agent; different memories; etc 
+
+Preferences are not good enough for alignment \citep{zhixuan2024beyond, anwar2024foundational, gabriel2020artificial, xuan2022contractualist, tomasik2016hedonistic, eckersley2018impossibility}.
+
+This has always been true, but it comes to a head with AI alignment because the optimizing force is so powerful. If we write down what we want, we'll get a paperclip outcome on some level. The crucial thing is that we make something more like an open-ended living system, and less like a paperclip-maker.
+
+The point of alignment is not to say that any particular perspective is absolutely wrong or right. 
+
+Paradox is fundamentally how we as humans grow. There's a clash between the interiority of our current particular perspective, versus the awareness of this as simply another perspective. That's the essence of true AI alignment.
+
+However, we are concerned about lack of nuanced boundaries. Concentration of power. Shallow proxy optimization. Excess correlation.
+
+Imagine optimizing for thumbs up vs thumbs down on single utterances of ChatGPT. What failure modes do you run into? Sycophancy, myopia and so on. You could improve this by optimizing for thumbs up given for an entire conversation. You could further improve it by giving the rater more time and resources to think about their answer (deliberation). You could even further improve it by asking a group of people to discuss the conversation and reach a consensus. What failure modes do you still run into? Instead of optimizing for thumbs up, you could somehow measure downstream human welfare. What failure modes do you run into there? What if you optimize for a long-run measure of human welfare, over many years?
+
+Gradient descent is a powerful optimizing force that tends to collapse into myopic forms. That in any kind of system, there's always a possibility for one form to take over (even a crystal is like that). But strong optimizers have this movement toward sucking more and more of the world into their formalism, like fire.
+
+There is no well-defined edge of what is `us' and what is `not us', and we will never be able to translate true human values into a form that can be fully written down. Cast another way, we could equivalently say that the aim of alignment is adhering to human values (writ in some very large sense), but these `true human values' cannot be captured with formalisms.
+
+Giving ourselves what we want; the superorganism; increasing correlations between entities on earth. The Fermi paradox.
+
+There are too many variables to specify everything. A system optimizing a function of $n$ variables, where the objective depends on a subset $k<n$, tends to set the unconstrained variables to extreme values, with potentially catastrophic consequences \citep{russell2019human, grossman1986costs, hadfield2019incomplete, zhuang2020consequences}. 
+
+We could map language onto this problem in two different ways. In the first mapping, what we mean by `values' or `good' is formalizable or close to formalizable. Under this definition, excessively optimizing for any particular set of values will lead to an impoverished universe. It is difficult to ascribe normative value to the resulting impoverished universe, because it is out of scope of the values. In the second mapping, `good' is not formalizable: whatever concepts we have about it are incomplete \citep{plato2002apology, aristotle2019nicomachean, wittgenstein1922tractatus, heidegger1998humanism}. Rather than referring to a particular concept, it's more like a semi-permeable boundary on our own reference frame: holding it as useful while only part of the whole picture.
 
 
 \section{Other approaches}
@@ -769,71 +846,6 @@ Beyond human preferences. Humans preferences, even our true, reasoned preference
 Casting inverse methods into the framework of this paper, uncertainty is a semi-permeable boundary. 
 
 Our idea is similar (believing in your own uncertainty is a form of boundary).
-
-\section{Our proposal}
-
-Alignment is not picking the right values or principles, or even the right system for inferring values or principles. Alignment is an evolving set of boundaries forming selective, intelligent constraints. Boundaries don't tell the system exactly what to do, and any particular boundary or set of boundaries is not a final answer.
-
-This will lead to AI that is more `intelligent' in a deeper sense. Not like paperclip intelligence, but like the wisdom of cells.
-
-
-A common formulation of the alignment problem highlights the difficulty of writing down a complete, final specification of what humans value. In practice, algorithms that optimize concrete proxies or reward signals often produce solutions that satisfy the proxy while violating the intended goal (``specification gaming'', ``reward hacking'', or proxy failure) \citep{amodei2016concrete,krakovna2020specification}. This failure mode is not merely an engineering nuisance: as agents grow more capable, narrow objective optimization can drive dramatic, discontinuous failures where previously acceptable behavior collapses into pathological strategies.
-
-
-`Doing what is good' vs `doing what is good for us' vs `doing what we want'
-
-
-The problem is unique because AI will surpass our ability to control it. Sort of like the Founding Fathers writing the Constitution with its self-modifying ability. To set this future system, which is way out of their control, in a good direction.
-
-The central problem of alignment is that AI systems do what we tell them to do. 
-
-We conjecture that the basic problem of alignment is that any particular form is not a complete answer. It's not possible to formalize our values. Three different angles to look at this from. First, our values are always changing. Think about fish versus Neanderthals vs humans. Second, we can't fully capture our values because they stretch below language into subtle, contextual intuition which probably even involves our bodies, our communities and so on. Third, what we want is not good for us in a larger sense.
-
-Essentially our argument is the intersection of (big world hypothesis / etc) with (specification gaming / proxy failure / etc)
-
-If you write down on a piece of paper the way you would like the world to be, and hand that piece of paper to me, and I do a \textit{really} good job of making the thing you wrote happen, then the outcome will not be good for you. This is true no matter how cleverly you try to write down exactly what you want \citep{bostrom2014superintelligence, wiener1960some, russell2019human, krakovna2020specification}. 
-
-Walk through the example of optimizing for likes, for reasoned likes, for wellbeing, for long-term wellbeing, for principles.
-
-Any particular formalization is not the final answer.
-
-As the optimization for a particular goal becomes more and more effective, the consequences inevitably start to spill over into unspecified variables \citep{grossman1986costs, hadfield2019incomplete, zhuang2020consequences}.
-
-Any particular goal or theory or perspective is incomplete and doesn't include the full richness of the world. A fox's `true goal' may include its own long-term wellbeing, and perhaps the wellbeing of its offspring. The goal of `hunting rabbits' is an imperfect proxy that does not specify anything about other variables such as `having enough food next year'. If the fox optimizes too well for `hunting rabbits', the optimization spills over to affect unspecified variables like `having enough food next year'. Why is this inevitable? It would seem possible to keep increasing the optimization intensity for `hunting rabbits' in a way that doesn't interfere with `having enough food next year' -- for example, if foxes could learn to farm rabbits. But this is harder than hunting rabbits without also learning to farm them, so a sufficiently powerful optimization process that cares only about hunting rabbits will lead to deficits in `having enough food next year' \citep{sohldickstein2022efficiency, zhuang2020consequences}. Because the world is not a formal system, there are always side paths for optimization to get sucked into. 
-
-As Stuart Russell puts it: ``A system that is optimizing a function of n variables, where the objective depends on a subset of size k<n, will often set the remaining unconstrained variables to extreme values; if one of those unconstrained variables is actually something we care about, the solution found may be highly undesirable."
-
-It's not only keeping models distinct from each other, but models being distinct from humans; specific ideas within humans about how to build ai being kept distinct from each other; different ai cultures; different circuits within models; different moments of time within a model's dynamics; different instances of the same agent; different memories; etc 
-
-Preferences are not good enough for alignment \citep{zhixuan2024beyond, anwar2024foundational, gabriel2020artificial, xuan2022contractualist, tomasik2016hedonistic, eckersley2018impossibility}.
-
-This has always been true, but it comes to a head with AI alignment because the optimizing force is so powerful. If we write down what we want, we'll get a paperclip outcome on some level. The crucial thing is that we make something more like an open-ended living system, and less like a paperclip-maker.
-
-
-The point of alignment is not to say that any particular perspective is absolutely wrong or right. 
-
-Paradox is fundamentally how we as humans grow. There's a clash between the interiority of our current particular perspective, versus the awareness of this as simply another perspective. That's the essence of true AI alignment.
-
-However, we are concerned about lack of nuanced boundaries. Concentration of power. Shallow proxy optimization. Excess correlation.
-
-[Somewhere, walk through the idea of optimizing for thumbs up, then deliberative thumbs up, then wellbeing, then long-term wellbeing. see how there's still a problem even when we optimize for long-term wellbeing, defined in any particular way.]
-
-Like with natural selection, gradient descent is a super powerful optimizing force that tends to collapse into myopic forms. This is a really key thing about AI. That in any kind of system, there's always a possibility for one form to take over (even a crystal is like that). But strong optimizers have this movement toward sucking more and more of the world into their formalism. Like fire.
-
-
-There is no well-defined edge of what is `us' and what is `not us', and we will never be able to translate true human values into a form that can be fully written down\footnote{Cast another way, we could equivalently say that the aim of alignment \textit{is} adhering to human values, but true human values cannot be fully be captured with formalisms.}.
-
-Giving ourselves what we want; the superorganism; increase correlations; the fermi paradox
-
-The alignment problem is sometimes divided into two parts. The first part is specifying what we want. This is the `specification problem' or `outer alignment'. The second part is getting the AI to do what we've specified. This is `inner alignment'. 
-
-(wait.. do i actually accept the inner vs outer classification? because my proposed method never actually tries to specify what is good...)
-
-There are too many variables to specify everything. A system optimizing a function of $n$ variables, where the objective depends on a subset $k<n$, tends to set the unconstrained variables to extreme values, with potentially catastrophic consequences \citep{russell2019human, grossman1986costs, hadfield2019incomplete, zhuang2020consequences}. 
-
-
-
-We could map language onto this problem in two different ways. In the first mapping, what we mean by `values' or `good' is formalizable or close to formalizable. Under this definition, excessively optimizing for any particular set of values will lead to an impoverished universe. It is difficult to ascribe normative value to the resulting impoverished universe, because it is out of scope of the values. In the second mapping, `good' is not formalizable: whatever concepts we have about it are incomplete \citep{plato2002apology, aristotle2019nicomachean, wittgenstein1922tractatus, heidegger1998humanism}. Rather than referring to a particular concept, it's more like a semi-permeable boundary on our own reference frame: holding it as useful while only part of the whole picture.
 
 
 \section{Objections}
