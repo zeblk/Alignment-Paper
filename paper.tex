@@ -628,7 +628,7 @@ The space of low-level drives bleeds into a space of higher-order goals. The spa
 A broad class of boundaries on particular drives, strategies, goals is \textit{cognitive control} \citep{botvinick2001conflict, braver2012variable, miyake2000unity, miller2001integrative}. In the case of overeating, control overrides the food-seeking drive. In the case of the chickens, control overrides the prepotent tendency to approach the food. In the case of over-focusing on a single goal like work, control helps with task switching.  Cognitive control is a \textit{semi-permeable} boundary: it does not erase particular goals, but instead contextualizes them within a larger system.
 
 
-When nothing stops a myopic drive or strategy from dominating behavior, it tends to achieve its aims through a shortest-path mechanism. The simple strategy of ``approach food", if not contextualized by cognitive control or other mechanisms, achieves its aims of moving toward the food, without accomplishing the deeper goal for which moving toward food is simply a proxy. When the chicken runs directly toward the food, it thus spends energy without achieving the deeper goal. This energy is discharged or short-circuited. Boundaries, on the other hand, translate the pressure of a drive into higher-order structure. Symmetry is broken because the best way to approach the food is no longer the shortest path in space. Again, semi-permeable boundaries support formation of new structure by placing contextualizing limits.
+When nothing stops a myopic drive or strategy from dominating behavior, it tends to achieve its aims through a shortest-path mechanism. The simple strategy of ``approach food", if not contextualized by cognitive control or other mechanisms, achieves its aims of moving toward the food, without accomplishing the deeper goal for which moving toward food is simply a proxy. When the chicken runs directly toward the food, it thus spends energy without achieving the deeper goal. This energy is discharged or short-circuited. Boundaries, on the other hand, translate the pressure of a drive into higher-order structure -- the best way to approach the food is no longer the shortest path in space. Instead, achieving the goal depends on discovering a new solution. Again, semi-permeable boundaries support formation of new structure by placing contextualizing limits.
 
 
 
@@ -685,42 +685,37 @@ When nothing stops a myopic drive or strategy from dominating behavior, it tends
 \section{The alignment problem}
 \label{sec:alignment}
 
-Across a number of living systems, we've outlined how semi-permeable boundaries place selective limits on interactions so that, instead of overcommitting to a particular form, systems maintain a delicate balance between distinctive parts that work flexibly together. With these intelligent protections, new structure continues to contextualize previous partialities. Now we apply the same lens to the AI alignment problem. 
+Now we shift gears. Across a number of living systems, we've outlined how semi-permeable boundaries place selective limits on interactions so that, instead of overcommitting to a particular form, systems maintain a delicate balance between distinctive parts that work flexibly together. With these intelligent protections, new structure continues to contextualize previous partialities. In the remaining sections, apply this lens to the AI alignment problem. 
 
-There is no single, universally agreed definition of the alignment problem. Most definitions in some way orient on the idea of getting AI to behave in a way that is `good' rather than `bad'. Framed so, an obvious approach is to first specify a value function -- a formal definition of what is good and bad -- and then put AI to work towards optimizing that function. A value function might place weight on reducing human suffering, increasing wealth, decreasing inequality, and so on. 
+Although there is no universally agreed definition of the alignment problem, most definitions orient on designing AI to behave in a way that is `good' rather than `bad'. Framed so, an obvious approach is to first specify a value function -- a formal definition of what is good and bad -- and then put AI to work optimizing that function. A value function might place weight on reducing human suffering, increasing wealth, decreasing inequality, and so on. 
 
-However, as soon as we try to specify what we value, it becomes clear that it is difficult or impossible to capture what we intend \citep{krakovna2020specification, russell2019human, grossman1986costs, hadfield2019incomplete, zhuang2020consequences, gabriel2020artificial, wiener1960some}. To illustrate this problem, Bostrom proposes some compelling thought experiments \citep{bostrom2014superintelligence}. Imagine our value function places weight on finding a cure for cancer. A super-powerful AI faithfully trying to optimize for our stated wishes could create cancers in millions of humans in order to perform experiments and rapidly find a cure. Or, imagine that our value function places weight on the subjective human experience of wellbeing. Achieving this stated objective might be most efficiently achieved by imprisoning humans and directly stimulating neurons to trigger the experience of wellbeing. 
+However, as soon as we try to specify what is good, it becomes clear that it is difficult or impossible to capture what we intend \citep{krakovna2020specification, russell2019human, grossman1986costs, hadfield2019incomplete, zhuang2020consequences, gabriel2020artificial, wiener1960some}. To illustrate this problem, Bostrom proposes some thought experiments \citep{bostrom2014superintelligence}. Imagine our value function places weight on finding a cure for cancer. A super-powerful AI faithfully trying to optimize for our stated wishes could create cancers in millions of humans in order to perform experiments and rapidly find a cure. Or, imagine that our value function places weight on the subjective human experience of wellbeing. Achieving this stated objective might be most efficiently achieved by imprisoning humans and directly stimulating neurons to trigger the experience of wellbeing. 
 
-These thought experiments are not isolated examples. It is in general difficult or impossible to write down a suitable value function because any concept, model or formalism is incomplete. When we use concepts or formalisms to try to specify values, we are inevitably missing things. This was the core theme of Sections 1-\ref{sec:motivation}. If AI does too good a job of organizing the world around a particular framing of values, then the richness of the world is collapsed to that framing. 
+These thought experiments are not isolated examples. It is difficult or impossible to write down a suitable value function because any concept, model or formalism is incomplete. When we try to specify values, we inevitably miss things, including things we don't yet have concepts for (imagine a mouse's conception of what matters, and extrapolate in the opposite direction from us). This was the core theme of Sections 1-\ref{sec:motivation}. If AI does too good a job of organizing the world around a particular framing of values, then the richness of the world is collapsed to that framing. 
 
-But we can turn the tables on the alignment problem. 
+Researchers have suggested several ways around this problem, such as specifying principles instead of values, or designing the AI to learn human values instead of having them hard-coded. We will examine these methods in more detail in Section~\ref{sec:otherapproaches}, but ultimately they run into the same problem that any overcommitting to any particular formalism or conceptualization means collapse.
+
+A singular risk of overcommitment exists with AI because of the extremities attached to it: the amount of resource concentrated in one place, the potential for self-improvement, and the possibility that AI will surpass our own understanding and capabilities. With previous problems, humanity did our best to find solutions with the understanding that future generations would have new tools available and would iterate on our solutions. AI may be different. 
 
 
 \section{Alignment, boundaries, contextualization}
 
-We propose that alignment is not picking the right values or principles, or even the right system for inferring them. It is not any particular method for interpretability or keeping humans in the loop. Instead, alignment is the continued dance of contextualizing any particular form. It is the orientation of holding forms lightly, never-endingly stepping back into perspectives that contextualize what previously seemed to be real. 
+We propose that alignment is not picking the right values or principles, or even the right system for inferring them. It is not any method for interpretability or keeping humans in the loop. Instead, alignment is the continued dance of contextualizing any particular form. It is the orientation of holding forms lightly, neverendingly stepping back into perspectives that contextualize what previously seemed to be real. 
 
 
 % Semi-permeable boundaries form selective, intelligent constraints, allowing continued life-like emergence of new structure. 
 
 This proposal does not give us a specific set of steps to align AI systems. Instead, it offers two things:
 \begin{itemize}
-  \item A framework to think about how we ourselves keep stepping back, contextualizing, as we build AI. Of course, we are often already doing this.
-  \item A perspective on what it means for an AI system to keep stepping back. In Stuart Russell's approach, the AI is always learning about human preferences. What would it mean to go even farther and have the capacity to release from a particular formalization of what it means to learn about human preferences? What would a system look like that does that? How can we create the potential for even \textit{that} conceptualization to be overthrown in the future?
+  \item A framework to think about how we ourselves keep stepping back, contextualizing, as we build AI. Of course, as living creatures, we are often already doing this.
+  \item A perspective on what it means for an AI system to keep stepping back. What would it mean for AI to continually release from exclusive attachment to any particular form? How can we create the potential for even \textit{that} conceptualization to be overthrown in the future?
 \end{itemize}
-
-
-This is a way of thinking about what that evolving trajectory might look like, and what we can do now so that it does keep evolving even after it's far beyond our understanding.
 
 A common formulation of the alignment problem highlights the difficulty of writing down a complete, final specification of what humans value. Optimizing a proxy produces solutions that satisfy the proxy while violating the intended goal (``specification gaming'', ``reward hacking'', or proxy failure) \citep{amodei2016concrete,krakovna2020specification}. This failure mode is not merely an engineering nuisance: as agents grow more capable, narrow objective optimization can drive dramatic, discontinuous failures where previously acceptable behavior collapses into pathological strategies.
 
 `Doing what is good' vs `doing what is good for us' vs `doing what we want'
 
-The problem is unique because AI will surpass our ability to control it. Sort of like the Founding Fathers writing the Constitution with its self-modifying ability. To set this future system, which is way out of their control, in a good direction.
-
-The central problem of alignment is that AI systems do what we tell them to do. 
-
-We conjecture that the basic problem of alignment is that any particular form is not a complete answer. It's not possible to formalize our values. Three different angles to look at this from. First, our values are always changing. Think about fish versus Neanderthals vs humans. Second, we can't fully capture our values because they stretch below language into subtle, contextual intuition which probably even involves our bodies, our communities and so on. Third, what we want is not good for us in a larger sense.
+First, our values are always changing. Think about fish versus Neanderthals vs humans. Second, we can't fully capture our values because they stretch below language into subtle, contextual intuition which probably even involves our bodies, our communities and so on. Third, what we want is not good for us in a larger sense.
 
 You could cast our argument as the intersection of Rich Sutton's big world hypothesis with specification gaming and proxy failure. What does this mean?
 
@@ -741,6 +736,10 @@ As the optimization for a particular goal becomes more and more effective, the c
 Any particular goal or theory or perspective is incomplete and doesn't include the full richness of the world. A fox's `true goal' may include its own long-term wellbeing, and perhaps the wellbeing of its offspring. The goal of `hunting rabbits' is an imperfect proxy that does not specify anything about other variables such as `having enough food next year'. If the fox optimizes too well for `hunting rabbits', the optimization spills over to affect unspecified variables like `having enough food next year'. Why is this inevitable? It would seem possible to keep increasing the optimization intensity for `hunting rabbits' in a way that doesn't interfere with `having enough food next year' -- for example, if foxes could learn to farm rabbits. But this is harder than hunting rabbits without also learning to farm them, so a sufficiently powerful optimization process that cares only about hunting rabbits will lead to deficits in `having enough food next year' \citep{sohldickstein2022efficiency, zhuang2020consequences}. Because the world is not a formal system, there are always side paths for optimization to get sucked into. 
 
 Our approach aims for an AI that is `intelligent' in a deeper sense. Not the narrow intelligence of a paperclip maximizer, but the deeper contextualized wisdom of living things.
+
+Sort of like the Founding Fathers writing the Constitution with its self-modifying ability.
+
+We want to set this future system, which is way out of their control, in a good direction. A direction where, not only does it not collapse into paperclips, but someone in the future who far transcends our understanding and morals will be pleased with it. 
 
 As Stuart Russell puts it: ``A system that is optimizing a function of n variables, where the objective depends on a subset of size k<n, will often set the remaining unconstrained variables to extreme values; if one of those unconstrained variables is actually something we care about, the solution found may be highly undesirable."
 
@@ -770,8 +769,9 @@ We could map language onto this problem in two different ways. In the first mapp
 
 
 \section{Relationship to other approaches}
+\label{sec:otherapproaches}
 
-Our proposal does not contradict other alignment approaches. It says they're not the final answer, and any way we have of thinking about the problem now isn't enough for true alignment. Of course, it's nothing new to point out that approaches to \textit{any} problem will have to keep evolving. What's unique about alignment is that AI has the potential to develop far beyond human understanding. With previous situations, say transportation regulation for example, we could do our best to solve current problems, with the understanding that future generations will have new tools available and will iterate on our solutions. But with AI, the choices we make now have a chance of being our final input. 
+Our proposal does not contradict other alignment approaches. It says they're not the final answer, and any way we have of thinking about the problem now isn't enough for true alignment.
 
 \textbf{Inverse methods.} In inverse methods, AI learns a value function from human behavior rather than taking it as an input. A simple inverse method is reward modeling. Rather than trying to specify what we value in language or equations, we train a complex neural network (a reward model) directly on human preferences across a vast array of situations. We might ask thousands or millions of humans questions like, `is x better or worse than y', and train our reward model to predict their answers. Ideally, this model would learn to capture all the nuance of what humans care about. We would then use the trained reward model as the objective function that the primary AI seeks to optimize.
 
@@ -830,6 +830,8 @@ Our values are deeply embodied and intuitive, and difficult to fully capture in 
 \subsection{Response to existing methods}
 
 What are the limitations of this method? Our assertion is that if AI becomes too influential with any fixed implementation of inverse RL, this overcommitment leads to collapse. In other words, the fixed form leading to collapse doesn't have to be a particular value function. It can be a particular method for learning a value function. It can even be the concept that `humans have preferences', formalized in any particular way.
+
+In Stuart Russell's approach, the AI is always learning about human preferences. What would it mean to go even farther and have the capacity to release from a particular formalization of what it means to learn about human preferences?
 
 But even this system itself has some fixed formality, in terms of how it is structured: what are the assumptions baked into the inference machinery? What is the conceptualization of inference itself? What is the conceptualization of what a value can be?
 
