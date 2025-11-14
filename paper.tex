@@ -736,30 +736,84 @@ This means not only changing what we believe, but changing the believer. Awarene
 
 \section{The alignment problem}
 
-Across a number of living systems, we've outlined how boundaries place selective limits on interactions so that, instead of overcommitting to a particular form, systems maintain a delicate balance between distinctive parts that work flexibly together. With these intelligent protections, new structure continues to contextualize previous partialities. 
+% Across a number of living systems, we've outlined how boundaries place selective limits on interactions so that, instead of overcommitting to a particular form, systems maintain a delicate balance between distinctive parts that work flexibly together. With these intelligent protections, new structure continues to contextualize previous partialities. 
 
-We now apply this lens to the AI alignment problem. Our central message is that overcommitment to any particular form of AI means collapse, and AI carries a singular risk of overcommitment because of the extremities attached to it.
+We now apply our lens to the AI alignment problem. Our central message is that overcommitment to any particular form of AI means collapse, and AI carries a singular risk of overcommitment because of the extremities attached to it.
 
-To illustrate this idea, let's start with a simple example. If AI begins to approach and exceed human-level general intelligence, it may accelerate its own development, creating a positive feedback loop and intelligence explosion \citep{good1965speculations, vinge1993coming}. If the explosion is coupled to a narrow goal or vision, it clearly constitutes an extreme form of collapse. Using Bostrom's classic example, imagine an AI whose sole objective is maximizing paperclip production \citep{bostrom2014superintelligence}. The system would be incentivized to continually improve its own intelligence and capabilities, recognizing this as the best way to increase future paperclip production \citep{silver2021reward, bostrom2012superintelligent}. The AI could thus become vastly more intelligent and capable than humans, wresting control of the Earth from us and transforming it entirely into a bleak paperclip factory. Recursive self-improvement charges the narrow paperclip goal with overwhelming force, causing overcommitment and collapse.
+\subsection{Extremeties of AI}
+
+Many of these categories are overlapping with each other.
+
+\textbf{Intelligence.} Intelligence has always been the thing that gives us the ability to control other technologies (and other species). For the first time, we're endowing something else with true intelligence. 
+
+\textbf{Exceeding human abilities.} This creates a fundamentally new problem: it is difficult to control an agent more intelligent than ourselves. In some aspects it is already greater than our own (with potential for malware, misinformation, coercing humans, displacing intellectual labor, etc)
+
+\textbf{Intensity of optimization toward an objective.} This is already happening. Vast resources. Data centers, energy, money, data.
+
+Are there any examples of Harvey (law AI) proxy failure? Like the AI learns to find arguments that humans can't refute, even though they might be subtly wrong?
+
+Or other examples of the intensity of optimization causing collapse in existing applications?
+
+\textbf{Concentration of information flow and human attention.} So many people relying on chatbots now for answers. Instead of relying Google search on the internet which was (ideally) surfacing diverse content created and refined by many different individuals with different perspectives over a long time. (Counterargument: chatbots are just giving us a better view on the internet. They've memorized the whole thing.)
+
+What about when this same concentration starts to happen with robots completing tasks? (Of course, that has already happened a lot in the world with industrial robots and even with human concepts leading to people doing the same things the same way all over the world.) Also, the same idea with agentic LLMs.
+
+\textbf{Concentrating human power.} It is possible that a very small number of humans will have the majority of control over AI systems, which will give them greater dominance over other humans. Especially if the AI systems include robots that replace most human labor.
+
+Historically, power of states, corporations and elite individuals has been limited by factors like competition with other self-interested entities, the need for labor and the need to avoid uprising \citep{mills1956power, olson1965logic, stigler1971theory, piketty2014capital, acemoglu2012nations, thompson1971moral}. These constraints are likely to weaken as the persuasive power of technology increases \citep{woolley2018computational, costello2024durably}, autonomous weapons concentrate control of lethal force in a small number of hands \citep{scharre2018army}, and the need for human labor decreases \citep{susskind2020world, ford2015rise, drago2025defining}.
+
+\textbf{Not being limited to biological substrate.} Speed, ability to self-copy and self-modify, share information between copies, take in vast sensor data, etc.
+
+\textbf{Rate of change.} AI-powered algorithms already shape our behavior, yet rapidly changing technology outpaces regulatory response. Sora videos, for instance, are increasingly optimized to capture attention. In the future, advanced agents may act faster than human institutions or social processes can respond.
+
+\textbf{Recursive improvement and runaway intelligence.} Finally, the greatest extremity is recursive self-improvement.  If AI approaches human-level intelligence, it will likely be able to improve itself at least as quickly. As AI then begins to exceed human intelligence, it may plausibly begin to improve itself even faster, creating a positive feedback loop and an intelligence explosion \citep{good1965speculations, vinge1993coming}. 
+
+However, this intelligence explosion need not be aligned in any meaningful sense. Using Bostrom's classic example, imagine an AI whose sole objective is to maximize paperclip production \citep{bostrom2014superintelligence}. Plausibly, the system would continually work to improve its own intelligence and capabilities because it knows this is the best way to increase future paperclip production \citep{silver2021reward, bostrom2012superintelligent}. 
+
+
+\subsection{Particular forms} 
+
+What does it mean to overcommit to particular forms of AI? Let's take a simple and well-discussed example first. 
+
+What would overcommitment to an objective function look like? Bostrom scenarios. 
+
+What would it look like to be overcommitted to human values, even if learned dynamically? Super-fish intelligence.
+
+What would it look like to be overcommitted to a particular mechanism for learning human values?
+
+What would it look like to be overcommitted to particular representations within the model?
+
+Training data, model architecture, trained model as an artefact, etc
+
+
+
+
+
+To illustrate this idea, let's start with a dramatic example: the superintelligent paperclip maker \citep{bostrom2014superintelligence}. Nick Bostrom proposed a thought experiment where an AI has intellect and capabilities far beyond our own. It has been given the single goal of producing paperclips. If such an agent did everything it could to maximize its objective, it might well wrest control of the Earth from us and transform it entirely into a bleak paperclip factory. Superintelligence is an extremity that charges the narrow paperclip goal with overwhelming force, causing overcommitment to a particular form.
+
+But goals don't have to be as narrow as `making paperclips' to be dangerous when charged with great force. Suppose the AI's objective is to improve the human subjective experience of wellbeing. Achieving this stated objective may be most efficiently achieved by imprisoning humans and directly stimulating neurons to trigger the experience of wellbeing \citep{bostrom2014superintelligence}. It is difficult or impossible to capture what we really value -- any specification of what we value is incomplete \citep{krakovna2020specification, russell2019human, grossman1986costs, hadfield2019incomplete, zhuang2020consequences, gabriel2020artificial, wiener1960some, amodei2016concrete}.
+
+The problem is that \textit{being too good at any particular thing} means collapse. 
+
+
+Also, the force doesn't have to be as great as superintelligence to cause overcommitment to particular forms.
+
+
+
+
+
+For a large space of possible goals, the system could reasonably be expected to try to improve its own intelligence and capabilities, recognizing this as the best way to attain its goals more fully \citep{silver2021reward, bostrom2012superintelligent, omohundro2018basic}. 
 
 But recursive self-improvement isn't the only extremity attached to AI. And the form does not need to be as caricatured as paperclip-making to be partial.
 
 At their deepest, true human values are not formalizable. (If you object to this, we could equivalently say that human values are formalizble, but there is still more in the universe that is not captured by human values.)
 
-The extremities are:
-- intelligence and speed. in some ways already superhuman.
-- possibility of recursive self-improvement.
-- concentration of attention and information flow in one place.
-- intensity of optimization toward its objective function.
-- tool for concentrating human power.
 
 
+Recursive self-improvement. If AI begins to approach and exceed human-level general intelligence, it may accelerate its own development, creating a positive feedback loop and an intelligence explosion \citep{good1965speculations, vinge1993coming}.
 
-Thinking of the AlphaProof paper, there's a question: `is it really generalizing?'. Or is it collapsing on some narrower manifold? Is it going to hinder us from discovering deeper mathematics? Actually, a better way to say it is this: *whatever* manifold it has discovered is inevitably something partial. What will constrain it to say, `this is not the whole truth; keep being pressured to grow'? Something has to understand *it* (i.e., be aware of it) in order to contextualize it. Like, we'd have to be able to see the limits in its understanding and conceptualization.
+Thinking of the AlphaProof paper, there's a question: `is it really generalizing?'. Or is it collapsing on some narrower manifold? Is it going to hinder us from discovering deeper mathematics? Actually, a better way to say it is this: *whatever* manifold it has discovered is inevitably something partial. What will constrain it to say, `this is not the whole truth; keep being pressured to grow'? Something has to understand *it* (i.e., be aware of it) in order to contextualize it. Like, we'd have to be able to see the limits in its understanding and conceptualization. Right now, we can still do this in many ways. But what can contextualize AI when it is vastly more capable than us and sees trivially through all of our concepts? It has to do it to itself -- or have separated AIs or parts of the AI.
 
-
-
-The greatest extremity attached to AI is the possibility of super-human intelligence. 
 
 It can outsmart us and adapt faster than we can respond.
 
@@ -787,48 +841,11 @@ AI serves as a tool for concentrating power in few hands through propaganda, adv
 % People and companies increasingly depend on AI for work. 
 
 
-\textbf{Rate of change.} AI-powered algorithms already shape our behavior, yet rapidly changing technology outpaces regulatory response. Sora videos, for instance, are increasingly optimized to capture attention. In the future, advanced agents may act faster than human institutions or social processes can respond.
-
-\textbf{Exceeding human abilities.} AI's most distinctive feature is its capacity to replicate and possibly surpass human intelligence and agency. This creates a fundamentally new problem: it is difficult to control an agent more intelligent than ourselves.
-
-
-
-
-\textbf{Recursive improvement and runaway intelligence}
-
-Finally, the most extreme version of overcommitment is recursive self-improvement.  If AI approaches human-level intelligence, it will likely be able to improve itself at least as quickly. As AI then begins to exceed human intelligence, it may plausibly begin to improve itself even faster, creating a positive feedback loop and an intelligence explosion \citep{good1965speculations, vinge1993coming}. 
-
-However, this intelligence explosion need not be aligned in any meaningful sense. Using Bostrom's classic example, imagine an AI whose sole objective is to maximize paperclip production \citep{bostrom2014superintelligence}. Plausibly, the system would continually work to improve its own intelligence and capabilities because it knows this is the best way to increase future paperclip production \citep{silver2021reward, bostrom2012superintelligent}. 
-
-
-
-
-
-
-
-
-
-
-
 
 How does this map onto `human values'?
 1) The fact that the universe is NOT captured by any particular formalism is ultimately what we value. If we could probe deep enough into human values, the `true' values that we can't necessarily articulate but we slowly discover through deliberation and self-discovery, we would discover something like that. Attunement to the livingness of the universe itself.
 2) Another reasonable mapping is that this isn't human values. That human values are about things like human welfare, subjective wellbeing, maybe even concepts like fairness and so on. 
 
-
-\subsection{Overcommitment to particular forms of AI} 
-
-What does it mean to overcommit to particular forms of AI? Let's take a simple and well-discussed example first. 
-
-What would overcommitment to an objective function look like? Bostrom scenarios. 
-
-What would it look like to be overcommitted to human values, even if learned dynamically? Super-fish intelligence.
-
-What would it look like to be overcommitted to a particular mechanism for learning human values?
-
-What would it look like to be overcommitted to particular representations within the model?
-
-Training data, model architecture, trained model as an artefact, etc
 
 
 \section{Alignment, boundaries, contextualization}
@@ -1027,11 +1044,6 @@ A: No. In fact, an important boundary is against excess relativism.  AI comes in
 We could map language onto this problem in two different ways. In the first mapping, what we mean by `values' or `good' is formalizable or close to formalizable. Under this definition, excessively optimizing for any particular set of values will lead to an impoverished universe. It is difficult to ascribe normative value to the resulting impoverished universe, because it is out of scope of the values. In the second mapping, `good' is not formalizable: whatever concepts we have about it are incomplete \citep{plato2002apology, aristotle2019nicomachean, wittgenstein1922tractatus, heidegger1998humanism}. Rather than referring to a particular concept, it's more like a semi-permeable boundary on our own reference frame: holding it as useful while only part of the whole picture. The point of alignment is not to say that any particular perspective is absolutely wrong or right. 
 
 
-\section{Consequences of getting alignment wrong}
-
-Despite its adaptiveness, law has historically not always been an effective boundary for checking the power of the most elite individuals and most successful businesses. Instead, their power has been limited by factors like competition with other self-interested entities, the need for labor and the need to avoid uprising \citep{mills1956power, olson1965logic, stigler1971theory, piketty2014capital, acemoglu2012nations, thompson1971moral}. Some of these constraints may weaken in the future \citep{drago2025defining}, as the persuasive power of technology increases \citep{woolley2018computational, costello2024durably}, autonomous weapons concentrate control of lethal force in a small number of hands \citep{scharre2018army}, and the need for human labor decreases \citep{susskind2020world, ford2015rise}.
-
-Paperclip worlds.
 
  
 \section{Open-endedness versus optimization for an objective}
