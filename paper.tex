@@ -38,14 +38,14 @@
 
 \vspace{20pt}
 
-\begin{adjustwidth}{35pt}{35pt}
-\begin{center}
-\textbf{Abstract}
-\end{center}
+% \begin{adjustwidth}{35pt}{35pt}
+% \begin{center}
+% \textbf{Abstract}
+% \end{center}
 % The alignment problem in artificial intelligence (AI) is often posed as the problem of building AI to act in accordance with human values or principles. Here, w
-We suggest a new way to think about AI alignment: as a rich, ever-changing, imperfect array of semi-permeable boundaries that contextualize any particular forms. Contextualization nuances the functioning of systems, supporting the continued arising of unexpected phenomena. First we show how a range of living systems follow this principle, and then we apply the same idea to the problem of alignment.
-\end{adjustwidth}
-\vspace{30pt}
+
+% \end{adjustwidth}
+% \vspace{30pt}
 
 
 % Not long ago, AI alignment was a niche research topic. Sci-fi books and a handful of nerdy (but, it turns out, remarkably foresightful) computer scientists worried about the implications of steadily increasing machine intelligence. 
@@ -63,13 +63,12 @@ We suggest a new way to think about AI alignment: as a rich, ever-changing, impe
 
 % Most alignment research is premised on the notion of aligning AI with some well-designed goals or principles. 
 
-In this paper, we argue that true alignment is not achieved through any formalizable objective or principle. Any conceptualization is by itself inherently misaligned. Instead, alignment is the ongoing process of limiting overcommitment to any particular form.
 
-To make this argument, we begin by studying a range of natural and human systems. We observe that each form -- an equation, a genome, a viewpoint, an institution -- is myopic in the sense that it is only a small aspect of the world. But the existence of many partial forms, developing rich, grounded individual identities while flexibly working together at many scales, constitutes the livingness of the world. Collapse is a failure mode where, instead of lightly-held dynamic relationships between different partialities, there is overcommitment to particular forms. Cancer spreads, concentrated power reduces human welfare, invasive species choke out complex ecosystems. Semi-permeable boundaries protect against collapse by maintaining distinctiveness of separate forms while also allowing them to interact productively. Juxtaposing incompatible things surfaces paradoxes and propels evolution. 
+In this paper, we begin by studying a range of natural and human systems. We observe that each form -- an equation, a genome, a viewpoint, an institution -- is myopic in the sense that it is only a small aspect of the world. But the existence of many partial forms, developing rich, grounded individual identities while flexibly working together at many scales, constitutes the livingness of the world. Collapse is a failure mode where, instead of lightly-held dynamic relationships between different partialities, there is overcommitment to particular forms. Cancer spreads, concentrated power reduces human welfare, invasive species choke out complex ecosystems. In living systems, semi-permeable boundaries protect against collapse by maintaining distinctiveness of separate forms while also allowing them to interact productively. Boundaries thereby contextualize forms in relation to others, surfaces paradoxes by juxtaposing incompatible things. Boundaries support nuance and the continued arising of unexpected phenomena. 
 
 % semi-permeable boundaries contextualize myopic forms as part of larger systems. 
 
-AI charges particular myopic forms with enormous leverage, creating a unique risk of overcommitment. If aspects of the AI system remain fixed while it gains increasing resource, capability and purview, there is a possibility of severe collapse. Some researchers believe AI is inevitably destructive for these reasons. We cautiously argue that there is a non-destructive path available, by reframing AI as a continuation of living processes that bound one another to support increasing subtlety of organization. Applying the template of living systems, we recast alignment as an evolving network of semi-permeable boundaries that contextualize any particular form of AI to avoid collapse and promote ongoing discovery of new structure. 
+We then use those living systems as inspiration for a new way to think about AI alignment. We propose that alignment is the ongoing process of limiting overcommitment to any form. On the path it is currently following, AI will charge particular myopic forms with enormous leverage, creating a unique risk of overcommitment. If aspects of the AI system remain fixed while it gains increasing resource, capability and purview, there is a possibility of severe collapse. Some researchers believe AI is inevitably destructive for these reasons. We cautiously argue that there is a non-destructive path available, by reframing AI as a continuation of living processes that bound one another. Applying the template of living systems, we recast alignment as an evolving network of semi-permeable boundaries that contextualize any particular form of AI to avoid collapse and promote ongoing discovery of new structure. 
 
 % If you want to jump straight to alignment, it starts at Section~\ref{sec:alignment}. But those arguments will have more color if you read at least a few of the earlier sections first.
 
@@ -86,9 +85,14 @@ AI charges particular myopic forms with enormous leverage, creating a unique ris
 
 % each form or arrangement is lightly held. 
 
+\tableofcontents
+
+\section{Examples from the natural and human world}
+
+The central ideas of this paper are necessarily abstract, as we hope they may contribute meaningfully to reasoning about AI even when it is vastly different from anything we are familiar with. To relate these abstract ideas to familiar things, we will walk through a series of examples from living systems. Within each example, we hope the ideas are approachable if not commonsense. Seeing how the same principles play out across a wide range of systems may also foreground their generality.
 
 
-\section{Cell membranes and semi-permeable boundaries}
+\subsection{Cell membranes and semi-permeable boundaries}
 
 \begin{center}
 \textit{`Defying definition---a word that means ``to fix or mark the limits of"---living cells move and expand incessantly.'}\\*Lynn Margulis
@@ -99,7 +103,7 @@ AI charges particular myopic forms with enormous leverage, creating a unique ris
 \textit{`Nature's imagination is so much greater than man's, she's never going to let us relax.'}\\*Richard Feynman
 \end{center}
 
-Boundaries, collapse and contextualization are abstract ideas. To show what we mean, we will walk through a series of examples from living systems. Within each example, the ideas are commonsense and straightforward. Our hope is that working through multiple examples both clarifies the concepts and foregrounds how general and fundamental they are.
+
 
 The cell membrane is an essential boundary of living systems. The membrane holds the integrity of the cell against the overwhelming pressure of diffusion that tries to homogenize the cell with the outside \citep{watson2015biological, alberts2022molecular, bray2019wetware, harold2001way, lane2015vital}. The membrane places limits on interactions between the inside and the outside. Thanks to the membrane, both the cell and the outside can exist; this is a more diverse, less symmetric arrangement compared to the inside and outside being blended together \citep{schrodinger1944what, anderson1972more, prigogine1984order, turing1952chemical}. Without boundaries, interactions cause collapse, where there are no longer separate entities flexibly interacting, but instead overcommitment to a simpler homogeneous form\footnote{We define collapse as overcommitment to particular form. It could be equivalently defined as either undercommitment or overcommitment. Radically undercommitting means homogeneity, which is itself a particular kind of form and so also overcommitted.}.
 
@@ -114,7 +118,7 @@ Another recurring thread is that collapse is always relative. For example, progr
 % Both random mutation and diffusion toward chemical equilibrium are good examples of how dominance of a particular force can be problematic even if that force is not agentic in the traditional sense. Diffusion is a powerful, myopic pressure. It `sees' only the drive toward spatial homogeneity and does not `care' about other factors like the health of the cell.
 
 
-\section{Diversity and problem solving in groups}
+\subsection{Group problem solving and diversity}
 
 \begin{center}
 \textit{``I could also observe, time and again, how too deep an immersion in the math literature tended to stifle creativity."}\\*Jean Écalle
@@ -261,7 +265,7 @@ Separate representations exist but can also interact \\
 
 
 
-\section{Genes and groundedness}
+\subsection{Genes and groundedness}
 
 Sex is costly. An organism must find a mate in the vast and dangerous world, and half of them can't reproduce \citep{smith1971origin, lehtonen2012many, smith1978evolution, speijer2015sex, goodenough2014origins}. Yet all known species either reproduce sexually or have some form of horizontal gene transfer \citep{gladyshev2008massive, butterfield2000bangiomorpha}. Why is that?
 
@@ -360,10 +364,7 @@ Boundaries encourage lightly-held, modular interactions. By not overcommitting t
 % Higher rates of sex evolve in spatially heterogeneous environments \citep{becks2010higher}.
 
 
-\newpage
-
-
-\section{Laws and evolving patchworks}
+\subsection{Laws and evolving patchworks}
 
 \begin{center}
 \textit{`Unity without uniformity and diversity without fragmentation.'}\\*Kofi Annan
@@ -400,7 +401,7 @@ Of course, intelligent agents do not necessarily accept boundaries set on their 
 
 
 
-\section{Frames and myopia}
+\subsection{Frames and myopia}
 
 \begin{center}
 \textit{`Strong opinions, weakly held.'}\\*Paul Saffo
@@ -476,7 +477,7 @@ Again, as our ideas are tested against multiple situations and problems, they ar
 
 
 
-\section{Art and spontaneous novelty}
+\subsection{Art and spontaneous novelty}
 
 
 \begin{center}
@@ -506,7 +507,7 @@ There's so much dynamism in us, that simply preventing the short-circuiting of a
 
 
 
-\section{Ecosystems and reciprocal limits}
+\subsection{Ecosystems and reciprocal limits}
 
 An ecosystem's health and resilience depend on boundaries that limit the effectiveness of any constituent gene, organism, group or species \citep{holling1973resilience}. Each entity tries to consume resources and proliferate, but if it dominates to excess, the ecosystem suffers.
 
@@ -548,7 +549,7 @@ Finally, we again stress that one entity's collapse is another's flourishing. Ex
 
 
 
-\section{Interpersonal dynamics and domination}
+\subsection{Interpersonal dynamics and domination}
 
 
 \begin{center}
@@ -582,7 +583,7 @@ Without boundaries, interactions tend to result in one person being dominated by
 
 
 
-\section{Information in the brain}
+\subsection{Information in the brain}
 
 The brain is somewhat miraculous in that it manages to keep so many pieces of information distinct from one another. If you picture a highly-connected network of neurons with their signals continually impinging on one another, it's not obvious that this would be an easy thing to accomplish. In this section, we review a selected handful of mechanisms by which the brain creates semi-permeable boundaries between different signals. Each paragraph below focuses on one of these mechanisms. There are many more; the brain is perhaps the most extraordinary example in nature of a system of semi-permeable boundaries supporting the proliferation of multitudinous forms that are kept distinct yet also meaningfully linked together.
 
@@ -616,7 +617,7 @@ Boundaries mean much of our world is internal. Like replay in the brain: much of
 
 
 
-\section{Motivation and long-sightedness}
+\subsection{Motivation and long-sightedness}
 
 Animal motivation systems evolved to maximize fitness. Thirst shapes our behavior to increase the odds of reproducing before we dehydrate. But motivation functions best in support of fitness when it doesn't overcommit to particular drives, strategies, or goals.
 
@@ -683,7 +684,7 @@ When nothing stops a myopic drive or strategy from dominating behavior, it tends
 % The hippocampus uses a sparse, pattern-separated code for rapid episodic learning, whereas neocortex uses a distributed, overlapping code for slow integration across experiences \citep{kumaran2016learning}. The complementary learning‐systems framework posits that hippocampus and cortex work together: hippocampus quickly binds the specifics of each event (sparse, largely non-overlapping codes) while cortex gradually extracts common structure (distributed codes) across many events \citep{OReilly2014}. 
 
 
-\section{Contextualization and contemplative practice}
+\subsection{Contextualization and contemplative practice}
 \label{sec:contemplative}
 
 
@@ -745,6 +746,8 @@ This means not only changing what we believe, but changing the believer. Awarene
 % Across a number of living systems, we've outlined how boundaries place selective limits on interactions so that, instead of overcommitting to a particular form, systems maintain a delicate balance between distinctive parts that work flexibly together. With these intelligent protections, new structure continues to contextualize previous partialities. 
 
 We now apply our lens to the AI alignment problem. Our central message is that overcommitment to any particular form of AI means collapse, and AI carries a singular risk of overcommitment because of the extremities attached to it.
+
+Alignment is not achieved through any formalizable objective or principle (cite human values not being formalizable). Any formalization is by itself inherently misaligned. 
 
 \subsection{Extremeties of AI}
 
@@ -849,7 +852,7 @@ AI serves as a tool for concentrating power in few hands through propaganda, adv
 
 
 How does this map onto `human values'?
-1) The fact that the universe is NOT captured by any particular formalism is ultimately what we value. If we could probe deep enough into human values, the `true' values that we can't necessarily articulate but we slowly discover through deliberation and self-discovery, we would discover something like that. Attunement to the livingness of the universe itself.
+1) The fact that the universe is NOT captured by any particular formalism is ultimately what we value. If we could probe deep enough into human values, the `true' values that we can't necessarily articulate but we slowly discover through deliberation and self-discovery, we would discover something like that. Attunement to the livingness of the universe itself. Cite Russell and others who have made the case for this asymptotic notion of what human values are.
 2) Another reasonable mapping is that this isn't human values. That human values are about things like human welfare, subjective wellbeing, maybe even concepts like fairness and so on. 
 
 
