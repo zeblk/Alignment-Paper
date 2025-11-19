@@ -1,18 +1,17 @@
 \babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {1}Examples from the natural and human world}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Cell membranes and semi-permeable boundaries}{3}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Group problem solving and diversity}{3}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Genes and groundedness}{7}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}Laws and evolving patchworks}{7}{subsection.1.4}%
-\contentsline {subsection}{\numberline {1.5}Frames and myopia}{8}{subsection.1.5}%
-\contentsline {subsection}{\numberline {1.6}Art and spontaneous novelty}{10}{subsection.1.6}%
-\contentsline {subsection}{\numberline {1.7}Ecosystems and reciprocal limits}{11}{subsection.1.7}%
-\contentsline {subsection}{\numberline {1.8}Interpersonal dynamics and domination}{12}{subsection.1.8}%
-\contentsline {subsection}{\numberline {1.9}Information in the brain}{13}{subsection.1.9}%
-\contentsline {subsection}{\numberline {1.10}Motivation and long-sightedness}{14}{subsection.1.10}%
-\contentsline {subsection}{\numberline {1.11}Contextualization and contemplative practice}{16}{subsection.1.11}%
-\contentsline {section}{\numberline {2}The alignment problem}{18}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Extremeties of AI}{18}{subsection.2.1}%
+\contentsline {subsection}{\numberline {1.1}Cell membranes}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Group problem solving}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Genes}{7}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Laws}{8}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Frames and perspectives}{8}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Ecosystems}{10}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}Interpersonal dynamics}{11}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}Information in the brain}{12}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.9}Motivation}{14}{subsection.1.9}%
+\contentsline {subsection}{\numberline {1.10}Contemplative practice}{15}{subsection.1.10}%
+\contentsline {section}{\numberline {2}The alignment problem}{17}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Extremeties of AI}{17}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Particular forms}{19}{subsection.2.2}%
 \contentsline {section}{\numberline {3}Alignment, boundaries, contextualization}{21}{section.3}%
 \contentsline {subsection}{\numberline {3.1}The human process}{21}{subsection.3.1}%
