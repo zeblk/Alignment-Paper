@@ -11,19 +11,20 @@
 \contentsline {subsection}{\numberline {1.9}Motivation}{14}{subsection.1.9}%
 \contentsline {subsection}{\numberline {1.10}Contemplative practice}{15}{subsection.1.10}%
 \contentsline {section}{\numberline {2}The alignment problem}{16}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Case study 1: The paperclip maker}{18}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Beyond paperclips}{19}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Case study 2: An overcommitted learner}{20}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Alignment, boundaries, contextualization}{20}{subsection.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.1}The human process}{20}{subsubsection.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.4.2}The AI process}{21}{subsubsection.2.4.2}%
-\contentsline {subsubsection}{\numberline {2.4.3}Other stuff}{22}{subsubsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.5}Relationship to other approaches}{23}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Response to existing methods}{25}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}Failure modes for specifying values}{25}{subsection.2.7}%
-\contentsline {subsection}{\numberline {2.8}Objections}{27}{subsection.2.8}%
-\contentsline {subsection}{\numberline {2.9}Morality and normativity}{27}{subsection.2.9}%
-\contentsline {subsection}{\numberline {2.10}Open-endedness versus optimization for an objective}{28}{subsection.2.10}%
-\contentsline {subsection}{\numberline {2.11}So what should we do?}{30}{subsection.2.11}%
-\contentsline {section}{\numberline {3}Acknowledgements}{30}{section.3}%
-\contentsline {section}{\numberline {4}Competing Interests}{30}{section.4}%
+\contentsline {subsection}{\numberline {2.1}Case study 1: Belief amplification loops}{18}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Case study 2: The paperclip maker}{19}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Beyond paperclips}{19}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Case study 3: An overcommitted learner}{21}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Alignment, boundaries, contextualization}{21}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}The human process}{21}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}The AI process}{21}{subsubsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.3}Other stuff}{23}{subsubsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.6}Relationship to other approaches}{24}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Response to existing methods}{25}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Failure modes for specifying values}{26}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}Objections}{27}{subsection.2.9}%
+\contentsline {subsection}{\numberline {2.10}Morality and normativity}{28}{subsection.2.10}%
+\contentsline {subsection}{\numberline {2.11}Open-endedness versus optimization for an objective}{29}{subsection.2.11}%
+\contentsline {subsection}{\numberline {2.12}So what should we do?}{30}{subsection.2.12}%
+\contentsline {section}{\numberline {3}Acknowledgements}{31}{section.3}%
+\contentsline {section}{\numberline {4}Competing Interests}{31}{section.4}%

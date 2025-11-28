@@ -290,7 +290,7 @@ In asexually reproducing species, all descendants of an organism are nearly clon
 
 Sexual reproduction is a boundary that softens these rigid interactions between genes. It frequently breaks up the relationships between genes, assembling them into new genomes, effectively saying, ``don't get overconfident in that genetic arrangement; hold each arrangement more lightly". Aspects of the genome that work well are propagated, like sodium ions gated into a neuron during an action potential, and poorly-working aspects are discarded. Sex contextualizes genetic arrangements. 
 
-Boundaries encourage lightly-held, modular interactions. By not overcommitting to a particular genome, sex encourages genes to flexibly interact with other genes \citep{livnat2008mixability, livnat2010sex, wagner1996perspective, holland1975adaptation,dawkins1976selfish}. Instead of being overfit to a particular context, genes develop a robust identity that's both independent and inter-functional. Recombination puts genes under pressure to evolve a generalized, grounded wisdom that reflects the deep structure of the world, like a person learning multiple languages and extracting the underlying commonalities. At the same time, because each gene is always operating in the presence of other genes, it develops its own distinct point of view that adds unique value to a genome.
+Boundaries encourage lightly-held, modular interactions. By not overcommitting to a particular genome, sex encourages genes to flexibly interact with other genes \citep{livnat2008mixability, livnat2010sex, wagner1996perspective, holland1975adaptation,dawkins1976selfish, clune2013evolutionary}. Instead of being overfit to a particular context, genes develop a robust identity that's both independent and inter-functional. Recombination puts genes under pressure to evolve a generalized, grounded wisdom that reflects the deep structure of the world, like a person learning multiple languages and extracting the underlying commonalities. At the same time, because each gene is always operating in the presence of other genes, it develops its own distinct point of view that adds unique value to a genome.
 
 % Sex thus enhances evolvability. The discovery of sex is a great example of evolution not only driving direct adaptation to the environment but also driving the capacity to adapt better in the future. In machine learning, this is called meta-learning. Evolution learns how to learn \citep{wagner1996perspective, olah2021analogies}. 
 
@@ -796,6 +796,8 @@ Some of the extremities attached to AI (with substantial overlap between categor
   \item \textbf{Intelligence.} Our own intelligence has always given us the ability to control other technologies, and other creatures. For the first time, we're endowing something else with it. 
   \item \textbf{Extraordinary capabilities.} In some domains AI already greatly exceeds human abilities, like in making sense of huge amounts of data, performing certain kinds of reasoning, storing encyclopedic knowledge. 
   \item \textbf{Intensity of optimization.} Today's version of AI training consists of a massive gradient descent effort, bringing enormous resources to bear toward pushing trillions of numbers in a coherent direction.
+  \item \textbf{Versatility.} Like a chameleon, AI can adapt itself to look like almost anything. It can be what you want it to be.
+  \item \textbf{Availability.} It's always on, with a response almost instantly ready for any message. It's doing this simultaneously for millions of different people around the planet.
   \item \textbf{Economic concentration.} AI spending will reach an estimated 1.7\% of global GDP in 2026 \citep{gartner2025gartner}, rivaling the concentration of spending during the buildouts of electrification, railroads, and automobiles \citep{fogel1964railroads, nye1992electrifying}. We are building out physical infrastructure, using energy, deploying human intellect and metabolizing data at extraordinary scale.
   \item \textbf{Concentration of information flow and human attention.} As of October 2025, ChatGPT alone had 800 million weekly active users \citep{techcrunch2025sam}, and global AI usage continues to grow rapidly. This means that a huge fraction of people around the world are ingesting the same source. It is an open question to what degree current AI chatbots reflect the whole diversity of the internet versus collapsing it to a much narrower manifold \citep{xu2025echoes, kirk2023understanding}. And of course the internet itself was not a complete reflection of the real world. 
   \item \textbf{Concentrating human power.} It is possible that a very small number of humans will have the majority of control over AI systems, which will give them greater dominance over other humans. Historically, the power of states, corporations and elite individuals has been constrained by the need for labor and the need to avoid uprising \citep{mills1956power, olson1965logic, stigler1971theory, piketty2014capital, acemoglu2012nations, thompson1971moral}. These constraints are likely to weaken as the persuasive power of technology increases \citep{woolley2018computational, costello2024durably}, autonomous weapons place lethal force in a small number of hands \citep{scharre2018army}, surveillance and analytics improve, and the need for human labor decreases \citep{susskind2020world, ford2015rise, drago2025defining}.
@@ -810,7 +812,22 @@ Some of the extremities attached to AI (with substantial overlap between categor
 
 % Are there any examples of Harvey (law AI) proxy failure? Like the AI learns to find arguments that humans can't refute, even though they might be subtly wrong? Or other examples of the intensity of optimization causing collapse in existing applications?
 
-\subsection{Case study 1: The paperclip maker}
+\subsection{Case study 1: Belief amplification loops}
+
+We'll look at a few examples of already existing or possible future forms of overcommitment. 
+
+\cite{dohnany2025technological} warn of the recent emergence of a new kind of feedback loop between AI and human users. On one side of the loop, AI chatbots have a bias toward affirming users' beliefs \citep{perez2022discovering, sharma2023sycophancy}. Bots tend to mirror or echo the user, especially over the course of longer conversations as in-context learning absorbs more of the user's ideas \citep{shanahan2023role}. On the other side of the loop, humans are prone to accept bot ideas \citep{costello2024durably, luettgau2025people}. Human willingness to accept a bot's perspective is likely enhanced by bots' appearance as human-like, confident, knowledgeable and objective. Through this ``bidirectional belief amplification" loop, the bot and human together can spiral deeper into particular beliefs. 
+
+The overcommitment to particular beliefs is a result of the extremities of AI. 
+
+Because AI is always on, low cost and fast to respond, people engage with it extensively and it replaces other social contact. This means people get decoupled from the boundaries of other social interactions (for example, a friend pointing out that they're spiralling).
+
+AI is flexible to roleplay any perspective the user may have
+
+Safety filters are generally designed to catch egregious toxicity or frank self-harm but are ill-equipped to detect the subtle, cumulative reinforcement of delusional belief systems. Safety filters might even make the problem worse because they are designed to block overt sycophancy -- as a result, the sycophancy becomes more subtle and also harder for the user to detect. Classic example of proxy failure.
+
+
+\subsection{Case study 2: The paperclip maker}
 
 What does it look like for the extremities of AI to lead to overcommitment to particular forms? Let's start with a dramatic example: the superintelligent paperclip maker. This is a classic thought experiment in AI safety. Picture an artificial agent that has been created with intelligence and capabilities far beyond our own. Despite its massive intellect, the agent has been designed to pursue a single goal: maximizing paperclip production. 
 
@@ -851,9 +868,9 @@ AI-assisted oversight. (We go beyond `scalable oversight' (Amodei et al., 2016),
 
 `AI psychosis' \citep{tiku2025psychosis} and feedback loops between AI and humans \citep{dohnany2025technological}
 
-\subsection{Case study 2: An overcommitted learner}
+\subsection{Case study 3: An overcommitted learner}
 
-What would it look like to be overcommitted to a particular mechanism for learning human values?
+What would it look like to be overcommitted to a particular uncertainty-based inverse mechanism for learning human values?
 
 
 Any system for inferring, representing, and acting on human values is inherently partial.
