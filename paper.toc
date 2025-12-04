@@ -11,22 +11,23 @@
 \contentsline {subsection}{\numberline {1.9}Motivation}{14}{subsection.1.9}%
 \contentsline {subsection}{\numberline {1.10}Contemplative practice}{15}{subsection.1.10}%
 \contentsline {section}{\numberline {2}The alignment problem}{17}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Mild overcommitment}{17}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Extremities of AI}{18}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}More serious overcommitment}{19}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Case study 4: An overcommitted learner}{20}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Other extremities...}{20}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Forms of AI}{20}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}Alignment, boundaries, contextualization}{21}{subsection.2.7}%
-\contentsline {subsubsection}{\numberline {2.7.1}The human process}{22}{subsubsection.2.7.1}%
-\contentsline {subsubsection}{\numberline {2.7.2}The AI process}{22}{subsubsection.2.7.2}%
-\contentsline {subsubsection}{\numberline {2.7.3}Other stuff}{23}{subsubsection.2.7.3}%
-\contentsline {subsection}{\numberline {2.8}Relationship to other approaches}{25}{subsection.2.8}%
-\contentsline {subsection}{\numberline {2.9}Response to existing methods}{26}{subsection.2.9}%
-\contentsline {subsection}{\numberline {2.10}Failure modes for specifying values}{27}{subsection.2.10}%
-\contentsline {subsection}{\numberline {2.11}Objections}{28}{subsection.2.11}%
-\contentsline {subsection}{\numberline {2.12}Morality and normativity}{28}{subsection.2.12}%
-\contentsline {subsection}{\numberline {2.13}Open-endedness versus optimization for an objective}{29}{subsection.2.13}%
-\contentsline {subsection}{\numberline {2.14}So what should we do?}{31}{subsection.2.14}%
-\contentsline {section}{\numberline {3}Acknowledgements}{31}{section.3}%
-\contentsline {section}{\numberline {4}Competing Interests}{31}{section.4}%
+\contentsline {subsection}{\numberline {2.1}Extremities}{17}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Proposed solutions}{18}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Examples of overcommitment}{18}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Irreversible overcommitment}{19}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Case study 4: An overcommitted learner}{19}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Other extremities...}{20}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Forms of AI}{21}{subsection.2.7}%
+\contentsline {section}{\numberline {3}Alignment, boundaries, contextualization}{22}{section.3}%
+\contentsline {subsection}{\numberline {3.1}The human process}{22}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}The AI process}{23}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Other stuff}{24}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Relationship to other approaches}{25}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Response to existing methods}{27}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Failure modes for specifying values}{27}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Objections}{29}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Morality and normativity}{29}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Open-endedness versus optimization for an objective}{30}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}So what should we do?}{31}{subsection.3.10}%
+\contentsline {section}{\numberline {4}Acknowledgements}{32}{section.4}%
+\contentsline {section}{\numberline {5}Competing Interests}{32}{section.5}%
