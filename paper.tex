@@ -767,7 +767,7 @@ Finally, we appreciate that this way of talking raises red flags for some people
 
 In Part 1 we looked at how healthy living systems are composed of a variety of partial forms, like voices in a group, drives in an organism or creatures in an ecosystem. Semi-permeable boundaries both protect these entities from homogenizing and also allow interactions that contextualize entities as part of larger systems. Through these lightly-held interactions, entities experience multiple contexts and are shaped into grounded, modular parts, which supports ongoing increase of subtlety. Conversely, unhealthy systems overcommit to particular forms.
 
-Now we turn this lens to the AI alignment problem. Our central thesis is that alignment means avoiding overcommitment to any particular form. The problem is particularly challenging because AI carries extremities that create a danger of severe overcommitment. In this section we discuss those extremities, existing mitigation approaches, and a subtler problem that is not addressed by those approaches. Finally, we explore what an aligned future could look like.
+Now we turn this lens to the AI alignment problem. Our central thesis is that alignment means avoiding overcommitment to any particular form. The problem is particularly challenging because AI carries extremities that create a danger of severe overcommitment. In this section we discuss those extremities, what is missing from existing mitigation approaches, and finally what an aligned future could look like.
 
 % First, we re-cast familiar problems in this language. Some forms of overcommitment  like conceptual monoculture or concentration of human power. 
 
@@ -801,24 +801,27 @@ Now we turn this lens to the AI alignment problem. Our central thesis is that al
 
 \subsection{Extremities}
 
-AI is a unique technology. Traditionally, humans have been empowered by our own intelligence to maintain a degree of control over other systems and technologies. For the first time, we're now endowing non-human agents with intelligence that could exceed our own -- with the risk that we lose this control. In some ways, AI is already superhuman. It can copy itself almost instantly, run on upgraded hardware, communicate with other instances of itself at high bandwidth, and read vast data. By virtue of its non-biological substrate, it has the potential to learn, change and adapt many times faster than humans. 
+AI is a unique technology. Traditionally, humans have been empowered by our own intelligence to maintain a degree of control over other systems and technologies. For the first time, we're now endowing non-human agents with intelligence that could exceed our own -- with the risk that we lose control. In some ways, AI is already superhuman. It can copy itself almost instantly, run on upgraded hardware, communicate with other instances of itself at high bandwidth, and read vast data. By virtue of its non-biological substrate, it has the potential to learn, change and adapt many times faster than humans. If AI approaches human-level intelligence, it may begin to improve itself in a recursive cycle, creating a positive feedback loop and a rapid intelligence explosion \citep{good1965speculations, vinge1993coming}. There is good reason to think it will be motivated to do so: for many goals, first improving oneself is a rational means toward achieving the final goal \citep{silver2021reward, bostrom2012superintelligent, omohundro2018basic, turner2019optimal}. For similar reasons, a superintelligent agent might (successfully) resist human efforts to alter its goals \citep{bostrom2014superintelligence,russell2019human}.
 
-If AI approaches human-level intelligence, it may begin to improve itself in a recursive cycle, creating a positive feedback loop and an intelligence explosion \citep{good1965speculations, vinge1993coming}. There is good reason to think it will be motivated to do so: for many goals, first improving oneself is a rational means toward achieving the final goal \citep{silver2021reward, bostrom2012superintelligent, omohundro2018basic, turner2019optimal}.
+Presently, AI systems lag far behind humans in some crucial domains of intelligence. But even in the era of jagged intelligence \citep{karpathy2024jagged}, there are other extremities worth tracking. AI amplifies the trend toward centralization of information flow. As of October 2025, ChatGPT alone had 800 million weekly active users \citep{techcrunch2025sam}, and global AI usage continues to grow rapidly. At the same time, AI spending will reach an estimated 1.7\% of global GDP in 2026 \citep{gartner2025gartner}, rivaling the concentration of spending during the buildouts of electrification, railroads, and automobiles \citep{fogel1964railroads, nye1992electrifying}. A frontier training run expends hundreds of gigawatt hours of electricity and hundreds of millions of dollars to push trillions of numbers in a coherent direction defined by a formal objective. 
 
-Presently, AI systems lag far behind humans in some crucial domains of intelligence. But even in the era of jagged intelligence \citep{karpathy2024jagged}, there are other extremities worth tracking. As of October 2025, ChatGPT alone had 800 million weekly active users \citep{techcrunch2025sam}, and global AI usage continues to grow rapidly. AI spending will reach an estimated 1.7\% of global GDP in 2026 \citep{gartner2025gartner}, rivaling the concentration of spending during the buildouts of electrification, railroads, and automobiles \citep{fogel1964railroads, nye1992electrifying}. There is already a remarkable concentration of information flow and resources, and signs point to continued intensification.
+AI may also be a tool for concentration of human power. In some scenarios, a small number of humans will have the majority of control over AI systems, facilitating dominance over other humans. These scenarios appear more likely as the persuasive power of technology increases \citep{woolley2018computational, costello2024durably}, autonomous weapons place lethal force in a small number of hands \citep{scharre2018army}, surveillance and analytics improve, and the need for human labor decreases \citep{susskind2020world, ford2015rise, drago2025defining}. 
 
+\subsection{What is missing from mitigation approaches}
 
-\textit{Concentration of human power.} In some scenarios, a small number of humans will have the majority of control over AI systems, facilitating dominance over other humans. These scenarios appear more likely as the persuasive power of technology increases \citep{woolley2018computational, costello2024durably}, autonomous weapons place lethal force in a small number of hands \citep{scharre2018army}, surveillance and analytics improve, and the need for human labor decreases \citep{susskind2020world, ford2015rise, drago2025defining}. 
+All of the risks mentioned above are studied extensively.
 
+Global governance with democratic oversight, verification mechanisms, etc \citep{bostrom2014superintelligence, dafoe2018ai}. Binding agreement for AI companies to distribute capital to the public \citep{okeefe2020windfall}. Participatory AI \citep{birhane2022power}. Sociotechnical \citep{selbst2019fairness}. Inequality research.
 
+* Solutions to concentration of information and `mode collapse' of human thought.
 
-\subsection{Proposed solutions}
+* Solutions to rapid self-improvement. Such as placing limits on the capabilities of the system.
 
-First, solutions proposed to concentration of human power. Democratic AI, sociotechnical alignment.
+* Solutions to overcommitment to particular values. Corrigibility, uncertainty, constitutional AI. 
 
-Proposed solutions to concentration of information and `mode collapse' of human thought.
+All of these are valuable. But no formal approach by itself is alignment. Sticking to any of these approaches is not aligned.
 
-Proposed solutions to rapid self-improvement. Intrinsic limitations.
+We'll look at one example in more detail: inverse methods.
 
 single-minded pursuit of \textit{any formalized goal} leads to disaster when that pursuit is charged with enough competence \citep{krakovna2020specification, russell2019human, grossman1986costs, hadfield2019incomplete, zhuang2020consequences, gabriel2020artificial, wiener1960some, amodei2016concrete}. Suppose AI's objective is to improve the human subjective experience of wellbeing. Under reasonable definitions, achieving this objective is most efficiently achieved by imprisoning humans and directly stimulating neurons to trigger our experience of wellbeing \citep{bostrom2014superintelligence}. Granting immense power to any formalized goal is overcommitment and misaligned.
 
@@ -892,23 +895,19 @@ And the fact that to actualize `deep human values', we will have to profoundly l
 
 Most technologies have had temporary overcommitments to particular imperfect forms. In 1900, boiler explosions killed an estimated two people per day in North America \citep{cepforensic2021keeping}. 
 
-For example, if a model with a particular goal becomes superintelligent, it might successfully resist human efforts to later update that goal \citep{bostrom2014superintelligence,russell2019human}.
-
 It's interesting to think about what it means for AI to become a central part of almost every workflow, including education. 
 
 As AI begins to displace more human labor, it is poised to become the most focused spend of resources in history, displacing a distributed exploration of other technologies.
 
 
-Some of the extremities attached to AI (with substantial overlap between categories):
 
-
-\begin{itemize}
-  \item \textbf{Extraordinary capabilities.} In some domains AI already greatly exceeds human abilities, like in making sense of huge amounts of data, performing certain kinds of reasoning, storing encyclopedic knowledge. 
-  \item \textbf{Intensity of optimization.} Today's version of AI training consists of a massive gradient descent effort, bringing enormous resources to bear toward pushing trillions of numbers in a coherent direction.
-  \item \textbf{Versatility.} Like a chameleon, AI can adapt itself to look like almost anything. It can be what you want it to be.
-  \item \textbf{Availability.} It's always on, with a response almost instantly ready for any message. It's doing this simultaneously for millions of different people around the planet.
-  % \item \textbf{Economic concentration.}  We are building out physical infrastructure, using energy, deploying human intellect and metabolizing data at extraordinary scale.
-\end{itemize}
+% \begin{itemize}
+%   \item \textbf{Extraordinary capabilities.} In some domains AI already greatly exceeds human abilities, like in making sense of huge amounts of data, performing certain kinds of reasoning, storing encyclopedic knowledge. 
+%   \item \textbf{Versatility.} Like a chameleon, AI can adapt itself to look like almost anything. It can be what you want it to be.
+%   \item \textbf{Availability.} It's always on, with a response almost instantly ready for any message. It's doing this simultaneously for millions of different people around the planet.
+%   \item \textbf{Metabolizing data.}
+%   \item \textbf{Physical infrastructure.}
+% \end{itemize}
 
 \subsection{Forms of AI}
 
@@ -944,7 +943,7 @@ Some of the extremities attached to AI (with substantial overlap between categor
 % Historically, the power of states, corporations and elite individuals has been constrained by the need for labor and the need to avoid uprising \citep{mills1956power, olson1965logic, stigler1971theory, piketty2014capital, acemoglu2012nations, thompson1971moral}. These constraints are likely to weaken as the persuasive power of technology increases \citep{woolley2018computational, costello2024durably}, autonomous weapons place lethal force in a small number of hands \citep{scharre2018army}, surveillance and analytics improve, and the need for human labor decreases \citep{susskind2020world, ford2015rise, drago2025defining}.
 
 
-\section{Alignment, boundaries, contextualization}
+\section{An aligned future}
 
 
 \begin{center}
