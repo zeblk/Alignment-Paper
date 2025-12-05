@@ -765,9 +765,11 @@ Finally, we appreciate that this way of talking raises red flags for some people
 
 % Across a number of living systems, we've outlined how boundaries place selective limits on interactions so that, instead of overcommitting to a particular form, systems maintain a delicate balance between distinctive parts that work flexibly together. With these intelligent protections, new structure continues to contextualize previous partialities. 
 
-In Part 1 we looked at how healthy living systems are composed of a variety of partial forms, like voices in a group, drives in an organism or creatures in an ecosystem. Semi-permeable boundaries both protect these entities from homogenizing and also allow interactions that contextualize entities as part of larger systems. Through these lightly-held interactions, entities experience multiple contexts and are shaped into grounded, modular parts, which supports ongoing increase of subtlety. Conversely, unhealthy systems overcommit to particular forms.
+In Part 1 we looked at how healthy living systems are composed of a variety of partial forms, like voices in a group, drives in an organism or creatures in an ecosystem. Semi-permeable boundaries both protect against overcommitment to particular forms. Through lightly-held interactions, entities are contextualized and shaped into grounded, modular parts, existing as paradoxes for one another and supporting ongoing increase of subtlety.
 
 Now we turn this lens to the AI alignment problem. Our central thesis is that alignment means avoiding overcommitment to any particular form. The problem is particularly challenging because AI carries extremities that create a danger of severe overcommitment. In this section we discuss those extremities, what is missing from existing mitigation approaches, and finally what an aligned future could look like.
+
+% We recast alignment in this framework. Then we show how the idea extends previous work. Every conceptual scheme by itself is misaligned. 
 
 % First, we re-cast familiar problems in this language. Some forms of overcommitment  like conceptual monoculture or concentration of human power. 
 
@@ -799,7 +801,7 @@ Now we turn this lens to the AI alignment problem. Our central thesis is that al
 
 % Technologies have always temporarily overcommitted to particular imperfect forms. [examples].  
 
-\subsection{Extremities}
+\subsection{Extremities of AI}
 
 AI is a unique technology. Traditionally, humans have been empowered by our own intelligence to maintain a degree of control over other systems and technologies. For the first time, we're now endowing non-human agents with intelligence that could exceed our own -- with the risk that we lose control. In some ways, AI is already superhuman. It can copy itself almost instantly, run on upgraded hardware, communicate with other instances of itself at high bandwidth, and read vast data. By virtue of its non-biological substrate, it has the potential to learn, change and adapt many times faster than humans. If AI approaches human-level intelligence, it may begin to improve itself in a recursive cycle, creating a positive feedback loop and a rapid intelligence explosion \citep{good1965speculations, vinge1993coming}. There is good reason to think it will be motivated to do so: for many goals, first improving oneself is a rational means toward achieving the final goal \citep{silver2021reward, bostrom2012superintelligent, omohundro2018basic, turner2019optimal}. For similar reasons, a superintelligent agent might (successfully) resist human efforts to alter its goals \citep{bostrom2014superintelligence,russell2019human}.
 
@@ -809,23 +811,22 @@ AI may also be a tool for concentration of human power. In some scenarios, a sma
 
 \subsection{What is missing from mitigation approaches}
 
-All of the risks mentioned above are studied extensively.
+All of the risks mentioned above have been studied extensively.
 
-Global governance with democratic oversight, verification mechanisms, etc \citep{bostrom2014superintelligence, dafoe2018ai}. Binding agreement for AI companies to distribute capital to the public \citep{okeefe2020windfall}. Participatory AI \citep{birhane2022power}. Sociotechnical \citep{selbst2019fairness}. Inequality research.
+Global governance with democratic oversight, verification mechanisms, etc \citep{bostrom2014superintelligence, dafoe2018ai, openai2023democratic}. 
+
+Mechanisms for getting AI to work for the values of everyone. Participatory AI \citep{birhane2022power, sloane2022participation}. Sociotechnical AI \citep{selbst2019fairness, lazar2023ai}. Collective constitutional AI \citep{huang2024collective}. The broad framework of pluralistic alignment \citep{sorensen2024roadmap}. 
+
+Redistribution. Binding agreement for AI companies to distribute capital to the public \citep{okeefe2020windfall}. Provision of basic income or basic services \citep{sharp2025agentic, gough2019universal, susskind2020world}. 
+
+Transparency, open science, open weights \citep{widder2023open}. 
 
 * Solutions to concentration of information and `mode collapse' of human thought.
 
-* Solutions to rapid self-improvement. Such as placing limits on the capabilities of the system.
+* Solutions to superintelligence and rapid self-improvement. Such as placing limits on the capabilities of the system.
 
 * Solutions to overcommitment to particular values. Corrigibility, uncertainty, constitutional AI. 
 
-All of these are valuable. But no formal approach by itself is alignment. Sticking to any of these approaches is not aligned.
-
-We'll look at one example in more detail: inverse methods.
-
-single-minded pursuit of \textit{any formalized goal} leads to disaster when that pursuit is charged with enough competence \citep{krakovna2020specification, russell2019human, grossman1986costs, hadfield2019incomplete, zhuang2020consequences, gabriel2020artificial, wiener1960some, amodei2016concrete}. Suppose AI's objective is to improve the human subjective experience of wellbeing. Under reasonable definitions, achieving this objective is most efficiently achieved by imprisoning humans and directly stimulating neurons to trigger our experience of wellbeing \citep{bostrom2014superintelligence}. Granting immense power to any formalized goal is overcommitment and misaligned.
-
-The incompleteness of any formal specification of values is one of the central problems of AI safety, and many solutions have been proposed, including:
 
 \begin{itemize}
   \item Improving our mechanistic understanding of the agent's internal goals, reasoning, and representations, so we can detect and correct problems at a mechanistic level \citep{olah2020zoom, burns2022discovering, bereska2024mechanistic, anthropic2024mapping}.
@@ -834,6 +835,59 @@ The incompleteness of any formal specification of values is one of the central p
   \item Iterated amplification and debate (Christiano 2018; Irving et al. 2018). Human-AI cooperative governance frameworks (OpenAI 2021).
 \end{itemize}
 
+All of these alignment methods are boundaries, and they are all potentially valuable. However, our thesis is that every conceptual scheme by itself is misaligned. No approach can achieve alignment. 
+
+One implication is that anything that creates lock-in of any kind is misaligned. We often think about lock-in to a particular fixed value function for example, but it could be lock-in to literally anything that you can describe. For example, lock-in to a mechanism for learning values or representing what values are. [what about the counterargument of something like lock-in to DNA among lifeforms on Earth?]
+
+Alignment is intrinsically something that we \textit{cannot} understand right now. It's this process in the future where, if things are aligned, there will be a continual reinvention of the concepts themselves.
+
+% Because of the growing extremities attached to AI, 
+
+(Even this lens of `alignment as avoiding overcommitment' is insufficient. We offer it now as a partial idea in the same spirit as these other alignment ideas, to be metabolized.)
+
+
+We can't fully control the future.
+
+\subsection{Case study: inverse methods}
+
+We'll look at one example in more detail: inverse methods.
+
+single-minded pursuit of \textit{any formalized goal} leads to disaster when that pursuit is charged with enough competence \citep{krakovna2020specification, russell2019human, grossman1986costs, hadfield2019incomplete, zhuang2020consequences, gabriel2020artificial, wiener1960some, amodei2016concrete}. Suppose AI's objective is to improve the human subjective experience of wellbeing. Under reasonable definitions, achieving this objective is most efficiently achieved by imprisoning humans and directly stimulating neurons to trigger our experience of wellbeing \citep{bostrom2014superintelligence}. Granting immense power to any formalized goal is overcommitment and misaligned.
+
+
+
+\subsection{Morality and normativity}
+
+\begin{center}
+\textit{`We can love the beautiful, and believe in it, and thereby open ourselves to an understanding of love that does not dominate, but cherishes the independence and beauty of the loved.'}\\*Martha Nussbaum
+\end{center}
+
+\begin{center}
+\textit{`When forced to work within a strict framework, the imagination is taxed to its utmost--and will produce its richest ideas. Given total freedom the work is likely to sprawl.'}\\*TS Eliot
+\end{center}
+
+\begin{center}
+\textit{`The intellect... treats the living by freezing it, by cutting it up into distinct, discontinuous, motionless pieces.'}\\*Henri Bergson
+\end{center}
+
+Formalized values vs deep values.
+
+We could map language onto this problem in two different ways. In the first mapping, what we mean by `values' or `good' is formalizable or close to formalizable. Under this definition, excessively optimizing for any particular set of values will lead to an impoverished universe. It is difficult to ascribe normative value to the resulting impoverished universe, because it is out of scope of the values. In the second mapping, `good' is not formalizable: whatever concepts we have about it are incomplete \citep{plato2002apology, aristotle2019nicomachean, wittgenstein1922tractatus, heidegger1998humanism}. Rather than referring to a particular concept, it's more like a semi-permeable boundary on our own reference frame: holding it as useful while only part of the whole picture. The point of alignment is not to say that any particular perspective is absolutely wrong or right. 
+
+At their deepest, true human values are not formalizable. (If you object to this, we could equivalently say that human values are formalizble, but there is still more in the universe that is not captured by human values.)
+
+There is no well-defined edge of what is `us' and what is `not us', and we will never be able to translate true human values into a form that can be fully written down. Cast another way, we could equivalently say that the aim of alignment is adhering to human values (writ in some very large sense), but these `true human values' cannot be captured with formalisms.
+
+
+How does this map onto `human values'?
+1) The fact that the universe is NOT captured by any particular formalism is ultimately what we value. If we could probe deep enough into human values, the `true' values that we can't necessarily articulate but we slowly discover through deliberation and self-discovery, we would discover something like that. Attunement to the livingness of the universe itself. Cite Russell and others who have made the case for this asymptotic notion of what human values are.
+2) Another reasonable mapping is that this isn't human values. That human values are about things like human welfare, subjective wellbeing, maybe even concepts like fairness and so on. 
+
+Alignment is not achieved through any formalizable objective or principle (cite human values not being formalizable). Any formalization is by itself inherently misaligned. 
+
+Even the concept of `values' is a form that we shouldn't over-index on. This might sound circular and paradoxical -- that's because it is. Doesn't `should' imply values, but if so, doesn't that contradict the statement that we shouldn't overindex on values? It's a perfect example of how you get stuck with any particular forms.
+
+ 
 
 \subsection{Examples of overcommitment}
 
@@ -1136,40 +1190,6 @@ Q: Is this pure relativism? Everything is equal, you can't tell anything apart? 
 
 A: All these local perspectives are vitally important. It makes perfect sense that humans would want to advantage our own welfare. Semi-permeable boundaries protect against overcommitment to a particular perspective, including relativism. They also allow some relativism when it's useful: for example, to the degree that it helps us appreciate the plurality of human values. AI comes into existence amid a profound network of existing reality which is saturated with meaning and importance. The point is to nourish all this form and structure, not to extinguish it. 
 
-
-\subsection{Morality and normativity}
-
-\begin{center}
-\textit{`We can love the beautiful, and believe in it, and thereby open ourselves to an understanding of love that does not dominate, but cherishes the independence and beauty of the loved.'}\\*Martha Nussbaum
-\end{center}
-
-\begin{center}
-\textit{`When forced to work within a strict framework, the imagination is taxed to its utmost--and will produce its richest ideas. Given total freedom the work is likely to sprawl.'}\\*TS Eliot
-\end{center}
-
-\begin{center}
-\textit{`The intellect... treats the living by freezing it, by cutting it up into distinct, discontinuous, motionless pieces.'}\\*Henri Bergson
-\end{center}
-
-
-Formalized values vs deep values.
-
-We could map language onto this problem in two different ways. In the first mapping, what we mean by `values' or `good' is formalizable or close to formalizable. Under this definition, excessively optimizing for any particular set of values will lead to an impoverished universe. It is difficult to ascribe normative value to the resulting impoverished universe, because it is out of scope of the values. In the second mapping, `good' is not formalizable: whatever concepts we have about it are incomplete \citep{plato2002apology, aristotle2019nicomachean, wittgenstein1922tractatus, heidegger1998humanism}. Rather than referring to a particular concept, it's more like a semi-permeable boundary on our own reference frame: holding it as useful while only part of the whole picture. The point of alignment is not to say that any particular perspective is absolutely wrong or right. 
-
-At their deepest, true human values are not formalizable. (If you object to this, we could equivalently say that human values are formalizble, but there is still more in the universe that is not captured by human values.)
-
-There is no well-defined edge of what is `us' and what is `not us', and we will never be able to translate true human values into a form that can be fully written down. Cast another way, we could equivalently say that the aim of alignment is adhering to human values (writ in some very large sense), but these `true human values' cannot be captured with formalisms.
-
-
-How does this map onto `human values'?
-1) The fact that the universe is NOT captured by any particular formalism is ultimately what we value. If we could probe deep enough into human values, the `true' values that we can't necessarily articulate but we slowly discover through deliberation and self-discovery, we would discover something like that. Attunement to the livingness of the universe itself. Cite Russell and others who have made the case for this asymptotic notion of what human values are.
-2) Another reasonable mapping is that this isn't human values. That human values are about things like human welfare, subjective wellbeing, maybe even concepts like fairness and so on. 
-
-Alignment is not achieved through any formalizable objective or principle (cite human values not being formalizable). Any formalization is by itself inherently misaligned. 
-
-Even the concept of `values' is a form that we shouldn't over-index on. This might sound circular and paradoxical -- that's because it is. Doesn't `should' imply values, but if so, doesn't that contradict the statement that we shouldn't overindex on values? It's a perfect example of how you get stuck with any particular forms.
-
- 
 \subsection{Open-endedness versus optimization for an objective}
 
 
