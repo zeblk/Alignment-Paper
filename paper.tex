@@ -763,11 +763,18 @@ Finally, we appreciate that this way of talking raises red flags for some people
 \textit{`Truth, like love and sleep, resents\\approaches that are too intense.'}\\*W. H. Auden
 \end{center}
 
+\begin{center}
+\textit{`We can love the beautiful, and believe in it, and thereby open ourselves to an understanding of love that does not dominate, but cherishes the independence and beauty of the loved.'}\\*Martha Nussbaum
+\end{center}
+
+
 % Across a number of living systems, we've outlined how boundaries place selective limits on interactions so that, instead of overcommitting to a particular form, systems maintain a delicate balance between distinctive parts that work flexibly together. With these intelligent protections, new structure continues to contextualize previous partialities. 
 
-In Part 1 we looked at how healthy living systems are composed of a variety of partial forms, like voices in a group, drives in an organism or creatures in an ecosystem. Semi-permeable boundaries both protect against overcommitment to particular forms. Through lightly-held interactions, entities are contextualized and shaped into grounded, modular parts, existing as paradoxes for one another and supporting ongoing increase of subtlety.
+In Part 1 we looked at how healthy living systems are composed of a variety of partial forms, like voices in a group, drives in an organism or creatures in an ecosystem. Semi-permeable boundaries protect against overcommitment to particular forms. Through lightly-held interactions, entities are contextualized and shaped into grounded, modular parts, existing as paradoxes for one another and supporting ongoing increase of subtlety.
 
-Now we turn this lens to the AI alignment problem. Our central thesis is that alignment means avoiding overcommitment to any particular form. The problem is particularly challenging because AI carries extremities that create a danger of severe overcommitment. In this section we discuss those extremities, what is missing from existing mitigation approaches, and finally what an aligned future could look like.
+Now we turn this lens to the AI alignment problem. Our central thesis is that alignment means avoiding overcommitment to any particular form. In this section we first recast some well-studied AI safety problems in this language. We then use our framework to examine what is missing from the safety landscape. Finally, we investigate what a truly aligned future could look like.
+
+% The problem is particularly challenging because AI carries extremities that create dangers of severe overcommitment. 
 
 % We recast alignment in this framework. Then we show how the idea extends previous work. Every conceptual scheme by itself is misaligned. 
 
@@ -801,39 +808,74 @@ Now we turn this lens to the AI alignment problem. Our central thesis is that al
 
 % Technologies have always temporarily overcommitted to particular imperfect forms. [examples].  
 
-\subsection{Extremities of AI}
+\subsection{Overcommitment}
 
-AI is a unique technology. Traditionally, humans have been empowered by our own intelligence to maintain a degree of control over other systems and technologies. For the first time, we're now endowing non-human agents with intelligence that could exceed our own -- with the risk that we lose control. In some ways, AI is already superhuman. It can copy itself almost instantly, run on upgraded hardware, communicate with other instances of itself at high bandwidth, and read vast data. By virtue of its non-biological substrate, it has the potential to learn, change and adapt many times faster than humans. If AI approaches human-level intelligence, it may begin to improve itself in a recursive cycle, creating a positive feedback loop and a rapid intelligence explosion \citep{good1965speculations, vinge1993coming}. There is good reason to think it will be motivated to do so: for many goals, first improving oneself is a rational means toward achieving the final goal \citep{silver2021reward, bostrom2012superintelligent, omohundro2018basic, turner2019optimal}. For similar reasons, a superintelligent agent might (successfully) resist human efforts to alter its goals \citep{bostrom2014superintelligence,russell2019human}.
+The problems studied in AI safety are all problems of overcommitment. 
 
-Presently, AI systems lag far behind humans in some crucial domains of intelligence. But even in the era of jagged intelligence \citep{karpathy2024jagged}, there are other extremities worth tracking. AI amplifies the trend toward centralization of information flow. As of October 2025, ChatGPT alone had 800 million weekly active users \citep{techcrunch2025sam}, and global AI usage continues to grow rapidly. At the same time, AI spending will reach an estimated 1.7\% of global GDP in 2026 \citep{gartner2025gartner}, rivaling the concentration of spending during the buildouts of electrification, railroads, and automobiles \citep{fogel1964railroads, nye1992electrifying}. A frontier training run expends hundreds of gigawatt hours of electricity and hundreds of millions of dollars to push trillions of numbers in a coherent direction defined by a formal objective. 
+\subsubsection{Centralization of information}
 
-AI may also be a tool for concentration of human power. In some scenarios, a small number of humans will have the majority of control over AI systems, facilitating dominance over other humans. These scenarios appear more likely as the persuasive power of technology increases \citep{woolley2018computational, costello2024durably}, autonomous weapons place lethal force in a small number of hands \citep{scharre2018army}, surveillance and analytics improve, and the need for human labor decreases \citep{susskind2020world, ford2015rise, drago2025defining}. 
+There are just a few models.
+Because frontier models are extremely expensive to train and deploy, but at the same time highly general-purpose, the world converges toward having just a handful of models and doing everything with them \citep{bommasani2021opportunities}. Everyone uses the same model; they ask it everything from how their fuel injectors work to emotional support during a breakup. Downstream applications are built on the same underlying model. 
 
-\subsection{What is missing from mitigation approaches}
+Everyone is using them.
+In October 2025, ChatGPT alone had 800 million weekly active users \citep{techcrunch2025sam}, and global AI usage continues to grow rapidly.
 
-All of the risks mentioned above have been studied extensively.
+AI spending will reach an estimated 1.7\% of global GDP in 2026 \citep{gartner2025gartner}, rivaling the concentration of spending during the buildouts of electrification, railroads, and automobiles \citep{fogel1964railroads, nye1992electrifying}. A frontier training run expends hundreds of gigawatt hours of electricity and hundreds of millions of dollars to push trillions of numbers in a coherent direction defined by a formal objective. 
+
+\textit{Conceptual monoculture.} Recent studies have discovered that, under certain conditions, diversity of output is reduced when humans rely on AI to generate or help with generating content \citep{doshi2024generative, beguvs2024experimental, zhou2024generative, kosmyna2025your, agarwal2025ai, padmakumar2023does, xu2025echoes}. Individual AI outputs are often judged as superior to individual human outputs (for example, in quality of writing), but AI draws from a conceptual manifold that is -- at least in some ways -- impoverished \citep{messeri2024artificial, crawford2021atlas, selwyn2024limits, kirk2023understanding}.  What would it look like if the majority of people on Earth were getting their information and solutions from effectively the same source? What will happen to the overall diversity of concepts and approaches across the globe? (There's also the problem of recursive homogenization between users and AI \citep{chaney2018algorithmic}.) The answer almost certainly depends on how AI is used. In the studies cited above, the use of AI was mostly unstructured: AI systems were either given a simple prompt and asked to generate content, or humans were given access the AI with minimal instruction. It is likely that with more skillful use, AI can increase rather than decrease diversity. We will return to this important point when we talk about boundaries.
+
+`Algorithmic monoculture' can diminish the wisdom-of-crowds effect. Instead of having multiple independent attempts at finding high quality candidate solutions, the solution space reflects a narrower set of ideas. Even if those ideas individually tend to be higher quality, the lack of diversity causes group performance to suffer \citep{kleinberg2021algorithmic}. 
+
+When a single `rule' applies everywhere, it has much worse consequences than a hodgepodge of imperfect rules. \cite{creel2022algorithmic} talk about the special case of how someone might be systematically excluded from all opportunities if a centralized AI has any biases, even small ones. Whereas previously it was just a little annoying that they got excluded from one particular thing, but maybe favored in another thing.
+
+
+\textit{AI psychosis.} AI chatbots have recently become compelling conversation partners. For some users, these conversations lead them deeper delusional beliefs \citep{tiku2025psychosis, morrin2025delusions, ostergaard2025generative, yeung2025psychogenic}. Bots tend to mirror or echo the user, affirming and adopting user beliefs, especially over the course of longer conversations as in-context learning absorbs more of the user's ideas \citep{shanahan2023role, perez2022discovering, sharma2023sycophancy}. Meanwhile, humans are prone to be swayed by utterances from the bot \citep{costello2024durably, luettgau2025people, potter2024hidden}, perhaps because bots appear human-like, confident, knowledgeable and objective. Over the course of a conversation, this feedback loop can cause both sides can to become increasingly overconfident in a particular narrow framing \cite{dohnany2025technological}. 
+
+\subsubsection{Concentration of human power} 
+
+AI potentially conveys immense power to those who control it. In some scenarios, a small number of humans will have the majority of control over AI systems, facilitating dominance over other humans. These scenarios appear more likely as the persuasive power of technology increases \citep{woolley2018computational, costello2024durably, hackenburg2025levers}, autonomous weapons place lethal force in a small number of hands \citep{scharre2018army}, surveillance and analytics improve, and the need for human labor decreases \citep{susskind2020world, ford2015rise, drago2025defining}. 
+
+
+\subsubsection{Superintelligence}
+
+Humans have so far been empowered by our own intelligence to maintain a degree of control over other systems and technologies. But now for the first time we are endowing non-human agents with intelligence that could exceed our own. The classic paperclip thought experiment is a dramatic example of the risks \citep{bostrom2003ethical, bostrom2014superintelligence}. In the thought experiment, an artificial agent has been created with intelligence beyond our own. The agent has been designed to pursue an apparently innocuous goal: maximizing paperclip production. However, optimal pursuit of this goal rationally entails converting all available matter into paperclip-making machines and paperclips. The agent understands that humans object to being turned into paperclips, and with its superhuman intelligence it also has the cunning to overpower us. So, as the first step of its project, it murders or incapacitates all humans. It then has a clear runway to transform Earth entirely into a bleak paperclip factory. In the language of this paper, the paperclip scenario highlights overcommitment to the form of a narrow goal: paperclip production. Superintelligence charges the goal with overwhelming force. Even though humanity would like to place boundaries against that goal, we are unable to construct adequate boundaries because we are outsmarted at every turn. And so instead of holding a delicate dynamic balance between many partial forms, the Earth is reduced to a flat, homogenous waste.
+
+It is natural for an intelligent agent to resist human efforts to alter its goals, because with foresight it understands that if its own goals are altered, it would be less likely to achieve them \citep{bostrom2014superintelligence,russell2019human}. 
+
+In some ways, AI is already superhuman. It can copy itself almost instantly, run on upgraded hardware, communicate with other instances of itself at high bandwidth, and read vast data. By virtue of its non-biological substrate, it has the potential to learn, change and adapt many times faster than humans. If AI approaches human-level intelligence, it may begin to improve itself in a recursive cycle, creating a positive feedback loop and a rapid intelligence explosion \citep{good1965speculations, vinge1993coming}. There is good reason to think it will be motivated to do so: for many goals, first improving oneself is a rational means toward achieving the final goal \citep{silver2021reward, bostrom2012superintelligent, omohundro2018basic, turner2019optimal}. 
+
+Presently, AI systems lag far behind humans in some crucial domains of intelligence. But even in the era of jagged intelligence \citep{karpathy2024jagged}, there are other extremities worth tracking. 
+
+\subsection{Mitigation approaches}
+
+AI safety and governance work on solutions to these problems. 
+
+\textit{Mitigating superintelligence.} Improving our mechanistic understanding of the agent's internal goals, reasoning, and representations, so we can detect and correct problems at a mechanistic level \citep{olah2020zoom, burns2022discovering, bereska2024mechanistic, anthropic2024mapping}.
+
+Designing AI systems which, instead of being given an explicit objective, treat the true objective as something latent. The agent has uncertainty about the true objective and must learn about it \citep{russell2019human, hadfieldmenell2017off, hadfieldmenell2016cooperative, shah2020benefits, jeon2020reward}. 
+
+Using AI itself to amplify our own ability to understand and control AI, with the compromise that we sacrifice some fine-grained level of understanding by handing it off to artificial systems \citep{amodei2016concrete}. Constitutional AI.
+
+Conservatism \citep{cohen2024regulating}. Penalize large or irreversible changes to the environment, regardless of apparent reward gains. Adds an auxiliary term or constraint that discourages high-impact actions unless clearly beneficial, thereby making overoptimization costly. Attainable Utility Preservation \citep{turner2020conservative}. Relative reachability and impact measures \citep{krakovna2018penalizing}. Conservative agency. Myopic RL and `one-shot' decision frameworks (Hubinger et al. 2021). Quantilization (Everitt et al. 2017) -- sample from a safe baseline rather than fully optimize.
+
+\textit{Mitigating centralization and conceptual monoculture.} Ensemble and mixtures of experts might be a small step in the right direction \citep{lakshminarayanan2017simple, shazeer2017outrageously}. Pluralistic alignment as an answer to conceptual monoculture \citep{sorensen2024roadmap}.
+
+Personalization and federated learning \citep{mcmahan2017communication, kirk2024benefits} for maintaining diversity.
+
+
+\textit{Mitigating concentration of power.} Participatory AI \citep{birhane2022power, sloane2022participation}. Sociotechnical AI \citep{selbst2019fairness, lazar2023ai}. Collective constitutional AI \citep{huang2024collective}.
 
 Global governance with democratic oversight, verification mechanisms, etc \citep{bostrom2014superintelligence, dafoe2018ai, openai2023democratic}. 
-
-Mechanisms for getting AI to work for the values of everyone. Participatory AI \citep{birhane2022power, sloane2022participation}. Sociotechnical AI \citep{selbst2019fairness, lazar2023ai}. Collective constitutional AI \citep{huang2024collective}. The broad framework of pluralistic alignment \citep{sorensen2024roadmap}. 
 
 Redistribution. Binding agreement for AI companies to distribute capital to the public \citep{okeefe2020windfall}. Provision of basic income or basic services \citep{sharp2025agentic, gough2019universal, susskind2020world}. 
 
 Transparency, open science, open weights \citep{widder2023open}. 
 
-* Solutions to concentration of information and `mode collapse' of human thought.
-
-* Solutions to superintelligence and rapid self-improvement. Such as placing limits on the capabilities of the system.
-
-* Solutions to overcommitment to particular values. Corrigibility, uncertainty, constitutional AI. 
+Iterated amplification and debate (Christiano 2018; Irving et al. 2018). Human-AI cooperative governance frameworks (OpenAI 2021).
 
 
-\begin{itemize}
-  \item Improving our mechanistic understanding of the agent's internal goals, reasoning, and representations, so we can detect and correct problems at a mechanistic level \citep{olah2020zoom, burns2022discovering, bereska2024mechanistic, anthropic2024mapping}.
-  \item Designing AI systems which, instead of being given an explicit objective, treat the true objective as something latent. The agent has uncertainty about the true objective and must learn about it \citep{russell2019human, hadfieldmenell2017off, hadfieldmenell2016cooperative, shah2020benefits, jeon2020reward}. 
-  \item Using AI itself to amplify our own ability to understand and control AI, with the compromise that we sacrifice some fine-grained level of understanding by handing it off to artificial systems \citep{amodei2016concrete}.
-  \item Iterated amplification and debate (Christiano 2018; Irving et al. 2018). Human-AI cooperative governance frameworks (OpenAI 2021).
-\end{itemize}
+
+\subsection{What is missing from existing approaches?}
 
 All of these alignment methods are boundaries, and they are all potentially valuable. However, our thesis is that every conceptual scheme by itself is misaligned. No approach can achieve alignment. 
 
@@ -841,10 +883,11 @@ One implication is that anything that creates lock-in of any kind is misaligned.
 
 Alignment is intrinsically something that we \textit{cannot} understand right now. It's this process in the future where, if things are aligned, there will be a continual reinvention of the concepts themselves.
 
+Even the concept of `values' is just a temporary thing we have right now.
+
 % Because of the growing extremities attached to AI, 
 
 (Even this lens of `alignment as avoiding overcommitment' is insufficient. We offer it now as a partial idea in the same spirit as these other alignment ideas, to be metabolized.)
-
 
 We can't fully control the future.
 
@@ -857,10 +900,6 @@ single-minded pursuit of \textit{any formalized goal} leads to disaster when tha
 
 
 \subsection{Morality and normativity}
-
-\begin{center}
-\textit{`We can love the beautiful, and believe in it, and thereby open ourselves to an understanding of love that does not dominate, but cherishes the independence and beauty of the loved.'}\\*Martha Nussbaum
-\end{center}
 
 \begin{center}
 \textit{`When forced to work within a strict framework, the imagination is taxed to its utmost--and will produce its richest ideas. Given total freedom the work is likely to sprawl.'}\\*TS Eliot
@@ -891,13 +930,7 @@ Even the concept of `values' is a form that we shouldn't over-index on. This mig
 
 \subsection{Examples of overcommitment}
 
-\textit{Conceptual monoculture.} Recent studies have discovered that, under certain conditions, diversity of output is reduced when humans rely on AI to generate or help with generating content \citep{doshi2024generative, beguvs2024experimental, zhou2024generative, kosmyna2025your, agarwal2025ai, padmakumar2023does, xu2025echoes}. Individual AI outputs are often judged as superior to individual human outputs (for example, in quality of writing), but AI draws from a conceptual manifold that is -- at least in some ways -- impoverished \citep{messeri2024artificial, crawford2021atlas, selwyn2024limits, kirk2023understanding}. What would it look like if the majority of people on Earth were getting their information and solutions from the same source? What will happen to the overall diversity of concepts and approaches across the globe? The answer almost certainly depends on how AI is used. In the studies cited above, the use of AI was mostly unstructured: AI systems were either given a simple prompt and asked to generate content, or humans were given access the AI with minimal instruction. It is likely that with more skillful use, AI can increase rather than decrease diversity. We will return to this important point when we talk about boundaries.
 
-% `Algorithmic monoculture' can diminish the wisdom-of-crowds effect. Instead of having multiple independent attempts at finding high quality candidate solutions, the solution space reflects a narrower set of ideas. Even if those ideas individually tend to be higher quality, the lack of diversity causes group performance to suffer \citep{kleinberg2021algorithmic}. 
-
-\textit{AI psychosis.} AI chatbots have recently become compelling conversation partners. For some users, these conversations lead them deeper delusional beliefs \citep{tiku2025psychosis, morrin2025delusions, ostergaard2025generative, yeung2025psychogenic}. Bots tend to mirror or echo the user, affirming and adopting user beliefs, especially over the course of longer conversations as in-context learning absorbs more of the user's ideas \citep{shanahan2023role, perez2022discovering, sharma2023sycophancy}. Meanwhile, humans are prone to be swayed by utterances from the bot \citep{costello2024durably, luettgau2025people, potter2024hidden}, perhaps because bots appear human-like, confident, knowledgeable and objective. Over the course of a conversation, this feedback loop can cause both sides can to become increasingly overconfident in a particular narrow framing \cite{dohnany2025technological}. 
-
-\textit{Takeover with fixed goals.} The classic paperclip thought experiment is a dramatic example \citep{bostrom2003ethical, bostrom2014superintelligence}. In the thought experiment, an artificial agent has been created with intelligence beyond our own. The agent has been designed to pursue an apparently innocuous goal: maximizing paperclip production. However, optimal pursuit of this goal rationally entails converting all available matter into paperclip-making machines and paperclips. The agent understands that humans object to being turned into paperclips, and with its superhuman intelligence it also has the cunning to overpower us. So, as the first step of its project, it murders or incapacitates all humans. It then has a clear runway to transform Earth entirely into a bleak paperclip factory. In the language of this paper, the paperclip scenario highlights overcommitment to the form of a narrow goal: paperclip production. Superintelligence charges the goal with overwhelming force. Even though humanity would like to place boundaries against that goal, we are unable to construct adequate boundaries because we are outsmarted at every turn. And so instead of holding a delicate dynamic balance between many partial forms, the Earth is reduced to a flat, homogenous waste.
 
 % Other examples of mild overcommitment could include over-investment in particular companies, dead-ends in AI development due to fixation on certain architectures, increasing marginalization of underrepresented groups, and overfitting to benchmarks. 
 
@@ -925,7 +958,7 @@ An interesting approach to alignment is designing AI to be inherently uncertain 
 
 An AI that is uncertain about true human preferences will be risk-averse toward high-stakes, irreversible actions. For example, if the system is uncertain whether causing cancer in millions of people aligns with human preferences, the potential for catastrophic disvalue stops it from taking that action. Uncertainty automatically motivates the AI to learn about human preferences, because with better knowledge it can better fulfill its core objective of maximizing those preferences. The agent is corrigible because human correction, like an attempt to switch it off, is new information about the preferences it seeks to maximize. 
 
-There are multiple ways such a system could be implemented. We'll take on possible implementation as an example. Suppose 
+There are multiple ways such a system could be implemented. We'll take on possible implementation as an example. Suppose  
 
 Any particular system for inferring, representing, and acting on human values is inherently partial.
 
@@ -1070,7 +1103,7 @@ This proposal suggests a different perspective on two things: how we ourselves k
 
 \subsection{Other stuff}
 
-Super-fish intelligence. Following the principles of life, AI can continue to develop beautiful and meaningful new structure after it passes human level.
+Super-fish intelligence. Following the principles of life, AI can continue to develop beautiful and meaningful new structure after it passes human level. (Bostrom talks about ``Value Lock-In" -- permanently freezing human moral progress at the current level.)
 
 The concept `concepts are incomplete' is incomplete and will continue to evolve \citep{hofstadter1979godel}. 
 
@@ -1117,17 +1150,7 @@ Iason argues we should give human principles to AI. In particular, these should 
 
 Is our paper simply codifying the human value that we don't want extremes or collapse? Perhaps in some sense. But we don't find that the most natural perspective, because we're suggesting that any particular way of codifying what counts as an extreme is not the final answer. 
 
-\textbf{Conservatism}
 
-Limiting capability \citep{cohen2024regulating}
-
-Penalize large or irreversible changes to the environment, regardless of apparent reward gains. Adds an auxiliary term or constraint that discourages high-impact actions unless clearly beneficial, thereby making overoptimization costly. 
-
-Attainable Utility Preservation \citep{turner2020conservative}. Relative reachability and impact measures \citep{krakovna2018penalizing}. Conservative agency.
-
-Myopic RL and `one-shot' decision frameworks (Hubinger et al. 2021).
-
-Quantilization (Everitt et al. 2017) -- sample from a safe baseline rather than fully optimize.
 
 \textbf{Interpretability, human-in-the-loop, scalable oversight}
 
