@@ -772,7 +772,7 @@ Finally, we appreciate that this way of talking raises red flags for some people
 
 In Part 1 we looked at how healthy living systems are composed of a variety of partial forms, like voices in a group, drives in an organism or creatures in an ecosystem. Semi-permeable boundaries protect against overcommitment to particular forms. Through lightly-held interactions, entities are contextualized and shaped into grounded, modular parts, existing as paradoxes for one another and supporting ongoing increase of subtlety.
 
-Now we turn this lens to the AI alignment problem. Our central thesis is that alignment means avoiding overcommitment to any particular form. In this section we first recast some well-studied AI safety problems in this language. We then use our framework to examine what is missing from the safety landscape. Finally, we investigate what a truly aligned future could look like.
+Now we turn this lens to the AI alignment problem. Our central thesis is that alignment means avoiding overcommitment to any particular form. In this section we first recast some well-studied AI safety and alignment problems\footnote{We prefer `alignment' as the broadest umbrella term to include `AI safety' and all other aspects of designing AI in a way that leads to positive futures.} in this language. We then use our framework to examine what is missing from the current research landscape. Finally, we investigate what a truly aligned future could look like.
 
 % The problem is particularly challenging because AI carries extremities that create dangers of severe overcommitment. 
 
@@ -810,30 +810,26 @@ Now we turn this lens to the AI alignment problem. Our central thesis is that al
 
 \subsection{Overcommitment}
 
-The problems studied in AI safety are all problems of overcommitment. 
+First, we highlight three topics in AI safety and alignment: centralization of information flow, concentration of human power, and superintelligence. We recast each of these as a problem of overcommitment. 
 
-\subsubsection{Centralization of information}
+\subsubsection{Centralization of information and conceptual monoculture}
 
-There are just a few models.
-Because frontier models are extremely expensive to train and deploy, but at the same time highly general-purpose, the world converges toward having just a handful of models and doing everything with them \citep{bommasani2021opportunities}. Everyone uses the same model; they ask it everything from how their fuel injectors work to emotional support during a breakup. Downstream applications are built on the same underlying model. 
+The adoption of AI has been faster than any other technology in history \citep{bick2024rapid, ccia2025survey}. By late 2025, ChatGPT alone had 800 million weekly active users \citep{techcrunch2025sam}, and global AI usage continues to grow rapidly. Meanwhile, the range of use-cases is remarkably broad, from users asking for relationship advice to industrial applications built on top of the model \citep{chatterji2025chatgpt, mckinsey2025stateofai, openai2025enterprise, mccain2025claude}. Because frontier models are both general-purpose and expensive to train, the massive quantity and diversity of usage is routed through just a handful of models \citep{bommasani2021opportunities}. 
 
-Everyone is using them.
-In October 2025, ChatGPT alone had 800 million weekly active users \citep{techcrunch2025sam}, and global AI usage continues to grow rapidly.
+This centralization carries a risk of conceptual monoculture. AI draws from a conceptual manifold that is -- at least in some ways -- impoverished relative to humans \citep{messeri2024artificial, crawford2021atlas, selwyn2024limits, kirk2023understanding}. Recent studies have discovered that while individual AI outputs are often judged as superior to human outputs, AI tends to produce more homogenous content \citep{doshi2024generative, beguvs2024experimental, zhou2024generative, kosmyna2025your, agarwal2025ai, padmakumar2023does, xu2025echoes}. Since humans are both influenced by AI and a source of training data, there's an additional risk of recursive homogenization \citep{chaney2018algorithmic}.
 
-AI spending will reach an estimated 1.7\% of global GDP in 2026 \citep{gartner2025gartner}, rivaling the concentration of spending during the buildouts of electrification, railroads, and automobiles \citep{fogel1964railroads, nye1992electrifying}. A frontier training run expends hundreds of gigawatt hours of electricity and hundreds of millions of dollars to push trillions of numbers in a coherent direction defined by a formal objective. 
+Conceptual monoculture is overcommitment to particular beliefs, ideas, frames, values, problem-solving approaches. In many kinds of systems, monoculture creates fragility and leads to lower performance of the system as a whole \citep{tilman1996biodiversity, kleinberg2021algorithmic,scott1998seeing, haldane2013rethinking}. What would be the consequences if a large fraction of all information traffic were routed through a handful of AI models?
 
-\textit{Conceptual monoculture.} Recent studies have discovered that, under certain conditions, diversity of output is reduced when humans rely on AI to generate or help with generating content \citep{doshi2024generative, beguvs2024experimental, zhou2024generative, kosmyna2025your, agarwal2025ai, padmakumar2023does, xu2025echoes}. Individual AI outputs are often judged as superior to individual human outputs (for example, in quality of writing), but AI draws from a conceptual manifold that is -- at least in some ways -- impoverished \citep{messeri2024artificial, crawford2021atlas, selwyn2024limits, kirk2023understanding}.  What would it look like if the majority of people on Earth were getting their information and solutions from effectively the same source? What will happen to the overall diversity of concepts and approaches across the globe? (There's also the problem of recursive homogenization between users and AI \citep{chaney2018algorithmic}.) The answer almost certainly depends on how AI is used. In the studies cited above, the use of AI was mostly unstructured: AI systems were either given a simple prompt and asked to generate content, or humans were given access the AI with minimal instruction. It is likely that with more skillful use, AI can increase rather than decrease diversity. We will return to this important point when we talk about boundaries.
+% When a single `rule' applies everywhere, it has much worse consequences than a hodgepodge of imperfect rules. \cite{creel2022algorithmic} talk about the special case of how someone might be systematically excluded from all opportunities if a centralized AI has any biases, even small ones. Whereas previously it was just a little annoying that they got excluded from one particular thing, but maybe favored in another thing.
 
-`Algorithmic monoculture' can diminish the wisdom-of-crowds effect. Instead of having multiple independent attempts at finding high quality candidate solutions, the solution space reflects a narrower set of ideas. Even if those ideas individually tend to be higher quality, the lack of diversity causes group performance to suffer \citep{kleinberg2021algorithmic}. 
+Crucially, however, monoculture is a risk, not a foregone conclusion. In the studies cited above where AI systems produced homogenous outputs, these systems were not tapped to their full potential for diversity. In the \textit{An aligned future} section below, we will return to the question of whether well-designed and thoughtfully-used AI systems can boost rather than collapse global conceptual diversity.
 
-When a single `rule' applies everywhere, it has much worse consequences than a hodgepodge of imperfect rules. \cite{creel2022algorithmic} talk about the special case of how someone might be systematically excluded from all opportunities if a centralized AI has any biases, even small ones. Whereas previously it was just a little annoying that they got excluded from one particular thing, but maybe favored in another thing.
-
-
-\textit{AI psychosis.} AI chatbots have recently become compelling conversation partners. For some users, these conversations lead them deeper delusional beliefs \citep{tiku2025psychosis, morrin2025delusions, ostergaard2025generative, yeung2025psychogenic}. Bots tend to mirror or echo the user, affirming and adopting user beliefs, especially over the course of longer conversations as in-context learning absorbs more of the user's ideas \citep{shanahan2023role, perez2022discovering, sharma2023sycophancy}. Meanwhile, humans are prone to be swayed by utterances from the bot \citep{costello2024durably, luettgau2025people, potter2024hidden}, perhaps because bots appear human-like, confident, knowledgeable and objective. Over the course of a conversation, this feedback loop can cause both sides can to become increasingly overconfident in a particular narrow framing \cite{dohnany2025technological}. 
 
 \subsubsection{Concentration of human power} 
 
 AI potentially conveys immense power to those who control it. In some scenarios, a small number of humans will have the majority of control over AI systems, facilitating dominance over other humans. These scenarios appear more likely as the persuasive power of technology increases \citep{woolley2018computational, costello2024durably, hackenburg2025levers}, autonomous weapons place lethal force in a small number of hands \citep{scharre2018army}, surveillance and analytics improve, and the need for human labor decreases \citep{susskind2020world, ford2015rise, drago2025defining}. 
+
+This is overcommitment to the goals and interests of a few individuals, at the expense of others.
 
 
 \subsubsection{Superintelligence}
@@ -844,7 +840,7 @@ It is natural for an intelligent agent to resist human efforts to alter its goal
 
 In some ways, AI is already superhuman. It can copy itself almost instantly, run on upgraded hardware, communicate with other instances of itself at high bandwidth, and read vast data. By virtue of its non-biological substrate, it has the potential to learn, change and adapt many times faster than humans. If AI approaches human-level intelligence, it may begin to improve itself in a recursive cycle, creating a positive feedback loop and a rapid intelligence explosion \citep{good1965speculations, vinge1993coming}. There is good reason to think it will be motivated to do so: for many goals, first improving oneself is a rational means toward achieving the final goal \citep{silver2021reward, bostrom2012superintelligent, omohundro2018basic, turner2019optimal}. 
 
-Presently, AI systems lag far behind humans in some crucial domains of intelligence. But even in the era of jagged intelligence \citep{karpathy2024jagged}, there are other extremities worth tracking. 
+% Presently, AI systems lag far behind humans in some crucial domains of intelligence. But even in the era of jagged intelligence \citep{karpathy2024jagged}, there are other extremities worth tracking. 
 
 \subsection{Mitigation approaches}
 
@@ -931,6 +927,10 @@ Even the concept of `values' is a form that we shouldn't over-index on. This mig
 \subsection{Examples of overcommitment}
 
 
+\textit{AI psychosis.} AI chatbots have recently become compelling conversation partners. For some users, these conversations lead them deeper delusional beliefs \citep{tiku2025psychosis, morrin2025delusions, ostergaard2025generative, yeung2025psychogenic}. Bots tend to mirror or echo the user, affirming and adopting user beliefs, especially over the course of longer conversations as in-context learning absorbs more of the user's ideas \citep{shanahan2023role, perez2022discovering, sharma2023sycophancy}. Meanwhile, humans are prone to be swayed by utterances from the bot \citep{costello2024durably, luettgau2025people, potter2024hidden}, perhaps because bots appear human-like, confident, knowledgeable and objective. Over the course of a conversation, this feedback loop can cause both sides can to become increasingly overconfident in a particular narrow framing \cite{dohnany2025technological}. 
+
+
+AI spending will reach an estimated 1.7\% of global GDP in 2026 \citep{gartner2025gartner}, rivaling the concentration of spending during the buildouts of electrification, railroads, and automobiles \citep{fogel1964railroads, nye1992electrifying}. A frontier training run expends hundreds of gigawatt hours of electricity and hundreds of millions of dollars to push trillions of numbers in a coherent direction defined by a formal objective. 
 
 % Other examples of mild overcommitment could include over-investment in particular companies, dead-ends in AI development due to fixation on certain architectures, increasing marginalization of underrepresented groups, and overfitting to benchmarks. 
 
