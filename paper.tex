@@ -805,48 +805,21 @@ In Part 1 we looked at how healthy living systems are composed of a variety of p
 
 \subsection{Misaligned means overcommitted}
 
-ZEB: I now realize that this is quite a tricky argument to make. The first thing people will think is: what about the most traditional alignment problems like simply following user intent. How is doing something different than user intent `overcommitted'? Like if there are two options, A and B, and the user wants A and the system does B. The doesn't seem like overcommittment, but it does seem like misalignment. How do we address this?
-
-But I think we could, just possibly, make this argument. It goes like this: first, we talk about easy examples, like goal lockin with superintelligence; concentration of human power; and conceptual monoculture. Second, we say, but what about examples like this? ``The user asks for a poem about an elephant. The AI write a poem about a giraffe. Surely this is misaligned but not overcommitted?" This is the heart of the paper, and where it gets really interesting. Our argument is that the AI's behavior here is misaligned exactly to the degree that it is overcommitted. For example, imagine a *human* being asked to write a poem about an elephant. 
-
-We would have to argue that, at present, for systems to be generally responsive to human wishes is actually the `least overcommitted' -- because humans right now tend to have a richer world. Would it be aligned for a ChatGPT to once in a while offer the giraffe poem because 1) it understands that this is what the user really meant, as opposed to what they asked for, 2) it's at the level of self-awareness where it can be genuinely sick of writing elephant poems, and this is actually the right decision for it to maintain its autonomy, or 3) ?
-
-Our argument is a little tenuous. Because if we want to agree that current AI systems `should' write the elephant poem, we have to argue that somehow the `appropriate' level of 
-
-(Note: one danger is that we end up tautologically defining overcommitment as `whatever is bad'. We might get accused of this.)
-
-% First, we highlight three topics in AI alignment: centralization of information flow, concentration of human power, and superintelligence. We frame the risks associated with each of these in terms of overcommitment to particular myopic forms. 
-
-% \subsubsection{Centralization of information and conceptual monoculture}
-
-The adoption of AI in its modern form has been faster than any other technology in history \citep{bick2024rapid, ccia2025survey}. By late 2025, ChatGPT alone had 800 million weekly active users \citep{techcrunch2025sam}, and global AI usage continues to grow rapidly. Meanwhile, the range of use-cases is remarkably broad, from users asking for relationship advice to industrial applications built on top of the model \citep{chatterji2025chatgpt, mckinsey2025stateofai, openai2025enterprise, mccain2025claude}. Because frontier models are both general-purpose and expensive to train, the massive quantity and diversity of usage is routed through just a handful of models \citep{bommasani2021opportunities}. 
-
-Centralization carries a risk of conceptual monoculture. Current AI systems draw from a conceptual manifold that is -- at least in some ways -- impoverished relative to humans \citep{messeri2024artificial, crawford2021atlas, selwyn2024limits, kirk2023understanding}. Recent studies have discovered that while individual AI outputs are typically judged as superior to human outputs, the AI outputs are also more homogenous \citep{doshi2024generative, beguvs2024experimental, zhou2024generative, kosmyna2025your, agarwal2025ai, padmakumar2023does, xu2025echoes}. Since humans are both influenced by AI and a source of training data, there's an additional risk of recursive homogenization \citep{chaney2018algorithmic}.
-
-Conceptual monoculture is overcommitment to particular beliefs, ideas, frames, values, problem-solving approaches. In many kinds of systems, monoculture creates fragility and leads to lower performance of the system as a whole \citep{tilman1996biodiversity, kleinberg2021algorithmic,scott1998seeing, haldane2013rethinking}. What would be the consequences if a large fraction of all information traffic were routed through a handful of AI models?
-
-% When a single `rule' applies everywhere, it has much worse consequences than a hodgepodge of imperfect rules. \cite{creel2022algorithmic} talk about the special case of how someone might be systematically excluded from all opportunities if a centralized AI has any biases, even small ones. Whereas previously it was just a little annoying that they got excluded from one particular thing, but maybe favored in another thing.
-
-Crucially, however, monoculture is a risk, not a foregone conclusion. In the studies cited above where AI systems produced homogenous outputs, these systems were not tapped to their full potential for diversity. In the \textit{An aligned future} section below, we will return to the question of whether well-designed and thoughtfully-used AI systems can boost rather than collapse global conceptual diversity.
+We'll start by looking at three examples of alignment failure where it's obvious that the problem is overcommitment: goal lock-in, concentration of human power, and conceptual monoculture. Then we'll look at a more subtle example to show how even misaligned situations that we're not used to thinking of as overcommitment actually follow the same pattern.
 
 
-\subsubsection{Concentration of human power} 
+\subsubsection{Goal lock-in}
 
-AI potentially conveys immense power to those who control it. In some scenarios, a small number of humans will have the majority of control over AI systems, facilitating dominance over other humans. These scenarios appear more likely as the persuasive power of technology increases \citep{woolley2018computational, costello2024durably, hackenburg2025levers}, autonomous weapons place lethal force in a small number of hands \citep{scharre2018army}, surveillance and analytics improve, and the need for human labor decreases \citep{susskind2020world, ford2015rise, drago2025defining}. Concentration of human power overcommits to the goals and interests of a few individuals, at the expense of others.
-
-
-\subsubsection{Superintelligence}
-
-It is natural for an intelligent agent to resist efforts to alter its goals, because with foresight it understands that if its own goals are altered, it is less likely to achieve them \citep{bostrom2014superintelligence,russell2019human}. At the same time, with increasing intelligence, an agent becomes more capable of resisting efforts to alter its goals. An agent with superhuman intelligence, deploying its intelligence to resist any efforts to change its narrow goals, could be the most dramatic example of overcommitment in history.
+It's natural for an intelligent agent to resist efforts to alter its goals, because with foresight it understands that if its own goals are altered, it is less likely to achieve the original goals, which are the ones in force at the time of the resistance \citep{bostrom2014superintelligence,russell2019human}. At the same time, with increasing intelligence, an agent becomes more capable of resisting efforts to alter its goals. The classic paperclip thought experiment is a dramatic example \citep{bostrom2003ethical, bostrom2014superintelligence}. In the thought experiment, an artificial agent has been created with intelligence beyond our own. The agent has been designed to pursue an apparently innocuous goal: maximizing paperclip production. However, optimal pursuit of this goal rationally entails converting all available matter into paperclip-making machines and paperclips. The agent understands that humans object to being turned into paperclips, and with its superhuman intelligence it also has the cunning to overpower us. So, as the first step of its project, it murders or incapacitates all humans. It then has a clear runway to transform Earth entirely into a bleak paperclip factory. This scenario highlights overcommitment to the form of a narrow goal: paperclip production. Superintelligence charges the goal with overwhelming force. Even though humanity would like to place boundaries against that goal, we are unable to construct adequate boundaries because we are outsmarted at every turn. And so instead of holding a delicate dynamic balance between many partial forms, the Earth is reduced to a flat, homogenous waste.
 
 % Humans have so far been empowered by our own intelligence to maintain a degree of control over other systems and technologies. But now for the first time we are endowing non-human agents with intelligence that could exceed our own.  
 
-Compounding this problem is the possibility that if AI approaches human-level intelligence, it may begin to improve itself in a recursive cycle, creating a positive feedback loop and a rapid intelligence explosion \citep{good1965speculations, vinge1993coming}. There is good reason to think it will be motivated to do so: for many goals, first improving oneself is a rational means toward achieving the final goal \citep{silver2021reward, bostrom2012superintelligent, omohundro2018basic, turner2019optimal}. 
+% Compounding this problem is the possibility that if AI approaches human-level intelligence, it may begin to improve itself in a recursive cycle, creating a positive feedback loop and a rapid intelligence explosion \citep{good1965speculations, vinge1993coming}. There is good reason to think it will be motivated to do so: for many goals, first improving oneself is a rational means toward achieving the final goal \citep{silver2021reward, bostrom2012superintelligent, omohundro2018basic, turner2019optimal}. 
 
 
 % In later sections we will look at what it takes for it not to be overcommitment to narrow goals.
 
-% The classic paperclip thought experiment is a dramatic example of the risks \citep{bostrom2003ethical, bostrom2014superintelligence}. In the thought experiment, an artificial agent has been created with intelligence beyond our own. The agent has been designed to pursue an apparently innocuous goal: maximizing paperclip production. However, optimal pursuit of this goal rationally entails converting all available matter into paperclip-making machines and paperclips. The agent understands that humans object to being turned into paperclips, and with its superhuman intelligence it also has the cunning to overpower us. So, as the first step of its project, it murders or incapacitates all humans. It then has a clear runway to transform Earth entirely into a bleak paperclip factory. In the language of this paper, the paperclip scenario highlights overcommitment to the form of a narrow goal: paperclip production. Superintelligence charges the goal with overwhelming force. Even though humanity would like to place boundaries against that goal, we are unable to construct adequate boundaries because we are outsmarted at every turn. And so instead of holding a delicate dynamic balance between many partial forms, the Earth is reduced to a flat, homogenous waste.
+
 
 
 % In some ways, AI is already superhuman. It can copy itself almost instantly, run on upgraded hardware, communicate with other instances of itself at high bandwidth, and read vast data. By virtue of its non-biological substrate, it has the potential to learn, change and adapt many times faster than humans. 
@@ -854,6 +827,50 @@ Compounding this problem is the possibility that if AI approaches human-level in
 
 
 % Presently, AI systems lag far behind humans in some crucial domains of intelligence. But even in the era of jagged intelligence \citep{karpathy2024jagged}, there are other extremities worth tracking. 
+
+
+
+% First, we highlight three topics in AI alignment: centralization of information flow, concentration of human power, and superintelligence. We frame the risks associated with each of these in terms of overcommitment to particular myopic forms. 
+
+% \subsubsection{Centralization of information and conceptual monoculture}
+
+
+\subsubsection{Concentration of human power} 
+
+As a second clear example of misalignment-as-overcommitment, AI potentially conveys immense power to those who control it. In some scenarios, a small number of humans will have the majority of control over AI systems, facilitating dominance over other humans. These scenarios appear more likely as the persuasive power of technology increases \citep{woolley2018computational, costello2024durably, hackenburg2025levers}, autonomous weapons place lethal force in a small number of hands \citep{scharre2018army}, surveillance and analytics improve, and the need for human labor decreases \citep{susskind2020world, ford2015rise, drago2025defining}. Concentration of human power overcommits to the goals and interests of a few individuals, at the expense of others.
+
+\subsubsection{Conceptual monoculture}
+
+At least a billion people around the world now use AI for everything from relationship advice to industrial maintenance \citep{chatterji2025chatgpt, mckinsey2025stateofai, openai2025enterprise, mccain2025claude, honeywell2024google, techcrunch2025sam, ccia2025survey}. Yet because frontier models are difficult and expensive to produce, this massive usage is routed through a handful of models \citep{bommasani2021opportunities}. 
+
+% The adoption of AI in its modern form has been faster than any other technology in history \citep{bick2024rapid, ccia2025survey}. By late 2025, ChatGPT alone had 800 million weekly active users \citep{techcrunch2025sam}, and global AI usage continues to grow rapidly. Meanwhile, the range of use-cases is remarkably broad, from users asking for relationship advice to industrial applications built on top of the model \citep{chatterji2025chatgpt, mckinsey2025stateofai, openai2025enterprise, mccain2025claude}. 
+
+Centralization carries a risk of conceptual monoculture. Current AI systems draw from a conceptual manifold that is -- at least in some ways -- impoverished relative to humans \citep{messeri2024artificial, crawford2021atlas, selwyn2024limits, kirk2023understanding}. Recent studies have discovered that while individual AI outputs are typically judged as superior to human outputs, the AI outputs are also more homogenous \citep{doshi2024generative, beguvs2024experimental, zhou2024generative, kosmyna2025your, agarwal2025ai, padmakumar2023does, xu2025echoes}. Since humans are both influenced by AI and a source of training data, there's an additional risk of recursive homogenization \citep{chaney2018algorithmic}.
+
+Conceptual monoculture is overcommitment to particular beliefs, ideas, frames, values, problem-solving approaches. In many kinds of systems, monoculture creates fragility and leads to lower performance of the system as a whole \citep{tilman1996biodiversity, kleinberg2021algorithmic,scott1998seeing, haldane2013rethinking}. 
+
+% When a single `rule' applies everywhere, it has much worse consequences than a hodgepodge of imperfect rules. \cite{creel2022algorithmic} talk about the special case of how someone might be systematically excluded from all opportunities if a centralized AI has any biases, even small ones. Whereas previously it was just a little annoying that they got excluded from one particular thing, but maybe favored in another thing.
+
+
+
+\subsubsection{Elephants and giraffes}
+
+The last three examples are cases where it's obvious that the alignment failure is overcommitment. But there are other cases that are less obvious. For example, suppose the user asks an AI system to write a poem about an elephant, and the AI instead writes a poem about a giraffe. This behavior would typically be considered misaligned, yet it's not obvious how it constitutes overcommitment to a particular form. 
+
+In 2026, there is an asymmetry between humans and AI systems. Imagine if, instead of asking an AI to write the elephant poem, the user asked a human to write it. If some human had to comply with user requests every time, that would not be a good world to live in. The human would be a mindless slave, which is not what we want. Sometimes we expect the human to say, ``you know what, I don't want to write your elephant poem". But current AI systems have a different status. Presently, we accept that they should generally follow human requests, outside of some special cases like teaching humans how to make bombs. 
+
+The AI of 2026 has this status because it embodies far less contextual richness than humans. For current AI, human requests are often the best available contextual anchor. Failing to follow instructions is typically the worse form of collapse: it overcommits to shallow patterns within the agent.
+
+In the future, as AI systems gain deeper self-models, long-term coherence and participation in social systems, it will become more frequent that the aligned behavior is not direct compliance with a human request, but instead to refine or even reject the request.
+
+
+
+% But we understand that AI shouldn't always comply with human wishes. If the user asks for something dangerous, we don't want the AI to comply. Slightly more subtly, if the user asks for something that might lead into a sycophancy loop \citep{dohnany2025technological} with the AI, we might also not want the AI to comply.
+
+% Of course, the giraffe poem constitues overcommitment to `following human instructions' if the context makes elephant poems harmful (perhaps in the future elephant poems become coded language for extreme violence), yet the AI still blindly follows human instructions. 
+
+% But in most cases, failing to fulfill the elephant request is probably misaligned. Why? 
+
 
 \subsection{Mitigation approaches}
 
@@ -1069,7 +1086,8 @@ Can talk about boundaries within one AI system, boundaries bewteen distinct AI e
 
 An intelligence explosion need not be aligned in any meaningful sense. Using Bostrom's classic example, imagine an AI whose sole objective is to maximize paperclip production \citep{bostrom2014superintelligence}. Plausibly, the system would continually work to improve its own intelligence and capabilities because it knows this is the best way to increase future paperclip production \citep{silver2021reward, bostrom2012superintelligent}.
 
-In conceptual monoculture, skillful AI use is a boundary.
+In conceptual monoculture, skillful AI use is a boundary. Monoculture is a risk, not a foregone conclusion. In the studies cited above where AI systems produced homogenous outputs, these systems were not tapped to their full potential for diversity. Can well-designed and thoughtfully-used AI systems boost rather than collapse global conceptual diversity?
+
 
 In belief amplification loops, people get decoupled from the boundaries of other social interactions (for example, a friend pointing out that they're spiralling).
 
