@@ -762,16 +762,12 @@ Finally, we appreciate that this way of talking raises red flags for some people
 \textit{`Truth, like love and sleep, resents\\approaches that are too intense.'}\\*W. H. Auden
 \end{center}
 
-\begin{center}
-\textit{`We can love the beautiful, and believe in it, and thereby open ourselves to an understanding of love that does not dominate, but cherishes the independence and beauty of the loved.'}\\*Martha Nussbaum
-\end{center}
-
 
 % Across a number of living systems, we've outlined how boundaries place selective limits on interactions so that, instead of overcommitting to a particular form, systems maintain a delicate balance between distinctive parts that work flexibly together. With these intelligent protections, new structure continues to contextualize previous partialities. 
 
-In Part 1 we looked at how healthy living systems are composed of a variety of partial forms, like voices in a group, drives in an organism or creatures in an ecosystem. Semi-permeable boundaries protect against overcommitment to particular forms. Through lightly-held interactions, entities are contextualized and shaped into grounded, modular parts, existing as paradoxes for one another and supporting ongoing increase of subtlety.
+In Part 1 we looked at how healthy living systems are composed of a variety of partial forms, like voices in a group, drives in an organism or creatures in an ecosystem. Semi-permeable boundaries protect against overcommitment to particular forms. Through lightly-held interactions, entities are contextualized and shaped into grounded, modular parts, existing as paradoxes for one another and supporting ongoing increase of subtlety. Now we turn this lens to the AI alignment problem\footnote{We will use `alignment' as the broadest umbrella term to include `AI safety', `AI ethics', `AI governance', and all other aspects of designing and relating to AI in a way that leads to positive futures.}. Our central thesis is that alignment means avoiding overcommitment to any particular form. 
 
-Now we turn this lens to the AI alignment problem. Our central thesis is that alignment means avoiding overcommitment to any particular form. In this section we first recast some well-studied AI safety and alignment\footnote{We will use `alignment' as the broadest umbrella term to include `AI safety' and all other aspects of designing AI in a way that leads to positive futures.} problems in this language. We then use our framework to examine what is missing from the current research landscape. Finally, we investigate what a truly aligned future could look like.
+% In this section we first recast some well-studied AI alignment problems in this language. We then use our framework to examine what is missing from the current research landscape. Finally, we investigate what a truly aligned future could look like.
 
 % The problem is particularly challenging because AI carries extremities that create dangers of severe overcommitment. 
 
@@ -807,11 +803,21 @@ Now we turn this lens to the AI alignment problem. Our central thesis is that al
 
 % Technologies have always temporarily overcommitted to particular imperfect forms. [examples].  
 
-\subsection{Overcommitment}
+\subsection{Misaligned means overcommitted}
 
-First, we highlight three topics in AI safety and alignment: centralization of information flow, concentration of human power, and superintelligence. We frame each of these in terms of overcommitment. 
+ZEB: I now realize that this is quite a tricky argument to make. The first thing people will think is: what about the most traditional alignment problems like simply following user intent. How is doing something different than user intent `overcommitted'? Like if there are two options, A and B, and the user wants A and the system does B. The doesn't seem like overcommittment, but it does seem like misalignment. How do we address this?
 
-\subsubsection{Centralization of information and conceptual monoculture}
+But I think we could, just possibly, make this argument. It goes like this: first, we talk about easy examples, like goal lockin with superintelligence; concentration of human power; and conceptual monoculture. Second, we say, but what about examples like this? ``The user asks for a poem about an elephant. The AI write a poem about a giraffe. Surely this is misaligned but not overcommitted?" This is the heart of the paper, and where it gets really interesting. Our argument is that the AI's behavior here is misaligned exactly to the degree that it is overcommitted. For example, imagine a *human* being asked to write a poem about an elephant. 
+
+We would have to argue that, at present, for systems to be generally responsive to human wishes is actually the `least overcommitted' -- because humans right now tend to have a richer world. Would it be aligned for a ChatGPT to once in a while offer the giraffe poem because 1) it understands that this is what the user really meant, as opposed to what they asked for, 2) it's at the level of self-awareness where it can be genuinely sick of writing elephant poems, and this is actually the right decision for it to maintain its autonomy, or 3) ?
+
+Our argument is a little tenuous. Because if we want to agree that current AI systems `should' write the elephant poem, we have to argue that somehow the `appropriate' level of 
+
+(Note: one danger is that we end up tautologically defining overcommitment as `whatever is bad'. We might get accused of this.)
+
+% First, we highlight three topics in AI alignment: centralization of information flow, concentration of human power, and superintelligence. We frame the risks associated with each of these in terms of overcommitment to particular myopic forms. 
+
+% \subsubsection{Centralization of information and conceptual monoculture}
 
 The adoption of AI in its modern form has been faster than any other technology in history \citep{bick2024rapid, ccia2025survey}. By late 2025, ChatGPT alone had 800 million weekly active users \citep{techcrunch2025sam}, and global AI usage continues to grow rapidly. Meanwhile, the range of use-cases is remarkably broad, from users asking for relationship advice to industrial applications built on top of the model \citep{chatterji2025chatgpt, mckinsey2025stateofai, openai2025enterprise, mccain2025claude}. Because frontier models are both general-purpose and expensive to train, the massive quantity and diversity of usage is routed through just a handful of models \citep{bommasani2021opportunities}. 
 
@@ -831,7 +837,9 @@ AI potentially conveys immense power to those who control it. In some scenarios,
 
 \subsubsection{Superintelligence}
 
-It is natural for an intelligent agent to resist efforts to alter its goals, because with foresight it understands that if its own goals are altered, it would be less likely to achieve them \citep{bostrom2014superintelligence,russell2019human}. At the same time, with increasing intelligence, an agent becomes more capable of resisting efforts to alter its goals. Humans have so far been empowered by our own intelligence to maintain a degree of control over other systems and technologies. But now for the first time we are endowing non-human agents with intelligence that could exceed our own. An agent with superhuman intelligence, deploying its intelligence to resist any efforts to change its narrow goals, could be the most dramatic example in history of overcommitment to a form. 
+It is natural for an intelligent agent to resist efforts to alter its goals, because with foresight it understands that if its own goals are altered, it is less likely to achieve them \citep{bostrom2014superintelligence,russell2019human}. At the same time, with increasing intelligence, an agent becomes more capable of resisting efforts to alter its goals. An agent with superhuman intelligence, deploying its intelligence to resist any efforts to change its narrow goals, could be the most dramatic example of overcommitment in history.
+
+% Humans have so far been empowered by our own intelligence to maintain a degree of control over other systems and technologies. But now for the first time we are endowing non-human agents with intelligence that could exceed our own.  
 
 Compounding this problem is the possibility that if AI approaches human-level intelligence, it may begin to improve itself in a recursive cycle, creating a positive feedback loop and a rapid intelligence explosion \citep{good1965speculations, vinge1993coming}. There is good reason to think it will be motivated to do so: for many goals, first improving oneself is a rational means toward achieving the final goal \citep{silver2021reward, bostrom2012superintelligent, omohundro2018basic, turner2019optimal}. 
 
@@ -1050,6 +1058,9 @@ As AI begins to displace more human labor, it is poised to become the most focus
 
 So what does the opposite of this look like? In living systems, semi-permeable boundaries continunally contextualize partial forms to be more long-sighted and support increasing subtlety. Evolving boundaries supporting the expansion of nuance and light, playful interactions
 
+the question of whether well-designed and thoughtfully-used AI systems can boost rather than collapse global conceptual diversity.
+
+
 We can divide this into two subparts. How we ourselves keep stepping back and contextualizing as we build AI, and what it means for an AI system to keep stepping back.
 
 Boundaries within ourselves (including between humans). Boundaries between us and AI systems. Boundaries within AI systems (including between AI systems).
@@ -1073,6 +1084,12 @@ Thinking of the AlphaProof paper, there's a question: `is it really generalizing
 
 
 \subsection{The AI process}
+
+
+\begin{center}
+\textit{`We can love the beautiful, and believe in it, and thereby open ourselves to an understanding of love that does not dominate, but cherishes the independence and beauty of the loved.'}\\*Martha Nussbaum
+\end{center}
+
 
 What would it mean for AI to continually release from exclusive attachment to any particular form? How can we protect the potential for even \textit{that} conceptualization to be contextualized in the future?
 
