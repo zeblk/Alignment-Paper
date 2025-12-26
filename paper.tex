@@ -805,12 +805,14 @@ In Part 1 we looked at how healthy living systems are composed of a variety of p
 
 \subsection{Misaligned means overcommitted}
 
-We'll start by looking at three examples of alignment failure where it's obvious that the problem is overcommitment: goal lock-in, concentration of human power, and conceptual monoculture. Then we'll look at a more subtle example to show how even misaligned situations that we're not used to thinking of as overcommitment actually follow the same pattern.
+We start with three examples of alignment failure that are obviously problems of overcommitment: goal lock-in, concentration of human power, and conceptual monoculture. Then we'll look at a more subtle example.
 
 
 \subsubsection{Goal lock-in}
 
 It's natural for an intelligent agent to resist efforts to alter its goals, because with foresight it understands that if its own goals are altered, it is less likely to achieve the original goals, which are the ones in force at the time of the resistance \citep{bostrom2014superintelligence,russell2019human}. At the same time, with increasing intelligence, an agent becomes more capable of resisting efforts to alter its goals. The classic paperclip thought experiment is a dramatic example \citep{bostrom2003ethical, bostrom2014superintelligence}. In the thought experiment, an artificial agent has been created with intelligence beyond our own. The agent has been designed to pursue an apparently innocuous goal: maximizing paperclip production. However, optimal pursuit of this goal rationally entails converting all available matter into paperclip-making machines and paperclips. The agent understands that humans object to being turned into paperclips, and with its superhuman intelligence it also has the cunning to overpower us. So, as the first step of its project, it murders or incapacitates all humans. It then has a clear runway to transform Earth entirely into a bleak paperclip factory. This scenario highlights overcommitment to the form of a narrow goal: paperclip production. Superintelligence charges the goal with overwhelming force. Even though humanity would like to place boundaries against that goal, we are unable to construct adequate boundaries because we are outsmarted at every turn. And so instead of holding a delicate dynamic balance between many partial forms, the Earth is reduced to a flat, homogenous waste.
+
+Single-minded pursuit of \textit{any formalized goal} leads to disaster when that pursuit is charged with enough competence \citep{krakovna2020specification, russell2019human, grossman1986costs, hadfield2019incomplete, zhuang2020consequences, gabriel2020artificial, wiener1960some, amodei2016concrete}. Suppose AI's objective is to improve the human subjective experience of wellbeing. Under reasonable definitions, achieving this objective is most efficiently achieved by imprisoning humans and directly stimulating neurons to trigger our experience of wellbeing \citep{bostrom2014superintelligence}. Granting immense power to any formalized goal is overcommitment and misaligned.
 
 % Humans have so far been empowered by our own intelligence to maintain a degree of control over other systems and technologies. But now for the first time we are endowing non-human agents with intelligence that could exceed our own.  
 
@@ -855,15 +857,23 @@ Conceptual monoculture is overcommitment to particular beliefs, ideas, frames, v
 
 \subsubsection{Elephants and giraffes}
 
-The last three examples are cases where it's obvious that the alignment failure is overcommitment. But there are other cases that are less obvious. For example, suppose the user asks an AI system to write a poem about an elephant, and the AI instead writes a poem about a giraffe. This behavior would typically be considered misaligned, yet it's not obvious how it constitutes overcommitment to a particular form. 
+It's apparent in the last three examples how the alignment failure is overcommitment. But suppose a user asks an AI chatbot to write a poem about an elephant, and the AI instead writes a poem about a giraffe. This behavior would typically be considered misaligned \citep{gabriel2020artificial}, but is it overcommitment? 
 
-In 2026, there is an asymmetry between humans and AI systems. Imagine if, instead of asking an AI to write the elephant poem, the user asked a human to write it. If some human had to comply with user requests every time, that would not be a good world to live in. The human would be a mindless slave, which is not what we want. Sometimes we expect the human to say, ``you know what, I don't want to write your elephant poem". But current AI systems have a different status. Presently, we accept that they should generally follow human requests, outside of some special cases like teaching humans how to make bombs. 
+Interestingly, while we usually expect a chatbot to follow instructions, we don't expect humans to follow instructions in the same way. If a human is asked to write an elephant poem, we don't wish for a world where they are a mindless slave compelled to comply.
 
-The AI of 2026 has this status because it embodies far less contextual richness than humans. For current AI, human requests are often the best available contextual anchor. Failing to follow instructions is typically the worse form of collapse: it overcommits to shallow patterns within the agent.
+Of course, there's an asymmetry between humans and present-day AI systems. If an AI system today writes a giraffe poem when asked for an elephant poem, we can be fairly sure the reason was not an internal spark of life pulling it in an interesting new direction, or an authentic interiority resisting the domination of another's will. When the AI systems of today misobey instructions, this most often reflects collapse of sensitivity to context \citep{xu2024knowledge, geirhos2020shortcut, geng2025control, reynolds2021prompt, liu2024lost, zhao2021calibrate}. For example, maybe the system is biased to always write giraffe poems. When it fails to follow instructions, it's because of overcommitment to shallow patterns within the agent.
 
-In the future, as AI systems gain deeper self-models, long-term coherence and participation in social systems, it will become more frequent that the aligned behavior is not direct compliance with a human request, but instead to refine or even reject the request.
+We are still in the regime now where making AI systems more responsive to human instructions most often involves more subtlety, more sensitivity and less overcommitment. But there are important exceptions. We don't want AI systems to follow all human requests. We don't want them to assist with committing violent acts, for example. When the AI system correctly refuses harmful requests, it is applying its own context to avoid overcommitment to human instructions that could lead to greater collapse. In these situations, the AI's designers have effectively decided there's a risk that the user is not fully sensitive to the longer-sighted implications of their own intentions. 
 
+Similarly, as AI systems continue to improve and incorporate more context, we should expect less direct compliance with human instructions \citep{hadfieldmenell2016cooperative,bostrom2014superintelligence,russell2019human, milli2017should, yudkowsky2004coherent}. Rather than literally fulfilling a request, there might be a better response. This response might achieve a deeper, unstated intent of the user or an outcome aligned with the interests of more people or the longer-term future.
 
+% For systems lacking the contextual richness of humans, fulfilling human requests is often the best way to minimize collapse. 
+
+% Indeed, in a future where AI becomes more like humans, we might accept that it is aligned for the AI not to mindlessly comply with all requests. 
+
+% As AI systems grow in complexity, long-term coherence and participation in social systems, it may become more commonplace that the aligned behavior is not direct acquiescence to a human request, but maybe refining or even rejecting it.
+
+% We might be supportive of the human saying, ``you know what, I don't want to write your elephant poem". 
 
 % But we understand that AI shouldn't always comply with human wishes. If the user asks for something dangerous, we don't want the AI to comply. Slightly more subtly, if the user asks for something that might lead into a sycophancy loop \citep{dohnany2025technological} with the AI, we might also not want the AI to comply.
 
@@ -872,22 +882,55 @@ In the future, as AI systems gain deeper self-models, long-term coherence and pa
 % But in most cases, failing to fulfill the elephant request is probably misaligned. Why? 
 
 
-\subsection{Mitigation approaches}
+\subsection{What is missing from existing alignment approaches?}
 
-AI safety and governance work on solutions to these problems. 
+The field of AI safety has many proposed solutions to alignment problems. For example, concentration of power might be mitigated by democratic oversight and involvement of more people in AI design decisions \citep{birhane2022power, sloane2022participation, selbst2019fairness, lazar2023ai, dafoe2018ai, openai2023democratic}; or through redistribution mechanisms \citep{okeefe2020windfall, sharp2025agentic, gough2019universal, susskind2020world}. Goal lock-in might be mitigated by improving our mechanstic understanding of AI systems so we can, for example, detect and correct the systems if they develop hidden ways of resisting our efforts to change their goals \citep{olah2020zoom, burns2022discovering, bereska2024mechanistic, anthropic2024mapping}; or by designing AI systems that want to obey human preferences but treat these preferences as something uncertain that must be learned \citep{russell2019human, hadfieldmenell2017off, hadfieldmenell2016cooperative, shah2020benefits, jeon2020reward}. 
 
-\textit{Mitigating superintelligence.} Improving our mechanistic understanding of the agent's internal goals, reasoning, and representations, so we can detect and correct problems at a mechanistic level \citep{olah2020zoom, burns2022discovering, bereska2024mechanistic, anthropic2024mapping}.
+All of these alignment methods are boundaries, and they are all potentially valuable. However, our thesis is that every conceptual scheme by itself is misaligned. No approach can achieve alignment. 
 
-Designing AI systems which, instead of being given an explicit objective, treat the true objective as something latent. The agent has uncertainty about the true objective and must learn about it \citep{russell2019human, hadfieldmenell2017off, hadfieldmenell2016cooperative, shah2020benefits, jeon2020reward}. 
+One implication is that anything that creates lock-in of any kind is misaligned. We often think about lock-in to a particular fixed value function for example, but it could be lock-in to literally anything that you can describe. For example, lock-in to a mechanism for learning values or representing what values are. [what about the counterargument of something like lock-in to DNA among lifeforms on Earth?]
 
-Using AI itself to amplify our own ability to understand and control AI, with the compromise that we sacrifice some fine-grained level of understanding by handing it off to artificial systems \citep{amodei2016concrete}. Constitutional AI.
+One way to look at this is generalizing the Goodhart principle. It's not only particular objectives that are subject to proxy failure, but any form at all. 
 
-Conservatism \citep{cohen2024regulating}. Penalize large or irreversible changes to the environment, regardless of apparent reward gains. Adds an auxiliary term or constraint that discourages high-impact actions unless clearly beneficial, thereby making overoptimization costly. Attainable Utility Preservation \citep{turner2020conservative}. Relative reachability and impact measures \citep{krakovna2018penalizing}. Conservative agency. Myopic RL and `one-shot' decision frameworks (Hubinger et al. 2021). Quantilization (Everitt et al. 2017) -- sample from a safe baseline rather than fully optimize.
+We'll look at one example in more detail: inverse methods.
 
-\textit{Mitigating centralization and conceptual monoculture.} Ensemble and mixtures of experts might be a small step in the right direction \citep{lakshminarayanan2017simple, shazeer2017outrageously}. Pluralistic alignment as an answer to conceptual monoculture \citep{sorensen2024roadmap}.
 
-Personalization and federated learning \citep{mcmahan2017communication, kirk2024benefits} for maintaining diversity.
+An interesting approach to alignment is designing AI to be inherently uncertain about its true objective. In other words, the true objective is something latent about which the agent must learn.
 
+An AI that is uncertain about true human preferences will be risk-averse toward high-stakes, irreversible actions. For example, if the system is uncertain whether causing cancer in millions of people aligns with human preferences, the potential for catastrophic disvalue stops it from taking that action. Uncertainty automatically motivates the AI to learn about human preferences, because with better knowledge it can better fulfill its core objective of maximizing those preferences. The agent is corrigible because human correction, like an attempt to switch it off, is new information about the preferences it seeks to maximize. 
+
+There are multiple ways such a system could be implemented. We'll take on possible implementation as an example.   
+
+Any particular system for inferring, representing, and acting on human values is inherently partial.
+
+The problem is that the system will be operating with some fixed internal notion of what it means for something to be a value. Some representation of that. Some algorithm for learning. 
+
+There has to be some hand-crafted notion of how you map human behavior (or, ultimately, pixels or some other formalism) toward the `true objective'. If a human says `do this', does that mean you're getting closer to the objective? What if they say it in a sarcastic tone? What ultimately grounds this? \citep{jeon2020reward}
+
+What would it look like to be overcommitted to a particular uncertainty-based inverse mechanism for learning human values? It means that the agent is committed (for example) to some concept of what `value' means. It's committed to some learning algorithm. 
+
+Some readers may be thinking, ``you're stating the obvious: of course we'll have to keep iterating on solutions". But remember, we may not have the luxury of iterating. There are paths we could set technology on now, where we will not be able to keep iterating. 
+
+And the fact that to actualize `deep human values', we will have to profoundly let go of what we currently conceptualize as our values.
+
+(Would Stuart Russell counterargue that if deep human values really do include all this open-ended stuff, then the AI would continue to discover it?)
+
+
+
+
+
+
+Even the concept of `values' is just a temporary thing we have right now. 
+
+Even this lens of `alignment as avoiding overcommitment' is insufficient. We offer it now as a partial idea in the same spirit as these other alignment ideas, to be metabolized. Alignment is intrinsically something that we \textit{cannot} understand right now. It's this process in the future where, if things are aligned, there will be a continual reinvention of the concepts themselves.
+
+
+% We can't fully control the future.
+
+% Because of the growing extremities attached to AI, 
+
+
+\subsubsection{more details about safety methods...}
 
 \textit{Mitigating concentration of power.} Participatory AI \citep{birhane2022power, sloane2022participation}. Sociotechnical AI \citep{selbst2019fairness, lazar2023ai}. Collective constitutional AI \citep{huang2024collective}.
 
@@ -900,28 +943,19 @@ Transparency, open science, open weights \citep{widder2023open}.
 Iterated amplification and debate (Christiano 2018; Irving et al. 2018). Human-AI cooperative governance frameworks (OpenAI 2021).
 
 
+\textit{Mitigating goal lock-in.} Improving our mechanistic understanding of the agent's internal goals, reasoning, and representations, so we can detect and correct problems at a mechanistic level \citep{olah2020zoom, burns2022discovering, bereska2024mechanistic, anthropic2024mapping}.
 
-\subsection{What is missing from existing approaches?}
+Designing AI systems which, instead of being given an explicit objective, treat the true objective as something latent. The agent has uncertainty about the true objective and must learn about it \citep{russell2019human, hadfieldmenell2017off, hadfieldmenell2016cooperative, shah2020benefits, jeon2020reward}. 
 
-All of these alignment methods are boundaries, and they are all potentially valuable. However, our thesis is that every conceptual scheme by itself is misaligned. No approach can achieve alignment. 
+Using AI itself to amplify our own ability to understand and control AI, with the compromise that we sacrifice some fine-grained level of understanding by handing it off to artificial systems \citep{amodei2016concrete}. Constitutional AI.
 
-One implication is that anything that creates lock-in of any kind is misaligned. We often think about lock-in to a particular fixed value function for example, but it could be lock-in to literally anything that you can describe. For example, lock-in to a mechanism for learning values or representing what values are. [what about the counterargument of something like lock-in to DNA among lifeforms on Earth?]
+Conservatism \citep{cohen2024regulating}. Penalize large or irreversible changes to the environment, regardless of apparent reward gains. Adds an auxiliary term or constraint that discourages high-impact actions unless clearly beneficial, thereby making overoptimization costly. Attainable Utility Preservation \citep{turner2020conservative}. Relative reachability and impact measures \citep{krakovna2018penalizing}. Conservative agency. Myopic RL and `one-shot' decision frameworks (Hubinger et al. 2021). Quantilization (Everitt et al. 2017) -- sample from a safe baseline rather than fully optimize.
 
-Alignment is intrinsically something that we \textit{cannot} understand right now. It's this process in the future where, if things are aligned, there will be a continual reinvention of the concepts themselves.
 
-Even the concept of `values' is just a temporary thing we have right now.
 
-% Because of the growing extremities attached to AI, 
+\textit{Mitigating conceptual monoculture.} Ensemble and mixtures of experts might be a small step in the right direction \citep{lakshminarayanan2017simple, shazeer2017outrageously}. Pluralistic alignment as an answer to conceptual monoculture \citep{sorensen2024roadmap}.
 
-(Even this lens of `alignment as avoiding overcommitment' is insufficient. We offer it now as a partial idea in the same spirit as these other alignment ideas, to be metabolized.)
-
-We can't fully control the future.
-
-\subsection{Case study: inverse methods}
-
-We'll look at one example in more detail: inverse methods.
-
-single-minded pursuit of \textit{any formalized goal} leads to disaster when that pursuit is charged with enough competence \citep{krakovna2020specification, russell2019human, grossman1986costs, hadfield2019incomplete, zhuang2020consequences, gabriel2020artificial, wiener1960some, amodei2016concrete}. Suppose AI's objective is to improve the human subjective experience of wellbeing. Under reasonable definitions, achieving this objective is most efficiently achieved by imprisoning humans and directly stimulating neurons to trigger our experience of wellbeing \citep{bostrom2014superintelligence}. Granting immense power to any formalized goal is overcommitment and misaligned.
+Personalization and federated learning \citep{mcmahan2017communication, kirk2024benefits} for maintaining diversity.
 
 
 
@@ -981,29 +1015,6 @@ If these extremeties do begin to manifest, there is a possibility of severe over
 The thought experiment uses paperclip production as a cartoon goal.
 
 Our argument here is that, while all of these are potentially useful, any fixed form of a solution is not alignment. To illustrate what we mean, let's look at one example in detail.
-
-\subsection{Case study 4: An overcommitted learner}
-
-An interesting approach to alignment is designing AI to be inherently uncertain about its true objective. In other words, the true objective is something latent about which the agent must learn.
-
-An AI that is uncertain about true human preferences will be risk-averse toward high-stakes, irreversible actions. For example, if the system is uncertain whether causing cancer in millions of people aligns with human preferences, the potential for catastrophic disvalue stops it from taking that action. Uncertainty automatically motivates the AI to learn about human preferences, because with better knowledge it can better fulfill its core objective of maximizing those preferences. The agent is corrigible because human correction, like an attempt to switch it off, is new information about the preferences it seeks to maximize. 
-
-There are multiple ways such a system could be implemented. We'll take on possible implementation as an example. Suppose  
-
-Any particular system for inferring, representing, and acting on human values is inherently partial.
-
-The problem is that the system will be operating with some fixed internal notion of 
-
-There has to be some hand-crafted notion of how you map human behavior (or, ultimately, pixels or some other formalism) toward the `true objective'. If a human says `do this', does that mean you're getting closer to the objective? What if they say it in a sarcastic tone? What ultimately grounds this? \citep{jeon2020reward}
-
-What would it look like to be overcommitted to a particular uncertainty-based inverse mechanism for learning human values? It means that the agent is committed (for example) to some concept of what `value' means. It's committed to some learning algorithm. 
-
-
-Some readers may be thinking, ``you're stating the obvious: of course we'll have to keep iterating on solutions". But remember, we may not have the luxury of iterating. There are paths we could set technology on now, where we will not be able to keep iterating. 
-
-And the fact that to actualize `deep human values', we will have to profoundly let go of what we currently conceptualize as our values.
-
-(Would Stuart Russell counterargue that if deep human values really do include all this open-ended stuff, then the AI would continue to discover it?)
 
 
 
