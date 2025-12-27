@@ -17,16 +17,17 @@
 \contentsline {subsubsection}{\numberline {2.1.3}Conceptual monoculture}{18}{subsubsection.2.1.3}%
 \contentsline {subsubsection}{\numberline {2.1.4}Elephants and giraffes}{18}{subsubsection.2.1.4}%
 \contentsline {subsection}{\numberline {2.2}Overcommitment to any form is misaligned}{19}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}An aligned future}{20}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}The human process}{21}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}The AI process}{21}{subsubsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.4}Other stuff}{22}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Relationship to other approaches}{24}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Alignment to human values?}{25}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}Response to existing methods}{26}{subsection.2.7}%
-\contentsline {subsection}{\numberline {2.8}Failure modes for specifying values}{27}{subsection.2.8}%
-\contentsline {subsection}{\numberline {2.9}Objections}{28}{subsection.2.9}%
-\contentsline {subsection}{\numberline {2.10}Open-endedness versus optimization for an objective}{28}{subsection.2.10}%
-\contentsline {subsection}{\numberline {2.11}So what should we do?}{30}{subsection.2.11}%
+\contentsline {subsection}{\numberline {2.3}AI is especially problematic}{20}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}An aligned future}{20}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}The human process}{21}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}The AI process}{21}{subsubsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.5}Other stuff}{23}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Relationship to other approaches}{24}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Alignment to human values?}{25}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Response to existing methods}{26}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}Failure modes for specifying values}{27}{subsection.2.9}%
+\contentsline {subsection}{\numberline {2.10}Objections}{28}{subsection.2.10}%
+\contentsline {subsection}{\numberline {2.11}Open-endedness versus optimization for an objective}{28}{subsection.2.11}%
+\contentsline {subsection}{\numberline {2.12}So what should we do?}{30}{subsection.2.12}%
 \contentsline {section}{\numberline {3}Acknowledgements}{30}{section.3}%
-\contentsline {section}{\numberline {4}Competing Interests}{30}{section.4}%
+\contentsline {section}{\numberline {4}Competing Interests}{31}{section.4}%
