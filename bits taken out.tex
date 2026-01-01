@@ -1,6 +1,16 @@
 
 
-\subsection{Genes}
+
+\section{Other quotes}
+
+
+\begin{center}
+\textit{`When forced to work within a strict framework, the imagination is taxed to its utmost--and will produce its richest ideas. Given total freedom the work is likely to sprawl.'}\\*TS Eliot
+\end{center}
+
+\begin{center}
+\textit{`The intellect... treats the living by freezing it, by cutting it up into distinct, discontinuous, motionless pieces.'}\\*Henri Bergson
+\end{center}
 
 \begin{center}
 \textit{`Variation itself is nature's only irreducible essence.'}\\*Stephen Jay Gould
@@ -11,9 +21,46 @@
 \end{center}
 
 \begin{center}
-\textit{`To create is to recombine.'}\\*François Jacob
+\textit{`When I observe something unusual in an experiment, it reverberates in my brain for a long while.'}\\*György Buzsáki
 \end{center}
 
+\begin{center}
+\textit{`Conversation enriches the understanding, but solitude is the school of genius.'}\\*Edward Gibbon
+\end{center}
+
+
+\subsection{Intro}
+
+
+The alignment problem in artificial intelligence (AI) is often posed as the problem of building AI to act in accordance with human values or principles.
+
+Not long ago, AI alignment was a niche research topic. Sci-fi books and a handful of nerdy (but, it turns out, remarkably foresightful) computer scientists worried about the implications of steadily increasing machine intelligence. 
+
+The year after Nick Bostrom's book Superintelligence was released, it was cited 134 times, according to Google Scholar. Last year it was cited 1583 times. 
+
+ImageNet in 2012. DQN in 2013. AlphaGo in 2016. AlphaFold in 2018. GPT-3 in 2020. ChatGPT in 2022. Advanced reasoning models in 2025. 
+
+It crept up on the public and suddenly there is acute global awareness of not only of the danger of eliminating jobs, risk of hacking and bioterrorism, loss of human agency. Even risk of human extinction \citep{cais_statement_2023}. Public calls for alignment \citep{bengio2024managing} or a pause on AI research \citep{bengio2023pause}. Governmental and world organizations calling for ai safety and ethics \citep{unesco2021recommendation, un2024governing, uk2025bletchley}.
+
+AI now matches or exceeds human capacity in many domains \citep{giattino2023test, maslej2024artificial}. Progress continues rapidly, with a number of positive feedback loops on the horizon standing to further accelerate improvement\footnote{Data flywheels, coding agents, training/search loops, handing over agency of longer-horizon problems to AI, AI-designed hardware.}. It is not far-fetched to imagine rogue human actors weaponizing AI (drones, bioweapons); expansion of totalitarian states with AI-powered propaganda and surveillance; and even autonomous systems pursing their own goals at the expense of human welfare \citep{bostrom2014superintelligence}. Some of these threats are already materializing.
+
+Accordingly, there has been a rapid ramp-up of research on AI alignment. 
+
+Most alignment research is premised on the notion of aligning AI with some well-designed goals or principles. 
+
+\subsection{Culture and laws}
+
+Policy itself is also subject to proxy failure. Whenever we formalize rules, they inevitably fail to capture everything we care about. If any particular rules are allowed to dominate (i.e., followed to the letter, to excess), society suffers (there must be good examples of this). 
+
+Another form of boundary is the competition between agents.  
+
+Boundaries against the market: Social welfare programs, Labor laws and trade unions, Environmental regulations  \citep{polanyi1944great}.
+
+For millennia, geographical and cultural boundaries allowed different societies to function as parallel experiments, developing unique technologies, laws, and cultural solutions. 
+
+Pre-globalization, civilizations probably worked similarly to how sexual reproduction protects against Muller's ratchet. Each culture contains a backup copy of the principles that have worked: culture, laws, technologies. Each culture experiments with new ideas, and most experiments fail. These civilizations get conquered (overwritten). In general it's like a set of copies, with a particular mode of interaction: when one copy is degraded, it can get overwritten in totality by an intact copy. Crucially, they *don't* interact by remotely updating sub-parts of each other.
+
+\subsection{Genes}
 
 All organisms are subject to periodic mutations in their genetic code, due to copying errors and damage, and the vast majority of mutations are either neutral or harmful to fitness. In an asexually reproducing species, whenever a creature experiences a germline mutation, that creature's entire lineage is stuck with the mutation forever. (The odds of the mutation being spontaneously reversed by another mutation are vanishingly small.) So within each lineage, the mutation load only increases with time. When, by chance, the least-loaded lineage dies off, the maximum fitness of the species is irreversibly lowered. This is Muller's ratchet: the loss of a less-burdened lineage is like a ratchet click that the species can never recover from \citep{keightley2006interference, muller1932some}. Thus, the overall fitness of an asexual species experiences steady downward pressure from increasing mutation load. With asexual reproduction, the whole lineage suffers the weight of any mutations -- like groupthink where a whole group has the same wrong idea and there's nothing to challenge it.
 
@@ -178,6 +225,8 @@ Our idea is similar (believing in your own uncertainty is a form of boundary).
 
 \subsection{Failure modes for specifying values}
 
+Even the concept of `values' is a form we might over-index on. This might sound circular and paradoxical -- that's because it is. Doesn't `should' imply values, but if so, doesn't that contradict the statement that we shouldn't overindex on values? It's a perfect example of how you get stuck with any particular forms.
+
 \textbf{The values we express are often not good for us.} What we say we want or like, or the choices we make, are poor reflections of what is advantageous for our wellbeing. This is illustrated by recent problems with sycophancy in commercial chatbots \citep{openai2025sycophancy}. Human feedback, about whether they liked or disliked particular bot utterances, were part of the training signal for the model. But these human feedback signals tend to prefer utterances that are more flattering. It's much harder for a user or rater to tell whether the bot said something true about a complex topic, or something that would lead to increased long run well-being. Myopic human preferences are similarly reflected in our decisions about procrastination, drug abuse, spending and so on. One way to access longer-sighted preferences is by giving humans more time and resources to think about their answer, to ask on behalf of another person, or on behalf of their future self. You can give them access to tools and information. You can ask people retrospectively whether an outcome was good, rather than prospectively. 
 
 \textbf{Different people value different things.} How do we weigh these against each other \citep{sorensen2024roadmap}? There is not even universal agreement on which principles are most appropriate for aggregating the preferences of different people. You could ask a group of people to discuss and reach a consensus. 
@@ -192,6 +241,11 @@ It is hard for us to value the distant future. It is plausible that there will b
 
 
 \subsection{Other stuff}
+
+
+Both random mutation and diffusion toward chemical equilibrium are good examples of how dominance of a particular force can be problematic even if that force is not agentic in the traditional sense. Diffusion is a powerful, myopic pressure. It `sees' only the drive toward spatial homogeneity and does not `care' about other factors like the health of the cell.
+
+There is no well-defined edge of what is `us' and what is `not us'.
 
 Super-fish intelligence. Following the principles of life, AI can continue to develop beautiful and meaningful new structure after it passes human level. (Bostrom talks about ``Value Lock-In" -- permanently freezing human moral progress at the current level.)
 
@@ -695,6 +749,27 @@ Homeostasis targets an activity pattern rather than a particular set of conducta
 Again, boundaries increase formality at a local scale. There is less blending or overwriting between entities, so each entity has more distinctively its own form. At the same time, at a larger scale, boundaries avoid excess formality by preserving a space of distinct, contradictory forms within the larger system.
 
 
+\subsection{Drives, goals and motivation}
+
+Many types of congruency bias: defaulting to believing in a simpler, symmetric world \citep{shenhav2013expected}.
+
+The narrow goal becomes like a subroutine to be called at appropriate moments. 
+
+Like a cell membrane studded with an array of finely-tuned pumps and channels, semi-permeable boundaries...
+
+Mental health is perhaps nearly synonymous with the capacity to contextualize each cognitive process, while the opposite of mental health is when a particular process dominates. Mental health is a form of exquisite, open-ended balance. 
+
+Psychological flexibility and resilience. Having backup strategies, context sensitivity, diverse ways of coping with problems. ( https://pubmed.ncbi.nlm.nih.gov/11315249/   ,   https://pmc.ncbi.nlm.nih.gov/articles/PMC2998793   ,   https://www.tc.columbia.edu/faculty/gab38/faculty-profile/files/2013_Bonanno_Burton_REGULATORY_FLEXIBLITY.pdf   ,   https://www.tc.columbia.edu/faculty/gab38/faculty-profile/files/2023_Bonanno-et-al._NATURE-REVIEWS-PSYCHOLOGY.pdf   ,   https://journals.sagepub.com/doi/10.1177/1745691613504116 )
+
+Cognitive reserve in dementia. 
+
+boundaries go both directions: besides preserving our flexibility (the opposite of delusions or obsessions), they also prevent us from being *too* flexible. 
+
+But ultimately, it's \textit{inherently} a deep mystery how contextualization works. If we have a particular, absolutely fixed strategy for regulating the obsession, then this strategy itself is part of the obsession. 
+
+Drives are deeply hierarchical. My desire to keep reading is weighed against feeling better tomorrow if I go to sleep -- but even if I keep reading, laying comfortably on my side is weighed against my hand's fatigue holding the book in this position. 
+
+A variety of collapse affecting many of us is device addiction. It's unsettling to realize that we now spend around 40\% of our waking lives looking at internet-connected screens \citep{binns2024screen}. Device addiction is a recognized problem \citep{ratan2021smartphone}. In the authors' experience, once children have experienced YouTube or Roblox, it can be quite difficult to get them interested in other activities. Our ability to navigate and remember spatial information is worse when we rely on digital maps \citep{brugger2019does}. When we look up information instantly with search engines, we lose the ability to remember it ourselves \citep{sparrow2011google}. Moreover, with social media some people replace complex real-world interactions with a shallower substitute that satisfies a narrower, more immediate drive for a sense of belonging or social connection. This can lead to social isolation, a collapse of the richness of real-world interactions and experiences \citep{mccrae2017social, nowland2018loneliness, primack2017social}. It is worth noting that there is some evidence for the opposite pattern as well, when internet-mediated connections are used wisely, they may enhance meaningful social connectivity and wellbeing. Also acknowledging that although the individual's robustness is collapsing here, the larger system might be working just fine. 
 
 
 \subsection{Ecosystems}
@@ -722,6 +797,15 @@ Monoculture in farming. The seeds and methods of industrial farming have less re
 Forestry. Human-induced habitat fragmentation. 
 
 \subsection{Frames and perspectives}
+
+
+Even aggregating multiple solutions given by an individual can boost performance (so-called `wisdom of inner crowds'), attesting to the value of diverse problem-solving approaches within one individual \citep{stroop1932judgment, herzog2009wisdom, herzog2014harnessing, vul2008measuring, rauhut2011wisdom}.
+
+Sometimes the new frame has a solution; sometimes it's using both frames together that gives extra resolution on a problem. Empirically, asking the same person to solve the same problem twice and then aggregating the two solutions can boost performance. This has been called `wisdom of inner crowds' \citep{stroop1932judgment, herzog2009wisdom, herzog2014harnessing, vul2008measuring, rauhut2011wisdom}. If the solution is elicited twice in quick succession, the benefits are typically minimal compared to asking once: the two answers tend to be very similar. But if the person returns to the problem later and thinks about it afresh, then averaging their two answers carries a substantial advantage. Interestingly, the same benefit can be obtained without a time gap by explicitly requesting that the participant take a different approach for their second solution, without giving any additional information about the problem.
+
+In Karl Duncker's famous Candle Problem, research participants were given a candle, a box of thumbtacks, and some matches, and they were challenged to attach the candle to a vertical corkboard in such a way that it could burn without dripping wax onto the table below \citep{duncker1945problem}. Most participants tried to either tack the candle directly to the corkboard, or melt the candle onto the corkboard, but neither solution was stable. Some successful participants emptied the tacks out of their box, tacked the box itself to the corkboard, and then secured the candle in the box. Success required escaping what Duncker called `functional fixedness' -- excess attachment to one perspective. There's no reason why the box can't be conceptualized as a candle holder; shifting to this different framing solves the problem.
+
+The capacity to adopt multiple perspectives is, fittingly, described in multiple ways across different areas of psychology and cognitive science. `Psychological flexibility' is the ability to update one's approach or lens contextually rather than being fused to a single thought or frame \citep{cherry2021defining}. Conversely, `functional fixedness' is excess attachment to one perspective \citep{duncker1945problem}. `Adaptive experts' dynamically evaluate the appropriateness of different interpretations, analogies or schemas \citep{hatano1984two, feltovich1997issues, spiro1988cognitive}. `Integrative complexity' is first differentiating multiple perspectives on a problem and then identifying connections between them \citep{tetlock1986value, suedfeld1992conceptual}. Humans contextually switch between many `heuristics', each of which processes a problem through its own narrow lens \citep{gigerenzer2009homo}. `Set shifting' is transitioning between task sets, which are the concepts and lenses relevant for particular tasks \citep{miyake2000unity, grant1948behavioral}. These psychological constructs capture a range of scales: people can hold multiple perspectives on something as fine-grained as the color of a dress or something as all-encompassing as their self-construct and the nature of reality. 
 
 
 A recent case study reported a 47 year old man in India who could not stop thinking about how he might have swallowed a plate, a tin sheet, or even a building, leading to significant distress \citep{karnam2025obsessive}.
@@ -810,4 +894,18 @@ We'll first look at examples of overcommitment, both existing and projected.
 Then we'll talk about how the current path of AI development runs the risk of much more severe overcommitment and collapse as a result of extremities attached to AI. 
 
 Technologies have always temporarily overcommitted to particular imperfect forms. [examples].  
+
+
+\subsection{Event boundaries and pattern separation in the brain}
+
+The brain carves experience into discrete units and then reasons about their relationships. This happens both in time and in space. 
+
+In time, the brain segments the continuous flow of experience into discrete, memorable units. At important transitions like the end of a scene in a film, transient neural signals track this event boundary \citep{zacks2001human, zacks2010brain, speer2007human, baldassano2017discovering}. In (conceptual) space, the brain separates continuously-varying sensory experiences into discrete categories or objects. If a cat looks a bit dog-like, it is still recognized as a cat, but as the animal becomes more and more dog-like, at some point neurons in the cortex flip suddenly to recognizing it as a dog \citep{freedman2006experience}. Likewise, similar situations or environments can be encoded by hippocampus with categorically different patterns of activity \citep{leutgeb2007pattern, bakker2008pattern, yassa2011pattern}.
+
+Once the world is chunked into separate units, the brain learns the relationships between them. The detection of an event boundary in time is often followed by rapid neural replay of either the just-completed event, or of events in the more-distant past \citep{ben2013hippocampal, ben2011constructing, kurby2008segmentation, silva2019rapid, hahamy2023human}, and these replays appear to underlie the relational integration of multiple events \citep{hahamy2023human, liu2022hippocampal}. 
+
+Pattern separation facilitates storing distinct memories even when they share features -- like remembering where the car is parked today versus where it was parked yesterday. 
+
+The hippocampus uses a sparse, pattern-separated code for rapid episodic learning, whereas neocortex uses a distributed, overlapping code for slow integration across experiences \citep{kumaran2016learning}. The complementary learning‐systems framework posits that hippocampus and cortex work together: hippocampus quickly binds the specifics of each event (sparse, largely non-overlapping codes) while cortex gradually extracts common structure (distributed codes) across many events \citep{OReilly2014}. 
+
 
