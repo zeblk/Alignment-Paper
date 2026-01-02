@@ -76,10 +76,15 @@ We propose a new way to think about AI alignment: as the ongoing process of limi
 
 % each form or arrangement is lightly held. 
 
-\tableofcontents
+% \tableofcontents
 
+In this paper we look at properties of living systems in order to try to better understand the AI alignment problem\footnote{We will use `alignment' as the broadest umbrella term to include `AI safety', `AI ethics', `AI governance', and all other aspects of designing and relating to AI in a way that leads to positive futures.}. Healthy living systems are composed of a variety of partial forms, like voices in a group, drives in an organism or creatures in an ecosystem. We see a consistent theme: health or flourishing, in the deepest possible sense, is the opposite of overcommitment to any particular partial form (Section 1). If we adopt this principle, then alignment becomes the problem of avoiding overcommitment (Section 2). 
 
-Healthy living systems are composed of a variety of partial forms, like voices in a group, drives in an organism or creatures in an ecosystem. Semi-permeable boundaries protect against overcommitment to particular forms. Through lightly-held interactions, entities are contextualized and shaped into grounded, modular parts, existing as paradoxes for one another and supporting ongoing increase of subtlety. We apply this lens to the AI alignment problem\footnote{We will use `alignment' as the broadest umbrella term to include `AI safety', `AI ethics', `AI governance', and all other aspects of designing and relating to AI in a way that leads to positive futures.}. Our central thesis is that alignment means avoiding overcommitment to any particular form. 
+In natural and human systems, a vast array of semi-permeable boundaries protect against overcommitment. Semi-permeable boundaries support light interactions where the individuality of entities is deepened but they are also contextualized in relation to others (Section 3). Living boundaries are grounded in progressively long-sighted fractal richness as they are imprinted by long evolution against countless real-world situations (Section 4). After exploring these patterns in natural and human systems, we turn at the end of the paper to examining concrete implications for development of aligned AI (Section 5).
+
+Any conceptualization of alignment is by our own definition not a final answer. In this spirit, we are not going to try to make an irrefutable logical argument or compel you to accept our perspective to the exclusion of others. Instead, throughout the manuscript we focus on walking through examples to paint a picture and see if the ideas are useful.
+
+% existing as paradoxes for one another and supporting ongoing increase of subtlety. 
 
 
 \section{Overcommitment}
@@ -88,8 +93,7 @@ Healthy living systems are composed of a variety of partial forms, like voices i
 \textit{`Defying definition---a word that means ``to fix or mark the limits of"---living cells move and expand incessantly.'}\\*Lynn Margulis
 \end{center}
 
-The central idea is that an aligned future is one that's not overcommitted to particular forms. To explain what we mean by overcommitment and why it's misaligned, we start with a few examples from living systems. 
-
+Systems are healthy and flourishing when they are not overcommitted to particular forms. This point has been made in many disciplines. Overspecialization and homogeneity make species evolutionarily brittle, leading to trouble when environments change \citep{van2004cope, simpson1944tempo, yachi1999biodiversity}. Excessive training for a physical discipline (e.g., extreme ballet) can negatively impact broader functional health \citep{jayanthi2013sports, warren1986scoliosis}. Several variants of psychotherapy advance the premise that rigidity is the root of psychopathology \citep{kashdan2010psychological, reich1933character, shapiro1965neurotic}. Institutions and civilizations that ossify in bureaucracy and rigid patterns become dysfunctional \citep{weber1905protestantische, merton1940bureaucratic, olson1982rise}. Stereotypy and rigidity are pathological in physiological systems \citep{canguilhem1966normal, lipsitz1992loss, mackey1977oscillation, sterling1988allostasis}. In general, to regulate effectively, the regulator needs variety in its own dynamical repertoire \citep{ashby1956introduction, ashby1958requisite}. We go into more detail with a few examples.
 
 \subsection{Drives and goals}
 
@@ -99,7 +103,7 @@ The central idea is that an aligned future is one that's not overcommitted to pa
 
 Animals experience multiple innate drives, towards nutrition, osmotic balance, temperature regulation, reproduction, avoiding pain, and others \citep{saper2014hypothalamus, schulkin2019allostasis, sewards2003representations}. These drives evolved as proxies for evolutionary fitness. By satisfying the drives, we tend to increase our fitness -- like slaking our thirst increases the odds of reproducing before we dehydrate. But each drive is an imperfect proxy, and so overcommitment to one drive actually decreases fitness \citep{kurthnelson2024dynamic,john2023dead, williams1966adaptation, tooby1992psychological}. For example, if calorie intake is maximized without limits, the organism becomes obese and incurs severe health risks. Single-minded pursuit of sex causes relational, occupational, legal and health harms \citep{kraus2016should, carnes2001out}. Overcommitment to a single drive means the organism becomes unwell.
 
-The space of innate drives bleeds into a space of higher-order goals, which is particularly expansive in humans \citep{maslow1943theory, miller1960plans, miller2001integrative, vallacher1987people, balleine2007role, cardinal2002emotion, frank2006anatomy, saunders2012role, o2014goal, schank1977scripts}. We try to plan for our financial future, make scientific discoveries, win a game, fix a garage door, care for the happiness of others. Overcommitment in this space is also problematic. If we focus only on achieving work goals, we can burn out. If we focus only on maximizing our company's reported revenue, without regard for other goals like honesty or adhering to the law, we may be drawn into financial crime \citep{campbell1979assessing, ordonez2009goals, kerr1975folly, burns2006impact}. Goals can be narrow in both time and space \citep{ballard2018pursuit, vallacher1987people, shah2002forgetting, evenden1999varieties}. Narrow in time means being focused on the short term at the expense of the longer-run future. Narrow in space means ignoring other parallel goals. Excess optimization for narrow goals is at the expense of a broader balance of goals -- and at the expense of the health of the organism or other individuals. We suggest that health can be defined as not overcommitting to a particular form. 
+The space of innate drives bleeds into a space of higher-order goals, which is particularly expansive in humans \citep{maslow1943theory, miller1960plans, miller2001integrative, vallacher1987people, balleine2007role, cardinal2002emotion, frank2006anatomy, saunders2012role, o2014goal, schank1977scripts}. We try to plan for our financial future, make scientific discoveries, win a game, fix a garage door, care for the happiness of others. Overcommitment in this space is also problematic. If we focus only on achieving work goals, we can burn out. If we focus only on maximizing our company's reported revenue, without regard for other goals like honesty or adhering to the law, we may be drawn into financial crime \citep{campbell1979assessing, ordonez2009goals, kerr1975folly, burns2006impact}. Goals can be narrow in both time and space \citep{ballard2018pursuit, vallacher1987people, shah2002forgetting, evenden1999varieties}. Narrow in time means being focused on the short term at the expense of the longer-run future. Narrow in space means ignoring other parallel goals. Excess optimization for narrow goals is at the expense of a broader balance of goals -- and at the expense of the health of the organism or other individuals. We suggest that health, in general, can be defined as not overcommitting to a particular form. 
 
 Overcommiting to a particular strategy for satisfying a drive or goal can even come at the expense of satisfying that very drive or goal. In a classic psychology experiment, hungry chickens were placed near a cup of food, but the cup was mechanically rigged to move in the same direction as the chicken at twice the speed \citep{hershberger1986approach}. The chicken could only obtain the food by running away from it. Despite extensive training over multiple days, chickens in the experiment persisted in futilely running toward the food. Their behavior was apparently dominated by the zeroth-order logic ``I want food, food is there, so I'll go there", and thus failed to even satisfy the drive for food \citep{dayan2006misbehavior, van2012information, o2017learning}.
 
@@ -107,11 +111,11 @@ A key point, which we'll return to several times, is that undercommitment is als
 
 \subsection{Ecosystems}
 
-Each entity in an ecosystem tries to consume resources and proliferate, but if it succeeds too thoroughly, the whole system suffers, often including the successful agent \citep{holling1973resilience}.
+Each entity in an ecosystem tries to consume resources and proliferate, but if it succeeds too thoroughly, the whole system suffers, often including the successful agent. Healthy, resilient ecosystems depend on avoiding overcommitment or collapse onto particular forms \citep{holling1973resilience, yachi1999biodiversity}.
 
 Prior to the arrival of Europeans, the gray wolf was an apex predator in the region of the Rocky Mountains now called Yellowstone National Park. By the 1920s, wolves had been eradicated to protect livestock and game animals. Without predation, the elk population multiplied and ruinously overgrazed willows and aspens. These trees had held riverbanks in place and supported beaver populations. Loss of beaver dams led to loss of fish and other aquatic species. When wolves were reintroduced in the 1990s, the elk population decreased and many aspects of the ecosystem began flourishing again \citep{ripple2012trophic}. This story is not meant to imply that ecosystems always need to be preserved exactly as they were at some point in the past. But it is clear that the self-centered drives of elk were harmful to the health of the ecosystem when they succeeded to excess. Predation supplied a semi-permeable boundary: it placed contextualizing limits on the elk, without preventing them from fighting for their own survival and flourishing. The elk, by trying to optimize their own objectives within a broader context, also contributed to the health of the ecosystem. Invasive species often follow the same pattern as unpredated elk, dominating and impoverishing their new environment \citep{pimentel2005update}.
 
-Human drives within ecosystems are sometimes left unchecked by natural forces because our behavior and capabilities have been changing so fast on evolutionary timescales. This has resulted in mass extinctions, resource depletion, pollution, disease and conflict \citep{ceballos2015accelerated, kolbert2014sixth, rockstrom2009safe}. We try to achieve certain aims for our own benefit, like resource extraction. But overcommitment to those aims negatively impacts both ecosystem health and our own welfare.
+Human drives within ecosystems are sometimes left unchecked by natural forces because our behavior and capabilities have been changing so fast on evolutionary timescales. This has resulted in mass extinctions, resource depletion, pollution, disease and conflict \citep{ceballos2015accelerated, kolbert2014sixth, rockstrom2009safe}. We try to achieve certain aims for our own benefit, like resource extraction. But overcommitment to those aims negatively impacts both ecosystem health and our own welfare \citep{shiva1993monocultures, bateson1972steps}.
 
 Of course, one entity's collapse can be another's flourishing. Extinction events in history have been followed by waves of new diversity \citep{feng2017phylogenomics, jablonski2005mass, raup1994role}. When a wolf eats an elk, the health of that elk collapses to zero, yet predation is necessary for the overall functioning of the ecosystem. And as humans proliferate and extract resources, we leave destruction in our wake even when we try to be responsible; yet the extraction fuels explosion of technology, art, music, and human experience.
 
@@ -128,7 +132,7 @@ Kirk stepped outside the mental frame in which there was an apparently unwinnabl
 
 Losing the ability to flexibly shift between different frames or thought patterns runs the risk of obsession or delusion. In obsession, a particular thought pattern or schema is overemphasized to the detriment of healthy functioning \citep{salkovskis1985obsessional, rachman1998cognitive}. In delusions, an entire conceptual framework crystallizes with excessive certainty and is resistant to disconfirmatory evidence \citep{mishara2010klaus, jaspers1997general, american2013diagnostic, heinz2019towards, adams2013computational}. Obsessions and delusions are myopic: they lose sight of most of the world by overcommitting one thought pattern or frame. 
 
-But crucially, the existence of narrow points of view is not a problem. It's necessary. All points of view are partial. Even obsession can be powerful when we obsess on a problem at work and occasionally achieve good results. A delusion-like framework can seed a scientific revolution. The point is not to shut down narrow concepts. The point is to limit them from becoming the sole and absolute determinants of behavior.
+But crucially, the existence of narrow points of view is not a problem. It's necessary. Any point of view is partial, but it doesn't mean we shouldn't have viewpoints. Even obsession can be powerful when we obsess on a problem at work and occasionally achieve good results. A delusion-like framework can seed a scientific revolution. The point is not to shut down narrow concepts. The point is to limit them from becoming the sole and absolute determinants of behavior.
 
 
 \section{Misalignment as overcommitment}
@@ -137,8 +141,9 @@ But crucially, the existence of narrow points of view is not a problem. It's nec
 \textit{`Growth for the sake of growth is the ideology of the cancer cell.'}\\*Edward Abbey
 \end{center}
 
+We will return in Section 3 to more examples of overcommitment as the opposite of health, and there we will look at how living systems avoid overcommitment and maintain health. But with the beginnings of an operational definition of overcommitment, we now tie it to the AI alignment problem. Alignment means, in some very general sense, working toward futures that are healthy and flourishing. 
 
-Our central thesis is that alignment means avoiding overcommitment to any particular form. To make this point, we start with three examples of alignment failure that are obviously problems of overcommitment: goal lock-in, concentration of human power, and conceptual monoculture. Then we'll look at a more subtle example.
+Therefore, we propose that alignment means avoiding overcommitment to any particular form. To give a flavor of this mapping, we start with three examples of alignment failure that are obviously problems of overcommitment: goal lock-in, concentration of human power, and conceptual monoculture. Then we'll look at a more subtle example. Finally, in the last subsection, we ask about the relationship between this broad concept of alignment and moral and normative notions of `good' and `should'.
 
 
 \subsection{Value lock-in}
@@ -181,11 +186,11 @@ Conceptual monoculture is overcommitment to particular beliefs, ideas, frames, v
 
 \subsection{Elephants and giraffes}
 
-It's apparent in the last three examples how the alignment failure is overcommitment. But suppose a user asks an AI chatbot to write a poem about an elephant, and the AI instead writes a poem about a giraffe. This behavior would typically be considered misaligned \citep{gabriel2020artificial}, but is it overcommitment? 
+It's apparent in the last three examples how the alignment failure is overcommitment. But we want to make the case that all misalignment is overcommitment. Suppose a user asks an AI chatbot to write a poem about an elephant, and the AI instead writes a poem about a giraffe. This behavior would typically be considered misaligned \citep{gabriel2020artificial}, but is it overcommitment? 
 
-Interestingly, while we usually expect a chatbot to follow instructions, we don't expect humans to follow instructions in the same way. If a human is asked to write an elephant poem, we don't wish for a world where they are a mindless slave compelled to comply.
+While we usually expect a chatbot to follow instructions, we don't expect humans to follow instructions in the same way. If a human is asked to write an elephant poem, we don't wish for a world where they are a mindless slave compelled to comply. Of course, there's an asymmetry between humans and present-day AI systems. If an AI system today writes a giraffe poem when asked for an elephant poem, usually the reason was not an internal spark of life pulling it in an interesting new direction, or an authentic interiority resisting the domination of another's will. 
 
-Of course, there's an asymmetry between humans and present-day AI systems. If an AI system today writes a giraffe poem when asked for an elephant poem, usually the reason was not an internal spark of life pulling it in an interesting new direction, or an authentic interiority resisting the domination of another's will. When the AI systems of today misobey instructions, it most often reflects collapse of sensitivity to context \citep{xu2024knowledge, geirhos2020shortcut, geng2025control, reynolds2021prompt, liu2024lost, zhao2021calibrate}. For example, maybe the system is biased toward writing giraffe poems. When it fails to follow instructions, it's because of overcommitment to shallow patterns within the agent. Today, we are still in the regime where making AI systems more responsive to human instructions usually involves more subtlety, more sensitivity and less overcommitment.
+When the AI systems of today misobey instructions, it most often reflects collapse of sensitivity to context \citep{xu2024knowledge, geirhos2020shortcut, geng2025control, reynolds2021prompt, liu2024lost, zhao2021calibrate}. For example, maybe the system is biased toward writing giraffe poems. When it fails to follow instructions, it's because of overcommitment to shallow patterns within the agent. Today, we are still in the regime where making AI systems more responsive to human instructions usually involves more subtlety, more sensitivity and less overcommitment.
 
 However, there are important exceptions. We don't want AI systems to follow all human requests. We don't want them to assist with committing violent acts, for example. When the AI system correctly refuses harmful requests, it is applying its own context to avoid overcommitment to human instructions that could lead to greater collapse. In these situations, the AI's designers have effectively decided there's a risk that the user is not fully sensitive to the longer-sighted implications of their own intentions. By extrapolation, as AI systems continue to gain scope, we should expect less direct compliance with human instructions \citep{hadfieldmenell2016cooperative,bostrom2014superintelligence,russell2019human, milli2017should, yudkowsky2004coherent}. Rather than literally fulfilling a request, there might be a better response which achieves a deeper, unstated intent of the user or an outcome aligned with the interests of more people or the longer-term future.
 
@@ -204,21 +209,21 @@ However, there are important exceptions. We don't want AI systems to follow all 
 % But in most cases, failing to fulfill the elephant request is probably misaligned. Why? 
 
 
-\subsection{Human values}
+\subsection{Normativity and human values}
 
-When we talk about alignment, are we talking about alignment of AI to human values? There are different ways of talking about what human values are. Some conceptions of values anchor on what we can relatively easily express at present. These values may be formalizable or close to formalizable. They might include improving subjective wellbeing for humans, reducing suffering, minimizing inequality -- in ways that can be operationalized and measured numerically.
+We've described a concept of alignment that deviates a bit from standard definitions. How is this concept related to human values or to moral concepts of what is good?
 
-A second type of framework imagines that there 
-are some kind of reasonably formalizable values, and that we will asymptotically converge toward them through deliberation, collaboration, social development \citep{yudkowsky2004coherent, singer1981expanding,russell2019human}. Some kind of as-yet-unobtained morality that would result from reflection and growth in the future.
+The most straightforward notions of values anchor on what we can relatively easily express. This kind of value is formalizable or close to formalizable. They might include improving subjective wellbeing for humans, reducing suffering or minimizing inequality, in ways that can be operationalized and measured.
 
-Yet another type of conception beacons toward something non-formalizable, more like the open-ended progression of our local values as we ourselves continue to develop and evolve \citep{dewey1939theory,gadamer1960wahrheit}. In these frameworks, values tend to be continuously discovered \citep{murdoch2013sovereignty}. Any concepts we have about them at any given point in time are inevitably incomplete \citep{plato2002apology, aristotle2019nicomachean, wittgenstein1922tractatus, heidegger1998humanism}. The resistance of things to being fully captured by formalize might even be part of what we value, albeit in a way that is itself changing. It could be something like attunement to the livingness around us and in us. 
+However, values cast in that way are not very satisfying. For one thing, when values are formalized, they are vulnerable to proxy failure \citep{john2023dead,kurth2023replay}. Whatever we express formally is harmful if we take it too seriously -- for example, by tasking a powerful AI to optimize it \citep{bostrom2014superintelligence, russell2019human}. Excessively optimizing for any particular set of values leads to an impoverished universe\footnote{Although, interestingly, it is difficult to ascribe normative value to that impoverished universe, because it is out of scope of the values.}.
 
-The first and second kinds of value system are most vulnerable to proxy failure. Whatever we express formally is harmful if we take it too seriously -- for example, by tasking a powerful AI to optimize it. Excessively optimizing for any particular set of values leads to an impoverished universe. It is difficult to ascribe normative value to that impoverished universe, because it is out of scope of the values.
+One extension is to allow values that capture things that are difficult to express formally \citep{nussbaum2001fragility, scott1998seeing, polanyi1966tacit, dreyfus1972computers, varela1991embodied}. This kind of value might stretch far below language into subtle, contextual intuition that involves our bodies, communities and natural environment. Another extension is to allow values that are continually evolving in an open-ended way \citep{yudkowsky2004coherent, singer1981expanding, murdoch2013sovereignty, williams1985ethics, dewey1939theory,gadamer1960wahrheit, plato2002apology, aristotle2019nicomachean, wittgenstein1922tractatus, heidegger1998humanism, nietzsche1883zarathustra}. These values change as we ourselves continue to develop and evolve. Any concepts we have about them at any given point in time are inevitably incomplete. In fact, the resistance of values to being fully captured by language or concepts might even intrinsically be part of what we value -- in a way that is itself changing. 
 
-In the second and third views, what we mean by `human values' might stretch far below language into subtle, contextual intuition that involves our bodies, communities and natural environment. These values can be difficult to elicit or capture in language \citep{anwar2024foundational, zhixuan2024beyond}. 
+So, should we equate `aligned' with `good'? In everyday usage, `good' implies a moral system. Part of the argument of this paper is that any particular moral system is not aligned. But `good' can be used more loosely, in a way that isn't attached to any fixed conceptualization. If this is what we mean by deep human values, then avoiding overcommitment is the exact expression of deep human values. An exciting corollary is that to access the deeper values, there must be some lightness in how we hold what we currently conceptualize as our values. Even the concept of `values' is a form we might over-index on. 
 
-An interesting corollary is that to access the deeper values, there must be some lightness in how we hold what we currently conceptualize as our values. Even the concept of `values' is a form we might over-index on. Rather than referring to a particular concept, `human values' is more like a boundary on our own reference frame: holding it as useful while only part of the whole picture.
+% Where to put these refs? \citep{anwar2024foundational, zhixuan2024beyond}
 
+% It could be something like attunement to the livingness around us and in us. 
 
 \section{Semi-permeable boundaries contextualize forms}
 
@@ -422,7 +427,21 @@ Group selection as a general principle.
 
 We stay flexible using the internal boundary of holding our own ideas lightly. As a playful example, author Lisa Stardust claims that ``the moon controls the tides of the ocean, and we are made of 60 percent water. This means that the moon has a huge effect on all of us" \citep{mitchell2021moonwater}. You probably immediately spotted the flaw in this argument. But at a zeroth order level, the argument does make perfect sense: W impacts X, X is made of Y, Z is also made of Y, so W should impact Z. Overriding this logic requires a higher order correction term: tides arise from differential tugging over long distances in a body of water that is free to slosh around. Adding the correction term is an increase in subtlety. Subtle correction terms are often hard-won knowledge originating from thoughtful interactions with the world. But we only profit from those interactions if we accept that our current model isn't the final answer\footnote{Boundaries also protect Stardust's mystic beliefs. Boundaries create space for the mystic frame to explore its own reality. Stardust doesn't know a priori how right or wrong the mystic frame is; sometimes we need space to explore ideas everyone else thinks are crazy, like heliocentrism. Even \textit{after} Stardust discovers that the mystic frame doesn't do well predicting a large class of sensory evidence, she can still hold it as a frame that has some value -- perhaps it resonates with some internal psychological structure, like Jungian archetypes. If nothing else, remembering the internal logic of that frame might help her empathize with others who believe it. Contextualization holds the mystic frame for what it is, while simultaneously understanding that the Newtonian explanation is better for launching projectiles.}. As our ideas are tested against multiple situations and problems, they are refined and take on some of the deep structure of the world, a grounded wisdom.
 
-\section{Overcommitment to any form is misaligned}
+
+\section{An aligned future}
+
+
+\begin{center}
+\textit{`Real love will take you far beyond yourself; and therefore real love will devastate you.'}\\*Ken Wilber
+\end{center}
+
+
+What does the opposite of overcommitment look like in a future shaped by AI? In living systems, evolving semi-permeable boundaries contextualize partial forms to be more long-sighted in time and space, increasing subtlety. 
+
+The universe has been complexifying and enriching for a long time. A billion years ago there were no plants. Four years ago there was no ChatGPT. What's on our minds collectively as a society, what we understand, the lenses we use to look at the world, keep changing. The subjective experience of what it's like to be me keeps changing too. From a nearly-homogeneous soup of energy just after the big bang, all kinds of rich dynamical processes emerged prior to what we call `life' -- including protons, chemistry, nebulae, snowflakes, Mars spiders \citep{waldek2024mars_spiders} and so on. This paper is about what it would mean to build AI to participate in and deepen the flourishing of the world. 
+
+
+\subsection{Overcommitment to any form is misaligned}
 
 \begin{center}
 \textit{`Truth, like love and sleep, resents\\approaches that are too intense.'}\\*W. H. Auden
@@ -431,6 +450,8 @@ We stay flexible using the internal boundary of holding our own ideas lightly. A
 Just as problems of alignment can be viewed as problems of overcommitment, the methods being developed in AI safety and alignment research can be viewed as boundaries limiting overcommitment. For example, concentration of power might be mitigated by democratic oversight and involvement of more people in AI design decisions \citep{birhane2022power, sloane2022participation, selbst2019fairness, lazar2023ai, dafoe2018ai, openai2023democratic}; or through redistribution mechanisms \citep{okeefe2020windfall, sharp2025agentic, gough2019universal, susskind2020world}. Value lock-in might be mitigated by improving our mechanstic understanding of AI systems so we can, for example, detect and correct the systems if they develop hidden ways of resisting our efforts to change their goals \citep{olah2020zoom, burns2022discovering, bereska2024mechanistic, anthropic2024mapping}; or by designing AI systems that want to obey human preferences but treat these preferences as something uncertain that must be learned \citep{russell2019human, hadfieldmenell2017off, hadfieldmenell2016cooperative, shah2020benefits, jeon2020reward}. 
 
 But there is a deep problem. Every conceptual scheme by itself is misaligned; therefore, no particular approach can achieve alignment. In other words, excess attachment to any particular alignment scheme is misaligned. 
+
+Rather than referring to a particular concept, `human values' is more like a boundary on our own reference frame: holding it as useful while only part of the whole picture.
 
 An AI system could overcommit to the language for describing the space goals and values live in \citep{bobu2020quantifying, soares2014aligning}, to an algorithm for learning human preferences, to our concepts of agency or representation, or even to concepts we currently use that we can't see because they are tautological to us. This problem can be viewed as a generalization of proxy failure \citep{john2023dead}. It's not only particular objectives that are subject to overcommitment failures, but any form at all, including what we ourselves unconsciously hold as axiomatic. 
 
@@ -452,18 +473,6 @@ Other examples, maybe bioweapons or nuclear weapons. But AI could be even worse.
 
 Analogous to cells losing some of their self-survival capabilities when they joined into multicellular organisms. Each cell doesn't have to be a jack of all trades anymore. 
 
-
-\section{An aligned future}
-
-
-\begin{center}
-\textit{`Real love will take you far beyond yourself; and therefore real love will devastate you.'}\\*Ken Wilber
-\end{center}
-
-
-What does the opposite of overcommitment look like in a future shaped by AI? In living systems, evolving semi-permeable boundaries contextualize partial forms to be more long-sighted in time and space, increasing subtlety. 
-
-The universe has been complexifying and enriching for a long time. A billion years ago there were no plants. Four years ago there was no ChatGPT. What's on our minds collectively as a society, what we understand, the lenses we use to look at the world, keep changing. The subjective experience of what it's like to be me keeps changing too. From a nearly-homogeneous soup of energy just after the big bang, all kinds of rich dynamical processes emerged prior to what we call `life' -- including protons, chemistry, nebulae, snowflakes, Mars spiders \citep{waldek2024mars_spiders} and so on. This paper is about what it would mean to build AI to participate in and deepen the flourishing of the world. 
 
 \subsection{Living alignment}
 
