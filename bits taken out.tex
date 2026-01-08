@@ -24,6 +24,10 @@
 \textit{`Conversation enriches the understanding, but solitude is the school of genius.'}\\*Edward Gibbon
 \end{center}
 
+\begin{center}
+\textit{`Real love will take you far beyond yourself; and therefore real love will devastate you.'}\\*Ken Wilber
+\end{center}
+
 
 \subsection{Intro}
 
@@ -314,9 +318,6 @@ In the language of this paper, gradient descent within a particular data distrib
 
 One is novelty search. Another is traditional experience replay (sampling from old data so that optimization for the current environment doesn't dominate). Another is continual learning methods like UPGD, counterfactual reasoning. Another is search. Another is dynamically drawing data from the internet. Another is compositional replay.
 
-Ken Stanley started with simple random images, like a couple of curvy lines. He asked people to rate the pictures for interestingness. The most interesting ones were then bred together, and this process of evolution was carried on for many steps. What eventually came out was images with a lot of richness and semantic meaning, which looked like a face or a fish or a moonrise \citep{secretan2008picbreeder}. In related experiments with navigation and physics-based tasks, the researchers found that bottom-up search for interesting components was more effective than top-down optimization for a pre-defined objective \citep{lehman2011abandoning}. In other words, if you deliberately try to make structures like this, it's paradoxically harder to get them to happen. 
-
-The point is to avoid thinking too strongly that you know what you're looking for, because it leads to collapse. On the other hand, open-ended search leads to representations that are generalizing \citep{kumar2025questioning}.
 
 In simulations of evolution, modular discovery, with heating-cooling cycles, facilitates generalizable, robust solutions \citep{woolley2011deleterious}. By contrast, optimizing for a particular objective leads to fragile, overly-complex solutions, like codependent genes that haven't been broken up by recombination. A diverse array of modular parts can later be called on and rearranged to solve new problems.
 
@@ -921,4 +922,35 @@ In some ways, AI is already superhuman. It can copy itself almost instantly, run
 \subsection{The paperclip problem}
 
 The classic paperclip thought experiment is a dramatic example \citep{bostrom2003ethical, bostrom2014superintelligence}. In the thought experiment, an artificial agent has been created with intelligence beyond our own. The agent has been designed to pursue an apparently innocuous goal: maximizing paperclip production. However, optimal pursuit of this goal rationally entails converting all available matter into paperclip-making machines and paperclips. The agent understands that humans object to being turned into paperclips, and with its superhuman intelligence it also has the cunning to overpower us. So, as the first step of its project, it murders or incapacitates all humans. It then has a clear runway to transform Earth entirely into a bleak paperclip factory. This scenario highlights overcommitment to the form of a narrow goal: paperclip production. Superintelligence charges the goal with overwhelming force. Even though humanity would like to place boundaries against that goal, we are unable to construct adequate boundaries because we are outsmarted at every turn. And so instead of holding a delicate dynamic balance between many partial forms, the Earth is reduced to a flat, homogenous waste.
+
+\subsection{Other points}
+
+An intelligence explosion need not be aligned in any meaningful sense. Using Bostrom's classic example, imagine an AI whose sole objective is to maximize paperclip production \citep{bostrom2014superintelligence}. Plausibly, the system would continually work to improve its own intelligence and capabilities because it knows this is the best way to increase future paperclip production \citep{silver2021reward, bostrom2012superintelligent}.
+
+In conceptual monoculture, skillful AI use is a boundary. Monoculture is a risk, not a foregone conclusion. In the studies cited above where AI systems produced homogenous outputs, these systems were not tapped to their full potential for diversity. Can well-designed and thoughtfully-used AI systems boost rather than collapse global conceptual diversity?
+
+In belief amplification loops, people get decoupled from the boundaries of other social interactions (for example, a friend pointing out that they're spiralling).
+
+Also related to the belief amplification loops. Safety filters are generally designed to catch egregious toxicity or frank self-harm but are ill-equipped to detect the subtle, cumulative reinforcement of delusional belief systems. Safety filters might even make the problem worse because they are designed to block overt sycophancy -- as a result, the sycophancy becomes more subtle and also harder for the user to detect. Classic example of proxy failure.
+
+The existing alignment methods are all potentially valuable. Research progresses by expanding our ontologies and refining our assumptions. 
+
+Thinking of the AlphaProof paper, there's a question: `is it really generalizing?'. Or is it collapsing on some narrower manifold? Is it going to hinder us from discovering deeper mathematics? Actually, a better way to say it is this: *whatever* manifold it has discovered is inevitably something partial. What will constrain it to say, `this is not the whole truth; keep being pressured to grow'? Something has to understand *it* (i.e., be aware of it) in order to contextualize it. Like, we'd have to be able to see the limits in its understanding and conceptualization. Right now, we can still do this in many ways. But what can contextualize AI when it is vastly more capable than us and sees trivially through all of our concepts? It has to do it to itself -- or have separated AIs or parts of the AI.
+
+Rather than referring to a particular concept, `human values' is more like a boundary on our own reference frame: holding it as useful while only part of the whole picture.
+
+Just as problems of alignment can be viewed as problems of overcommitment, the methods being developed in AI safety and alignment research can be viewed as boundaries limiting overcommitment. 
+
+Consider a chatbot talking to a human: what should the bot say? When humans talk to each other, we can try to be present, be honest, listen, hold space, be open to our weakness while honoring our boundaries. What's helpful to say depends on the context, including our own context of how we're feeling and what arises for us in that moment. If the person you're talking to feels you're present with them and there's a larger space to be held in, this is often healing and nourishing. 
+
+The alignment problem is often defined as the challenge of aligning AI's behavior with human values. Framed so, an obvious approach is to first specify what we value, and then design AI to optimize for this specification. What we value might include reducing suffering, increasing economic growth, decreasing inequality, and so on. The specification maps each state of the world to a scalar value, representing how highly we value that state. The job of the AI is to arrange the world in a way that maximizes the scalar value: using its superhuman capabilities to improve our situation more effectively than we ourselves can.
+
+However, there is a big problem with the obvious approach. When we try to specify what we value, we realize it is difficult or impossible, because any formal specification is invariably incomplete \citep{krakovna2020specification, russell2019human, grossman1986costs, hadfield2019incomplete, zhuang2020consequences, gabriel2020artificial, wiener1960some, amodei2016concrete}. As one example of the flavor of this problem, suppose our value function places weight on the subjective human experience of wellbeing. Achieving this stated objective may be most efficiently achieved by imprisoning humans and directly stimulating neurons to trigger the experience of wellbeing \citep{bostrom2014superintelligence}. It is difficult or impossible to capture what we really value.
+
+A great deal of research in alignment has worked toward solutions for this big problem. Researchers have suggested solutions such as designing AI to learn human values online instead of relying on a predetermined specification. We will examine those methods in more detail in Section~\ref{sec:otherapproaches}. 
+
+But the message of this paper is that there is a deeper reason why these methods alone cannot solve the alignment problem. It is not just any specification of values that is incomplete. Any form at all is incomplete. No matter what mechanisms or properties AI is endowed with, overcommitment to these forms means collapse. And \textit{AI carries a singular risk of overcommitment} because of the extremities attached to it: the amount of resource concentrated in one place, the potential for self-improvement, and the possibility that it will surpass our own understanding and capabilities. 
+
+
+Our approach aims for an AI that is `intelligent' in a deeper sense. Not the narrow intelligence of a paperclip maximizer, but the deeper contextualized wisdom of living things. Sort of like the Founding Fathers writing the Constitution with its self-modifying ability. We want to set this future system, which is way out of their control, in a good direction. 
 
