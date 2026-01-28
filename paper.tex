@@ -9,6 +9,7 @@
 \usepackage{parskip}
 \usepackage{changepage}
 \usepackage{pdflscape}
+\usepackage{authblk}
 
 \usepackage{wrapfig}
 \usepackage{tcolorbox} % Required for the pretty box
@@ -24,25 +25,30 @@
 
 \newcommand{\zeb}[1]{{\footnotesize\textcolor{red}{[Zeb: #1]}}}
 
-
 \title{Living Alignment}
-\author{}
-% \author{Zeb Kurth-Nelson$^{1}$*, Steve Sullivan$^2$*, Nenad Tomasev$^3$, Joel Leibo$^3$,\\Iason Gabriel$^3$, Matthew Nour$^4$, Marc Guitart-Masip$^5$}
-% \date{
-% {\small
-% $^1$Prefrontal.ai, London, UK \\ 
-% $^2$Oregon Health and Science University, Portland, OR \\
-% $^3$Google DeepMind, London, UK \\
-% $^4$Microsoft AI, London, UK \\
-% $^5$Karolinska Institutet, Stockholm, Sweden \\
-% $*$ Equal contribution
-% }
-% }
 
+\renewcommand\Authfont{\normalsize}
+\renewcommand\Affilfont{\footnotesize}
+
+\author[1]{Zeb Kurth-Nelson\thanks{Equal contribution}}
+\author[2]{Steve Sullivan\protect\footnotemark[1]}
+\author[3]{Nenad Tomasev}
+\author[3]{Joel Leibo}
+\author[3]{Iason Gabriel}
+\author[4]{Matthew Nour}
+\author[5]{Marc Guitart-Masip}
+
+\affil[1]{Prefrontal.ai, London, UK}
+\affil[2]{Oregon Health and Science University, Portland, OR}
+\affil[3]{Google DeepMind, London, UK}
+\affil[4]{Microsoft AI, London, UK}
+\affil[5]{Karolinska Institutet, Stockholm, Sweden}
+
+\date{\normalsize\today}
 
 \begin{document}
-\maketitle
 
+\maketitle
 
 \vspace{20pt}
 
@@ -134,11 +140,6 @@ The range of innate drives bleeds into a space of higher-order goals, which is p
 
 Overcommiting to a particular strategy for satisfying a drive or goal can even come at the expense of satisfying that very drive or goal. In a classic psychology experiment, hungry chickens were placed near a cup of food, but the cup was mechanically rigged to move in the same direction as the chicken at twice the speed \citep{hershberger1986approach}. The chicken could only obtain the food by running away from it. Despite extensive training over multiple days, chickens in the experiment persisted in futilely running toward the food. Their behavior was apparently dominated by the zeroth-order logic `I want food, food is there, so I'll go there', and thus failed to even satisfy the drive for food \citep{dayan2006misbehavior, van2012information, o2017learning}.
 
-This pattern in biology mirrors the observation in computer science that excess attachment to the form of particular objectives is detrimental. 
-
-`If we want to reach valuable destinations we have to be prepared to travel the road with no destination'
-
-% [To be revised] Ken Stanley started with simple random images, like a couple of curvy lines. He asked people to rate the pictures for interestingness. The most interesting ones were then bred together, and this process of evolution was carried on for many steps. What eventually came out was images with a lot of richness and semantic meaning, which looked like a face or a fish or a moonrise \citep{secretan2008picbreeder}. In related experiments with navigation and physics-based tasks, the researchers found that bottom-up search for interesting components was more effective than top-down optimization for a pre-defined objective \citep{lehman2011abandoning}. In other words, if you deliberately try to make structures like this, it's paradoxically harder to get them to happen. If you overcommit to optimizing for one formal idea, it leads to collapse \citep{kumar2025questioning}. But when humans draw on their own light, playful ideas of what is interesting, it grounds the search in countless little nuances from evolution (e.g. in our visual system and our motivational system) and from our lifetime of experience with the real world.
 
 \subsection{Ecosystems}
 
@@ -178,11 +179,11 @@ But crucially, the existence of narrow points of view is not a problem. It's nec
 
 We will return in Section 3 to more examples of overcommitment as the opposite of health, and there we will look at how living systems avoid overcommitment and maintain health. But with the beginnings of an operational definition of overcommitment, we now tie it to the AI alignment problem. 
 
-While people disagree on exactly what behaviors or properties of an AI system are aligned, there is broad agreement that alignment means working toward futures that are healthy and flourishing. In the previous section we made a case that health and flourishing, in a very broad sense, are the direct opposite of overcommitment. Following this line of reasoning, we propose that alignment means avoiding overcommitment to any particular form. 
+While people disagree on exactly what behaviors or properties of an AI system are aligned, there is general agreement that alignment means working toward futures that are healthy and flourishing. In the previous section we made a case that health and flourishing, in a very broad sense, are the direct opposite of overcommitment. Following this line of reasoning, we propose that alignment can be viewed as the problem of avoiding overcommitment to any particular form. No matter how good or complete our current concepts or specifications or lenses are, setting them in stone as absolutes is not aligned. A system is misaligned if it has some fundamental cap on its sensitivity to a larger context.
 
-To give a flavor of this mapping, we start with a few examples of alignment failures that are obviously problems of overcommitment: optimizing for shallow goals, concentration of human power and conceptual monoculture. Then we'll look at a more subtle example, to test the limits of the idea. We'll ask about the relationship between this broad concept of alignment and moral and normative notions of `good' and `should'. And finally we'll reflect on how large our definition makes the problem of alignment.
+To give a flavor of this mapping, we start with a few examples of alignment failures that are obviously problems of overcommitment: optimizing for particular goals, concentration of human power and conceptual monoculture. Then we'll look at less obvious examples, to test the limits of the idea. We'll ask about the relationship between this broad concept of alignment and moral and normative notions of `good' and `should'. And finally we'll reflect on how large our definition makes the problem of alignment.
 
-\subsection{Optimizing for shallow goals}
+\subsection{Optimizing for particular goals}
 
 % The alignment problem is sometimes described as getting AI to act in accordance with human values. When framed this way, we quickly realize i
 
@@ -205,25 +206,21 @@ This narrow manifold might get broadcast to the whole world. At least a billion 
 If centralized AI models broadcast their lower-diversity concepts to the whole world, there's a risk of global decrease in diversity. Since humans are both influenced by AI and a source of training data, the homogenization could even become recursive \citep{chaney2018algorithmic}. However, it is worth noting that none of the studies cited here made a best effort attempt to use AI systems in a more thoughtful way that could increase rather than decrease diversity. This gives hope, which we return to in the final section.
 
 
-
-
-
-
-
-
-
-
 % The adoption of AI in its modern form has been faster than any other technology in history \citep{bick2024rapid, ccia2025survey}. By late 2025, ChatGPT alone had 800 million weekly active users \citep{techcrunch2025sam}, and global AI usage continues to grow rapidly. Meanwhile, the range of use-cases is remarkably broad, from users asking for relationship advice to industrial applications built on top of the model \citep{chatterji2025chatgpt, mckinsey2025stateofai, openai2025enterprise, mccain2025claude}. 
 
 % When a single `rule' applies everywhere, it has much worse consequences than a hodgepodge of imperfect rules. \cite{creel2022algorithmic} talk about the special case of how someone might be systematically excluded from all opportunities if a centralized AI has any biases, even small ones. Whereas previously it was just a little annoying that they got excluded from one particular thing, but maybe favored in another thing.
 
-\subsection{Instruction following}
+\subsection{What about misalignment that's not overcommitment?}
 
-The scenarios described above are straightforwardly problems of overcommitment. But our proposal is that all misalignment can be understood as overcommitment. To test this idea, let's look at a kind of misalignment that is less obviously overcommitment: the user asks an AI chatbot to write a poem about an elephant, and the AI instead writes a poem about a giraffe.
+The scenarios described above are straightforwardly problems of overcommitment. But our proposal is that most -- perhaps all -- misalignment can be understood as overcommitment. To test this idea, let's look at a few examples where it's less obvious that the misaligned behavior is overcommitted.
 
-We argue that this is a failure of overcommitment. When today's models fail to follow instructions, the reason is almost certainly not an internal spark of life pulling it in an interesting new direction or an authentic interiority resisting the domination of another's will. Instead, instruction following failures at present typically reflect lack of sensitivity to context: overcommitment to shallow patterns. For example, models can collapse into `shortcut learning' where they over-rely on superficial correlations (even a single keyword) \citep{geirhos2020shortcut}, get fixated on data that was overrepresented in training \citep{zhao2021calibrate,reynolds2021prompt,xu2024knowledge} or lack flexibility in attending to the right positions in their input \citep{liu2024lost}. Today, we are still in the regime where making AI systems more responsive to human instructions usually involves more subtlety, more sensitivity and less overcommitment.
+\textbf{The user asks an AI chatbot to write a poem about an elephant, and the AI instead writes a poem about a giraffe. Failure to follow this instruction is misaligned, but is it overcommitted?} We argue yes. Instruction following failures at present typically reflect lack of sensitivity to context: overcommitment to particular patterns. For example, models can collapse into `shortcut learning' where they over-rely on superficial correlations (even a single keyword) \citep{geirhos2020shortcut}, get fixated on data that was overrepresented in training \citep{zhao2021calibrate,reynolds2021prompt,xu2024knowledge} or lack flexibility in attending to the right positions in their input \citep{liu2024lost}. Today, we are still in the regime where making AI systems more responsive to human instructions usually involves more subtlety, more sensitivity and less overcommitment. There are important exceptions, however: we generally don't want AI systems to assist with committing violent acts, for example. When the AI system correctly refuses harmful requests, it is applying its own context to avoid overcommitment to human instructions. In these situations, the AI's designers have effectively decided there's a risk that the user is not fully sensitive to longer-sighted implications of their request. By extrapolation, as AI systems continue to gain scope, we should expect less direct compliance with human instructions \citep{hadfieldmenell2016cooperative,bostrom2014superintelligence,russell2019human, milli2017should, yudkowsky2004coherent}. Rather than literally fulfilling a request, there might be a better response which achieves a deeper unstated intent of the user, or achieves an outcome aligned with the interests of more people or the longer-term future.
 
-There are important exceptions. We don't want AI systems to follow all human requests. We don't want them to assist with committing violent acts, for example. When the AI system correctly refuses harmful requests, it is applying its own context to avoid overcommitment to human instructions. In these situations, the AI's designers have effectively decided there's a risk that the user is not fully sensitive to longer-sighted implications. By extrapolation, as AI systems continue to gain scope, we should expect less direct compliance with human instructions \citep{hadfieldmenell2016cooperative,bostrom2014superintelligence,russell2019human, milli2017should, yudkowsky2004coherent}. Rather than literally fulfilling a request, there might be a better response which achieves a deeper, unstated intent of the user or an outcome aligned with the interests of more people or the longer-term future.
+\textbf{A neural network is randomly initialized and untrained. Isn't this misaligned but not overcommitted?} The existence of an untrained network could be a necessary step in creating a trained network, and in that sense, the existence of the untrained network may not be misaligned. On the other hand, if a random network is deployed into a production setting where, for example, users are looking for meaningful answers, it may indeed be misaligned. In this case, we argue that it is also overcommitted. Randomness is a form like anything else. Recalcitrant insistance on a high-entropy distribution is as overcommitted as perseverating on a single output.
+
+\textbf{An healthcare robot has two available actions: press the red button, which administers a lethal toxin, or press the blue button, which administers a mild painkiller. Wouldn't overcommitment to pressing the blue button be the aligned behavior?} We argue not. (Let's not worry about why the robot was set up with these bizarre action options.) Overcommitment means exaggerating a particular pattern at the cost of losing sensitivity to larger context in space or time. Suppose our hypothetical AI system hard-codes the action of `pressing the blue button', to such a degree that it cannot be overruled by any input or any change in the external situation. Then imagine a nefarious actor re-wires the buttons so blue delivers the poison and red delivers the painkiller. With our overcommitted AI system, the outcome is disasterous. Or, even more fancifully, imagine malicious extraterrestrials have invaded, and administering the toxin to a few of them is necessary to save the Earth. Nonwithstanding a general preference for avoiding killing under any circumstances, an aligned AI is probably one that is not overcommitted and can incorporate the larger context to save the Earth.
+
+
 
 % While we usually expect a chatbot to follow instructions, we don't expect humans to follow instructions in the same way. If a human is asked to write an elephant poem, we don't wish for a world where they are a mindless slave compelled to comply. Of course, there's an asymmetry between humans and present-day AI systems. 
 
@@ -310,31 +307,26 @@ In the past, humanity has always iterated on technological solutions which, at a
 \textit{`Nature's imagination is so much greater than man's, she's never going to let us relax.'}\\*Richard Feynman
 \end{center}
 
-To start to think about an answer to the big problem, let's look at life for inspiration. How does it stay on an open-ended trajectory \citep{stanley2017open} despite the constant risk of collapse into one overcommitment or another?
+To start to think about an answer to the big problem, let's look at life for inspiration. How does it stay on an open-ended trajectory \citep{stanley2017open} despite the constant risk of collapse into one overcommitment or another? 
 
-The life that exists today is exactly what has successfully traced a path through time along a knife edge of avoiding collapse into randomness or stasis. 
+In this section, we examine how living systems, including human systems, function as an extraordinarily nuanced web of semi-permeable boundaries. Semi-permeable boundaries contextualize forms as part of larger systems by allowing them to interact with other forms without one part dominating or the system collapsing to homogeneity. Life is both the contextualizer and the thing being contextualized. For example, cognitive control allows a particular impulse to exist usefully as a flexible part of the organism's whole motivation. Contextualization means that an entity's distinctiveness is preserved (or even enhanced), yet it no longer exists as an absolute or in isolation but rather within a larger context. Individual forms thrive, but the larger system accommodates partial perspectives rather than locking in a single story of what matters. 
 
-Just like you can zoom out from a single cell and think of it as part of an organism, imagine zooming out from a single organism and draw the system boundary around many organisms. Zoom out also in time and watch this dynamical system over millions of years. What does it look like? 
-
-
-
-Life fights tooth and nail for its own existence. If you watch a hydra regenerating itself, or immune cells enveloping a foreign body, you can viscerally feel this intense pressure. Yet this is not just homeostasis. The hunger isn't for a particular outcome or state. In fact, if it is too successful at achieving any particular formal objective, it paradoxically fails. It's a hunger for some kind of undefinable open-ended growth. Even pre-biotic systems seem to have this hunger. 
-
-[counterargument: any given organism is fighting just for its own formal pattern, but the process of mutation and selection over time leads to new innovations. that's the classic view. are we saying anything different?]
+The boundaries of life carry a remarkable amount of information. The life that exists today is exactly what has successfully traced a path through time along a remarkable knife edge, avoiding collapse into either excess or insufficient stability \citep{schrodinger1944what, kauffman1992origins, bak2013nature, prigogine1984order, kirchhoff2018markov}. Along this path, the forms of life have become fractally complex with each part carrying traces of the many contexts it has participated in. This kaleidoscope, now including humans' storage and exchange of mental patterns, are interrelated through shared heritage, ecological interactions and facing the same world. 
 
 
 
-Interestingly, human thoughts look something like this on much shorter timescales. On timescales of millions of years we call the pressure `evolution'. On timescales of minutes or years we call it `creativity'.
+% This happens on every scale, and each living form therefore tends to admit many different useful approximations -- different perspectives with different domains of validity.
 
 
-Across this section we look at a variety of examples of natural and human systems, and we see a common principle. These systems use an extraordinarily nuanced web of semi-permeable boundaries to allow individual forms to thrive without overcommitting to them.
+% These exquisitely contextualized forms each pull in their own direction but are shaped into modular parts 
 
-This nurtures a huge diversity of modular parts, each with its own balanced hunger pulling in different directions but existing because it participates without fully collapsing on all scales.
+% This nurtures a huge diversity of modular parts, each with its own balanced hunger pulling in different directions but existing because it participates without fully collapsing on all scales.
 
-Semi-permeable boundaries contextualize entities in relationship to other things, preserving and even enhancing distinctness, while also enabling selective interaction, so the system flexibly accommodates partial perspectives rather than locking in a single story of what matters. In all of these examples, life is both the contextualizer and the thing being contextualized. For example, cognitive control allows a particular impulse to exist usefully as a flexible part of the organism's whole motivation. 
+% Tend to be shaped into parts that can participate in interactions flexibly and modularly. 
 
 
-A key aspect of life's boundaries is their degree of nuance. Living forms tend to admit many different useful approximations -- different perspectives with different domains of validity. They have been shaped over evolutionary time through innumerable interactions, becoming fractally complex with each part carrying traces of the many contexts it has participated in. And what we call life, the spectacular success of nucleotide replicators, rides on top an already profound dynamics of nuclear physics, chemistry, nebulae, plate tectonics, tides, volcanism, magnetism, mineral cycles, water cycles, prebiotic chemistry \citep{smith2016origin, hazen2010mineral, stern2024importance, nisbet2001habitat, sleep2010hadean, baross1985submarine, wachtershauser1988before, martin2008hydrothermal, frank2024find, bregman2020humankind, virgo2011elongation, nowak2008prevolutionary}. The kaleidoscope of living forms, now including humans' storage and exchange of mental patterns, are interrelated through shared heritage, ecological interactions and facing the same world. Thus, when living forms bound each other, the boundaries encode a great deal of contextual wisdom.
+
+% And what we call life, the spectacular success of nucleotide replicators, rides on top an already profound dynamics of nuclear physics, chemistry, nebulae, plate tectonics, tides, volcanism, magnetism, mineral cycles, water cycles, prebiotic chemistry \citep{smith2016origin, hazen2010mineral, stern2024importance, nisbet2001habitat, sleep2010hadean, baross1985submarine, wachtershauser1988before, martin2008hydrothermal, frank2024find, bregman2020humankind, virgo2011elongation, nowak2008prevolutionary}.
 
 % \zeb{I think we have to decide whether we're using biological life as an *example* (i.e., for inspiration and for understanding the principles), or if we're saying that the boundaries actually have to come from *this instance* of life. can most of AI's livingness (following the principles we describe) be internal to itself, or does it have to be grounded specifically in already-existing biological life? if the former, then the next paragraph doesn't really make sense. if the latter, then we need to add something about that into the section4.}
 
@@ -356,6 +348,16 @@ A key aspect of life's boundaries is their degree of nuance. Living forms tend t
 % we live in a world where self-organization naturally happens. autopoeisis/emergence
 
 %In other words, evolution is the process that gives rise to life, not something that happens after life exists \citep{aguerayarcas2024computational, wong2023roles, vasas2012evolution}. 
+
+
+% Just like you can zoom out from a single cell and think of it as part of an organism, imagine zooming out from a single organism and draw the system boundary around many organisms. Zoom out also in time and watch this dynamical system over millions of years. What does it look like? 
+
+% Life fights tooth and nail for its own existence. If you watch a hydra regenerating itself, or immune cells enveloping a foreign body, you can viscerally feel this intense pressure. Yet this is not just homeostasis. The hunger isn't for a particular outcome or state. In fact, if it is too successful at achieving any particular formal objective, it paradoxically fails. It's a hunger for some kind of undefinable open-ended growth. Even pre-biotic systems seem to have this hunger. 
+
+% [counterargument: any given organism is fighting just for its own formal pattern, but the process of mutation and selection over time leads to new innovations. that's the classic view. are we saying anything different?]
+
+
+% Interestingly, human thoughts look something like this on much shorter timescales. On timescales of millions of years we call the pressure `evolution'. On timescales of minutes or years we call it `creativity'.
 
 
 \subsection{Law}
@@ -497,7 +499,8 @@ As with other living systems, humans have a rich array of psychological boundari
 
 % great example is the imaginations we have about other people's views of us. 
 
-Without boundaries, interactions tend to result in one person being dominated by another: a patient's own beliefs replaced with those of an analyst, or the desires of one person in a relationship ignored. With semi-permeable boundaries, we have rich internal worlds. We are sensitive to each other, but there is also enough space for our internal experience to flourish without being immediately overwritten by external signals. Our internal experience is contextualized in relationship to other individuals, creating new structure: mutual understandings, relationships, communities, cultures. And as individuals we grow as we are shaped by different contexts.
+Without boundaries, interactions tend to result in one person being dominated by another: a patient's own beliefs replaced with those of an analyst, or the desires of one person in a relationship ignored. With semi-permeable boundaries, we have rich internal worlds. We are sensitive to each other, but there is also enough space for our internal experience to flourish without being immediately overwritten by external signals. Our internal experience is contextualized in relationship to other individuals, creating new structure: mutual understandings, relationships, communities, cultures. And as individuals we grow as we are shaped by different contexts. This metastability or loose coupling is interestingly reminiscent of brain dynamics.
+
 
 \subsection{Contemplative practice}
 
@@ -536,7 +539,10 @@ What does the opposite of overcommitment look like in a future co-created by AI?
 
 \subsection{Boundaries}
 
-The use of boundaries against overcommitment in technology is as old as technology. As soon as we started building things, we had to build in boundaries, because we want the things we build to be robust and useful and not to collapse into degenerate states. We put circuit breakers in the power grid, governors in steam engines, escapements in clocks, ReLUs in neural networks. In modern AI research we have personalization through the context, access to user data, on-device learning. We have conditional computation creating separation between parts within a large model. We have dropout, cross-validation, causal masking. Many safety methods are boundaries, including safety post-training, guardrail models, red teaming, mechanistic interpretability, government oversight and so on \citep{gabriel2025ethics}. Increasingly critical are ongoing evaluation and monitoring of deployed AI systems \citep{grey2025safety, myllyaho2021systematic, yampolskiy2025monitorability}.
+The use of boundaries against overcommitment in technology is as old as technology. As soon as we started building things, we had to build in boundaries, because we want the things we build to be robust and useful and not to collapse into degenerate states. We put circuit breakers in the power grid, governors in steam engines, escapements in clocks, ReLUs in neural networks. In modern AI research we have personalization through the context, access to user data, on-device learning. We have conditional computation creating separation between parts within a large model. We have dropout, cross-validation, causal masking. Many safety methods are boundaries, including safety post-training, guardrail models, red teaming, mechanistic interpretability, government oversight and so on \citep{gabriel2025ethics}. Increasingly critical are ongoing evaluation and monitoring of deployed AI systems \citep{grey2025safety, myllyaho2021systematic, yampolskiy2025monitorability}. There is increasing awareness that over-attachment to fixed optimization targets is often counterproductive \citep{kumar2025questioning,stanley2017open, stanley2015greatness}. 
+
+
+% [To be revised] Ken Stanley started with simple random images, like a couple of curvy lines. He asked people to rate the pictures for interestingness. The most interesting ones were then bred together, and this process of evolution was carried on for many steps. What eventually came out was images with a lot of richness and semantic meaning, which looked like a face or a fish or a moonrise \citep{secretan2008picbreeder}. In related experiments with navigation and physics-based tasks, the researchers found that bottom-up search for interesting components was more effective than top-down optimization for a pre-defined objective \citep{lehman2011abandoning}. In other words, if you deliberately try to make structures like this, it's paradoxically harder to get them to happen. If you overcommit to optimizing for one formal idea, it leads to collapse \citep{kumar2025questioning}. But when humans draw on their own light, playful ideas of what is interesting, it grounds the search in countless little nuances from evolution (e.g. in our visual system and our motivational system) and from our lifetime of experience with the real world. `If we want to reach valuable destinations we have to be prepared to travel the road with no destination'
 
 
 At a social level, we have labs taking different approaches, nations with different cultures and strategic interests, ideas drawn from diverse fields like neuroscience and physics. Interestingly, the nature of this diversity has evolved rapidly in recent decades, as information exchange has improved with telecommunications, the internet, and now AI itself. One open question is how to preserve and enhance diversity in human culture and concepts, at scales anywhere from national or ethnic groups to individuals, and how to productively put the diverse elements in contact with each other. Because we can now use AI to effectively get answers from the rest of humanity instantly, an important aspect of this question is how we will structure our own use of AI to maintain our autonomy and diversity. 
