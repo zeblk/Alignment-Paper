@@ -66,7 +66,7 @@ For millennia, geographical and cultural boundaries allowed different societies 
 
 Pre-globalization, civilizations probably worked similarly to how sexual reproduction protects against Muller's ratchet. Each culture contains a backup copy of the principles that have worked: culture, laws, technologies. Each culture experiments with new ideas, and most experiments fail. These civilizations get conquered (overwritten). In general it's like a set of copies, with a particular mode of interaction: when one copy is degraded, it can get overwritten in totality by an intact copy. Crucially, they *don't* interact by remotely updating sub-parts of each other.
 
-\subsection{Genes}
+\subsection{Genes and modularity}
 
 All organisms are subject to periodic mutations in their genetic code, due to copying errors and damage, and the vast majority of mutations are either neutral or harmful to fitness. In an asexually reproducing species, whenever a creature experiences a germline mutation, that creature's entire lineage is stuck with the mutation forever. (The odds of the mutation being spontaneously reversed by another mutation are vanishingly small.) So within each lineage, the mutation load only increases with time. When, by chance, the least-loaded lineage dies off, the maximum fitness of the species is irreversibly lowered. This is Muller's ratchet: the loss of a less-burdened lineage is like a ratchet click that the species can never recover from \citep{keightley2006interference, muller1932some}. Thus, the overall fitness of an asexual species experiences steady downward pressure from increasing mutation load. With asexual reproduction, the whole lineage suffers the weight of any mutations -- like groupthink where a whole group has the same wrong idea and there's nothing to challenge it.
 
@@ -100,6 +100,16 @@ Modularity plus external pressure makes each entity more agentic: it has to deve
 
 Modular, compositional interactions create potential for the generation of lots of new things.
 
+Each entity sees a different corner of the world, developing its own unique perspective over timescales of evolution or learning, and becoming a model of this niche \citep{conant1970every, friston2013life}. At the same time, boundaries limit rigid associations, so entities experience multiple contexts. They therefore tend toward developing both modularity, where they can function in multiple contexts, and generality, like a person learning multiple languages and extracting the underlying commonalities \citep{clune2013evolutionary,melo2016modularity, simon2018near}. 
+
+The separation of timescales is the engine of evolvability. It allows a complex system to tinker with one part without crashing the others, turning the impossible probability of evolving a complex whole all at once into a manageable series of local optimizations. A module is not just a spatial compartment; it is a temporal reservoir where a specific piece of the world's structure has been successfully captured, stabilized, and made available for novel recombination. The result is a system that can reason compositionally, building infinite new meanings from a finite alphabet of robust, time-tested parts.
+
+Sex for modularity \citep{melo2016modularity}. Recombination makes the genes more modular so that when a new reassortment or mutation happens, the existing genes are better prepared to work with it.
+
+Sex for breaking up co-adapted sets of genes, reducing overfitting, maximizing the ability for recombination and generation of modular solutions \citep{srivastava2014dropout, livnat2008mixability}. 
+
+In simulations of evolution, modular discovery, with heating-cooling cycles, facilitates generalizable, robust solutions \citep{woolley2011deleterious}. By contrast, optimizing for a particular objective leads to fragile, overly-complex solutions, like codependent genes that haven't been broken up by recombination. A diverse array of modular parts can later be called on and rearranged to solve new problems.
+
 The cell membrane allows the cell to interact with different external conditions\footnote{In a multicellular organism, there is a tradeoff: individual cells become more overfit to their particular context within the organism. They aren't as free to participate in different kinds of interactions. This is a form of collapse at one level that trades off with benefits at another level.}; effective group structures allow people to work together without becoming overfit to a particular context. 
 
 The last section explored semi-permeable boundaries that support group members in developing and leveraging their own unique viewpoints, which in turn contribute to group-level problem solving. Sex does the same for genes. 
@@ -129,9 +139,6 @@ Instead of thinking about mutation pressure as the proxy, we can think about ind
 
 `Blending inheritance' vs real sexual reproduction. The \textit{discreteness} of genes is key to make sure sex can keep finding new solutions.
 
-Sex for modularity \citep{melo2016modularity}. Recombination makes the genes more modular so that when a new reassortment or mutation happens, the existing genes are better prepared to work with it.
-
-Sex for breaking up co-adapted sets of genes, reducing overfitting, maximizing the ability for recombination and generation of modular solutions \citep{srivastava2014dropout, livnat2008mixability}. 
 
 Inbreeding diminishes the benefits of sex: in the limit, naively recombining the same genome with itself would not help to break up groups of genes. There are many mechanisms in biology to seek genetically distant mates \citep{fujii2016non, pusey1996inbreeding, penn2002scent}. On the other hand, there is also outbreeding depression from mates that are too distant. There are also defenses to minimize this problem; thus overall seeking mates of the correct distance from self.
 
@@ -325,13 +332,12 @@ In the language of this paper, gradient descent within a particular data distrib
 One is novelty search. Another is traditional experience replay (sampling from old data so that optimization for the current environment doesn't dominate). Another is continual learning methods like UPGD, counterfactual reasoning. Another is search. Another is dynamically drawing data from the internet. Another is compositional replay.
 
 
-In simulations of evolution, modular discovery, with heating-cooling cycles, facilitates generalizable, robust solutions \citep{woolley2011deleterious}. By contrast, optimizing for a particular objective leads to fragile, overly-complex solutions, like codependent genes that haven't been broken up by recombination. A diverse array of modular parts can later be called on and rearranged to solve new problems.
+
 
 In machine learning, overfitting is a form of collapse. Versus generalizable knowledge, which is often factorized or compositional. An explicit objective encourages overfitting and collapse.
 
 open-ended discovery (without a single objective) generates more forms. Tim Rocktäschel gave the examples of how jaw bones led to the middle ear; radar led to microwave ovens; RL led to LLM RLHF. 
 
-Importance of modularity and compositionality. Link to genes.
 
 Divergent evolution (i.e., search for diversity rather than a particular objective) increases evolvability (i.e., meta-learning) \citep{wilder2015reconciling}.
 
