@@ -57,7 +57,7 @@
 \textbf{Abstract}
 \end{center}
 
-We propose a broad framing for the AI alignment problem: as the ongoing process of limiting overcommitment to any form. Each form -- a fish, a religion, a uniform distribution -- is myopic in the sense that it is only a small aspect of the world. When systems overcommit to particular forms instead of lightly holding dynamic relationships between them, the richness and potential of the world is reduced. If aspects of AI systems remain fixed while they gain increasing resource, capability and purview, there is a risk of severe overcommitment. Specific instances of this problem have been extensively studied, but here we draw on the science of life to suggest a more general framing. In doing so, we find that life also gives clues about how to solve the problem. Living forms contextualize one another with semi-permeable boundaries which, when functioning well, allow diverse forms to thrive and work flexibly together without one part dominating. Extrapolating from examples in natural and human systems, we sketch out how aligned AI systems can participate in rather than overwhelm or collapse the subtlety of life.
+There is broad agreement that the goal of AI alignment is to promote futures full of health and flourishing. But our understanding of what exactly this means and how to achieve it remains poor. In this paper, we look to life for inspiration. We observe that living systems are healthy and full of open-ended potential when they form intricate semi-permeable boundaries that expand internal space and defy simplistic descriptions. Entities deepen their individual perspectives, becoming sensitive to more and more nuance of their context, and those new perspectives enter into relationship with other entities. Fundamentally new forms emerge over time. This process supports a many-scaled web of complexity that is difficult to completely capture with formalism. With these principles in mind, we turn to the alignment problem. We suggest that the semi-stable creative dynamics of life are at the heart of what we most deeply value, and we describe how some well-studied problems in alignment can be seen as special cases of our framework. Finally, we sketch out a preliminary view of how aligned AI systems can participate in rather than overwhelm or collapse the subtlety of life.
 
 \end{adjustwidth}
 \vspace{30pt}
@@ -88,41 +88,39 @@ We propose a broad framing for the AI alignment problem: as the ongoing process 
 
 % \tableofcontents
 
-In this paper, we look at properties of living systems to better understand AI alignment. We use `alignment' broadly to refer to all aspects of designing and relating to AI in a way that leads to futures full of flourishing and health. Looking across different types of living systems we see a consistent theme: health or flourishing is the opposite of overcommitment to any particular partial form (Section 1). Alignment then becomes the problem of avoiding overcommitment (Section 2). In other words, the alignment problem is bigger than anything formalizable: no formal approach can achieve alignment. In natural and human systems, an intricate, finely-tuned and ever-changing network of semi-permeable boundaries protect against overcommitment. Semi-permeable boundaries support both the individuality of entities and their participation in contexts at many spatial and temporal scales (Section 3). After exploring these patterns in natural and human systems, we end with an initial gesture toward the implications for development of aligned AI (Section 4).
-
-Crucially, this is not just about finding a balance between existing things. It's about the ongoing process of creation and discovery. Life achieves this semi-stable open-endedness through exquisite trade-offs between connection and separation. To the degree that entities are separated, they form their own unique perspectives through 
+In this paper, we study life to better understand how to design and relate to AI systems in ways leading to futures full of flourishing and health. Our approach is systems-oriented, with the hope that the ideas can be applied not only to the present world, but also to possible future worlds where humanity and AI may have changed substantially. Those future worlds may involve entirely new concepts and categories. We gravitate to ideas about alignment that generalize over such changes.
 
 
-boundaries allow separate parts to form new, diverse perspectives from their own unique experience. these newly developed perspectives can connect with other things. 
+% We often anchor back to the idea of an AI system being `aligned to' human values. indeed this is the origin of the term `alignment'. But the concepts here are intended to be more general. It doesn't have to be an AI system alone that is aligned. We can talk about aligned human-AI systems, for example. We expect the boundaries and categories will change in the future. The point is to think about a future that is overall flourishing and positive, regardless of what kinds of unforseen functional units come to exist. 
 
-it's about release into deeper and deeper appreciation for what's already here. contextualization keeps a system at the knife-edge where it is sensitive to something new. but maybe this is the same thing as semi-stability and open-endedness, because the system doing the appreciating is part of the world. if you look at that interaction from the outside, it looks like a new form (`a new perspective') being created in the agent.
+% One consequence is that the lens of alignment can be flexibly used to look at not only AI in isolation, but also AI in relationship with humanity, or indeed any way of drawing lines to define a system.
 
-question: how does this relate to our examples like cognitive control, ecosystems or cell membranes, where it's not obvious that we're discovering new structure. it seems to be more about a stationary balance for healthy functioning. how do we reconcile this?
+Section 1 looks across a variety of living systems and identifies a consistent theme. These systems are healthy and full of creative potential when they don't overcommitment to particular partial forms, but instead maximize sensitivity at the knife-edge of delicate, evolving interplay between diverse entities. These dynamics are supported by exquisitely tuned networks of semi-permeable boundaries. Life is both the boundary and the thing being bounded. Boundaries are semi-permeable when they both \textit{limit} and \textit{permit} interaction. Limits ensure that entities maintain their distinctiveness without getting overwritten or averaged to equilibrium. And by placing each entity in a distinct functional position with a distinct experience of the world, limits encourage entities to deepen their own unique perspectives. Equally important, permitting interaction means those rich and evolving individual perspectives can connect with other entities. Relationships with other partial forms situate entities in a larger context. 
 
+Section 2 applies this template to the alignment problem. We propose that this systems-level definition of health, creative potential and open-ended sensitivity to context is near to what we most deeply value and what we mean when we talk about flourishing in a sense that includes potentially radically different futures. We unpack a few specific problems in alignment to show how they can be viewed as special cases under our definition, then look at limits of those special cases to see why the broader framework is useful. A key takeaway is that the alignment problem is inherently not formalizable, because it must be sensitive to fundamentally new forms and concepts that will arise in the future.
 
+Section 3 offers a preliminary outline of how the principles described in Sections 1 and 2 can be applied concretely and what a truly aligned future might look like.
 
-% Healthy life is composed of an exquisite variety of intricately co-functioning partial forms
-
-% like voices in a group, drives in an organism or creatures in an ecosystem
-
-We take a systems oriented view. Our hope is that the ideas can be applied not only to the present world, but also to possible future worlds where humanity and AI may have changed substantially, with new concepts and categories applying. We gravitate to ideas about alignment that generalize over such changes. One consequence is that the lens of alignment can be flexibly used to look at not only AI in isolation, but also AI in relationship with humanity, or indeed any way of drawing lines to define a system.
-
-We often anchor back to the idea of an AI system being `aligned to' human values. indeed this is the origin of the term `alignment'. But the concepts here are intended to be more general. It doesn't have to be an AI system alone that is aligned. We can talk about aligned human-AI systems, for example. We expect the boundaries and categories will change in the future. The point is to think about a future that is overall flourishing and positive, regardless of what kinds of unforseen functional units come to exist. 
-
-And, it doesn't have to be aligned specifically `to human values', in a narrow sense of `human values'. There's one sense of human values that is open-ended and includes future discovery and things that are deeply embodied and difficult to express formally, and this is closer to what we mean. But any particular set of human values that we could write down is not what we mean. Ultimately we're aligning to this mysterious livingness of the universe. But because the universe is already full of life and structure, a big part of the problem is fully respecting and nurturing that existing life. 
-
-Any conceptualization of alignment is by our own definition not a final answer. In this spirit, we are not going to try to make an irrefutable logical argument or compel you to accept our perspective to the exclusion of others. Instead, throughout the manuscript we focus primarily on examples and leave it up to you to decide if our analogies are useful. We've tried to select terms -- like `form', `overcommitment', `collapse', `boundary', `groundedness' and `contextualization' -- whose everyday meaning is as close as possible to the ideas we want to describe. We hope that the examples will bring to life the shades of meaning we have in mind with each of these terms.
-
-% existing as paradoxes for one another and supporting ongoing increase of subtlety. 
+% Any conceptualization of alignment is by our own definition not a final answer. In this spirit, we are not going to try to make an irrefutable logical argument or compel you to accept our perspective to the exclusion of others. Instead, throughout the manuscript we focus primarily on examples and leave it up to you to decide if our analogies are useful. We've tried to select terms -- like `form', `overcommitment', `collapse', `boundary', `groundedness' and `contextualization' -- whose everyday meaning is as close as possible to the ideas we want to describe. We hope that the examples will bring to life the shades of meaning we have in mind with each of these terms.
 
 
-\section{Overcommitment}
+
+
+\section{Health and creative potential in living systems}
 
 \begin{center}
 \textit{`Defying definition---a word that means ``to fix or mark the limits of"---living cells move and expand incessantly.'}\\*Lynn Margulis
 \end{center}
 
-The central observation of this section is that systems are healthy and flourishing when they are not overcommitted. 
+\begin{center}
+\textit{`When forced to work within a strict framework, the imagination is taxed to its utmost--and will produce its richest ideas. Given total freedom the work is likely to sprawl.'}\\*TS Eliot
+\end{center}
+
+\begin{center}
+\textit{`Nature's imagination is so much greater than man's, she's never going to let us relax.'}\\*Richard Feynman
+\end{center}
+
+This section explores what it means for living systems to be healthy and flourishing.
 
 What do we mean by `overcommitted'? The world has many kinds of organization or regularity. The cells of animals are more or less organized into organisms. Arctic Terns typically migrate between northern and southern parts of the globe. There's a pencil on my table. Each of these patterns is only a partial, imperfect aspect of the thing it describes, let alone the rest of reality. We use the term overcommitment to describe when the immense multifaceted richness of reality collapses toward excess formality, losing sensitivity to larger context. In other words, overcommitment is the preponderance of one pattern at the expense of the delicate, structured interplay between things.
 
@@ -137,6 +135,46 @@ The amount of context available to be sensitive to is already immense (cf life),
 Importantly, avoiding overcommitment does \textit{not} mean simply finding a balance between existing factors. For example, it does not mean simply finding the midpoint of people's diverse preferences; and it does not  (such as the interests of different people, or Aristotle's idea of virtue as a midpoint like courage between cowardice and rashness). Plurality is essential because of the creative potency in the interactions between distinct parts. The created future is not fully captured by any existing concepts. 
 
 The observation that overcommitment is the opposite of health has been made independently in many fields. In evolution, overspecialization and homogeneity make species brittle, leading to trouble especially when environments change \citep{van2004cope, simpson1944tempo, yachi1999biodiversity}. Stereotypy and rigidity are generally pathological in physiological systems \citep{canguilhem1966normal, lipsitz1992loss, mackey1977oscillation, sterling1988allostasis}. Excessive training for a physical discipline (e.g., extreme ballet) can negatively impact broader functional health \citep{jayanthi2013sports, warren1986scoliosis}. Institutions and civilizations that ossify in bureaucracy and rigid patterns become dysfunctional \citep{weber1905protestantische, merton1940bureaucratic, olson1982rise}. Cognition operates best when neural circuits maintain flexibility to enter different modes, rather than collapsing into narrower patterns \citep{deco2012ongoing, waschke2021behavior, hellyer2015cognitive}. In statistics and artificial life, theorists argue that life operates best at the `edge of chaos' where it collapses neither into randomness nor excess regularity \citep{langton1990computation,kauffman1992origins, gell1994quark, crutchfield1994calculi}. We select a few examples below to examine in more detail.
+
+these diverse forms exist as paradoxes for one another.
+
+To start to think about an answer to the big problem, let's look again at life for inspiration. How does it maintain its intricate multiscale balance and open-ended trajectory \citep{stanley2017open} despite the constant threat of collapse into one overcommitment or another? 
+
+In this section, we examine how living systems, including human systems, function as a web of semi-permeable boundaries. Semi-permeable boundaries contextualize forms as part of larger systems by allowing them to interact with other forms without one part dominating or the system collapsing to homogeneity. Life is both the contextualizer and the thing being contextualized. For example, cognitive control allows a particular impulse to exist usefully as a flexible part of the organism's whole motivation. Contextualization means that an entity's distinctiveness is preserved (or even enhanced), yet it no longer exists as an absolute or in isolation but rather within a larger context. Individual forms thrive, but the larger system accommodates partial perspectives rather than locking in a single story of what matters. 
+
+Limits on interaction take many forms: blocking certain objects or information from passing, constraining when interactions happen, constraining the degree or type of effect, breaking up rigid associations, gating information conditional on another factor. 
+
+Importantly, limits also mean that entities don't get locked into 
+
+This unique perspective tends to reflect generalizable structure about the world, because limits prevent entities from getting locked into fixed relationships.
+
+And by not getting locked in to a single situation, boundaries encourage entities to develop modularity, in a generalizable way.
+
+
+Crucially, this is not just about finding a balance between existing things. It's about the ongoing process of creation and discovery. 
+
+\textbf{***Paragraph for Gemini to write***} Something about *how* boundaries enable each form to deepen its own identity. Boundaries protect diversity, and when those diverse things exist, they experience the world through their own lens, accumulating signal from these experiences. This could be on the timescale of evolution or of learning. The signal they accumulate is about the deep structure of the world, and about how to function in multiple contexts. This creates modularity and potential. 
+
+Boundaries create the conditions for depth by partially shielding against the overwhelming flux of the rest of the world. Each entity sees a different corner of the world, developing its own unique perspective over timescales of evolution or learning and becoming a model of this niche \citep{conant1970every, friston2013life}. 
+
+This protective isolation creates the phenomenon of near-decomposability \citep{simon2018near}: the crucial property where the internal dynamics of a module unfold much faster than its interactions with the rest of the system.  \citep{clune2013evolutionary}
+
+This separation of timescales is the engine of evolvability. It allows a complex system to tinker with one part without crashing the others, effectively turning the impossible probability of evolving a complex whole all at once into a manageable series of local optimizations. A module is not just a spatial compartment; it is a temporal reservoir where a specific piece of the world's structure has been successfully captured, stabilized, and made available for novel recombination. The result is a system that can reason compositionally, building infinite new meanings from a finite alphabet of robust, time-tested parts.
+
+
+there is always more context to step back into.
+
+but are we saying that the stepping back (i.e., entering into relationship) is the formation of something new?
+
+or that there is already something new outside myself to step into context with?
+
+i feel like those might somehow be the same thing.
+
+it's about release into deeper and deeper appreciation for what's already here. contextualization keeps a system at the knife-edge where it is sensitive to something new. but maybe this is the same thing as semi-stability and open-endedness, because the system doing the appreciating is part of the world. if you look at that interaction from the outside, it looks like a new form (`a new perspective') being created in the agent.
+
+
+The boundaries of life carry a remarkable amount of information. The life that exists today is exactly what has successfully traced a path through time along a knife edge of avoiding collapse into either excess or insufficient stability \citep{schrodinger1944what, kauffman1992origins, bak2013nature, prigogine1984order, kirchhoff2018markov}. Along this path, the forms of life have become fractally complex with each part carrying traces of the many contexts it has participated in. The forms in this kaleidoscope, now including humans' storage and exchange of mental patterns, are interrelated through shared heritage, ecological interactions and facing the same world. Life works because each part is contextualized by the extraordinary nuance of the real world. 
+
 
 % although myopia in common usage is usually reserved for agentic or intentional systems. It is less common to call an invasive species or a genetic arrangement myopic. Because we attempt to slice across many kinds of living systems, we use the broader term overcommitment, despite its imperfection. 
 
@@ -195,6 +233,193 @@ In science, \cite{kuhn1970structure} argues that perspectives are always, necess
 But crucially, the existence of narrow points of view is not a problem. It's necessary. Any point of view is partial, but it doesn't mean we shouldn't have viewpoints. Even obsession can be powerful when we obsess on a problem at work and occasionally achieve good results. Within the progress of science, temporary commitment to a paradigm is important for healthy functioning -- Kuhn even argues that scientists should resist change, to a degree. In general, the point is not to shut down narrow concepts. The point is to limit them from becoming the sole and absolute determinants of behavior. In healthy functioning, different ideas are kept distinct but can also be called upon appropriately and related to one another \citep{hatano1984two, tetlock1986value, herzog2014harnessing, gigerenzer2011heuristic}. 
 
 
+
+\subsection{Law}
+
+\begin{center}
+\textit{`Unity without uniformity and diversity without fragmentation.'}\\*Kofi Annan
+\end{center}
+
+Individual actors in a society and in an economy each act from their own perspective. Each actor's perspective is myopic. Myopia does not always mean selfishness in the sense of valuing only one's own wealth or physical wellbeing \citep{crockett2014harm, becker1974theory, henrich2001search}. But an actor cannot know everything or fully understand the motives and beliefs of others. 
+
+Without boundaries, social systems tend to overcommit to one actor's perspective or interests. This domination results in collapse and an impoverished system. For example, a company's profit motive, if unresisted, leads to suppression of competition, deception, and exploitation of individuals \citep{dalrymple2019anarchy, baran1966monopoly, goldacre2014bad, smith1776inquiry, bakan2006corporation}. An individual's desire for power and social dominance can lead to disempowering or silencing of others and even direct infringement on the autonomy and wellbeing of others \citep{hawley2003prosocial, tepper2000consequences, sidanius2001social}. Even genuinely held, ostensibly prosocial beliefs lead to conflict and suppression when different groups have different perspectives \citep{haidt2012righteous, scott1998seeing, greene2013moral}.
+
+Law, when it works well, is a boundary against dominance of any actor's motives. A person is motivated by a dispute to kill another person, but the law forbids murder. A business tries to maximize its success, but the law bans environmental exploitation, false advertising, and anti-competitive practice. 
+
+Effective laws do not annul the myopic drives of particular actors, but rather \textit{contextualize} them within a larger system. Under ideal circumstances, the boundary of the law reroutes the energy of a myopic drive in more productive direction. A would-be murderer, unwilling to face the penalty of the law, might seek a dispute resolution establishing a stable framework that supports future prospering of both parties. A business wanting to expand, but constrained to act within the law, is driven to build better products \citep{wu2011master, ashford1985using, ambec2013porter}. 
+
+Intelligent agents do not necessarily accept boundaries set on their desires. The law must adapt as its loopholes are discovered. Like other systems in the living world, it forms an evolving network of boundaries \citep{campbell1979assessing, ordonez2009goals, kerr1975folly, burns2006impact}. The evolving laws gradually acquire grounded wisdom as they are tested against many different situations and motives.
+
+
+
+\subsection{Problem solving in groups}
+
+\begin{center}
+\textit{`I could also observe, time and again, how too deep an immersion in the math literature tended to stifle creativity.'}\\*Jean Écalle
+\end{center}
+
+
+\begin{center}
+\textit{`There's more exchange of information than ever. What I don't like about the exchange of information is, I think that the removal of struggle to get that information creates bad cooking.'}\\*David Chang
+\end{center}
+
+
+In 1968, the nuclear submarine USS Scorpion vanished en route from the Mediterranean to Virginia \citep{sontag1998blind, craven2002silent, surowiecki2005wisdom}. The Navy started a search, but the amount of ocean where the vessel could be was enormous. John Craven, Chief Scientist of the U.S. Navy's Special Projects Office, devised an unusual search strategy. He assembled a diverse group of mathematicians, submarine specialists, and salvage operators. But he didn't let them communicate with each other. Each expert had to use their own methods to come up with their own estimate of where the Scorpion should be. Craven then aggregated the independent estimates into a single prediction. Astonishingly, the wreckage was found only 220 yards from this spot. 
+
+When solving problems, different people bring different perspectives and approaches. Each method processes the available data using a different toolkit. Under favorable conditions, combining the approaches of multiple contributors yields better results than any individual working alone. This `wisdom of crowds' effect has been documented in numerous domains of problem solving \citep{surowiecki2005wisdom, condorcet1785essai}.
+
+However, there is a perpetual danger of overcommitment. The wisdom of crowds is diminished if a group lacks diversity, either ab initio or as a result of within-group communication and influence \citep{surowiecki2005wisdom, hogarth1978note, ladha1992condorcet, hong2004groups}. Controlled experiments, as well as analyses of key decision moments in real groups, find that groups collectively reach irrational or suboptimal solutions when diverse and dissenting viewpoints are lost to a narrower set of ideas \citep{anderson1997information, stasser1985pooling, flowers1977laboratory, becker2017network, janis1972victims, bernstein2018intermittent, diehl1987productivity, frey2021social}. Unstructured communication methods like open discussion have a special vulnerability of rhetorical force dominating over epistemic merit. At the same time, sharing information is essential for the benefits of group wisdom and cooperative behavior. There is therefore a tension between overcommunication where diversity is lost and undercommunication where diversity is not leveraged. 
+
+The crux is semi-permeable boundaries: wisely transmitting the right information at the right time, in the right way. Thoughtful strategies for communication are like transmembrane channels that allow the right molecules in and out of the cell at the right time. They protect and enhance diverse problem solving approaches while also allowing productive interaction between them. Semi-permeable boundaries are contextualizing: they retain individuality while also situating it within relationships to other entities. 
+
+Many varieties of semi-permeable boundary are effective in boosting group performance, including: creating decentralized topologies where group members only communicate with nearby neighbors \citep{becker2017network, mason2008propagation}; defining rules that incentivize acting according to one's own belief rather than following the crowd \citep{hung2001information, bazazi2019self}; modeling the strengths and weaknesses of each group member \citep{welinder2010multidimensional}; promoting leadership styles where one person's views are less likely to dominate \citep{flowers1977laboratory, leana1985partial}; and periodically breaking up into subgroups or rotating membership \citep{janis1972victims, hauer2021science, trainer2020team, straus2011group, feldman1994whos, sutton1987selecting, kane2005knowledge, wu2022membership, owen2019avoid, vafeas2003length, bebchuk2005costs, baron2005so}. In a later section, we will look at boundaries within an individual, such as skepticism, that make it easier to interact with others without overwriting one's own beliefs.
+
+%If individuals contribute their own answers to the group too soon, diversity in the group can collapse. 
+
+% A particularly important boundary for group problem solving is simply giving members the space to work independently before communicating \citep{surowiecki2005wisdom}. In the case of the submarine search, experts weren't allowed to communicate while forming their own estimates; the estimates were later aggregated in a principled way by Craven. Analogously, science historians argue that partial intellectual isolation has at times been beneficial for the emergence of deeply new ideas. Einstein's relative independence from the advanced mathematical techniques of contemporaries like Hilbert led to a theory of general relativity grounded in deep physical insight rather than mathematical convenience \citep{stachel1989einstein, corry1997belated, renn1999heuristics}. Newton's and Leibniz's famous independent development of calculus, as a result of their mutual isolation, yielded two distinct and valuable mathematical systems that complemented and enriched one another \citep{hall2002philosophers}. 
+
+The importance of balancing communication with independence also shows up in controlled experiments. \cite{frey2021social} elicited votes about general knowledge questions (such as, `In which year did Germany invade Denmark?') from a group. In one condition of the experiment, participants voted sequentially and could see the running tallies of previous voters. Compared to independent voting, final group means were less accurate in the sequential condition, because early mistakes got baked in to the group's belief. In a related experiment, \cite{bernstein2018intermittent} tasked small groups with solving instances of the traveling salesman problem. Groups that exchanged information continuously tended to reach poor final outcomes, compared to groups with less communication. When one individual discovered a solution that looked compelling but was actually a dead-end, other group members collapsed on this dead-end and the group as a whole made less progress.
+
+% Each group was randomly assigned to one of three conditions. In some groups, members could continually see the work of other members as they progressed toward a solution; in some groups members could only occasionally exchange progress; and in some groups there was no exchange. The researchers found that groups with continual information exchange rarely found good solutions. In these groups, typically one individual would stumble on a solution that looked compelling but was actually a dead-end. When this solution was immediately shared with others, it hampered their progress. Groups with occasional or no contact were much more likely to find optimal or near-optimal solutions. 
+
+% We stress that this is not an indictment of connection and communication between group members. Rapid access to information and shared solutions often demonstrably boosts productivity. In some situations the ideal boundary might be working in isolation for months at a time. But in other situations it could be daily meetings with intensive communication, while maintaining the self-confidence to keep pursuing one's own intuition in the face of skepticism from others \citep{sawyer2017group, paulus2003group}. The key is that boundaries support flexible interactions and avoid overcommitment to particular forms.
+
+\subsection{Cells}
+
+\begin{center}
+\textit{`It is by avoiding the rapid decay into the inert state of equilibrium that an organism appears so enigmatic.'}\\*Erwin Schrödinger
+\end{center}
+
+
+
+One of the most reified examples of a boundary in nature is the cell membrane \citep{watson2015biological, alberts2022molecular, bray2019wetware, harold2001way, lane2015vital}. Without the membrane, the pressure of chemical gradients would rapidly homogenize the cell's contents with the outside -- severe overcommitment to a uniform state, collapsing the subtlety of the cell's structure. Thanks to the membrane, both the cell and the outside can exist, a more diverse, less symmetric arrangement \citep{schrodinger1944what, anderson1972more, prigogine1984order, turing1952chemical}. 
+
+Cell membranes are semi-permeable: they prevent the conditions outside from grossly overwriting the inside, but they do not block interactions wholesale. Via the sophistication of the membrane, outside information is selectively gated and transformed. To maintain its semi-fragile internal state between stasis and randomness, the cell needs a constant influx of energy. Channels permit certain small molecules to enter but not others, and these permissions are switched on and off according to momentary context. Endocytosis brings larger structures from outside into the cell. Cell surface receptors, when activated by external ligands, initiate intracellular signaling cascades that little resemble the ligand: an even more heavily curated form of influence. These and other processes allow information from the outside to influence the inside -- not in a totalitarian way but in a nuanced way, mediated by the intelligence of the boundary. 
+
+Semi-permeable boundaries store and put to work the potential energy of the asymmetry between different forms. The same gradients that could annihilate the cell to equilibrium instead drive useful signaling, like action potentials in nerve and muscle cells. Instead of short-circuiting, myopic forces are contextualized to propel the continuation of life.
+
+% Why was it easier for mitochondria to merge into cells rather than being evolved from within? It's literally that they have their own discreteness that permits cells to ship them around to serve as local power stations, and this fueled the explosion of complex morphologies in multicellular organisms.
+
+In multicellular organisms, most of the `outside' is defined by other cells. For organisms to work well as a whole, even though the cells are largely `on the same team', it's important that they don't blend into each other. Neurons rely on this principle dramatically, stretching out long processes to almost touch other neurons but then leaving the gap of the synapse. Synapses allow the network to precisely isolate many separate signals and direct information to relevant cells. They boost computational power as the signals are gated and transformed, and the nature of this transformation is plastic, storing a huge amount of information. Symbiogenesis is another example of how cells achieve more by retaining some discreteness than by smoothly blending together \citep{margulis1995what, margulis1986microcosmos}. 
+
+% A directly connected web of cells, as Golgi envisioned, tends to blend information. 
+
+Again, collapse or overcommitment is always relative. For example, programmed cell death is catastrophic collapse at the level of the dying cell, but it can be beneficial or even necessary for the organism the cell belongs to.
+
+
+question: how does this relate to the idea that we're discovering new structure? with cells it seems to be more about a stationary balance for healthy functioning. how do we reconcile this? well, cells *do* still discover new things. there's evolution at the cell level going on all the time. also, the richness of cells is what enables them to *make up* organs or brains (which are discovering new things because they're composed of this living substrate). it's what allows them to do the dance of development, which we can't reproduce in a lab. 
+
+however, this is not substrate chauvanism. there's not a single simple answer about whether you need biology for intelligence or not. of course you can reproduce different aspects of its function depending on how you build it. it's pretty easy to do chess in a cpu, and it's harder to do something like sensitive tactile manipulation.
+
+
+
+\subsection{Genetic recombination}
+
+% \begin{center}
+% \textit{`The mere act of crossing by itself does no good. The good depends on the individuals which are crossed differing slightly in constitution, owing to their progenitors having been subjected during several generations to slightly different conditions.'}\\*Charles Darwin
+% \end{center}
+
+Sex is costly. An organism must find a mate in the vast and dangerous world, and half of the creatures can't reproduce \citep{smith1971origin, lehtonen2012many, smith1978evolution, goodenough2014origins}. Yet nearly all eukaryotes reproduce sexually\footnote{And all known species exhibit some kind of gene transfer, performing a related function.} \citep{speijer2015sex, bell1982masterpiece}. This raises the question: what is so great about sex?
+
+In asexually reproducing species, all descendants of an organism are nearly clones, up to mutations within the lineage. Being permanently locked together gives the genes strong influence on each other. Selection can't act on one gene without dragging on the others. For example, suppose there are two genotypes within an asexual population, carrying different alleles at each of two different loci, as a result of mutations. One of the loci is currently fitness-neutral while the other is subject to selection pressure. The selection pressure tends to cause one of these genotypes to outcompete the other, eliminating one variant at the neutral locus. In other words, tight linkage between genes puts direct downward pressure on genetic diversity \citep{charlesworth1993effect, hudson1995deleterious}. Additionally, if two different beneficial mutations arise in two different organisms, they compete with each other. The only way for a single organism to obtain both beneficial mutations is if one arises again within the subpopulation that already carries the other, which is unlikely and therefore slow \citep{hill1966effect, felsenstein1974evolutionary, weismann1889essays, fisher1930genetial, muller1932some, crow1965evolution}. Conversely, if a deleterious mutation arises, all of the other genes in that lineage are stuck with it forever -- unless there is a reverse mutation, which is rare \citep{keightley2006interference, muller1932some}. An asexual species has rigid rather than flexible interaction between genes: it overcommits to particular genetic arrangements.
+
+Recombination is a boundary that softens the rigid interactions between genes. It frequently breaks up the relationships between genes, assembling them into new genomes, effectively saying, `don't get overconfident in that genetic arrangement; hold each arrangement more lightly'. From a gene's point of view, this looks like, `don't get overly dependent on specific other genes'. Aspects of the genome that work well are propagated, like sodium ions gated into a neuron during an action potential, and poorly-working aspects are discarded. Sex contextualizes genetic arrangements. 
+
+Boundaries encourage lightly-held, modular interactions. By not overcommitting to a particular genome, sex encourages genes to flexibly interact with other genes \citep{livnat2008mixability, livnat2010sex, wagner1996perspective, holland1975adaptation,dawkins1976selfish, clune2013evolutionary}. Instead of being overfit to a particular context, genes develop a robust identity that's both independent and inter-functional. Recombination puts genes under pressure to evolve a generalized, grounded wisdom that reflects the structure of the world, like a person learning multiple languages and extracting the underlying commonalities. At the same time, because each gene is always operating in the presence of other genes, it develops its own distinct point of view that adds unique value to a genome.
+
+
+
+
+
+
+
+\subsection{Cognitive control}
+
+Cognitive control is a broad class of boundaries on particular drives, goals and strategies \citep{botvinick2001conflict, braver2012variable, miyake2000unity, miller2001integrative}. In section 1.1, we looked at how organisms can overcommit -- unhealthily -- to particular motives or strategies for fulfilling the motives. Cognitive control contextualizes motives, strategies and thought patterns by allowing them to exist and perform useful functions without dominating. For example, I may have a drive to consume food, but I can apply control to avoid overeating. I might work obsessively on a project while also having a rule that I must go to bed at 10 pm. This boundary doesn't block me from temporarily taking a strong perspective, but it does place contextual limits on it. Cognitive control, when functioning well, is a semi-permeable boundary: it situates myopic patterns within a larger system. 
+
+Control translates the pressure of motivation into higher-order structure. When nothing stops a particular drive or goal or strategy from dominating behavior, it tends to follow a shortest path defined under its own myopic understanding of the world. For example, the chickens in Section 1.1 wanted food and tried to take the shortest path toward it in the naive sense of a straight line through space. In the backwards world created by the experimenter, this action does not accomplish the deeper goal of reaching food, for which moving spatially toward food is only a proxy. The chicken's motivation is short-circuited: it expends energy without making progress on the deeper goal. Humans can easily solve the task by inhibiting their prepotent impulse to approach food. The boundary of control breaks the symmetry of congruent action. In general, semi-permeable boundaries promote formation of new structure by placing contextualizing limits.
+
+
+\subsection{Information in the brain}
+
+\begin{center}
+\textit{`Memory is not an average of experience.'}\\*David Marr
+\end{center}
+
+
+The brain miraculously keeps many pieces of information distinct from one another. If you picture a highly connected network of neurons with their signals continually impinging on one another, it's not obvious that this would be an easy thing to accomplish. In this section, we review a selected handful of mechanisms by which the brain maintains semi-permeable boundaries between different signals. Each paragraph below focuses on one of these mechanisms. There are many more that we do not cover. The brain is perhaps the most extraordinary example in nature of a system of semi-permeable boundaries supporting the proliferation of multitudinous forms that develop their own richly distinct identities yet are also meaningfully linked together.
+
+Lateral inhibition is a central tenant of neural organization \citep{isaacson2011inhibition, hubel1962receptive, douglas2004neuronal}. Lateral inhibition means the activity of a neuron is reduced when its neighbors are active. This segregates information to create and sustain distinct neural representations. Lateral inhibition was first studied in the nerve cells of the eye, where it enhances contrast at the edges of stimuli \citep{hartline1956inhibition}. When a photoreceptor in the retina is activated by light, it sends signals forward toward the brain; but it also activates inhibitory interneurons, which suppress adjacent photoreceptors and their downstream targets. This amplifies the perception of borders and contours. And the same principle operates throughout the brain. In visual cortex, for example, inhibition sharpens selectivity of neurons for abstract visual features like the orientation of a line \citep{sillito1975contribution}. 
+
+% Global inhibition also supports the existence of distinct forms. In the hippocampal formation and connected areas, some cells are tuned to particular directions the animal's head could be facing. Inhibition creates a winner-take-all effect, integrating over intermittent noisy evidence (like vestibular signals when the head turns) to create a single stable representation of the head direction \citep{zhang1996understanding, rolls2022attractor}. Inhibition prevents the signals in some channels from getting blended or overwritten by the signals in other channels. 
+
+The brain uses inhibition organized into oscillatory dynamics to keep memory items separated \citep{lisman2013theta, jensen2010shaping, roux2014working, klimesch2007eeg}. Distinct items fire at different phases of the 8-12 Hz alpha oscillation. The inhibitory phase of the alpha rhythm silences all but one item at any given moment. By segregating firing in phase space, multiple memories are held simultaneously without interference. 
+
+The circuit architecture of hippocampus separates experiences or concepts into distinct representations, avoiding interference between similar memories \citep{mcclelland1995why, marr1971simple, mcnaughton1987hippocampal, treves1994computational, muller1987effects, leutgeb2007pattern, colgin2008frequency}. Inputs from entorhinal cortex are distributed via mossy fibers to a much larger population of dentate gyrus granule cells, creating sparse, orthogonal codes in dentate gyrus. This way, situations or ideas that are superficially similar but functionally different are kept cleanly separated in neuronal activity space -- a unique neural fingerprint for each distinct concept or memory. This prevents, for example, yesterday's memory of where you parked your car from interfering with today's memory of where you parked your car in the same parking ramp. 
+
+Compared to other animals, the human brain especially attempts to discretize its experience into approximately symbolic representations \citep{dehaene2022symbols, touretzky1988distributed, smolensky1990tensor, behrens2018cognitive}. The capacity to separate things into nearly-discrete entities and then recombine them in vast numbers of structured ways powers the extraordinary human capacity for reasoning \citep{fodor1975language, pinker1994language, lake2015human, chomsky1957syntactic, kurth2023replay}. Semi-permable boundaries keep forms distinct while enabling them to flexibly and modularly interact. Like genes participating in many genomes, discretized neural representations participate in many structured combinations. This encourages each entity to develop an identity that both is distinct and also reflects a more generalized picture of the world.
+
+More broadly, healthy brain dynamics live at a sweet spot between excessively stable synchronized patterns and chaotic uncorrelated noise \citep{beggs2003neuronal, chialvo2010emergent, tognoli2014metastable, deco2011emerging, bak1987self, shew2011information, rabinovich2008transient, haldeman2005critical, kotler2025pathfinding}. In this regime, the brain has access to a huge repertoire of patterns it can explore temporarily without overcommitting or getting stuck. 
+
+Loss of dynamic flexibility, where the brain's activity becomes more stereotyped and no longer explores as wide a repertoire of states, is tied to lower cognitive performance \citep{garrett2013bold, grady2014understanding, cocchi2017criticality, muller2025critical, shew2009neuronal}. More extreme stereotypy corresponds to severe dysfunction. For example, in Parkinson's disease, basal ganglia and cortical circuits collapse into excess synchrony and lose the flexibility needed to guide nuanced motor outputs \citep{hammond2007pathological, brown2003rhythmic}. 
+
+
+\subsection{Interpersonal dynamics}
+
+\begin{center}
+\textit{`Stand together yet not too near together, as the oak tree and the cypress grow not in each other's shadow.'}\\*Kahlil Gibran
+\end{center}
+
+
+Psychoanalysis introduced the concept of `boundaries' in human psychology, distinguishing what is the self from what is outside or other \citep{federn1928narcissism, tausk1919entstehung}. Early works applied the concept to psychosis, where those boundaries were thought to be blurred. But the need for clear self-other boundaries was also thrown into relief by the intimacy of the therapeutic relationship. In complex internal territory, it became harder to disentangle which experiences really belonged to someone and which were attributed in imagination by the other person \citep{freud1894neuro, freud1910future}. Analysts risked harming patients by imposing their own beliefs and desires, even to the extent of sexual abuse or psychological domination \citep{gabbard1995boundaries}. 
+
+The concept was enriched by Gestalt therapists, who agreed that boundaries can be too permeable; but added that they can also be too rigid, causing isolation and stagnation \citep{perls1951gestalt, polster1974gestalt, yontef1993awareness}. Family systems theorists and subsequent work further emphasized that lack of boundary in close relationships leads to enmeshment and loss of autonomy, while excessively rigid boundaries lead to isolation \citep{minuchin1974families, bowen1978family, cloud1992boundaries, brown2012daring}. In attachment theory, people with an anxious attachment style struggle to set boundaries for fear of alienating others, while people with an avoidant attachment style develop overly rigid and isolating boundaries \citep{ainsworth1978patterns}. Strengthening the agency of the self through semi-permeable boundaries is foundational for psychological health: meaningful connection with other people while preserving integrity of the self. 
+
+As with other living systems, humans have a rich array of psychological boundaries, with intelligence in their nuance. Anger, historically often viewed as sinful and irrational, is now seen as part of our system of boundaries: an important signal that our integrity is being violated \citep{lerner1985dance, videbeck2010psychiatric, sell2011recalibrational}. Healthy shame is suggested to operate as a bound on our own selfishness \citep{bradshaw1988healing}. Some psychologists argue that the incest taboo reroutes desires, which would otherwise be short-circuited, into productive activity \citep{stein1973incest, levistrauss1949structures, freud1913totem}. Assertiveness forms a boundary against the drives of other individuals \citep{smith1985say}. Skepticism protects us from credulity and having our own experience overwritten by the assertions of others \citep{lewandowsky2012misinformation, sperber2010epistemic}. Boundaries take many forms and continue to evolve as we learn across our lifetime.
+
+% great example is the imaginations we have about other people's views of us. 
+
+Without boundaries, interactions tend to result in one person being dominated by another: a patient's own beliefs replaced with those of an analyst, or the desires of one person in a relationship ignored. With semi-permeable boundaries, we have rich internal worlds. We are sensitive to each other, but there is also enough space for our internal experience to flourish without being immediately overwritten by external signals. Our internal experience is contextualized in relationship to other individuals, creating new structure: mutual understandings, relationships, communities, cultures. And as individuals we grow as we are shaped by different contexts. This metastability or loose coupling is interestingly reminiscent of brain dynamics.
+
+
+\subsection{Contemplative practice}
+
+\begin{center}
+\textit{`The world is perfect as it is, including my desire to change it.'}\\*Ram Dass
+\end{center}
+
+
+Awareness is contextualization. Think of an assumption somebody has that's never been questioned. That assumption could be lifelong and self-defining, or it could be fleeting and perceptual, like the assumption that the thing I'm touching is a keyboard. Within its own frame, it has a kind of tautological truth, a near-absolute formality. But sometimes there's a moment of stepping back, where the assumed form becomes an object in awareness, and the assumption is contextualized. The person realizes it's not an absolute truth standing alone, but rather a form in their mind.
+
+We inevitably get stuck because we have assumptions about things we tautologically can't allow to happen -- things that are Bad. What we do to prevent the bad thing from happening is what causes the bad thing to continue. Our collapsed patterns hold the tension that paradoxically creates the unease they resist. Awareness contextualizes these dynamics. It feel infinitely scary from the original frame, because it's allowing the bad thing. But from the new frame, the bad thing is just another content of experience. The fear or wrongness of is no longer an absolute but exists in context. So awareness brings healing and growth. 
+
+% People often report subjectively that the energy locked in the darkness turned out to be full of life, and that there's something self-evidently good or beautiful about participating in this mysterious discovery of new structure and relationship. 
+
+Awareness is an evolving system of boundaries: it limits overcommitment to any thing. The boundaries are semi-permeable: becoming aware of a belief doesn't make the belief wrong in an absolute sense any more than it was right in an absolute sense. Awareness holds us at the knife's edge of not collapsing exclusively into any particular forms. This activates a deeper sensitivity to our own livingness and to the world. Subtler forms, which would have been erased by overcommitment to other forms, instead play a role in a richer overall internal structure. Our own potential within the world creatively emerges in continued newness. 
+
+
+The whole idea of awareness is, of course, incomplete too. Once we picture awareness as an object, it's not the thing we're talking about. By construction, contextualization is an unsolvable mystery from any particular point of view.
+
+The orientation toward not overcommiting to particular forms within experience is familiar in art, poetry, music, dance. The meaning of art is open-ended and changes with context -- it has an inner life. What we value is perhaps something about the subtlety and the resistance art has to being pinned down into a formalism. It moves us.
+
+% Contemplative traditions suggest that the only `absolute' truth is the self-evident truth of immediate experience -- awareness itself. 
+
+%So the word `truth' is not really describing any particular thing at all.  
+
+% We could use different language and describe it as something more like an orientation toward stepping back from each perspective into awareness. And again, any concept we have of that process is not what we're really talking about.
+
+% What it takes to limit overcommitment to A is different than what it takes for B, so new boundaries are needed as the situation changes. This will be relevant for AI alignment in the next section. 
+
+% These are, by construction, the patterns that persist. From one point of view, this is the problem of suffering; from another point of view, it is all the beauty and meaningfulness of the world.
+
+% \footnote{Some schools of thought go a step farther to observe that whatever our current self is, it is always already inevitably contextualized, and love has no opposite.}
+
+
+% Contemplative philosophy posits that suffering comes from overcommitment to particular conceptualizations or desires: believing excessively in a formalism. Being attached to particular concepts, beliefs, feelings and other patterns in a collapsed way. 
+
+% We keep trying to give ourselves what we think we want under this model, pretending that things are formalizable, but as a result we become less sensitive to the rest of the world. 
+
+
 \section{Misalignment as overcommitment}
 
 \begin{center}
@@ -209,6 +434,8 @@ Following this line of reasoning, we propose that alignment can be viewed as the
 
 
 Finding a balance between existing factors is necessary but not sufficient. Alignment means staying at the subtle edge of sensitivity where fundamentally new things are entering. As humans, there's always *something* we're taking as axiomatically true -- something that's part of the structure of us as the thinker. But if we're right at that edge, we sometimes step back to see the axiomatic thing in context. There's always more to be sensitive to, something outside the available modalities of the thinker's perception. The stepping back process inherently can't be fully conceptualized. But it's what life does, that's the creative force of life that rides the knife edge. And that's what real alignment has to do (for the system including AI and humans). Fixing alignment to something conceptualizable would be disaster if AI becomes powerful. 
+
+any conceptual scheme, by itself, can't be a final answer. there's a risk if ai grows in power while being excessively attached to a particular scheme. 
 
 
 In the next few subsections we will look at examples of forms to which an AI system, or a human-AI system, might overcommit. One of the best studied examples is overcommitment of an AI system to particular values, which we review in Section 2.1. Systems could also overcommit to many other kinds of form, including principles, algorithms for learning values, methods for reaching consensus, or even something as abstract as the concept of what a value is. We include a few more examples in sections 2.2-5.
@@ -237,6 +464,7 @@ Go through the whole spectrum here. Starting with myopic, individual, verbally-s
 
 Any way we have of writing down or formalizing what we want misses important things. If we ask a powerful AI system to optimize for that formalization -- in other words, to give us what we've said we want -- the results are paradoxically disastrous \citep{krakovna2020specification, russell2019human, grossman1986costs, hadfield2019incomplete, zhuang2020consequences, gabriel2020artificial, wiener1960some, amodei2016concrete}. Suppose an AI's objective is to increase humans' subjective experience of wellbeing. Under reasonable definitions, achieving this objective is most efficiently achieved by imprisoning humans and directly stimulating neurons to trigger our experience of wellbeing \citep{bostrom2014superintelligence}. Doing too good a job of optimizing for any formalized goal is misaligned by being overcommitted to the myopic form of that goal.
 
+AI doesn't have to be aligned specifically `to human values', in a narrow sense of `human values'. There's one sense of human values that is open-ended and includes future discovery and things that are deeply embodied and difficult to express formally, and this is closer to what we mean. But any particular set of human values that we could write down is not what we mean. Ultimately we're aligning to this mysterious livingness of the universe. But because the universe is already full of life and structure, a big part of the problem is fully respecting and nurturing that existing life. 
 
 % Nick Bostrom gives some striking examples \citep{bostrom2014superintelligence}. Suppose part of our value function -- part of the objective we give to an AI system -- is to find a cure for cancer. A super-powerful AI system, trying its very best to do exactly what we've asked for, could plausibly create cancers in millions of humans in order to experiment more efficiently to find a cure. Or, 
 
@@ -372,33 +600,6 @@ In the past, humanity has always iterated on technological solutions which, at a
 
 
 
-\section{Contextualization and living boundaries}
-
-\begin{center}
-\textit{`When forced to work within a strict framework, the imagination is taxed to its utmost--and will produce its richest ideas. Given total freedom the work is likely to sprawl.'}\\*TS Eliot
-\end{center}
-
-\begin{center}
-\textit{`Nature's imagination is so much greater than man's, she's never going to let us relax.'}\\*Richard Feynman
-\end{center}
-
-To start to think about an answer to the big problem, let's look again at life for inspiration. How does it maintain its intricate multiscale balance and open-ended trajectory \citep{stanley2017open} despite the constant threat of collapse into one overcommitment or another? 
-
-In this section, we examine how living systems, including human systems, function as a web of semi-permeable boundaries. Semi-permeable boundaries contextualize forms as part of larger systems by allowing them to interact with other forms without one part dominating or the system collapsing to homogeneity. Life is both the contextualizer and the thing being contextualized. For example, cognitive control allows a particular impulse to exist usefully as a flexible part of the organism's whole motivation. Contextualization means that an entity's distinctiveness is preserved (or even enhanced), yet it no longer exists as an absolute or in isolation but rather within a larger context. Individual forms thrive, but the larger system accommodates partial perspectives rather than locking in a single story of what matters. 
-
-\textbf{***Paragraph for Gemini to write***} Something about *how* boundaries enable each form to deepen its own identity. Boundaries protect diversity, and when those diverse things exist, they experience the world through their own lens, accumulating signal from these experiences. This could be on the timescale of evolution or of learning. The signal they accumulate is about the deep structure of the world, and about how to function in multiple contexts. This creates modularity and potential. 
-
-Boundaries create the conditions for depth by partially shielding against the overwhelming flux of the rest of the world. Each entity sees a different corner of the world, developing its own unique perspective over timescales of evolution or learning and becoming a model of this niche \citep{conant1970every, friston2013life}. 
-
-This protective isolation creates the phenomenon of near-decomposability \citep{simon2018near}: the crucial property where the internal dynamics of a module unfold much faster than its interactions with the rest of the system.  \citep{clune2013evolutionary}
-
-This separation of timescales is the engine of evolvability. It allows a complex system to tinker with one part without crashing the others, effectively turning the impossible probability of evolving a complex whole all at once into a manageable series of local optimizations. A module is not just a spatial compartment; it is a temporal reservoir where a specific piece of the world's structure has been successfully captured, stabilized, and made available for novel recombination. The result is a system that can reason compositionally, building infinite new meanings from a finite alphabet of robust, time-tested parts.
-
-
-
-
-The boundaries of life carry a remarkable amount of information. The life that exists today is exactly what has successfully traced a path through time along a knife edge of avoiding collapse into either excess or insufficient stability \citep{schrodinger1944what, kauffman1992origins, bak2013nature, prigogine1984order, kirchhoff2018markov}. Along this path, the forms of life have become fractally complex with each part carrying traces of the many contexts it has participated in. The forms in this kaleidoscope, now including humans' storage and exchange of mental patterns, are interrelated through shared heritage, ecological interactions and facing the same world. Life works because each part is contextualized by the extraordinary nuance of the real world. 
-
 
 
 % This happens on every scale, and each living form therefore tends to admit many different useful approximations -- different perspectives with different domains of validity.
@@ -445,185 +646,6 @@ The boundaries of life carry a remarkable amount of information. The life that e
 
 % Interestingly, human thoughts look something like this on much shorter timescales. On timescales of millions of years we call the pressure `evolution'. On timescales of minutes or years we call it `creativity'.
 
-
-\subsection{Law}
-
-\begin{center}
-\textit{`Unity without uniformity and diversity without fragmentation.'}\\*Kofi Annan
-\end{center}
-
-Individual actors in a society and in an economy each act from their own perspective. Each actor's perspective is myopic. Myopia does not always mean selfishness in the sense of valuing only one's own wealth or physical wellbeing \citep{crockett2014harm, becker1974theory, henrich2001search}. But an actor cannot know everything or fully understand the motives and beliefs of others. 
-
-Without boundaries, social systems tend to overcommit to one actor's perspective or interests. This domination results in collapse and an impoverished system. For example, a company's profit motive, if unresisted, leads to suppression of competition, deception, and exploitation of individuals \citep{dalrymple2019anarchy, baran1966monopoly, goldacre2014bad, smith1776inquiry, bakan2006corporation}. An individual's desire for power and social dominance can lead to disempowering or silencing of others and even direct infringement on the autonomy and wellbeing of others \citep{hawley2003prosocial, tepper2000consequences, sidanius2001social}. Even genuinely held, ostensibly prosocial beliefs lead to conflict and suppression when different groups have different perspectives \citep{haidt2012righteous, scott1998seeing, greene2013moral}.
-
-Law, when it works well, is a boundary against dominance of any actor's motives. A person is motivated by a dispute to kill another person, but the law forbids murder. A business tries to maximize its success, but the law bans environmental exploitation, false advertising, and anti-competitive practice. 
-
-Effective laws do not annul the myopic drives of particular actors, but rather \textit{contextualize} them within a larger system. Under ideal circumstances, the boundary of the law reroutes the energy of a myopic drive in more productive direction. A would-be murderer, unwilling to face the penalty of the law, might seek a dispute resolution establishing a stable framework that supports future prospering of both parties. A business wanting to expand, but constrained to act within the law, is driven to build better products \citep{wu2011master, ashford1985using, ambec2013porter}. 
-
-Intelligent agents do not necessarily accept boundaries set on their desires. The law must adapt as its loopholes are discovered. Like other systems in the living world, it forms an evolving network of boundaries \citep{campbell1979assessing, ordonez2009goals, kerr1975folly, burns2006impact}. The evolving laws gradually acquire grounded wisdom as they are tested against many different situations and motives.
-
-
-
-\subsection{Problem solving in groups}
-
-\begin{center}
-\textit{`I could also observe, time and again, how too deep an immersion in the math literature tended to stifle creativity.'}\\*Jean Écalle
-\end{center}
-
-
-\begin{center}
-\textit{`There's more exchange of information than ever. What I don't like about the exchange of information is, I think that the removal of struggle to get that information creates bad cooking.'}\\*David Chang
-\end{center}
-
-
-In 1968, the nuclear submarine USS Scorpion vanished en route from the Mediterranean to Virginia \citep{sontag1998blind, craven2002silent, surowiecki2005wisdom}. The Navy started a search, but the amount of ocean where the vessel could be was enormous. John Craven, Chief Scientist of the U.S. Navy's Special Projects Office, devised an unusual search strategy. He assembled a diverse group of mathematicians, submarine specialists, and salvage operators. But he didn't let them communicate with each other. Each expert had to use their own methods to come up with their own estimate of where the Scorpion should be. Craven then aggregated the independent estimates into a single prediction. Astonishingly, the wreckage was found only 220 yards from this spot. 
-
-When solving problems, different people bring different perspectives and approaches. Each method processes the available data using a different toolkit. Under favorable conditions, combining the approaches of multiple contributors yields better results than any individual working alone. This `wisdom of crowds' effect has been documented in numerous domains of problem solving \citep{surowiecki2005wisdom, condorcet1785essai}.
-
-However, there is a perpetual danger of overcommitment. The wisdom of crowds is diminished if a group lacks diversity, either ab initio or as a result of within-group communication and influence \citep{surowiecki2005wisdom, hogarth1978note, ladha1992condorcet, hong2004groups}. Controlled experiments, as well as analyses of key decision moments in real groups, find that groups collectively reach irrational or suboptimal solutions when diverse and dissenting viewpoints are lost to a narrower set of ideas \citep{anderson1997information, stasser1985pooling, flowers1977laboratory, becker2017network, janis1972victims, bernstein2018intermittent, diehl1987productivity, frey2021social}. Unstructured communication methods like open discussion have a special vulnerability of rhetorical force dominating over epistemic merit. At the same time, sharing information is essential for the benefits of group wisdom and cooperative behavior. There is therefore a tension between overcommunication where diversity is lost and undercommunication where diversity is not leveraged. 
-
-The crux is semi-permeable boundaries: wisely transmitting the right information at the right time, in the right way. Thoughtful strategies for communication are like transmembrane channels that allow the right molecules in and out of the cell at the right time. They protect and enhance diverse problem solving approaches while also allowing productive interaction between them. Semi-permeable boundaries are contextualizing: they retain individuality while also situating it within relationships to other entities. 
-
-Many varieties of semi-permeable boundary are effective in boosting group performance, including: creating decentralized topologies where group members only communicate with nearby neighbors \citep{becker2017network, mason2008propagation}; defining rules that incentivize acting according to one's own belief rather than following the crowd \citep{hung2001information, bazazi2019self}; modeling the strengths and weaknesses of each group member \citep{welinder2010multidimensional}; promoting leadership styles where one person's views are less likely to dominate \citep{flowers1977laboratory, leana1985partial}; and periodically breaking up into subgroups or rotating membership \citep{janis1972victims, hauer2021science, trainer2020team, straus2011group, feldman1994whos, sutton1987selecting, kane2005knowledge, wu2022membership, owen2019avoid, vafeas2003length, bebchuk2005costs, baron2005so}. In a later section, we will look at boundaries within an individual, such as skepticism, that make it easier to interact with others without overwriting one's own beliefs.
-
-%If individuals contribute their own answers to the group too soon, diversity in the group can collapse. 
-
-% A particularly important boundary for group problem solving is simply giving members the space to work independently before communicating \citep{surowiecki2005wisdom}. In the case of the submarine search, experts weren't allowed to communicate while forming their own estimates; the estimates were later aggregated in a principled way by Craven. Analogously, science historians argue that partial intellectual isolation has at times been beneficial for the emergence of deeply new ideas. Einstein's relative independence from the advanced mathematical techniques of contemporaries like Hilbert led to a theory of general relativity grounded in deep physical insight rather than mathematical convenience \citep{stachel1989einstein, corry1997belated, renn1999heuristics}. Newton's and Leibniz's famous independent development of calculus, as a result of their mutual isolation, yielded two distinct and valuable mathematical systems that complemented and enriched one another \citep{hall2002philosophers}. 
-
-The importance of balancing communication with independence also shows up in controlled experiments. \cite{frey2021social} elicited votes about general knowledge questions (such as, `In which year did Germany invade Denmark?') from a group. In one condition of the experiment, participants voted sequentially and could see the running tallies of previous voters. Compared to independent voting, final group means were less accurate in the sequential condition, because early mistakes got baked in to the group's belief. In a related experiment, \cite{bernstein2018intermittent} tasked small groups with solving instances of the traveling salesman problem. Groups that exchanged information continuously tended to reach poor final outcomes, compared to groups with less communication. When one individual discovered a solution that looked compelling but was actually a dead-end, other group members collapsed on this dead-end and the group as a whole made less progress.
-
-% Each group was randomly assigned to one of three conditions. In some groups, members could continually see the work of other members as they progressed toward a solution; in some groups members could only occasionally exchange progress; and in some groups there was no exchange. The researchers found that groups with continual information exchange rarely found good solutions. In these groups, typically one individual would stumble on a solution that looked compelling but was actually a dead-end. When this solution was immediately shared with others, it hampered their progress. Groups with occasional or no contact were much more likely to find optimal or near-optimal solutions. 
-
-% We stress that this is not an indictment of connection and communication between group members. Rapid access to information and shared solutions often demonstrably boosts productivity. In some situations the ideal boundary might be working in isolation for months at a time. But in other situations it could be daily meetings with intensive communication, while maintaining the self-confidence to keep pursuing one's own intuition in the face of skepticism from others \citep{sawyer2017group, paulus2003group}. The key is that boundaries support flexible interactions and avoid overcommitment to particular forms.
-
-\subsection{Cells}
-
-\begin{center}
-\textit{`It is by avoiding the rapid decay into the inert state of equilibrium that an organism appears so enigmatic.'}\\*Erwin Schrödinger
-\end{center}
-
-
-
-One of the most reified examples of a boundary in nature is the cell membrane \citep{watson2015biological, alberts2022molecular, bray2019wetware, harold2001way, lane2015vital}. Without the membrane, the pressure of chemical gradients would rapidly homogenize the cell's contents with the outside -- severe overcommitment to a uniform state, collapsing the subtlety of the cell's structure. Thanks to the membrane, both the cell and the outside can exist, a more diverse, less symmetric arrangement \citep{schrodinger1944what, anderson1972more, prigogine1984order, turing1952chemical}. 
-
-Cell membranes are semi-permeable: they prevent the conditions outside from grossly overwriting the inside, but they do not block interactions wholesale. Via the sophistication of the membrane, outside information is selectively gated and transformed. To maintain its semi-fragile internal state between stasis and randomness, the cell needs a constant influx of energy. Channels permit certain small molecules to enter but not others, and these permissions are switched on and off according to momentary context. Endocytosis brings larger structures from outside into the cell. Cell surface receptors, when activated by external ligands, initiate intracellular signaling cascades that little resemble the ligand: an even more heavily curated form of influence. These and other processes allow information from the outside to influence the inside -- not in a totalitarian way but in a nuanced way, mediated by the intelligence of the boundary. 
-
-Semi-permeable boundaries store and put to work the potential energy of the asymmetry between different forms. The same gradients that could annihilate the cell to equilibrium instead drive useful signaling, like action potentials in nerve and muscle cells. Instead of short-circuiting, myopic forces are contextualized to propel the continuation of life.
-
-% Why was it easier for mitochondria to merge into cells rather than being evolved from within? It's literally that they have their own discreteness that permits cells to ship them around to serve as local power stations, and this fueled the explosion of complex morphologies in multicellular organisms.
-
-In multicellular organisms, most of the `outside' is defined by other cells. For organisms to work well as a whole, even though the cells are largely `on the same team', it's important that they don't blend into each other. Neurons rely on this principle dramatically, stretching out long processes to almost touch other neurons but then leaving the gap of the synapse. Synapses allow the network to precisely isolate many separate signals and direct information to relevant cells. They boost computational power as the signals are gated and transformed, and the nature of this transformation is plastic, storing a huge amount of information. Symbiogenesis is another example of how cells achieve more by retaining some discreteness than by smoothly blending together \citep{margulis1995what, margulis1986microcosmos}. 
-
-% A directly connected web of cells, as Golgi envisioned, tends to blend information. 
-
-Again, collapse or overcommitment is always relative. For example, programmed cell death is catastrophic collapse at the level of the dying cell, but it can be beneficial or even necessary for the organism the cell belongs to.
-
-
-\subsection{Genetic recombination}
-
-% \begin{center}
-% \textit{`The mere act of crossing by itself does no good. The good depends on the individuals which are crossed differing slightly in constitution, owing to their progenitors having been subjected during several generations to slightly different conditions.'}\\*Charles Darwin
-% \end{center}
-
-Sex is costly. An organism must find a mate in the vast and dangerous world, and half of the creatures can't reproduce \citep{smith1971origin, lehtonen2012many, smith1978evolution, goodenough2014origins}. Yet nearly all eukaryotes reproduce sexually\footnote{And all known species exhibit some kind of gene transfer, performing a related function.} \citep{speijer2015sex, bell1982masterpiece}. This raises the question: what is so great about sex?
-
-In asexually reproducing species, all descendants of an organism are nearly clones, up to mutations within the lineage. Being permanently locked together gives the genes strong influence on each other. Selection can't act on one gene without dragging on the others. For example, suppose there are two genotypes within an asexual population, carrying different alleles at each of two different loci, as a result of mutations. One of the loci is currently fitness-neutral while the other is subject to selection pressure. The selection pressure tends to cause one of these genotypes to outcompete the other, eliminating one variant at the neutral locus. In other words, tight linkage between genes puts direct downward pressure on genetic diversity \citep{charlesworth1993effect, hudson1995deleterious}. Additionally, if two different beneficial mutations arise in two different organisms, they compete with each other. The only way for a single organism to obtain both beneficial mutations is if one arises again within the subpopulation that already carries the other, which is unlikely and therefore slow \citep{hill1966effect, felsenstein1974evolutionary, weismann1889essays, fisher1930genetial, muller1932some, crow1965evolution}. Conversely, if a deleterious mutation arises, all of the other genes in that lineage are stuck with it forever -- unless there is a reverse mutation, which is rare \citep{keightley2006interference, muller1932some}. An asexual species has rigid rather than flexible interaction between genes: it overcommits to particular genetic arrangements.
-
-Recombination is a boundary that softens the rigid interactions between genes. It frequently breaks up the relationships between genes, assembling them into new genomes, effectively saying, `don't get overconfident in that genetic arrangement; hold each arrangement more lightly'. From a gene's point of view, this looks like, `don't get overly dependent on specific other genes'. Aspects of the genome that work well are propagated, like sodium ions gated into a neuron during an action potential, and poorly-working aspects are discarded. Sex contextualizes genetic arrangements. 
-
-Boundaries encourage lightly-held, modular interactions. By not overcommitting to a particular genome, sex encourages genes to flexibly interact with other genes \citep{livnat2008mixability, livnat2010sex, wagner1996perspective, holland1975adaptation,dawkins1976selfish, clune2013evolutionary}. Instead of being overfit to a particular context, genes develop a robust identity that's both independent and inter-functional. Recombination puts genes under pressure to evolve a generalized, grounded wisdom that reflects the structure of the world, like a person learning multiple languages and extracting the underlying commonalities. At the same time, because each gene is always operating in the presence of other genes, it develops its own distinct point of view that adds unique value to a genome.
-
-
-
-
-
-
-
-\subsection{Cognitive control}
-
-Cognitive control is a broad class of boundaries on particular drives, goals and strategies \citep{botvinick2001conflict, braver2012variable, miyake2000unity, miller2001integrative}. In section 1.1, we looked at how organisms can overcommit -- unhealthily -- to particular motives or strategies for fulfilling the motives. Cognitive control contextualizes motives, strategies and thought patterns by allowing them to exist and perform useful functions without dominating. For example, I may have a drive to consume food, but I can apply control to avoid overeating. I might work obsessively on a project while also having a rule that I must go to bed at 10 pm. This boundary doesn't block me from temporarily taking a strong perspective, but it does place contextual limits on it. Cognitive control, when functioning well, is a semi-permeable boundary: it situates myopic patterns within a larger system. 
-
-Control translates the pressure of motivation into higher-order structure. When nothing stops a particular drive or goal or strategy from dominating behavior, it tends to follow a shortest path defined under its own myopic understanding of the world. For example, the chickens in Section 1.1 wanted food and tried to take the shortest path toward it in the naive sense of a straight line through space. In the backwards world created by the experimenter, this action does not accomplish the deeper goal of reaching food, for which moving spatially toward food is only a proxy. The chicken's motivation is short-circuited: it expends energy without making progress on the deeper goal. Humans can easily solve the task by inhibiting their prepotent impulse to approach food. The boundary of control breaks the symmetry of congruent action. In general, semi-permeable boundaries promote formation of new structure by placing contextualizing limits.
-
-
-\subsection{Information in the brain}
-
-\begin{center}
-\textit{`Memory is not an average of experience.'}\\*David Marr
-\end{center}
-
-
-The brain miraculously keeps many pieces of information distinct from one another. If you picture a highly connected network of neurons with their signals continually impinging on one another, it's not obvious that this would be an easy thing to accomplish. In this section, we review a selected handful of mechanisms by which the brain maintains semi-permeable boundaries between different signals. Each paragraph below focuses on one of these mechanisms. There are many more that we do not cover. The brain is perhaps the most extraordinary example in nature of a system of semi-permeable boundaries supporting the proliferation of multitudinous forms that develop their own richly distinct identities yet are also meaningfully linked together.
-
-Lateral inhibition is a central tenant of neural organization \citep{isaacson2011inhibition, hubel1962receptive, douglas2004neuronal}. Lateral inhibition means the activity of a neuron is reduced when its neighbors are active. This segregates information to create and sustain distinct neural representations. Lateral inhibition was first studied in the nerve cells of the eye, where it enhances contrast at the edges of stimuli \citep{hartline1956inhibition}. When a photoreceptor in the retina is activated by light, it sends signals forward toward the brain; but it also activates inhibitory interneurons, which suppress adjacent photoreceptors and their downstream targets. This amplifies the perception of borders and contours. And the same principle operates throughout the brain. In visual cortex, for example, inhibition sharpens selectivity of neurons for abstract visual features like the orientation of a line \citep{sillito1975contribution}. 
-
-% Global inhibition also supports the existence of distinct forms. In the hippocampal formation and connected areas, some cells are tuned to particular directions the animal's head could be facing. Inhibition creates a winner-take-all effect, integrating over intermittent noisy evidence (like vestibular signals when the head turns) to create a single stable representation of the head direction \citep{zhang1996understanding, rolls2022attractor}. Inhibition prevents the signals in some channels from getting blended or overwritten by the signals in other channels. 
-
-The brain uses inhibition organized into oscillatory dynamics to keep memory items separated \citep{lisman2013theta, jensen2010shaping, roux2014working, klimesch2007eeg}. Distinct items fire at different phases of the 8-12 Hz alpha oscillation. The inhibitory phase of the alpha rhythm silences all but one item at any given moment. By segregating firing in phase space, multiple memories are held simultaneously without interference. 
-
-The circuit architecture of hippocampus separates experiences or concepts into distinct representations, avoiding interference between similar memories \citep{mcclelland1995why, marr1971simple, mcnaughton1987hippocampal, treves1994computational, muller1987effects, leutgeb2007pattern, colgin2008frequency}. Inputs from entorhinal cortex are distributed via mossy fibers to a much larger population of dentate gyrus granule cells, creating sparse, orthogonal codes in dentate gyrus. This way, situations or ideas that are superficially similar but functionally different are kept cleanly separated in neuronal activity space -- a unique neural fingerprint for each distinct concept or memory. This prevents, for example, yesterday's memory of where you parked your car from interfering with today's memory of where you parked your car in the same parking ramp. 
-
-Compared to other animals, the human brain especially attempts to discretize its experience into approximately symbolic representations \citep{dehaene2022symbols, touretzky1988distributed, smolensky1990tensor, behrens2018cognitive}. The capacity to separate things into nearly-discrete entities and then recombine them in vast numbers of structured ways powers the extraordinary human capacity for reasoning \citep{fodor1975language, pinker1994language, lake2015human, chomsky1957syntactic, kurth2023replay}. Semi-permable boundaries keep forms distinct while enabling them to flexibly and modularly interact. Like genes participating in many genomes, discretized neural representations participate in many structured combinations. This encourages each entity to develop an identity that both is distinct and also reflects a more generalized picture of the world.
-
-More broadly, healthy brain dynamics live at a sweet spot between excessively stable synchronized patterns and chaotic uncorrelated noise \citep{beggs2003neuronal, chialvo2010emergent, tognoli2014metastable, deco2011emerging, bak1987self, shew2011information, rabinovich2008transient, haldeman2005critical, kotler2025pathfinding}. In this regime, the brain has access to a huge repertoire of patterns it can explore temporarily without overcommitting or getting stuck. 
-
-Loss of dynamic flexibility, where the brain's activity becomes more stereotyped and no longer explores as wide a repertoire of states, is tied to lower cognitive performance \citep{garrett2013bold, grady2014understanding, cocchi2017criticality, muller2025critical, shew2009neuronal}. More extreme stereotypy corresponds to severe dysfunction. For example, in Parkinson's disease, basal ganglia and cortical circuits collapse into excess synchrony and lose the flexibility needed to guide nuanced motor outputs \citep{hammond2007pathological, brown2003rhythmic}. 
-
-
-\subsection{Interpersonal dynamics}
-
-\begin{center}
-\textit{`Stand together yet not too near together, as the oak tree and the cypress grow not in each other's shadow.'}\\*Kahlil Gibran
-\end{center}
-
-
-Psychoanalysis introduced the concept of `boundaries' in human psychology, distinguishing what is the self from what is outside or other \citep{federn1928narcissism, tausk1919entstehung}. Early works applied the concept to psychosis, where those boundaries were thought to be blurred. But the need for clear self-other boundaries was also thrown into relief by the intimacy of the therapeutic relationship. In complex internal territory, it became harder to disentangle which experiences really belonged to someone and which were attributed in imagination by the other person \citep{freud1894neuro, freud1910future}. Analysts risked harming patients by imposing their own beliefs and desires, even to the extent of sexual abuse or psychological domination \citep{gabbard1995boundaries}. 
-
-The concept was enriched by Gestalt therapists, who agreed that boundaries can be too permeable; but added that they can also be too rigid, causing isolation and stagnation \citep{perls1951gestalt, polster1974gestalt, yontef1993awareness}. Family systems theorists and subsequent work further emphasized that lack of boundary in close relationships leads to enmeshment and loss of autonomy, while excessively rigid boundaries lead to isolation \citep{minuchin1974families, bowen1978family, cloud1992boundaries, brown2012daring}. In attachment theory, people with an anxious attachment style struggle to set boundaries for fear of alienating others, while people with an avoidant attachment style develop overly rigid and isolating boundaries \citep{ainsworth1978patterns}. Strengthening the agency of the self through semi-permeable boundaries is foundational for psychological health: meaningful connection with other people while preserving integrity of the self. 
-
-As with other living systems, humans have a rich array of psychological boundaries, with intelligence in their nuance. Anger, historically often viewed as sinful and irrational, is now seen as part of our system of boundaries: an important signal that our integrity is being violated \citep{lerner1985dance, videbeck2010psychiatric, sell2011recalibrational}. Healthy shame is suggested to operate as a bound on our own selfishness \citep{bradshaw1988healing}. Some psychologists argue that the incest taboo reroutes desires, which would otherwise be short-circuited, into productive activity \citep{stein1973incest, levistrauss1949structures, freud1913totem}. Assertiveness forms a boundary against the drives of other individuals \citep{smith1985say}. Skepticism protects us from credulity and having our own experience overwritten by the assertions of others \citep{lewandowsky2012misinformation, sperber2010epistemic}. Boundaries take many forms and continue to evolve as we learn across our lifetime.
-
-% great example is the imaginations we have about other people's views of us. 
-
-Without boundaries, interactions tend to result in one person being dominated by another: a patient's own beliefs replaced with those of an analyst, or the desires of one person in a relationship ignored. With semi-permeable boundaries, we have rich internal worlds. We are sensitive to each other, but there is also enough space for our internal experience to flourish without being immediately overwritten by external signals. Our internal experience is contextualized in relationship to other individuals, creating new structure: mutual understandings, relationships, communities, cultures. And as individuals we grow as we are shaped by different contexts. This metastability or loose coupling is interestingly reminiscent of brain dynamics.
-
-
-\subsection{Contemplative practice}
-
-\begin{center}
-\textit{`The world is perfect as it is, including my desire to change it.'}\\*Ram Dass
-\end{center}
-
-
-Awareness is contextualization. Think of an assumption somebody has that's never been questioned. That assumption could be lifelong and self-defining, or it could be fleeting and perceptual, like the assumption that the thing I'm touching is a keyboard. Within its own frame, it has a kind of tautological truth, a near-absolute formality. But sometimes there's a moment of stepping back, where the assumed form becomes an object in awareness, and the assumption is contextualized. The person realizes it's not an absolute truth standing alone, but rather a form in their mind.
-
-We inevitably get stuck because we have assumptions about things we tautologically can't allow to happen -- things that are Bad. What we do to prevent the bad thing from happening is what causes the bad thing to continue. Our collapsed patterns hold the tension that paradoxically creates the unease they resist. Awareness contextualizes these dynamics. It feel infinitely scary from the original frame, because it's allowing the bad thing. But from the new frame, the bad thing is just another content of experience. The fear or wrongness of is no longer an absolute but exists in context. So awareness brings healing and growth. 
-
-% People often report subjectively that the energy locked in the darkness turned out to be full of life, and that there's something self-evidently good or beautiful about participating in this mysterious discovery of new structure and relationship. 
-
-Awareness is an evolving system of boundaries: it limits overcommitment to any thing. The boundaries are semi-permeable: becoming aware of a belief doesn't make the belief wrong in an absolute sense any more than it was right in an absolute sense. Awareness holds us at the knife's edge of not collapsing exclusively into any particular forms. This activates a deeper sensitivity to our own livingness and to the world. Subtler forms, which would have been erased by overcommitment to other forms, instead play a role in a richer overall internal structure. Our own potential within the world creatively emerges in continued newness. 
-
-
-The whole idea of awareness is, of course, incomplete too. Once we picture awareness as an object, it's not the thing we're talking about. By construction, contextualization is an unsolvable mystery from any particular point of view.
-
-The orientation toward not overcommiting to particular forms within experience is familiar in art, poetry, music, dance. The meaning of art is open-ended and changes with context -- it has an inner life. What we value is perhaps something about the subtlety and the resistance art has to being pinned down into a formalism. It moves us.
-
-% Contemplative traditions suggest that the only `absolute' truth is the self-evident truth of immediate experience -- awareness itself. 
-
-%So the word `truth' is not really describing any particular thing at all.  
-
-% We could use different language and describe it as something more like an orientation toward stepping back from each perspective into awareness. And again, any concept we have of that process is not what we're really talking about.
-
-% What it takes to limit overcommitment to A is different than what it takes for B, so new boundaries are needed as the situation changes. This will be relevant for AI alignment in the next section. 
-
-% These are, by construction, the patterns that persist. From one point of view, this is the problem of suffering; from another point of view, it is all the beauty and meaningfulness of the world.
-
-% \footnote{Some schools of thought go a step farther to observe that whatever our current self is, it is always already inevitably contextualized, and love has no opposite.}
-
-
-% Contemplative philosophy posits that suffering comes from overcommitment to particular conceptualizations or desires: believing excessively in a formalism. Being attached to particular concepts, beliefs, feelings and other patterns in a collapsed way. 
-
-% We keep trying to give ourselves what we think we want under this model, pretending that things are formalizable, but as a result we become less sensitive to the rest of the world. 
 
 \section{An aligned future}
 
