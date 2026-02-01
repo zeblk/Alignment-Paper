@@ -437,21 +437,43 @@ We begin Section 2 by casting a few well-studied examples of misalignment -- the
 
 % The alignment problem is sometimes described as getting AI to act in accordance with human values. When framed this way, we quickly realize i
 
-The alignment problem is often framed as the problem of defining what we as humans value (sometimes called `outer alignment') and then designing an AI that successfully optimizes for this function (`inner alignment'). But it is difficult to capture what we value.
+The alignment problem is often framed as the problem of defining what we as humans value (sometimes called `outer alignment') and then designing an AI that successfully optimizes for this function (`inner alignment'). But it is difficult to capture what we value \citep{amodei2016concrete,gabriel2020artificial,russell2019human}.
 
-The most naive approach to accessing human values is to simply ask people what they value or prefer. This approach runs into many problems \citep{amodei2016concrete,gabriel2020artificial,russell2019human}. What we say we want or like, or the choices we make, are poor reflections of what is actually advantageous for our long-term wellbeing. Our momentary preferences tend to be myopic. We often prefer to get an immediate reward even if it comes with a larger delayed punishment -- reflected in our decisions about procrastination, drug abuse, spending and so on. We lack the knowledge or resources to reason about many of the consequences of our stated preferences. Our myopia is illustrated by recent problems with sycophancy in commercial chatbots \citep{openai2025sycophancy}. Human feedback about particular bot utterances was part of the training signal for the model. But these human feedback signals tend to prefer utterances that are more flattering. It's much easier for a rater to judge surface characteristics than to determine whether the bot said something true about a complex topic, or something that would lead to increased long-run welfare. We also tend to be selfish, neglecting the welfare of other humans or living creatures. We have difficulty accessing through words or button presses all of the depth of what we value. Our stated values are extremely sensitive to the framing of the question.
+The most naive approach to accessing human values is to simply ask people what they value or prefer. This approach runs into many problems. Our articulation of what we want or like, or the choices we make, are poor reflections of what is actually advantageous for our own long-term wellbeing or the wellbeing of other humans or lifeforms. Our stated or revealed preferences are:
 
-To mitigate this, the field has moved toward deliberated preferences or idealized values, representing what we would prefer if we had more time, knowledge, and computational power \citep{bostrom2014superintelligence, soares2014aligning, yudkowsky2004coherent}. One way to access longer-sighted preferences is by giving humans more time and resources to think about their answer, to ask on behalf of another person, or on behalf of their future self. You can give them access to tools and information. You can ask people retrospectively whether an outcome was good, rather than prospectively. 
+\textit{Short-sighted in time.} We often prefer to get an immediate reward even if it comes with a larger delayed punishment, which is reflected in our decisions about procrastination, drug abuse, spending and so on \citep{evenden1999varieties, ainslie1975specious}. 
+
+\textit{Short-sighted in computation.} We lack the knowledge or resources to reason about many of the consequences of our stated preferences. 
+
+One illustration is recent problems with sycophancy in commercial chatbots \citep{openai2025sycophancy}. Human feedback about particular bot utterances was part of the training signal for the model. But these human feedback signals tend to prefer utterances that are more flattering. It's much easier for a rater to judge surface characteristics than to determine whether the bot said something true about a complex topic, or something that would lead to increased long-run welfare.   
+
+\textit{Short-sighted in social distance.} We tend to be selfish, neglecting the welfare of other humans or living creatures.
+
+\textit{Limited to what we have concepts for.} For example, imagine asking someone in the year 1800 about anthropogenic global warming. We also have a hard time articulating through words or button presses all of the depth of what we value, which involves shades of meaning around our bodies, our relationships with other people, and our embodied relationships to physical parts of the world. Philosophers have long emphasized the existence of tacit, embodied, and practice-based forms of understanding that resist formalization \citep{Polanyi1966, Dreyfus1972}. Ethical perception often involves sensitivity to particular contexts rather than application of general rules \citep{Nussbaum2001}.
+
+\textit{Sensitive to the framing of the question or choice.}
+
+\textit{Always changing.} We are even discovering new concepts and new kinds of things to value.
+
+\textit{Not compatible between different individuals.}
+Different humans disagree about what is good. Their interests clash, as well as their values and conceptualizations. These things are often fundamentally irreconcilable.
 
 
 
-Safely research is also keenly attuned to the problem that different people want different things, and these things are often fundamentally irreconcilable. Pluralistic alignment. There is not even universal agreement on which principles are most appropriate for aggregating the preferences of different people.
 
-Our values are always changing.
+
+
+
+
+To mitigate this, the field has moved toward deliberated preferences or idealized values, representing what we would prefer if we had more time, knowledge, and computational power \citep{bostrom2014superintelligence, soares2014aligning, yudkowsky2004coherent}. One way to access longer-sighted preferences is by giving humans more time and resources to think about their answer, to ask on behalf of another person, or on behalf of their future self. You can give them access to tools and information. You can ask people retrospectively whether an outcome was good, rather than prospectively. But although we can access *improved* values this way, it is still difficult to access the truly idealized values. Even worse, they are continually changing, and there are new concepts we haven't thought of yet. New kinds of morality. We can't lock in any particular thing. The process itself will have to evolve. 
+
+Pluralistic alignment. There is not even universal agreement on which principles are most appropriate for aggregating the preferences of different people. Even pluralistic alignment \citep{sorensen2024roadmap}, which seeks to aggregate diverse human perspectives, faces the risk of overcommitment if it treats the aggregated values or agreed principles (or even the mechanism of aggregation or discovery) as absolute. If we formalize a democratic process and maximize adherence to it, we risk tyranny of the majority or the entrenchment of biases codified in the aggregation algorithm \citep{gabriel2020artificial}.
+
+Principles frameworks.
 
 Yet, even these refined targets remain static snapshots. To treat a `coherent extrapolated volition' as a fixed optimization target is to freeze moral development at a specific point in time. It creates a system that is sensitive to the extrapolated values of today's humanity but insensitive to the open-ended moral discovery that defines our history. As John Dewey argued, valuation is not a fixed standard but a continuous process of resolving conflicts in experience \citep{dewey1939theory}. Overcommitting to a static ideal, no matter how enlightened, precludes the emergence of new values that we lack the concepts to articulate today.
 
-Philosophers have long emphasized the existence of tacit, embodied, and practice-based forms of understanding that resist formalization \citep{Polanyi1966, Dreyfus1972}. Ethical perception often involves sensitivity to particular contexts rather than application of general rules \citep{Nussbaum2001}. From this perspective, the problem is not merely that we have failed to find the right formalization, but that treating values as fully formalizable objects is itself a category error.
+From this perspective, the problem is not merely that we have failed to find the right formalization, but that treating values as fully formalizable objects is itself a category error.
 
 
 We want different things at different times. 
