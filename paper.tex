@@ -384,7 +384,7 @@ But sometimes there's a moment of stepping back, where the assumed form becomes 
 
 Awareness is an evolving system of boundaries that limits overcommitment to any particular belief or mental form. The boundaries are semi-permeable: becoming aware of a belief doesn't make the belief wrong in an absolute sense any more than it was right in an absolute sense. It is held productively for the partial truth it contains. Awareness keeps us at the edge of not collapsing exclusively into particular forms, holding all the partial truths in delicate balance. This activates a deeper sensitivity to our own livingness and to the world. Subtler forms, which could have been erased by clamped fixation on other forms, instead play a role in a richer overall internal structure. Our own potential within the world creatively emerges in continued newness. Of course, any concept of awareness is itself incomplete. Once we picture awareness as an object, it's not the thing we're talking about. By construction, contextualization is an unsolvable mystery from any particular point of view.
 
-Interestingly, while the intrinsic mysteriousness of awareness can sound esoteric, the orientation toward not overcommiting to particular forms within experience is commonplace in art, poetry, music, dance. The meaning of art is open-ended and changes with context -- it has an inner life. What we value is perhaps something about the subtlety and the resistance art has to being pinned down into a formalism. It moves us.
+Interestingly, while the intrinsic mysteriousness of awareness can sound esoteric, the orientation toward not overcommiting to particular forms within experience is commonplace in art, poetry, music, dance. The meaning of art is open-ended and changes with context -- it has an inner life. Part of what we value might be the subtlety and the resistance art has to being pinned down into a formalism. It moves us.
 
 % inevitably get stuck because we have assumptions about things we tautologically can't allow -- things that are Bad. what we do to prevent that Bad thing from happening is what causes the thing to continue. 
 
@@ -420,106 +420,51 @@ Interestingly, while the intrinsic mysteriousness of awareness can sound esoteri
 \textit{`Growth for the sake of growth is the ideology of the cancer cell.'}\\*Edward Abbey
 \end{center}
 
-In Section 1, we observed that living systems are healthy and flourishing when they hold the delicate, generative interplay of many partial perspectives. Conversely, they are unhealthy when any particular form -- including randomness or homogeneity -- gains too much traction, suppressing nuance and reducing creative potential. Finely-honed networks of semi-permeable boundaries prevent collapse into rigidity or randomness, instead supporting contextualization into ever-finer shades of subtlety. Semi-permeable boundaries both promote the unique individuality of distinct entities and also enable relational participation. They hold local perspectives strongly enough to act but lightly enough to remain open to broader context. Critically, well-functioning boundaries lead to ongoing exploration of fundamentally new forms, not static equilibrium or fixed compromise.
+In Section 1, we observed that living systems are healthy and flourishing when they hold the delicate, generative interplay of many partial perspectives. Conversely, they are unhealthy when any particular form -- including randomness or homogeneity -- gains too much traction, suppressing nuance and reducing creative potential. Finely-honed networks of semi-permeable boundaries prevent collapse into rigidity or randomness, instead supporting contextualization into ever-finer shades of subtlety. Semi-permeable boundaries both promote the unique individuality of distinct entities and also enable relational participation. They hold local perspectives strongly enough to act but lightly enough to remain open to broader context. Critically, well-functioning boundaries lead to ongoing exploration of fundamentally new forms, not to static equilibrium or fixed compromise.
 
-Now we look at the alignment problem through this lens. While people disagree on exactly what behaviors or properties of an AI system are aligned, there is general agreement that alignment means working toward healthy and flourishing futures. We therefore reason that alignment can be understood as the problem of maintaining the creative sensitivity of life by continually relaxing attachment to any particular form into a larger context. An advantage of this perspective is that it is less bound to current conceptual frames which might change radically as intelligence increases and human-AI systems evolve. 
+Now we look at the alignment problem through this lens. While people disagree on exactly what behaviors or properties of an AI system are aligned, there is general agreement that alignment means working toward healthy and flourishing futures. We therefore reason that alignment can be understood as the problem of maintaining the creative sensitivity of life by continually contextualizing attachment to any particular form. An advantage of this perspective is that it is less bound to current conceptual frames which might change radically as intelligence increases and human-AI systems evolve. 
 
-
-We begin Section 2 by casting a few well-studied examples of misalignment -- the Midas problem, poor performance, inequality, loss of diversity -- as special cases of overcommitment to particular forms. Then we make a case that the way life avoids overcommitment to maintain semi-stable, open-ended, difficult-to-formalize sensitivity is indeed well-aligned with what we value most deeply. Finally, we highlight what our life-inspired framework offers beyond existing views of alignment. 
-
-
+We begin Section 2 by casting a few well-studied alignment problems -- value misspecification, failures of instruction following, inequality, and loss of diversity -- as special cases of overcommitment to particular forms. Then we make a case that the way life avoids overcommitment to maintain semi-stable, open-ended, difficult-to-formalize sensitivity is indeed well-aligned with what we value most deeply. Finally, we highlight what our life-inspired framework offers beyond existing views of alignment. 
 
 % We'll then ask about the relationship between this broad concept of alignment and moral and normative notions of `good' and `should'. And finally we'll reflect on how large our definition makes the problem of alignment.
 
-
-
-\subsection{Optimizing for particular values or goals}
+\subsection{Value misspecification}
 
 % The alignment problem is sometimes described as getting AI to act in accordance with human values. When framed this way, we quickly realize i
 
-The alignment problem is often framed as the problem of defining what we as humans value (sometimes called `outer alignment') and then designing an AI that successfully optimizes for this function (`inner alignment'). But it is difficult to capture what we value \citep{amodei2016concrete,gabriel2020artificial,russell2019human}.
+The alignment problem is often framed as the problem of specifying what we as humans value (sometimes called `outer alignment') and then designing an AI that successfully optimizes for this specification (`inner alignment'). 
 
-The most naive approach to accessing human values is to simply ask people what they value or prefer. This approach runs into many problems. Our articulation of what we want or like, or the choices we make, are poor reflections of what is actually advantageous for our own long-term wellbeing or the wellbeing of other humans or lifeforms. Our stated or revealed preferences are:
+But it is difficult to capture what we value \citep{amodei2016concrete,gabriel2020artificial,russell2019human}. Our articulation of what we want or like, or the choices we make, are poor reflections of what is actually advantageous for our own long-term wellbeing or the wellbeing of other humans or lifeforms. Our stated or revealed preferences are:
 
-\textit{Short-sighted in time.} We often prefer to get an immediate reward even if it comes with a larger delayed punishment, which is reflected in our decisions about procrastination, drug abuse, spending and so on \citep{evenden1999varieties, ainslie1975specious}. 
+\begin{itemize}
+    \item \textit{Short-sighted in time.} We often prefer to get an immediate reward even if it comes with a larger delayed punishment, which is reflected in our decisions about procrastination, drug abuse, spending and so on \citep{evenden1999varieties, ainslie1975specious}. 
 
-\textit{Short-sighted in computation.} We lack the knowledge or resources to reason about many of the consequences of our stated preferences. 
+    \item \textit{Short-sighted in computation.} We lack the knowledge or resources to reason about many of the consequences of our stated preferences. 
 
 One illustration is recent problems with sycophancy in commercial chatbots \citep{openai2025sycophancy}. Human feedback about particular bot utterances was part of the training signal for the model. But these human feedback signals tend to prefer utterances that are more flattering. It's much easier for a rater to judge surface characteristics than to determine whether the bot said something true about a complex topic, or something that would lead to increased long-run welfare.   
 
-\textit{Short-sighted in social distance.} We tend to be selfish, neglecting the welfare of other humans or living creatures.
+    \item \textit{Short-sighted in social distance.} We tend to be selfish, neglecting the welfare of other humans or living creatures.
 
-\textit{Limited to what we have concepts for.} For example, imagine asking someone in the year 1800 about anthropogenic global warming. We also have a hard time articulating through words or button presses all of the depth of what we value, which involves shades of meaning around our bodies, our relationships with other people, and our embodied relationships to physical parts of the world. Philosophers have long emphasized the existence of tacit, embodied, and practice-based forms of understanding that resist formalization \citep{Polanyi1966, Dreyfus1972}. Ethical perception often involves sensitivity to particular contexts rather than application of general rules \citep{Nussbaum2001}.
+    \item \textit{Limited to what we have concepts for.} For example, imagine asking someone in the year 1800 about anthropogenic global warming. We also have a hard time articulating through words or button presses all of the depth of what we value, which involves shades of meaning around our bodies, our relationships with other people, and our embodied relationships to physical parts of the world. Philosophers have long emphasized the existence of tacit, embodied, and practice-based forms of understanding that resist formalization \citep{polanyi1944great,dreyfus1972computers}. Ethical perception often involves sensitivity to particular contexts rather than application of general rules \citep{nussbaum2001fragility}.
 
-\textit{Sensitive to the framing of the question or choice.}
+    \item \textit{Sensitive to the framing of the question or choice.} One group in a classic study saw beef labelled as `75\% lean', and the other group saw the same beef labelled `25\% fat'. The `75\% lean' group rated the beef significantly higher in quality, less greasy and even better tasting \citep{levin1988consumers}.
 
-\textit{Always changing.} We are even discovering new concepts and new kinds of things to value.
+    \item \textit{Always changing.} We are even discovering new concepts and new kinds of things to value.
 
-\textit{Not compatible between different individuals.}
-Different humans disagree about what is good. Their interests clash, as well as their values and conceptualizations. These things are often fundamentally irreconcilable.
+    \item \textit{Not compatible between different individuals.} Different humans disagree about what is good. Their interests clash, as well as their values and conceptualizations. These things are often fundamentally irreconcilable.
+    
+\end{itemize}
 
+If we optimize intensively for the wrong things, we get very bad outcomes. This is the Midas problem. It's a problem of overcommitment. 
 
+In Section 2.6 we look at alignment methods that work toward solving those problems, and then limits to those methods.
 
-
-
-
-
-
-To mitigate this, the field has moved toward deliberated preferences or idealized values, representing what we would prefer if we had more time, knowledge, and computational power \citep{bostrom2014superintelligence, soares2014aligning, yudkowsky2004coherent}. One way to access longer-sighted preferences is by giving humans more time and resources to think about their answer, to ask on behalf of another person, or on behalf of their future self. You can give them access to tools and information. You can ask people retrospectively whether an outcome was good, rather than prospectively. But although we can access *improved* values this way, it is still difficult to access the truly idealized values. Even worse, they are continually changing, and there are new concepts we haven't thought of yet. New kinds of morality. We can't lock in any particular thing. The process itself will have to evolve. 
-
-Pluralistic alignment. There is not even universal agreement on which principles are most appropriate for aggregating the preferences of different people. Even pluralistic alignment \citep{sorensen2024roadmap}, which seeks to aggregate diverse human perspectives, faces the risk of overcommitment if it treats the aggregated values or agreed principles (or even the mechanism of aggregation or discovery) as absolute. If we formalize a democratic process and maximize adherence to it, we risk tyranny of the majority or the entrenchment of biases codified in the aggregation algorithm \citep{gabriel2020artificial}.
-
-Principles frameworks.
-
-Yet, even these refined targets remain static snapshots. To treat a `coherent extrapolated volition' as a fixed optimization target is to freeze moral development at a specific point in time. It creates a system that is sensitive to the extrapolated values of today's humanity but insensitive to the open-ended moral discovery that defines our history. As John Dewey argued, valuation is not a fixed standard but a continuous process of resolving conflicts in experience \citep{dewey1939theory}. Overcommitting to a static ideal, no matter how enlightened, precludes the emergence of new values that we lack the concepts to articulate today.
-
-From this perspective, the problem is not merely that we have failed to find the right formalization, but that treating values as fully formalizable objects is itself a category error.
-
-
-We want different things at different times. 
-
-Different people value different things. 
-
-
-
-
-We began with simple, verbally stated preferences, which are obviously myopic and prone to error.
-
-We moved toward deliberated preferences, where values are what humans would want after careful reflection. 
-
-We expanded further to pluralistic alignment, acknowledging that no single value system can capture the diversity of human experience.
-
-This is sometimes called the Midas problem. Whatever we specify is wrong \citep{wiener1960some}.
-
-
-
-
-
-It's difficult to specify what our values are, what is good or the way the world ought to be. We can overcommit to this on many levels. 
-
-Go through the whole spectrum here. Starting with myopic, individual, verbally-stated preferences, and working our way through:
-
-* Deliberated preferences
-
-* Pluralistic alignment
-
-* Embodied and ecological values that don't fit easily into language
-
-* Changing values as we acquire new concepts
-
-* Finally, the impossibility of specification because of how there's some kind of meta-value that things aren't fixed and formal. Like, imagine a perfect day looping forever. Or literally any formal thing being played out forever. Some philosophers have acknowledged this with ideas like valuing future potential.
-
-
-Any way we have of writing down or formalizing what we want misses important things. If we ask a powerful AI system to optimize for that formalization -- in other words, to give us what we've said we want -- the results are paradoxically disastrous \citep{krakovna2020specification, russell2019human, grossman1986costs, hadfield2019incomplete, zhuang2020consequences, gabriel2020artificial, wiener1960some, amodei2016concrete}. Suppose an AI's objective is to increase humans' subjective experience of wellbeing. Under reasonable definitions, achieving this objective is most efficiently achieved by imprisoning humans and directly stimulating neurons to trigger our experience of wellbeing \citep{bostrom2014superintelligence}. Doing too good a job of optimizing for any formalized goal is misaligned by being overcommitted to the myopic form of that goal.
-
-AI doesn't have to be aligned specifically `to human values', in a narrow sense of `human values'. There's one sense of human values that is open-ended and includes future discovery and things that are deeply embodied and difficult to express formally, and this is closer to what we mean. But any particular set of human values that we could write down is not what we mean. Ultimately we're aligning to this mysterious livingness of the universe. But because the universe is already full of life and structure, a big part of the problem is fully respecting and nurturing that existing life. 
-
-One of the best studied examples is overcommitment of an AI system to particular values, which we review in Section 2.1. Systems could also overcommit to many other kinds of form, including principles, algorithms for learning values, methods for reaching consensus, or even something as abstract as the concept of what a value is. 
+Our real, deep values are simply not specifiable. Any specification misses important things. If we ask a powerful AI system to optimize for that formalization -- in other words, to give us what we've said we want -- the results are paradoxically disastrous \citep{krakovna2020specification, russell2019human, grossman1986costs, hadfield2019incomplete, zhuang2020consequences, gabriel2020artificial, wiener1960some, amodei2016concrete}. Suppose an AI's objective is to increase humans' subjective experience of wellbeing. Under reasonable definitions, achieving this objective is most efficiently achieved by imprisoning humans and directly stimulating neurons to trigger our experience of wellbeing \citep{bostrom2014superintelligence}. Doing too good a job of optimizing for any formalized goal is misaligned by being overcommitted to the myopic form of that goal.
 
 % Nick Bostrom gives some striking examples \citep{bostrom2014superintelligence}. Suppose part of our value function -- part of the objective we give to an AI system -- is to find a cure for cancer. A super-powerful AI system, trying its very best to do exactly what we've asked for, could plausibly create cancers in millions of humans in order to experiment more efficiently to find a cure. Or, 
 
 
-\subsection{Instruction following and poor performance}
+\subsection{Failures of instruction following and other performance issues}
 
 Failing to follow instructions often reflects lack of sensitivity to context: overcommitment to myopic patterns. Suppose the user asks an AI chatbot to write a poem about an elephant, and the AI instead writes a poem about a giraffe. With the chatbots of today, we can be fairly confident the cause of this divergence is not an internal spark of life where the AI system wisely decided a giraffe poem would fulfill a deeper purpose. Instead, the cause is probably a collapse of context. For example, models are prone to `shortcut learning' where they over-rely on superficial correlations (even a single keyword) \citep{geirhos2020shortcut}; they get fixated on data that was overrepresented in training \citep{zhao2021calibrate,reynolds2021prompt,xu2024knowledge}; they lack flexibility in attending to the right positions in their input \citep{liu2024lost}. Today, we are still in the regime where making AI systems more responsive to human instructions usually involves more subtlety, more sensitivity and less overcommitment. 
 
@@ -611,17 +556,51 @@ There is always more context to step back into. Appreciating and being sensitive
 % It could be something like attunement to the livingness around us and in us. 
 
 
-\subsection{Overcommitment to any form is misaligned}
+\subsection{Limitations of alignment strategies}
 
 \begin{center}
 \textit{`Truth, like love and sleep, resents\\approaches that are too intense.'}\\*W. H. Auden
 \end{center}
 
-Let's recap how big the problem is. AI safety researchers have identified many particular versions of overcommitment and developed or proposed solutions for them. For example, concentration of power might be mitigated by democratic oversight and involvement of more people in AI design decisions \citep{birhane2022power, sloane2022participation, selbst2019fairness, lazar2023ai, dafoe2018ai, openai2023democratic}; or through redistribution mechanisms \citep{okeefe2020windfall, sharp2025agentic, gough2019universal, susskind2020world}. Overcommitment to a particualr value function might be mitigated by improving our mechanistic understanding of AI systems so we can, for example, detect and correct the systems if they develop hidden ways of resisting our efforts to change their goals \citep{olah2020zoom, burns2022discovering, bereska2024mechanistic, anthropic2024mapping}; or by designing AI systems that want to obey human preferences but treat these preferences as something uncertain that must be learned \citep{russell2019human, hadfieldmenell2017off, hadfieldmenell2016cooperative, shah2020benefits, jeon2020reward}. 
+AI safety researchers have identified many particular versions of overcommitment and developed or proposed solutions for them. For example, concentration of power might be mitigated by democratic oversight and involvement of more people in AI design decisions \citep{birhane2022power, sloane2022participation, selbst2019fairness, lazar2023ai, dafoe2018ai, openai2023democratic}; or through redistribution mechanisms \citep{okeefe2020windfall, sharp2025agentic, gough2019universal, susskind2020world}. 
+
+Overcommitment to a particular value function might be mitigated by ; or by designing AI systems that want to obey human preferences but treat these preferences as something uncertain that must be learned \citep{russell2019human, hadfieldmenell2017off, hadfieldmenell2016cooperative, shah2020benefits, jeon2020reward}. 
+
+
+To mitigate this, the field has moved toward solutions:
+\begin{itemize}
+    \item \textit{Mechanistic interpretability.} Improving our mechanistic understanding of AI systems so we can, for example, detect and correct the systems if they develop hidden ways of resisting our efforts to change their goals \citep{olah2020zoom, burns2022discovering, bereska2024mechanistic, anthropic2024mapping}.
+    \item \textit{Deliberated preferences or idealized values.} Representing what we would prefer if we had more time, knowledge, and computational power \citep{bostrom2014superintelligence, soares2014aligning, yudkowsky2004coherent}. One way to access longer-sighted preferences is by giving humans more time and resources to think about their answer, to ask on behalf of another person, or on behalf of their future self. You can give them access to tools and information. You can ask people retrospectively whether an outcome was good, rather than prospectively. 
+    \item \textit{Pluralistic alignment.} \citep{sorensen2024roadmap}. Tries to do X. 
+    \item Principles frameworks. 
+    \item Inverse methods to learn values.
+\end{itemize}
+
+But each of these methods has a core limitation. Any conceptual scheme, taken too seriously, is misaligned; therefore, \textit{no particular approach can achieve alignment}\footnote{Of course, this does not mean we should have no scheme. Quite the opposite. Throwing away schemes capriciously can be just as over-fixated as any other particular form.}. An AI system could overcommit to the language for describing the space goals and values live in \citep{bobu2020quantifying, soares2014aligning}, to an algorithm for learning human preferences, to our concepts of agency or representation, or even to concepts we currently use but can't see because they are tautological to us. This problem can be viewed as a generalization of proxy failure \citep{john2023dead} or generalization of the outer alignment problem \citep{hubinger2019risks}. It's not only particular objectives that are subject to overcommitment failures, but any form at all, including what we ourselves unconsciously hold as axiomatic.
+
+Limitations of pluralistic alignment. There is not even universal agreement on which principles are most appropriate for aggregating the preferences of different people. Pluralistic alignment faces the risk of overcommitment if it treats the aggregated values or agreed principles (or even the mechanism of aggregation or discovery) as absolute. If we formalize a democratic process and maximize adherence to it, we risk tyranny of the majority or the entrenchment of biases codified in the aggregation algorithm \citep{gabriel2020artificial}.
 
 % Any static universe is misaligned. Even any ``statically dynamic" universe is misaligned. For example, repeating the same ``perfect day" over and over for eternity is not what we want.
 
-But there is a deeper problem. Any conceptual scheme, taken too seriously, is misaligned; therefore, \textit{no particular approach can achieve alignment}\footnote{Of course, this does not mean we should have no scheme. Quite the opposite. Throwing away schemes capriciously can be just as over-fixated as any other particular form.}. An AI system could overcommit to the language for describing the space goals and values live in \citep{bobu2020quantifying, soares2014aligning}, to an algorithm for learning human preferences, to our concepts of agency or representation, or even to concepts we currently use but can't see because they are tautological to us. This problem can be viewed as a generalization of proxy failure \citep{john2023dead} or generalization of the outer alignment problem \citep{hubinger2019risks}. It's not only particular objectives that are subject to overcommitment failures, but any form at all, including what we ourselves unconsciously hold as axiomatic.
+Although we can access *improved* values with deliberation, pluralistic alignment and so on, it is still difficult to access the truly idealized values. Even worse, they are continually changing, and there are new concepts we haven't thought of yet. New kinds of morality. We can't lock in any particular thing. The process itself will have to evolve. 
+
+
+Finally, the impossibility of specification. 
+
+
+Treating values as fully formalizable objects is a category error.
+
+
+AI doesn't have to be aligned specifically `to human values', in a narrow sense of `human values'. There's one sense of human values that is open-ended and includes future discovery and things that are deeply embodied and difficult to express formally, and this is closer to what we mean. But any particular set of human values that we could write down is not what we mean. Ultimately we're aligning to this mysterious livingness of the universe. But because the universe is already full of life and structure, a big part of the problem is fully respecting and nurturing that existing life. 
+
+One of the best studied examples is overcommitment of an AI system to particular values, which we review in Section 2.1. Systems could also overcommit to many other kinds of form, including principles, algorithms for learning values, methods for reaching consensus, or even something as abstract as the concept of what a value is. 
+
+
+there's some kind of meta-value that things aren't fixed and formal. Like, imagine a perfect day looping forever. Or literally any formal thing being played out forever. Some philosophers have acknowledged this with ideas like valuing future potential.
+
+
+Yet, even these refined targets remain static snapshots. To treat a `coherent extrapolated volition' as a fixed optimization target is to freeze moral development at a specific point in time. It creates a system that is sensitive to the extrapolated values of today's humanity but insensitive to the open-ended moral discovery that defines our history. As John Dewey argued, valuation is not a fixed standard but a continuous process of resolving conflicts in experience \citep{dewey1939theory}. Overcommitting to a static ideal, no matter how enlightened, precludes the emergence of new values that we lack the concepts to articulate today.
+
 
 The only way to be truly aligned, is to be aligned with all the subtlety of the world and all the potential of it, which isn't captured by any formalism. 
 
