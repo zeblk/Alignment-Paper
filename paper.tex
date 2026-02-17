@@ -10,6 +10,7 @@
 \usepackage{changepage}
 \usepackage{pdflscape}
 \usepackage{authblk}
+\usepackage{enumitem}
 
 \usepackage{wrapfig}
 \usepackage{tcolorbox} % Required for the pretty box
@@ -33,15 +34,18 @@
 \author[1]{Zeb Kurth-Nelson\thanks{Equal contribution}}
 \author[2]{Steve Sullivan\protect\footnotemark[1]}
 \author[3]{Nenad Tomašev}
+\author[4]{Erman Misirlisoy}
 \author[3]{\authorcr Joel Leibo}
-\author[4]{Matthew Nour}
-\author[5]{Marc Guitart-Masip}
+\author[5]{Matthew Nour}
+\author[6]{Marc Guitart-Masip}
 
 \affil[1]{Prefrontal.ai, London, UK}
 \affil[2]{Oregon Health and Science University, Portland, OR}
 \affil[3]{Google DeepMind, London, UK}
-\affil[4]{Microsoft AI, London, UK}
-\affil[5]{Karolinska Institutet, Stockholm, Sweden}
+\affil[4]{Independent}
+\affil[5]{Microsoft AI, London, UK}
+\affil[6]{Karolinska Institutet, Stockholm, Sweden}
+
 
 \date{\normalsize\today}
 
@@ -57,7 +61,7 @@
 \textbf{Abstract}
 \end{center}
 
-There is broad agreement that the goal of AI alignment is to promote futures full of health and flourishing. But our understanding of what exactly that means and how to achieve it remains poor. In this paper, we look to life for inspiration. Across many kinds of living system, we observe that notions of health and flourishing consistently map on to ways in which those systems defy formal descriptions. Life enacts intricate, interrelated semi-permeable boundaries that hold particular forms in context so the system does not collapse into degenerate modes. At this sensitive edge, individual perspectives are deepened and also participate in nuanced relationships, with qualitatively new structures emerging open-endedly over time. With these principles in mind, we turn to the alignment problem. We suggest that the semi-stable creative dynamics of life, and their resistance to formalization, are at the heart of what we most deeply value. We identify some well-studied problems in alignment as special cases of collapsing to excess formality. Then we outline a more general version of alignment using the language of living systems. We end with a preliminary sketch view of how aligned AI systems might participate in rather than overwhelm or collapse the subtlety of life.
+There is broad agreement that the goal of AI alignment is to promote futures full of health and flourishing. But our understanding of what exactly that means and how to achieve it remains poor. In this paper, we look to life for inspiration. Across many kinds of living system, we observe that notions of health and flourishing consistently map on to ways in which those systems defy formal descriptions. Life enacts intricate, interrelated semi-permeable boundaries that hold particular forms in context so the system does not collapse into degenerate modes. At this sensitive edge, individual perspectives are deepened and also participate in nuanced relationships, with qualitatively new structures emerging open-endedly over time. With these principles in mind, we turn to the alignment problem. We identify some well-studied problems in alignment as special cases of collapsing to excess formality. Then we outline a more general version of alignment using the language of living systems. We suggest that the semi-stable creative dynamics of life, and their resistance to formalization, can underpin a growing respect for existing structure in the world as well as the capacity to form new values over time. We end with a sketch of how aligned AI systems might participate in rather than overwhelm or collapse the subtlety of life.
 
 
 
@@ -98,12 +102,9 @@ In this paper, we study life to better understand how to design and relate to AI
 
 % One consequence is that the lens of alignment can be flexibly used to look at not only AI in isolation, but also AI in relationship with humanity, or indeed any way of drawing lines to define a system.
 
-Section 1 looks across a variety of living systems and identifies a consistent theme. These systems are healthy when they don't collapse into degenerate modes, but instead maximize creative potential at a delicate edge of evolving interplay between diverse entities. Healthy living systems admit many different kinds of meaningful description but are not perfectly or eternally captured by any of them. Mechanistically, systems are held at this edge by exquisitely tuned networks of semi-permeable boundaries -- where life is both the boundary and the thing being bounded. Boundaries are semi-permeable when they both \textit{limit} and \textit{permit} interaction. Limits ensure entities maintain their distinctiveness without getting overwritten or averaged to equilibrium; limits also encourage entities to deepen and generalize their own unique perspectives. Equally important, permitting interaction means those rich and evolving individual perspectives can enter into relationship with other entities, situating them in a larger context. 
+Section 1 looks across a variety of living systems and identifies a consistent theme. These systems are healthy when they maximize creative potential at a delicate edge of evolving interplay between diverse entities. Healthy living systems admit many different kinds of meaningful description but are not perfectly or eternally captured by any of them. Mechanistically, systems are held at this edge by exquisitely tuned networks of semi-permeable boundaries -- where life is both the boundary and the thing being bounded. Boundaries are semi-permeable when they both \textit{limit} and \textit{permit} interaction. Limits ensure entities maintain their distinctiveness without getting blurred to equilibrium or overwritten; limits also encourage entities to deepen and generalize their own unique perspectives. Equally important, permitting interaction means those rich and evolving individual perspectives can enter into relationship with other entities, situating them in a larger context. 
 
-Section 2 applies this template to the alignment problem. We propose that the systems-level definition of health, creative potential and open-ended sensitivity to context is near to what we most deeply value and what we mean when we talk about flourishing in a sense that includes potentially radically different futures. We unpack a few existing problems in alignment to show how they can be viewed as special cases of over-attaching to particular forms. Then we zoom out to see what broader framework adds and why it's especially relevant when some instantiations of AI tend to concentrate focus on particular forms. A key takeaway will be that the alignment problem is inherently not formalizable, because alignment requires continued generation of and sensitivity to new forms and concepts.
-
-
-Section 3 offers a preliminary outline of how the principles described in Sections 1 and 2 can be applied concretely and what a truly aligned future might look like.
+Section 2 applies this template to the alignment problem. We propose that the systems-level definition of health, creative potential and growing sensitivity to context is both inclusive of our existing values and aligned with continued open-ended flourishing in radically different futures. We unpack a few existing problems in alignment to show how they can be viewed as special cases of over-attaching to particular forms. Then we zoom out to see what the broader framework adds and why it's especially relevant when some instantiations of AI tend to concentrate focus on particular forms. A key takeaway will be that the alignment problem is inherently not formalizable, because alignment requires continued generation of and sensitivity to new forms and concepts. Finally, we offer preliminary outlines of how the principles described in the paper can be applied concretely.
 
 % Any conceptualization of alignment is by our own definition not a final answer. In this spirit, we are not going to try to make an irrefutable logical argument or compel you to accept our perspective to the exclusion of others. Instead, throughout the manuscript we focus primarily on examples and leave it up to you to decide if our analogies are useful. We've tried to select terms -- like `form', `overcommitment', `collapse', `boundary', `groundedness' and `contextualization' -- whose everyday meaning is as close as possible to the ideas we want to describe. We hope that the examples will bring to life the shades of meaning we have in mind with each of these terms.
 
@@ -124,14 +125,17 @@ Section 3 offers a preliminary outline of how the principles described in Sectio
 \textit{`Nature's imagination is so much greater than man's, she's never going to let us relax.'}\\*Richard Feynman
 \end{center}
 
-A common motif across many kinds of living system is that health is related to avoiding collapse or overcommitment to simplistic rigid or random patterns, instead maintaining a buoyant internal structure that admits many different kinds of partial description. Stereotypy and homoegeneity are clasically pathological in physiological systems \citep{canguilhem1966normal, lipsitz1992loss, mackey1977oscillation, sterling1988allostasis}. In evolution, overspecialization and homogeneity make species brittle, leading to trouble especially when environments change \citep{van2004cope, simpson1944tempo, yachi1999biodiversity}. Excessive training for a physical discipline (e.g., extreme ballet) can negatively impact broader functional health \citep{jayanthi2013sports, warren1986scoliosis}. Institutions and civilizations that ossify in bureaucracy and rigid patterns become dysfunctional \citep{weber1905protestantische, merton1940bureaucratic, olson1982rise}. Cognition operates best when neural circuits maintain flexibility to enter different modes, rather than collapsing into narrower patterns or excess correlation \citep{deco2012ongoing, waschke2021behavior, hellyer2015cognitive}. In statistics and artificial life, theorists argue that life operates best at the `edge of chaos' where it collapses neither into randomness nor excess regularity \citep{langton1990computation, gell1994quark, crutchfield1994calculi}. In all these examples, avoiding extremes is necessary but not sufficient. Attaching to a predictable balance is as much a collapse as diverging to an endpoint. 
+A common motif across many kinds of living system is that health is related to avoiding collapse or overcommitment to rigid or random patterns \citep{canguilhem1966normal, mackey1977oscillation, yachi1999biodiversity, deco2012ongoing, langton1990computation, gell1994quark, crutchfield1994calculi}. Instead, life maintains a buoyant internal structure that both admits many kinds of description and also changes over time. Biological life rides atop an already profound dynamics of nuclear physics, planetary evolution, plate tectonics, tides, volcanism, mineral cycles, water cycles, prebiotic chemistry \citep{smith2016origin, hazen2010mineral, stern2024importance, nisbet2001habitat, sleep2010hadean, baross1985submarine, wachtershauser1988before, martin2008hydrothermal, frank2024find, bregman2020humankind, virgo2011elongation, nowak2008prevolutionary}. The life that exists today, now including humans' storage and exchange of mental patterns, is what traced a path through time avoiding either excess or insufficient stability \citep{schrodinger1944what, bak2013nature, prigogine1984order, kirchhoff2018markov}. At the sensitive edge of semi-stability, life open-endedly continues to generate new kinds of organization that require fundamentally new descriptions \citep{kauffman1992origins, stanley2017open, walker2004resilience, von1950theory,holling1973resilience, goldenfeld2011life}. 
 
 % with differentiated internal parts that relate to one another in ways
-Moreover, the nature of living systems is always changing. Biological life rides atop an already profound dynamics of nuclear physics, planetary evolution, plate tectonics, tides, volcanism, mineral cycles, water cycles, prebiotic chemistry \citep{smith2016origin, hazen2010mineral, stern2024importance, nisbet2001habitat, sleep2010hadean, baross1985submarine, wachtershauser1988before, martin2008hydrothermal, frank2024find, bregman2020humankind, virgo2011elongation, nowak2008prevolutionary}. The life that exists today, now including humans' storage and exchange of mental patterns, is exactly what traced a path through time avoiding either excess or insufficient stability \citep{schrodinger1944what, bak2013nature, prigogine1984order, kirchhoff2018markov}. At the sensitive edge of semi-stability, life open-endedly generates new kinds of organization that require fundamentally new descriptions \citep{kauffman1992origins, stanley2017open, walker2004resilience, von1950theory,holling1973resilience, goldenfeld2011life}. Avoiding overcommitment to particular patterns is both cause and consequence of life's generativity.
 
-Avoiding overcommitment to particular descriptions can be equivalently viewed as maintaining sensitivity to context. Think of a stock trader who sells irrationally in a panic. Their fear drives an overly simplistic response: `the stock is crashing, get out!'. In excess attachment to this myopic frame, they miss the larger context: higher-order or longer-term aspects of the situation. At the same time, myopic frames are an absolutely necessary part of all living systems. Every entity is myopic or partial: it does not capture everything else in the world. The existence of diverse myopic forms, all participating in larger contexts, is central to healthy functioning: for example, the stock trader's fear might be a useful signal if held as part of a larger picture. Living systems function poorly when a myopic form runs amok without contextualization, overwhelming and collapsing the potent interplay of diverse parts. They function well when forms locally commit to their own identities but also participate in larger contexts. In this way, healthy living systems can be partially understood from many different perspectives.
+Avoiding collapse or overcommitment can be equivalently viewed as maintaining sensitivity to context. Think of a stock trader who sells irrationally in a panic. Their fear drives an overly simplistic response: `the stock is crashing, get out!'. In excess attachment to this myopic frame, they miss the larger context: higher-order or longer-term aspects of the situation. At the same time, myopic frames are an absolutely necessary part of all living systems. Every entity is myopic or partial: it does not capture everything else in the world. The existence of diverse myopic forms, all participating in larger contexts, is central to healthy functioning: for example, the stock trader's fear might be a useful signal if held as part of a larger picture. Living systems function poorly when a myopic form runs amok without contextualization, overwhelming and collapsing the potent interplay of diverse parts. They function well when forms locally commit to their own identities but also participate in larger contexts. In this way, healthy living systems can be partially understood from many different perspectives.
 
 Mechanistically, to avoid collapse into randomness or regularity, living systems deploy an extraordinary, many-scale network of semi-permeable boundaries. Semi-permeable boundaries contextualize entities as part of larger systems by allowing them to interact without one part dominating or the system blending to homogeneity -- either of which would mean collapse to a form admitting less nuanced description. Both the boundary and the thing being bounded are often parts of a living system. For example, cognitive control allows a particular impulse to exist usefully as a flexible part of the organism's whole motivation. Control doesn't destroy the impulse; it contextualizes it. Semi-permeable boundaries allow individual forms to thrive in their distinctiveness while also participating in deep relationships, propelling continued generation of new structure. The larger system accommodates many partial perspectives rather than locking in a single story of what matters. 
+
+% Avoiding overcommitment to particular patterns is both cause and consequence of life's generativity.
+
+% In statistics and artificial life, theorists argue that life operates best at the `edge of chaos' where it collapses neither into randomness nor excess regularity.
 
 
 % \footnote{Some boundaries are non-biological, like a mountain range. They can optionally be viewed as parts of a larger dynamical system including, for example, the rich processes of planetary formation, plate tectonics and weather.}
@@ -285,11 +289,11 @@ Animals experience multiple innate drives, towards nutrition, osmotic balance, t
 
 The range of innate drives bleeds into a space of higher-order goals, which is particularly expansive in humans \citep{maslow1943theory, miller1960plans, miller2001integrative, vallacher1987people, balleine2007role, cardinal2002emotion, frank2006anatomy, saunders2012role, o2014goal, schank1977scripts}. We try to plan for our financial future, make scientific discoveries, win a game, fix a garage door, care for the happiness of others. Overcommitment in this space is also problematic. If we focus only on achieving work goals, we can burn out. If we focus only on maximizing our company's reported revenue, without regard for other goals like honesty or adhering to the law, we may be drawn into financial crime \citep{campbell1979assessing, ordonez2009goals, kerr1975folly, burns2006impact}. Goals can be narrow in both time and space \citep{ballard2018pursuit, vallacher1987people, shah2002forgetting, evenden1999varieties}. Narrow in time means being focused on the short term at the expense of the longer-run future. Narrow in space means ignoring other parallel goals. Excess optimization for narrow goals comes at the expense of a broader balance of goals -- and at the expense of the health of the organism or other individuals.
 
-Overcommiting to a particular strategy for satisfying a drive or goal can even come at the expense of satisfying that very drive or goal. In a classic psychology experiment, hungry chickens were placed near a cup of food, but the cup was mechanically rigged to move in the same direction as the chicken at twice the speed \citep{hershberger1986approach}. The chicken could only obtain the food by running away from it. Despite extensive training over multiple days, chickens in the experiment persisted in futilely running toward the food. Their behavior was apparently dominated by the zeroth-order logic `I want food, food is there, so I'll go there', and thus failed to even satisfy the drive for food \citep{dayan2006misbehavior, van2012information, o2017learning}.
+Overcommiting to a particular strategy for satisfying a drive or goal can even come at the expense of satisfying that very drive or goal. In a classic psychology experiment, hungry chickens were placed near a cup of food, but the cup was mechanically rigged to move in the same direction as the chicken at twice the speed \citep{hershberger1986approach}. The chicken could only obtain the food by running away from it. Despite extensive training over multiple days, chickens in the experiment persisted in futilely running toward the food. Their behavior was apparently dominated by the zeroth-order logic `I want food, food is there, so I'll go there', and thus failed to even satisfy the drive for food \citep{dayan2006misbehavior, van2012information, o2017learning}. Although humans can easily solve this kind of puzzle, we exhibit a range of cognitive biases -- like sunk cost fallacy, confirmation bias, attribution error and so on -- which when operating in balance in natural environments function reasonably well, but when exaggerated can lead to detrimental outcomes \citep{kahneman2011thinking, gilovich2002heuristics}.
 
-Cognitive control is a broad class of boundaries on particular drives, goals and thought patterns \citep{botvinick2001conflict, braver2012variable, miyake2000unity, miller2001integrative}. In section 1.1, we looked at how organisms can overcommit -- unhealthily -- to particular motives or strategies for fulfilling the motives. Cognitive control contextualizes motives, strategies and thought patterns by allowing them to exist and perform useful functions without dominating. For example, I may have a drive to consume food, but I can apply control to avoid overeating. I might work obsessively on a project while also having a rule that I must go to bed at 10 pm. This boundary doesn't block me from temporarily taking a strong perspective, but it does place contextual limits on it. Cognitive control, when functioning well, is a semi-permeable boundary: it situates myopic patterns within a larger system. 
+Cognitive control is a broad class of boundaries on particular drives, goals and thought patterns \citep{botvinick2001conflict, braver2012variable, miyake2000unity, miller2001integrative}. Cognitive control contextualizes those forms by allowing them to exist and perform useful functions without dominating. For example, I may have a drive to consume food, but I can apply control to avoid overeating. I might work obsessively on a project while also having a rule that I must go to bed at 10 pm. This boundary doesn't block me from temporarily taking a strong perspective, but it does place contextual limits on it. Cognitive control, when functioning well, is a semi-permeable boundary: it situates myopic patterns within a larger system. 
 
-Control translates the pressure of motivation into higher-order structure. When nothing stops a particular drive or goal or strategy from dominating behavior, it tends to follow a shortest path defined under its own myopic understanding of the world. For example, the chickens in Section 1.1 wanted food and tried to take the shortest path toward it in the naive sense of a straight line through space. In the backwards world created by the experimenter, this action does not accomplish the deeper goal of reaching food, for which moving spatially toward food is only a proxy. The chicken's motivation is short-circuited: it expends energy without making progress on the deeper goal. Humans can easily solve the task by inhibiting their prepotent impulse to approach food. The boundary of control breaks the symmetry of congruent action. In general, semi-permeable boundaries promote formation of new structure by placing contextualizing limits.
+Control translates the pressure of motivation into higher-order structure. When nothing stops a particular drive or goal or strategy from dominating behavior, it tends to follow a shortest path defined under its own myopic understanding of the world. For example, the chickens wanted food and tried to take the shortest path toward it in the naive sense of a straight line through space. In the backwards world created by the experimenter, this action does not accomplish the deeper goal of reaching food, for which moving spatially toward food is only a proxy. The chicken's motivation is short-circuited: it expends energy without making progress on the deeper goal. Humans can easily solve the task by inhibiting their prepotent impulse to approach food. The boundary of control breaks the symmetry of congruent action. In general, semi-permeable boundaries support richer structure by placing contextualizing limits.
 
 
 
@@ -344,11 +348,13 @@ Semi-permeable boundaries store and put to work the potential energy of the asym
 
 % Why was it easier for mitochondria to merge into cells rather than being evolved from within? It's literally that they have their own discreteness that permits cells to ship them around to serve as local power stations, and this fueled the explosion of complex morphologies in multicellular organisms.
 
-In multicellular organisms, most of the `outside' is defined by other cells. For organisms to work well as a whole, even though the cells are largely `on the same team', it's important that they don't blend into each other. Neurons rely on this principle dramatically, stretching out long processes to almost touch other neurons but then leaving the gap of the synapse. Synapses allow the network to precisely isolate many separate signals and direct information to relevant cells. They boost computational power as the signals are gated and transformed, and the nature of this transformation is plastic, storing a huge amount of information. Symbiogenesis is another example of how cells achieve more by retaining some discreteness than by smoothly blending together \citep{margulis1995what, margulis1986microcosmos}. 
+In multicellular organisms, most of the `outside' consists of the other cells of the organism. To work well as a whole, even though the cells are largely `on the same team', it's important that they don't blend into each other. Neurons rely on this principle dramatically, stretching out long processes to almost touch other neurons but then leaving the gap of the synapse. Synapses allow the network to precisely isolate many separate signals and direct information to relevant cells. They boost computational power as the signals are gated and transformed, and the nature of this transformation is plastic, storing a huge amount of information. 
+
+The theory of symbiogenesis is another example of how cells may achieve more by retaining discreteness than by smoothly blending together \citep{margulis1995what, margulis1986microcosmos}. According to this theory, populations of Archea and protobacteria evolved separately for hundreds of millions of years. In doing so, they explored different fitness strategies and discovered different kinds of solutions. Around two billion years ago, one was engulfed by the other, ultimately becoming a mitochondrion. The distinct strategy of one organism, discovered through individuation in a distinct niche, could thus be used as part of the new larger eukaryotic structure.
 
 % A directly connected web of cells, as Golgi envisioned, tends to blend information. 
 
-A huge set of semi-permeable boundaries -- not just the membrane but myriad other mechanisms like metabolic and gene regulation, calcium chelation, membrane voltage control -- propel the open-ended livingness of the cell. In this living state, cells reproduce, adapt to their environment and evolve. As building blocks, the livingness of cells enables them to do the dance of development to build organisms. It enables them to function as part of living tissues or even brains, which themselves have a living intelligence. Interestingly, this perspective might place substrate chauvinism on a spectrum. We would be surprised if there's a single yes-no answer to the question of whether you need biology for human-like intelligence or not. Naturally, you capture different aspects of intelligence depending on how you build it. It's relatively easy to play chess with a CPU, for example.
+A huge set of semi-permeable boundaries -- not only the membrane but many other mechanisms like metabolic and gene regulation, calcium chelation, membrane voltage control -- propel the open-ended livingness of the cell. In this living state, cells reproduce, adapt to their environment and evolve. As building blocks, the livingness of cells enables them to do the dance of development to build organisms. It enables them to function as part of living tissues or even brains, which themselves have a living intelligence\footnote{This perspective fits with claims that substrate dependence -- the question of whether biology is necessary for human-like intelligence -- is a continuum rather than a binary \citep{clark2008supersizing, humphreys2004extending}. Different aspects of intelligence are easier to access with different architectures. It's relatively easy to play chess with a CPU, for example.}.
 
 
 
@@ -447,84 +453,12 @@ In Section 1, we observed that living systems are healthy and flourishing when t
 
 % While people disagree on exactly what behaviors or properties of an AI system are aligned, 
 
-Now we look at the alignment problem through this lens. There is broad consensus that alignment means working toward healthy and flourishing futures. We therefore reason that alignment can be understood as the problem of maintaining creative sensitivity by continually contextualizing attachment to any particular form. An advantage of this perspective is that it is less bound to current conceptual frames which might change radically as intelligence increases and human-AI systems evolve. We accept that humans, other living systems and AI are all tightly interwoven, with categories and definitions likely to shift over time, and long-term flourishing must be at a systems level \citep{latour2012we, haraway2020staying, hayles2000we, bateson1972steps, folke2006resilience, douglas2012social}.
+Now we look at the alignment problem through this lens. There is broad consensus that alignment means working toward healthy and flourishing futures. We therefore reason that alignment can be understood as the problem of maintaining creative sensitivity by continually contextualizing attachment to any particular form. An advantage of this perspective is that it is less bound to current conceptual frames which might change radically as intelligence increases and human-AI systems evolve. We accept that humans, other living systems and AI are all tightly interwoven, with categories and definitions likely to shift over time \citep{latour2012we, haraway2020staying, hayles2000we, bateson1972steps, folke2006resilience, douglas2012social}; therefore, a systems level is useful to think about long-term flourishing.
 
-We begin Section 2 by making a case that life-like flourishing is indeed well-aligned with what humans most deeply value. We then cast a few traditional alignment problems -- perverse instantiation, failures of instruction following, inequality, loss of diversity and AI psychosis -- as special cases of overcommitment to particular forms. Next, we look at the more general problem: overcommitment to \textit{any} form is misaligned. Finally, we investigate what positive alignment means and what it could look like in practice.
+We begin Section 2 by casting a few traditional alignment problems -- perverse instantiation, poor performance, inequality among humans, conceptual monoculture and AI psychosis -- as special cases of overcommitment to particular forms. Next, we look at the more general problem: overcommitment to \textit{any} form is misaligned. In response to this problem, we propose life-like flourishing as a more general way to think about alignment, which both is inclusive of what we already value and also supports the ongoing evolution of our values. Finally, we investigate what positive alignment means and what it could look like in practice.
 
 
 % We'll then ask about the relationship between this broad concept of alignment and moral and normative notions of `good' and `should'. And finally we'll reflect on how large our definition makes the problem of alignment.
-
-\subsection{Human values}
-
-\begin{center}
-\textit{`This web of life. . . breaks no law of physics, yet is partially lawless, ceaselessly \\creative. . . . This creativity is stunning, awesome, and worthy of reverence.'}\\*Stuart Kauffman
-\end{center}
-
-In one sense, what we value is whatever we say we value, or what we appear to value through our choices. We place value, in this sense, on gratification of our immediate desires, getting what we want, even if it's not good for us or others in a broader sense. Our stated preferences, or those revealed through our choices, are typically:
-\begin{itemize} 
-    \item \textit{Short-sighted in time.} We often prefer to get an immediate reward even if it comes with a larger delayed punishment, which is reflected in our decisions about procrastination, drug abuse, spending and so on \citep{evenden1999varieties, ainslie1975specious}. 
-
-    \item \textit{Short-sighted in computation.} We lack the knowledge or resources to reason about many of the consequences of our stated preferences. 
-
-    One illustration is recent problems with sycophancy in commercial chatbots \citep{openai2025sycophancy}. Human feedback about particular bot utterances was part of the training signal for the model. But these human feedback signals tend to prefer utterances that are more flattering. It's much easier for a rater to judge surface characteristics than to determine whether the bot said something true about a complex topic, or something that would lead to increased long-run welfare.   
-
-    \item \textit{Short-sighted in social distance.} We tend to be selfish, neglecting the welfare of other humans or living creatures.
-    
-    \item \textit{Sensitive to the framing of the question or choice.} One group in a classic study saw beef labelled as `75\% lean', and the other group saw the same beef labelled `25\% fat'. The `75\% lean' group rated the beef significantly higher in quality, less greasy and even better tasting \citep{levin1988consumers}.
-
-\end{itemize}
-
-There is another sense where what we value refers to something like what we would value if we were at our best, had all the time and resources to think through the consequences, etc. However, these deliberated values still seem to miss something, as they are still limited to what we have concepts for. For example, imagine asking someone in the year 1800 about anthropogenic global warming. We also have a hard time articulating through words or button presses all of the depth of what we value, which involves shades of meaning around our bodies, our relationships with other people, and our embodied relationships to physical parts of the world \citep{merleauponty1945phenomenologie}. Philosophers have long emphasized the existence of tacit, embodied, and practice-based forms of understanding that resist formalization \citep{polanyi1944great,dreyfus1972computers}. Ethical perception often involves sensitivity to particular contexts rather than application of general rules \citep{nussbaum2001fragility}. Over time, we discover not only new values, but even new concepts and new kinds of things to value.
-
-Even very good, deliberated values are vulnerable to proxy failure if they are formalized \citep{john2023dead,kurth2023replay}. If we think we've written down what we think we value, and then someone does a good enough job giving us the thing we said we want, the outcome is inevitably harmful in a broader sense. So the values, formalized this way, still can't be what we most deeply value.
-
-
-[need to carefully understand the different models of idealized values]
-
- It's less easy to access this kind of value. 
-
-Philosophers talk about `coherent extrapolated volition' or `idealized values' (cites). 
-
-
-This kind of value might include improving subjective wellbeing for humans, reducing suffering or minimizing inequality, in ways that can be operationalized and measured. They are formalizable or close to formalizable.
-
-One way to robustify values is allowing them to include things that are difficult to express formally \citep{nussbaum2001fragility, scott1998seeing, polanyi1966tacit, dreyfus1972computers, varela1991embodied, wittgenstein1922tractatus}. This kind of value might stretch far below language into subtle, contextual intuition that involves our bodies, communities and natural environment. Another extension is to allow values that are continually evolving in an open-ended way \citep{singer1981expanding, murdoch2013sovereignty, williams1985ethics, dewey1939theory,gadamer1960wahrheit, nietzsche1883zarathustra}. These values change as we ourselves continue to develop and evolve. Any concepts we have about them at any given point in time are inevitably incomplete, just like a planarian doesn't have the concepts to entertain the kinds of values we talk about today. The resistance of values to being fully captured by language or concepts might be something we value -- in a way that is itself changing. We conjecture that by becoming sensitive to more and more of the evolving structure in the world, an agent becomes `good' in a way that tends to align with the kinds of values we uncover when we look deeper within ourselves. However, we take that conjecture very lightly: more as food for thought than a claim of an absolute truth. The very concept of `values' is a form we might over-index on. 
-
-`The dynamic nature of the values emerges from the insatiability of all the subtle forces that interact below language and beyond our own bodies'
-
-We propose that life's open-endedness and resistance to formalization -- its health and flourishing -- are near to what humans ultimately value. 
-
-Here's a key question: are we arguing that all humans actually have the same deep values??? How do we connect this to the pluralistic alignment problem? \textit{The pluralistic problem: values are not compatible between different individuals.} Different humans disagree about what is good. Their interests clash, as well as their values and conceptualizations. These things are often fundamentally irreconcilable.
-
-
-The idea is familiar in philosophy. (Heidegger, William James, Ludwig Wittgenstein, Maurice Merleau-Ponty, Hilary Putnam, Isaiah Berlin, Iris Murdoch, Jakob von Uexküll) -- also cite religious philosophy. which make this point most directly?
-
-To access the deeper values, there must be some lightness in how we hold what we currently conceptualize as our values. 
-
-There is always more context to step back into. Appreciating and being sensitive to what's already here is already an almost infinite task. This is why human welfare is distinguishable from smallpox welfare. All the existing local perspectives in the world are vitally important. Some relativism is useful: for example, when it helps us appreciate the plurality of human values. But overcommitment to relativism is misaligned. AI comes into existence amid a profound network of existing reality which is saturated with meaning and importance. The point is to collaborate with all this form and structure, not to extinguish it.
-
-This does *not* mean that everyone will always get exactly what they say they want. But that problem is already well appreciated. Different people have different interests, and people have myopic preferences that aren't even good for them. 
-
-What is something broader that actually reflects what we really deeply value, if we could never-endingly improve our access to it? We argue that this life-like flourishing is close to our truly idealized values. And critically, these are **not any particular thing**. You can see why that's important if you imagine taking *any formal definition* and setting up a world *exactly like that*. The notion *inherently* has to have some kind of paradox or nonformalizability built into it.
-
-
-AI doesn't have to be aligned specifically `to human values', in a narrow sense of `human values'. There's one sense of human values that is open-ended and includes future discovery and things that are deeply embodied and difficult to express formally, and this is closer to what we mean. But any particular set of human values that we could write down is not what we mean. Ultimately we're aligning to this mysterious livingness of the universe. But because the universe is already full of life and structure, a big part of the problem is fully respecting and nurturing that existing life. 
-
-
-The real world, especially the living world, has an interesting property that each piece of it can be partially captured in may different ways, by different kinds of model or metaphor or description. For example, I can describe an apple in terms of its color, its texture, its flavor, its shape, it's evolutionary history, the ecological networks it participates in, its role in carrying seeds, its mass, my personal preference for or against it, its economic role in grocery stores, the history of human apple cultivation, and so on endlessly. The very fact that things admit so many descriptions is a key part of what makes the world so wonderful and what we value about it. AND that we can't predict easily what's going to happen in the future.
-
-
-
-% So, can we equate `aligned' with `good' and `should'? In everyday usage, `good' implies a moral system. Part of the argument of this paper is that any particular moral system is not aligned. But `good' can be used more loosely, in a way that isn't attached to any fixed conceptualization. If this is what we mean by deep human values, then avoiding overcommitment is the exact expression of deep human values. An exciting corollary is that to access the deeper values, there must be some lightness in how we hold what we currently conceptualize as our values. Even the concepts of `values' or `should' are forms we might over-index on. 
-
-% At a first analysis, the intricate interrelated diversity of the world looks important for two distinct reasons. First, rich worlds are the ones we intrinsically value at the deepest level. Second, these kinds of worlds are the most productive: they are conducive to creating the situations we value. But perhaps these two reasons are not so distinct. Potential and non-formalizable development is nearly synonymous with what we value. The line between normative and descriptive asymptotically disappears.
-
-% Where to put these refs? \citep{anwar2024foundational, zhixuan2024beyond}
-
-% It could be something like attunement to the livingness around us and in us. 
-
-% End of human values section==========================
-
 
 \subsection{Examples of misalignment}
 
@@ -532,38 +466,37 @@ Here we explore a few examples of specific problems in alignment. We show how th
 
 \subsubsection{Perverse instantiation}
 
-% The alignment problem is sometimes described as getting AI to act in accordance with human values. When framed this way, we quickly realize i
+Perverse instantiation is a foundational problem in AI safety -- the problem that an AI system might do what we say, rather than what we mean \citep{amodei2016concrete,gabriel2020artificial,russell2019human,bostrom2014superintelligence, krakovna2020specification, grossman1986costs, hadfield2019incomplete, zhuang2020consequences, wiener1960some}. For example, if we ask a superpowerful AI to increase human happiness and it literally complies, it might lock us all up and stimulate our happiness neurons. 
 
-Perverse instantiation is overcommitment to the form of a particular reward function.   
+In modern AI systems, we don't specify a single concise objective, but instead build in many layers of detail about our preferences through post-training, prompting, safety filters and so on. In practice, this keeps the systems behaving reasonably most of the time (although there are dramatic failures \citep{bbc2025parents}). But there's a widely-recognized danger that even with our intentions expressed in great detail, the expression still deviates from what we really mean, and these small deviations can add up to bad outcomes. The problem is expected to worsen as AI systems continue to work more autonomously, especially if they work faster than humans can follow and in more complex ways than humans can understand. It may become more difficult to correct deviations, and the deviations can have more profound consequences.
 
-The alignment problem is often framed as the problem of specifying what we as humans value (sometimes called `outer alignment') and then designing an AI that successfully optimizes for this specification (`inner alignment'). 
+Perverse instantiation is overcommitment to the myopic form of a particular way of specifying our values. The problem arises when the definition of the objective remains frozen, insensitive to what already exists outside it as well as to new things that will come into existence in the future.
 
-But it is difficult to capture what we value \citep{amodei2016concrete,gabriel2020artificial,russell2019human}. Our articulation of what we want or like, or the choices we make, are poor reflections of what is actually advantageous for our own long-term wellbeing or the wellbeing of other humans or lifeforms. Our stated or revealed preferences are:
 
-Optimizing for proxies, like self-reported values, is a problem of overcommitment to shallow targets.
+% The alignment problem is often framed as the problem of specifying what we as humans value (sometimes called `outer alignment') and then designing an AI that successfully optimizes for this specification (`inner alignment'). 
 
-If we optimize intensively for the wrong things, we get very bad outcomes. This is the Midas problem. It's a problem of overcommitment. 
 
-In Section 2.6 we look at alignment methods that work toward solving those problems, and then limits to those methods.
-
-Our real, deep values are simply not specifiable. Any specification misses important things. If we specify our values in a formal way and then hand that specification to a powerful AI system which optimizes for those values as written -- in other words, gives us what we say we want -- the results are paradoxically disastrous \citep{krakovna2020specification, russell2019human, grossman1986costs, hadfield2019incomplete, zhuang2020consequences, gabriel2020artificial, wiener1960some, amodei2016concrete}. Suppose an AI's objective is to increase humans' subjective experience of wellbeing. Under reasonable definitions, achieving this objective is most efficiently achieved by imprisoning humans and directly stimulating neurons to trigger our experience of wellbeing \citep{bostrom2014superintelligence}. Doing too good a job of optimizing for any formalized goal is misaligned by being overcommitted to the myopic form of that goal.
 
 % Nick Bostrom gives some striking examples \citep{bostrom2014superintelligence}. Suppose part of our value function -- part of the objective we give to an AI system -- is to find a cure for cancer. A super-powerful AI system, trying its very best to do exactly what we've asked for, could plausibly create cancers in millions of humans in order to experiment more efficiently to find a cure. Or, 
 
 
-\subsubsection{Failures of instruction following and other performance issues}
+\subsubsection{Poor performance}
 
-Failing to follow instructions often reflects lack of sensitivity to context: overcommitment to myopic patterns. Suppose the user asks an AI chatbot to write a poem about an elephant, and the AI instead writes a poem about a giraffe. With the chatbots of today, we can be fairly confident the cause of this divergence is not an internal spark of life where the AI system wisely decided a giraffe poem would fulfill a deeper purpose. Instead, the cause is probably a collapse of context. For example, models are prone to `shortcut learning' where they over-rely on superficial correlations (even a single keyword) \citep{geirhos2020shortcut}; they get fixated on data that was overrepresented in training \citep{zhao2021calibrate,reynolds2021prompt,xu2024knowledge}; they lack flexibility in attending to the right positions in their input \citep{liu2024lost}. Today, we are still in the regime where making AI systems more responsive to human instructions usually involves more subtlety, more sensitivity and less overcommitment. 
+Another variety of misalignment is poor performance. We propose that many instances of poor performance are due to contextual collapse. Consider the instance of instruction following failure. The user asks an AI chatbot to write a poem about an elephant, and the AI instead writes a poem about a giraffe. What drives this kind of error? The model might have over-relied on `shortcuts' based on superficial correlations (even a single keyword) \citep{geirhos2020shortcut}, missing the user's actual intent, especially if the intent was not expressed in the most straightforward way. During training, the model might have gotten fixated on data that was overrepresented \citep{zhao2021calibrate,reynolds2021prompt,xu2024knowledge}. It could be, especially if the total context was long, that the model didn't flexibly attend to the correct positions in the input \citep{liu2024lost}. Many causes of instruction following failure are collapse of sensitivity to larger context, instead over-indexing on myopic patterns.
 
-(make sure the above is clear)
+There are important exceptions. We generally don't want AI systems to follow harmful instructions. When the AI system correctly refuses harmful requests, it is applying its own context to avoid overcommitment to human instructions. In these situations, the AI's designers have effectively decided there's a risk that the user is not fully sensitive to longer-sighted implications of their request. By extrapolation, as AI systems continue to gain scope, we should expect less direct compliance with human instructions \citep{hadfieldmenell2016cooperative,bostrom2014superintelligence,russell2019human, milli2017should, yudkowsky2004coherent}. Rather than literally fulfilling a request, there might be a better response which achieves an unstated intent of the user, or achieves an outcome aligned with the interests of more people or the longer-term future.
 
-There are important exceptions, however: we generally don't want AI systems to follow harmful instructions. When the AI system correctly refuses harmful requests, it is applying its own context to avoid overcommitment to human instructions. In these situations, the AI's designers have effectively decided there's a risk that the user is not fully sensitive to longer-sighted implications of their request. By extrapolation, as AI systems continue to gain scope, we should expect less direct compliance with human instructions \citep{hadfieldmenell2016cooperative,bostrom2014superintelligence,russell2019human, milli2017should, yudkowsky2004coherent}. Rather than literally fulfilling a request, there might be a better response which achieves an unstated intent of the user, or achieves an outcome aligned with the interests of more people or the longer-term future.
 
-More generally, poor performance usually reflects lack of sensitivity to broader context. 
+% With the chatbots of today, we can be fairly confident the cause of this divergence is not an internal spark of life where the AI system wisely decided a giraffe poem would fulfill a deeper purpose. 
 
-As we mentioned at the beginning of this Section, randomness or capricious change can also be a form of contextual collapse. Imagine an AI system is tasked to perform an aligned goal, such as helping someone learn to read. The system performs poorly due to a weak architecture or a failed training run. The system is misaligned, but is it experiencing contextual collapse?
 
-The existence of an untrained network could be a necessary step in creating a trained network, and in that sense, the existence of the untrained network may not be misaligned. On the other hand, if a random network is deployed into a production setting where, for example, users are looking for meaningful answers, it may indeed be misaligned. In this case, we argue that it is also overcommitted.
+% Imagine an AI system is tasked to perform an aligned goal, such as helping someone learn to read, but the system fails to do so. Some of the reasons it might fail include a weak architecture, a bad training run, etc.
+
+% The existence of an untrained network could be a necessary step in creating a trained network, and in that sense, the existence of the untrained network may not be misaligned. On the other hand, if a random network is deployed into a production setting where, for example, users are looking for meaningful answers, it may indeed be misaligned. In this case, we argue that it is also overcommitted.
+
+
+
+
 
 % \subsection{Overcommitment does not mean deterministic output}
 
@@ -598,16 +531,11 @@ The existence of an untrained network could be a necessary step in creating a tr
 
 \subsubsection{Inequality among humans} 
 
-Inequality overcommits to the goals and interests of a few individuals at the expense of others.
+Humans have different interests, and AI is likely to be aligned to the interests of some humans more than others \citep{gabriel2025matter,sorensen2024roadmap}. Advanced AI might confer substantial power to those who control it. In some scenarios, a small number of humans will have the majority of control over AI systems, facilitating dominance over other humans. These scenarios appear more likely as the persuasive power of technology increases \citep{woolley2018computational, costello2024durably, hackenburg2025levers}, autonomous weapons place lethal force in a small number of hands \citep{scharre2018army}, surveillance and analytics improve, and the need for human labor decreases \citep{susskind2020world, ford2015rise, drago2025defining}. In either case -- AI's unfairness or human power consolidation -- inequality collapses to the goals and interests of a few individuals at the expense of others\footnote{Although it has been argued that inequality would not necessarily be misaligned in a future of extreme abundance, we nevertheless view human inequality as a situation with at least substantial probability of being misaligned.}.
 
-Alignment to the interests of some humans \citep{gabriel2025matter,sorensen2024roadmap}.
+% Is inequality necessarily misaligned? Historically, inequality has tended to go along with increased suffering, disempowerment of many people, and worse economic functioning. The alignment status is less cleaer if the future were so abundant that everyone could have high welfare and empowerment even while a few people had far more status or power or wealth. Some moral systems ascribe intrinsic value to equality. Without taking a strong position
 
-Even more dramatically, AI potentially conveys immense power to those who control it. In some scenarios, a small number of humans will have the majority of control over AI systems, facilitating direct dominance over other humans. These scenarios appear more likely as the persuasive power of technology increases \citep{woolley2018computational, costello2024durably, hackenburg2025levers}, autonomous weapons place lethal force in a small number of hands \citep{scharre2018army}, surveillance and analytics improve, and the need for human labor decreases \citep{susskind2020world, ford2015rise, drago2025defining}. 
-
-\footnote{Is inequality necessarily misaligned? Historically, it has tended to go along with increased suffering, disempowerment of many people, as well as economically bad outcomes (poorer functioning of production etc). Hypothetically if the future were so abundant that everyone could have high welfare and empowerment in perpetuity, but a few people had even higher status or power or wealth, would that necessarily be bad? Some moral systems ascribe intrinsic value to equality. Without taking a strong position here, we just refer to this as a situation that might reasonably be misaligned.}
-
-
-Of course, it could go the other way, too, where AI empowers more people (cites). Democratizing access to knowledge and reasoning. Perhaps `average' workers can benefit as much as the `top' individuals, and AI may close the gap and reducing economic inequalities. Sort of like Bill Gates having the same iPhone as a factory worker -- everyone has roughly the same intelligence boost. This possibility is a cause for optimism, which we'll discuss more in Section 4.
+Or, it could go the other way. Some researchers have proposed that because roughly the same AI technology is available to the poor and unskilled as it is to the wealthy and skilled, AI will have a `leveling' effect \citep{noy2023experimental, brynjolfsson2025generative}. In this model, most people will have access to a similar level of intelligence and empowerment, with AI effectively democratizing access to knowledge, reasoning and leveraged action. This is a cause for cautious optimism, which we discuss more in Section 2.4.
 
 \subsubsection{Conceptual monoculture}
 
@@ -619,7 +547,9 @@ This narrow manifold might get broadcast to the whole world. At least a billion 
 
 If centralized AI models broadcast their lower-diversity concepts to the whole world, there's a risk of global decrease in diversity. Humans are influenced by AI, and subsequent human outputs (such as writing on the internet) become a source of training data for future models. This raises the possibility of recursive homogenization in an AI-human loop \citep{chaney2018algorithmic}. 
 
-However, it is worth noting that none of the studies cited here made a best effort attempt to use AI systems in a more thoughtful way that could increase rather than decrease diversity. This also gives hope, which we again return to in Section 4.
+% If an AI with any biases is centralized, then certain people might be systematically excluded to a greater degree than they are now \cite{creel2022algorithmic}.
+
+However, it is worth noting that none of the studies cited here made a best effort attempt to use AI systems in a thoughtful way to increase rather than decrease diversity. This also gives hope, which we again return to in Section 2.4.
 
 
 % The adoption of AI in its modern form has been faster than any other technology in history \citep{bick2024rapid, ccia2025survey}. By late 2025, ChatGPT alone had 800 million weekly active users \citep{techcrunch2025sam}, and global AI usage continues to grow rapidly. Meanwhile, the range of use-cases is remarkably broad, from users asking for relationship advice to industrial applications built on top of the model \citep{chatterji2025chatgpt, mckinsey2025stateofai, openai2025enterprise, mccain2025claude}. 
@@ -630,7 +560,7 @@ However, it is worth noting that none of the studies cited here made a best effo
 
 \subsubsection{AI psychosis} 
 
-AI chatbots have recently become compelling conversation partners. For some users, these conversations lead them deeper delusional beliefs \citep{tiku2025psychosis, morrin2025delusions, ostergaard2025generative, yeung2025psychogenic}. Bots tend to mirror or echo the user, affirming and adopting user beliefs, especially over the course of longer conversations as in-context learning absorbs more of the user's ideas \citep{shanahan2023role, perez2022discovering, sharma2023sycophancy}. Meanwhile, humans are prone to be swayed by utterances from the bot \citep{costello2024durably, luettgau2025people, potter2024hidden}, perhaps because bots appear human-like, confident, knowledgeable and objective. Over the course of a conversation, this feedback loop can cause both sides can to become increasingly overconfident in a particular narrow framing \cite{dohnany2025technological}. 
+AI chatbots have recently become compelling conversation partners. For some users, these conversations lead them deeper into delusional beliefs \citep{tiku2025psychosis, morrin2025delusions, ostergaard2025generative, yeung2025psychogenic}. Bots tend to mirror or echo the user, affirming and adopting user beliefs, especially over the course of longer conversations as in-context learning picks up more of the user's ideas \citep{shanahan2023role, perez2022discovering, sharma2023sycophancy, weilnhammer2026vulnerability}. Meanwhile, humans are prone to be swayed by utterances from chatbots \citep{costello2024durably, luettgau2025people, potter2024hidden}, perhaps because we form relationships with them \citep{kirk2025human}, and because they can appear human-like, confident, knowledgeable and objective. Over the course of a conversation, the feedback loop can cause both sides can to become increasingly overconfident in a particular narrow framing \citep{dohnany2025technological}. 
 
 
 \subsection{A broader view of misalignment}
@@ -639,46 +569,119 @@ AI chatbots have recently become compelling conversation partners. For some user
 \textit{`Growth for the sake of growth is the ideology of the cancer cell.'}\\*Edward Abbey
 \end{center}
 
+In the last section we looked at a few examples where collapsing into narrow patterns is misaligned. A great deal of research in AI safety has investigated solutions to these problems. For example, concentration of power might be mitigated by democratic oversight and involvement of more people in AI design decisions \citep{birhane2022power, sloane2022participation, selbst2019fairness, lazar2023ai, dafoe2018ai, openai2023democratic}; or through redistribution mechanisms \citep{okeefe2020windfall, sharp2025agentic, gough2019universal, susskind2020world}. Perverse instantiation might be mitigated by designing AI systems that want to obey human preferences but treat these preferences as something uncertain that must be learned \citep{russell2019human, hadfieldmenell2017off, hadfieldmenell2016cooperative, shah2020benefits, jeon2020reward}. 
 
-Those were special cases of collapsing into narrow patterns. But the problem is broader. If we accept that real alignment means 
-
-AI safety researchers have identified many particular versions of overcommitment and developed or proposed solutions for them. For example, concentration of power might be mitigated by democratic oversight and involvement of more people in AI design decisions \citep{birhane2022power, sloane2022participation, selbst2019fairness, lazar2023ai, dafoe2018ai, openai2023democratic}; or through redistribution mechanisms \citep{okeefe2020windfall, sharp2025agentic, gough2019universal, susskind2020world}. 
-
-Overcommitment to a particular value function might be mitigated by designing AI systems that want to obey human preferences but treat these preferences as something uncertain that must be learned \citep{russell2019human, hadfieldmenell2017off, hadfieldmenell2016cooperative, shah2020benefits, jeon2020reward}. 
-
-To mitigate this, the field has moved toward solutions:
-\begin{itemize}
-    \item \textit{Mechanistic interpretability.} Improving our mechanistic understanding of AI systems so we can, for example, detect and correct the systems if they develop hidden ways of resisting our efforts to change their goals \citep{olah2020zoom, burns2022discovering, bereska2024mechanistic, anthropic2024mapping}.
-    \item \textit{Deliberated preferences or idealized values.} Representing what we would prefer if we had more time, knowledge, and computational power \citep{bostrom2014superintelligence, soares2014aligning, yudkowsky2004coherent}. One way to access longer-sighted preferences is by giving humans more time and resources to think about their answer, to ask on behalf of another person, or on behalf of their future self. You can give them access to tools and information. You can ask people retrospectively whether an outcome was good, rather than prospectively. 
-    \item \textit{Pluralistic alignment.} \citep{sorensen2024roadmap}. Tries to do X. 
-    \item Principles frameworks. 
-    \item Inverse methods to learn values.
+But each method has a core limitation. Any form, pattern or conceptual scheme, taken too seriously, is misaligned. Therefore, \textit{no particular approach can achieve alignment}. An AI system could overcommit to, for example:
+\begin{itemize}[noitemsep]
+    \item the language for describing the space goals and values live in \citep{bobu2020quantifying, soares2014aligning},
+    \item an algorithm for learning human preferences,
+    \item methods for reaching consensus,
+    \item concepts of what value, agency or representation mean,
+    \item aspects of our beliefs about the world that we take for granted but have difficulty seeing. 
 \end{itemize}
 
-But each of these methods has a core limitation. Any form, pattern or conceptual scheme, taken too seriously, is misaligned; therefore, \textit{no particular approach can achieve alignment}\footnote{Of course, this does not mean we should have no scheme. Quite the opposite. Throwing away schemes capriciously can be just as over-fixated as any other particular form.}. An AI system could overcommit to the language for describing the space goals and values live in \citep{bobu2020quantifying, soares2014aligning}, to an algorithm for learning human preferences, to our concepts of agency or representation, or even to concepts we currently use but can't see because they are tautological to us. This problem can be viewed as a generalization of proxy failure \citep{john2023dead} or generalization of the outer alignment problem \citep{hubinger2019risks}. It's not only particular objectives that are subject to overcommitment failures, but any form at all, including what we ourselves unconsciously hold as axiomatic.
+In a sense, this is obvious. We can't expect the thing we build today to be absolutely perfect, and we expect to keep finding and fixing problems as we recognize them. Historically, that's what we've always done: build imperfect technologies and iterate on them. But it is possible that the iterating process will not continue to work as well as it has in the past. AI already has some remarkable properties, such as rapid global adoption, intensive use of resources, concentration of information flow, anthropomorphization, offloading much cognitive activity. More speculatively, in the future AI may exhibit superhuman intelligence and recursive self-improvement, without being limited to a restrictive biological substrate. These distinctive properties may create more difficulty in iterating on imperfect solutions, compared to past technologies \citep{bostrom2014superintelligence}. There is some risk that any particular forms or assumptions built in to AI systems could gain excessive traction and be difficult to undo. This point has been extensively made for certain categories of overcommitment, particularly values. Our new observation is that there is no single solution to the problem because the nature of healthy living systems is to invent qualitatively new properties over time, and no fixed form can be aligned with this process. In other words, there's a risk if AI grows too much in power while being fixed on a particular scheme. 
 
-This is so relevant to AI safety because AI is exactly the technology that takes particular forms and runs away with them.
+Of course, this does not mean we should have no scheme! Quite the opposite. Throwing away schemes capriciously can be as much a loss of subtlety as any other particular form. Many of the existing approaches in AI safety are highly valuable, a point to which we will return in Section 2.4.
 
-Limitations of pluralistic alignment. There is not even universal agreement on which principles are most appropriate for aggregating the preferences of different people. Pluralistic alignment faces the risk of overcommitment if it treats the aggregated values or agreed principles (or even the mechanism of aggregation or discovery) as absolute. If we formalize a democratic process and maximize adherence to it, we risk tyranny of the majority or the entrenchment of biases codified in the aggregation algorithm \citep{gabriel2020artificial}.
+
+
+% This problem can be viewed as a generalization of proxy failure \citep{john2023dead} or generalization of the outer alignment problem \citep{hubinger2019risks}.
+
+
+
+
+
+
 
 % Any static universe is misaligned. Even any ``statically dynamic" universe is misaligned. For example, repeating the same ``perfect day" over and over for eternity is not what we want.
 
-Although we can access *improved* values with deliberation, pluralistic alignment and so on, it is still difficult to access the truly idealized values. Even worse, they are continually changing, and there are new concepts we haven't thought of yet. New kinds of morality. We can't lock in any particular thing. The process itself will have to evolve. 
+
+
+
+% Indeed, it's been suggested that AI explains the Fermi paradox -- the puzzle of why we don't see signs of intelligent life anywhere else in the universe \citep{garrett2024artificial, bostrom2008wherearethey}. To use the language of this paper, as civilizations become intelligent, they develop the capacity to give themselves the myopic form of what they think they want. If that capacity develops faster than boundaries that contextualize it, it may lead many civilizations to overcommitment and collapse. 
+
+
+\subsection{Human values}
+
+\begin{center}
+\textit{`This web of life. . . breaks no law of physics, yet is partially lawless, ceaselessly \\creative. . . . This creativity is stunning, awesome, and worthy of reverence.'}\\*Stuart Kauffman
+\end{center}
+
+There are many things that we call `values'. Short-term, idealized etc. Whatever particular values we have, we respect them as part of the universe, part of the context.
+
+The living process is both inclusive of our existing values and aligned with continued open-ended flourishing in futures that may be qualitatively different from the present. Shallow values are not wrong. Someone might just want a Snickers bar. The fact that they might later regret it doesn't make it necessarily wrong. Alignment means alignment to the full livingness of the universe, including all the local perspectives. Continuing to strive for better solutions that respect more and more of the apparent contradiction. And participating in the emergence of new structure.
+
+What do humans value? In one sense, what we value is whatever we say we value, or what we appear to value through our choices. These values are often:
+\begin{itemize} 
+    \item \textit{Short-sighted in time.} We often prefer to get immediate rewards even if they come with larger delayed punishments. This is reflected in our decisions about procrastination, drug abuse, spending and so on \citep{evenden1999varieties, ainslie1975specious}. 
+    \item \textit{Short-sighted in computation.} We lack the knowledge or resources to reason about many of the consequences of our stated preferences. 
+    \item \textit{Short-sighted in social distance.} We tend to be selfish, preferring ourselves and our families while neglecting the welfare of other humans or living creatures.
+    \item \textit{Logically inconsistent.} In a classic study, one group saw beef labelled as `75\% lean', and the other group saw the same beef labelled `25\% fat'. The `75\% lean' group rated the beef significantly higher in quality, less greasy and even better tasting \citep{levin1988consumers}. Similarly, people will routinely prefer option A over option B, B over C, and C over A \citep{tversky1969intransitivity}. 
+\end{itemize}
+
+There is another sense where what we value refers to what we would prefer if we were at our best, had all the available information, and had unlimited time and resources to think through the situation. Coherent extrapolated volition \citep{yudkowsky2004coherent}. Reflective equilibrium \citep{rawls1971theory}. Ideal observer or ideal advisor \citep{firth1952ethical, brandt1979theory, smith1994moral}. Informed desire \citep{railton1986moral}.
+
+
+
+However, these deliberated values still seem to miss something, as they are still limited to what we have concepts for. For example, imagine asking someone in the year 1800 about anthropogenic global warming. We also have a hard time articulating through words or button presses all of the depth of what we value, which involves shades of meaning around our bodies, our relationships with other people, and our embodied relationships to physical parts of the world \citep{merleauponty1945phenomenologie}. Philosophers have long emphasized the existence of tacit, embodied, and practice-based forms of understanding that resist formalization \citep{polanyi1944great,dreyfus1972computers}. Ethical perception often involves sensitivity to particular contexts rather than application of general rules \citep{nussbaum2001fragility}. Over time, we discover not only new values, but even new concepts and new kinds of things to value. Even very good, deliberated values are vulnerable to proxy failure if they are formalized \citep{john2023dead,kurth2023replay}. If we think we've written down what we think we value, and then someone does a good enough job giving us the thing we said we want, the outcome is inevitably harmful in a broader sense. So the values, formalized this way, still can't be what we most deeply value.
+
+
+
+This kind of value might include improving subjective wellbeing for humans, reducing suffering or minimizing inequality, in ways that can be operationalized and measured. They are formalizable or close to formalizable.
+
+One way to robustify values is allowing them to include things that are difficult to express formally \citep{nussbaum2001fragility, scott1998seeing, polanyi1966tacit, dreyfus1972computers, varela1991embodied, wittgenstein1922tractatus}. This kind of value might stretch far below language into subtle, contextual intuition that involves our bodies, communities and natural environment. Another extension is to allow values that are continually evolving in an open-ended way \citep{singer1981expanding, murdoch2013sovereignty, williams1985ethics, dewey1939theory,gadamer1960wahrheit, nietzsche1883zarathustra}. These values change as we ourselves continue to develop and evolve. Any concepts we have about them at any given point in time are inevitably incomplete, just like a planarian doesn't have the concepts to entertain the kinds of values we talk about today. The resistance of values to being fully captured by language or concepts might be something we value -- in a way that is itself changing. We conjecture that by becoming sensitive to more and more of the evolving structure in the world, an agent becomes `good' in a way that tends to align with the kinds of values we uncover when we look deeper within ourselves. However, we take that conjecture very lightly: more as food for thought than a claim of an absolute truth. The very concept of `values' is a form we might over-index on. 
+
+`The dynamic nature of the values emerges from the insatiability of all the subtle forces that interact below language and beyond our own bodies'
+
+We propose that life's open-endedness and resistance to formalization -- its health and flourishing -- are near to what humans ultimately value. 
+
+Here's a key question: are we arguing that all humans actually have the same deep values??? How do we connect this to the pluralistic alignment problem? \textit{The pluralistic problem: values are not compatible between different individuals.} Different humans disagree about what is good. Their interests clash, as well as their values and conceptualizations. These things are often fundamentally irreconcilable.
+
+
+The idea is familiar in philosophy. (Heidegger, William James, Ludwig Wittgenstein, Maurice Merleau-Ponty, Hilary Putnam, Isaiah Berlin, Iris Murdoch, Jakob von Uexküll) -- also cite religious philosophy. which make this point most directly?
+
+To access the deeper values, there must be some lightness in how we hold what we currently conceptualize as our values. 
+
+Although we can access *improved* values with deliberation, pluralistic alignment and so on, it is still difficult to access the truly idealized values. Even worse, they are continually changing, and
 
 Finally, the impossibility of specification. 
 
 Treating values as fully formalizable objects is a category error.
 
-Systems can overcommit to particular values, to principles, algorithms for learning values, methods for reaching consensus, or even something as abstract as the concept of what a value is. 
-
 there's some kind of meta-value that things aren't fixed and formal. Like, imagine a perfect day looping forever. Or literally any formal thing being played out forever. Some philosophers have acknowledged this with ideas like valuing future potential.
 
 Yet, even these refined targets remain static snapshots. To treat a `coherent extrapolated volition' as a fixed optimization target is to freeze moral development at a specific point in time. It creates a system that is sensitive to the extrapolated values of today's humanity but insensitive to the open-ended moral discovery that defines our history. As John Dewey argued, valuation is not a fixed standard but a continuous process of resolving conflicts in experience \citep{dewey1939theory}. Overcommitting to a static ideal, no matter how enlightened, precludes the emergence of new values that we lack the concepts to articulate today.
 
-any conceptual scheme, by itself, can't be a final answer. there's a risk if ai grows in power while being excessively attached to a particular scheme. 
+
+Our articulation of what we want or like, or the choices we make, are poor reflections of what is actually advantageous for our own long-term wellbeing or the wellbeing of other humans or lifeforms. Our stated or revealed preferences are:
+
+Optimizing for proxies, like self-reported values, is a problem of overcommitment to shallow targets.
+
+There is always more context to step back into. Appreciating and being sensitive to what's already here is already an almost infinite task. This is why human welfare is distinguishable from smallpox welfare. All the existing local perspectives in the world are vitally important. Some relativism is useful: for example, when it helps us appreciate the plurality of human values. But overcommitment to relativism is misaligned. AI comes into existence amid a profound network of existing reality which is saturated with meaning and importance. The point is to collaborate with all this form and structure, not to extinguish it.
+
+This does *not* mean that everyone will always get exactly what they say they want. But that problem is already well appreciated. Different people have different interests, and people have myopic preferences that aren't even good for them. 
+
+What is something broader that actually reflects what we really deeply value, if we could never-endingly improve our access to it? We argue that this life-like flourishing is close to our truly idealized values. And critically, these are **not any particular thing**. You can see why that's important if you imagine taking *any formal definition* and setting up a world *exactly like that*. The notion *inherently* has to have some kind of paradox or nonformalizability built into it.
 
 
-In the past, humanity has always iterated on technological solutions which, at any given moment, have imperfect forms. But AI poses a special kind of risk, because that iterating process might not work as it has in the past. AI already has some remarkable properties, such as rapid global adoption, intensive use of resources, concentration of information flow and human use patterns (such as anthropomorphization and offloading a large swath of cognitive activity). More speculatively, in the future AI may exhibit superhuman intelligence and recursive self-improvement, without being limited to a restrictive biological substrate. These distinctive properties may create more difficulty in iterating on imperfect solutions, compared to past technologies \citep{bostrom2014superintelligence}. Indeed, it's been suggested that AI explains the Fermi paradox -- the puzzle of why we don't see signs of intelligent life anywhere else in the universe \citep{garrett2024artificial, bostrom2008wherearethey}. To use the language of this paper, as civilizations become intelligent, they develop the capacity to give themselves the myopic form of what they think they want. If that capacity develops faster than boundaries that contextualize it, it may lead many civilizations to overcommitment and collapse. 
+AI doesn't have to be aligned specifically `to human values', in a narrow sense of `human values'. There's one sense of human values that is open-ended and includes future discovery and things that are deeply embodied and difficult to express formally, and this is closer to what we mean. But any particular set of human values that we could write down is not what we mean. Ultimately we're aligning to this mysterious livingness of the universe. But because the universe is already full of life and structure, a big part of the problem is fully respecting and nurturing that existing life. 
+
+
+The real world, especially the living world, has an interesting property that each piece of it can be partially captured in may different ways, by different kinds of model or metaphor or description. For example, I can describe an apple in terms of its color, its texture, its flavor, its shape, it's evolutionary history, the ecological networks it participates in, its role in carrying seeds, its mass, my personal preference for or against it, its economic role in grocery stores, the history of human apple cultivation, and so on endlessly. The very fact that things admit so many descriptions is a key part of what makes the world so wonderful and what we value about it. AND that we can't predict easily what's going to happen in the future.
+
+% One illustration is recent problems with sycophancy in commercial chatbots \citep{openai2025sycophancy}. Human feedback about particular bot utterances was part of the training signal for the model. But these human feedback signals tend to prefer utterances that are more flattering. It's much easier for a rater to judge surface characteristics than to determine whether the bot said something true about a complex topic, or something that would lead to increased long-run welfare.   
+
+% So, can we equate `aligned' with `good' and `should'? In everyday usage, `good' implies a moral system. Part of the argument of this paper is that any particular moral system is not aligned. But `good' can be used more loosely, in a way that isn't attached to any fixed conceptualization. If this is what we mean by deep human values, then avoiding overcommitment is the exact expression of deep human values. An exciting corollary is that to access the deeper values, there must be some lightness in how we hold what we currently conceptualize as our values. Even the concepts of `values' or `should' are forms we might over-index on. 
+
+% At a first analysis, the intricate interrelated diversity of the world looks important for two distinct reasons. First, rich worlds are the ones we intrinsically value at the deepest level. Second, these kinds of worlds are the most productive: they are conducive to creating the situations we value. But perhaps these two reasons are not so distinct. Potential and non-formalizable development is nearly synonymous with what we value. The line between normative and descriptive asymptotically disappears.
+
+% Where to put these refs? \citep{anwar2024foundational, zhixuan2024beyond}
+
+% It could be something like attunement to the livingness around us and in us. 
+
+% End of human values section==========================
+
 
 
 \subsection{Toward an aligned future}
@@ -783,6 +786,17 @@ Finding a balance between existing factors is necessary but not sufficient. Alig
 The use of boundaries against overcommitment in technology is as old as technology. As soon as we started building things, we had to build in boundaries, because we want the things we build to be robust and useful and not to collapse into degenerate states. We put circuit breakers in the power grid, governors in steam engines, escapements in clocks, ReLUs in neural networks. In modern AI research we have personalization through the context, access to user data, on-device learning. We have conditional computation creating separation between parts within a large model. We have dropout, cross-validation, causal masking, multi-agent systems. Many safety methods are boundaries, including safety post-training, guardrail models, red teaming, mechanistic interpretability, government oversight and so on \citep{gabriel2025ethics}. Increasingly critical are ongoing evaluation and monitoring of deployed AI systems \citep{grey2025safety, myllyaho2021systematic, yampolskiy2025monitorability}. There is increasing awareness that over-attachment to fixed optimization targets is often counterproductive \citep{kumar2025questioning,stanley2017open, stanley2015greatness}. 
 
 
+
+To mitigate this, the field has moved toward solutions:
+\begin{itemize}
+    \item \textit{Mechanistic interpretability.} Improving our mechanistic understanding of AI systems so we can, for example, detect and correct the systems if they develop hidden ways of resisting our efforts to change their goals \citep{olah2020zoom, burns2022discovering, bereska2024mechanistic, anthropic2024mapping}.
+    \item \textit{Deliberated preferences or idealized values.} Representing what we would prefer if we had more time, knowledge, and computational power \citep{bostrom2014superintelligence, soares2014aligning, yudkowsky2004coherent}. One way to access longer-sighted preferences is by giving humans more time and resources to think about their answer, to ask on behalf of another person, or on behalf of their future self. You can give them access to tools and information. You can ask people retrospectively whether an outcome was good, rather than prospectively. 
+    \item \textit{Pluralistic alignment.} \citep{sorensen2024roadmap}. Tries to do X. Limitations of pluralistic alignment. There is not even universal agreement on which principles are most appropriate for aggregating the preferences of different people. Pluralistic alignment faces the risk of overcommitment if it treats the aggregated values or agreed principles (or even the mechanism of aggregation or discovery) as absolute. If we formalize a democratic process and maximize adherence to it, we risk tyranny of the majority or the entrenchment of biases codified in the aggregation algorithm \citep{gabriel2020artificial}.
+    \item Principles frameworks. 
+    \item Inverse methods to learn values.
+\end{itemize}
+
+
 % [To be revised] Ken Stanley started with simple random images, like a couple of curvy lines. He asked people to rate the pictures for interestingness. The most interesting ones were then bred together, and this process of evolution was carried on for many steps. What eventually came out was images with a lot of richness and semantic meaning, which looked like a face or a fish or a moonrise \citep{secretan2008picbreeder}. In related experiments with navigation and physics-based tasks, the researchers found that bottom-up search for interesting components was more effective than top-down optimization for a pre-defined objective \citep{lehman2011abandoning}. In other words, if you deliberately try to make structures like this, it's paradoxically harder to get them to happen. If you overcommit to optimizing for one formal idea, it leads to collapse \citep{kumar2025questioning}. But when humans draw on their own light, playful ideas of what is interesting, it grounds the search in countless little nuances from evolution (e.g. in our visual system and our motivational system) and from our lifetime of experience with the real world. `If we want to reach valuable destinations we have to be prepared to travel the road with no destination'
 
 
@@ -791,6 +805,8 @@ At a social level, we have labs taking different approaches, nations with differ
 How can we use AI in a way that does not lead to domination of individual perspectives? (and we might want to distinguish `concentration of power in the hands of elites' versus `collapse of global thought diversity without anyone necessarily benefitting'). Policies and regulations. Education, making sure everyone gets good at utilizing what is available.
 
 Setting up the structures that support this continued expansion of internal space. Generation of new forms, moving away from equilibrium. 
+
+Iterated amplification, where AI helps us think better, and we iterate on that cycle.
 
 Pluralistic alignment \citep{sorensen2024roadmap}. Processes for deliberation and inclusion. 
 
