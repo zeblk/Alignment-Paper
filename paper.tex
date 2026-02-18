@@ -118,10 +118,6 @@ Section 2 applies this template to the alignment problem. We propose that the sy
 \end{center}
 
 \begin{center}
-\textit{`When forced to work within a strict framework, the imagination is taxed to its utmost--and will produce its richest ideas. Given total freedom the work is likely to sprawl.'}\\*TS Eliot
-\end{center}
-
-\begin{center}
 \textit{`Nature's imagination is so much greater than man's, she's never going to let us relax.'}\\*Richard Feynman
 \end{center}
 
@@ -535,7 +531,7 @@ Humans have different interests, and AI is likely to be aligned to the interests
 
 % Is inequality necessarily misaligned? Historically, inequality has tended to go along with increased suffering, disempowerment of many people, and worse economic functioning. The alignment status is less cleaer if the future were so abundant that everyone could have high welfare and empowerment even while a few people had far more status or power or wealth. Some moral systems ascribe intrinsic value to equality. Without taking a strong position
 
-Or, it could go the other way. Some researchers have proposed that because roughly the same AI technology is available to the poor and unskilled as it is to the wealthy and skilled, AI will have a `leveling' effect \citep{noy2023experimental, brynjolfsson2025generative}. In this model, most people will have access to a similar level of intelligence and empowerment, with AI effectively democratizing access to knowledge, reasoning and leveraged action. This is a cause for cautious optimism, which we discuss more in Section 2.4.
+Or, it could go the other way. Some researchers have proposed that because roughly the same AI technology is available to the poor and unskilled as it is to the wealthy and skilled, AI will have a `leveling' effect \citep{noy2023experimental, brynjolfsson2025generative}. In this model, most people will have access to a similar level of intelligence and empowerment, with AI effectively democratizing access to knowledge, reasoning and leveraged action. This is a cause for cautious optimism, which we discuss more in Section \ref{sec:toward}.
 
 \subsubsection{Conceptual monoculture}
 
@@ -549,7 +545,7 @@ If centralized AI models broadcast their lower-diversity concepts to the whole w
 
 % If an AI with any biases is centralized, then certain people might be systematically excluded to a greater degree than they are now \cite{creel2022algorithmic}.
 
-However, it is worth noting that none of the studies cited here made a best effort attempt to use AI systems in a thoughtful way to increase rather than decrease diversity. This also gives hope, which we again return to in Section 2.4.
+However, it is worth noting that none of the studies cited here made a best effort attempt to use AI systems in a thoughtful way to increase rather than decrease diversity. This also gives hope, which we again return to in Section \ref{sec:toward}.
 
 
 % The adoption of AI in its modern form has been faster than any other technology in history \citep{bick2024rapid, ccia2025survey}. By late 2025, ChatGPT alone had 800 million weekly active users \citep{techcrunch2025sam}, and global AI usage continues to grow rapidly. Meanwhile, the range of use-cases is remarkably broad, from users asking for relationship advice to industrial applications built on top of the model \citep{chatterji2025chatgpt, mckinsey2025stateofai, openai2025enterprise, mccain2025claude}. 
@@ -565,10 +561,6 @@ AI chatbots have recently become compelling conversation partners. For some user
 
 \subsection{A broader view of misalignment}
 
-\begin{center}
-\textit{`Growth for the sake of growth is the ideology of the cancer cell.'}\\*Edward Abbey
-\end{center}
-
 In the last section we looked at a few examples where collapsing into narrow patterns is misaligned. A great deal of research in AI safety has investigated solutions to these problems. For example, concentration of power might be mitigated by democratic oversight and involvement of more people in AI design decisions \citep{birhane2022power, sloane2022participation, selbst2019fairness, lazar2023ai, dafoe2018ai, openai2023democratic}; or through redistribution mechanisms \citep{okeefe2020windfall, sharp2025agentic, gough2019universal, susskind2020world}. Perverse instantiation might be mitigated by designing AI systems that want to obey human preferences but treat these preferences as something uncertain that must be learned \citep{russell2019human, hadfieldmenell2017off, hadfieldmenell2016cooperative, shah2020benefits, jeon2020reward}. 
 
 But each method has a core limitation. Any form, pattern or conceptual scheme, taken too seriously, is misaligned. Therefore, \textit{no particular approach can achieve alignment}. An AI system could overcommit to, for example:
@@ -580,9 +572,26 @@ But each method has a core limitation. Any form, pattern or conceptual scheme, t
     \item aspects of our beliefs about the world that we take for granted but have difficulty seeing. 
 \end{itemize}
 
-In a sense, this is obvious. We can't expect the thing we build today to be absolutely perfect, and we expect to keep finding and fixing problems as we recognize them. Historically, that's what we've always done: build imperfect technologies and iterate on them. But it is possible that the iterating process will not continue to work as well as it has in the past. AI already has some remarkable properties, such as rapid global adoption, intensive use of resources, concentration of information flow, anthropomorphization, offloading much cognitive activity. More speculatively, in the future AI may exhibit superhuman intelligence and recursive self-improvement, without being limited to a restrictive biological substrate. These distinctive properties may create more difficulty in iterating on imperfect solutions, compared to past technologies \citep{bostrom2014superintelligence}. There is some risk that any particular forms or assumptions built in to AI systems could gain excessive traction and be difficult to undo. This point has been extensively made for certain categories of overcommitment, particularly values. Our new observation is that there is no single solution to the problem because the nature of healthy living systems is to invent qualitatively new properties over time, and no fixed form can be aligned with this process. In other words, there's a risk if AI grows too much in power while being fixed on a particular scheme. 
+In a sense, this is obvious. We don't expect the thing we build today to be absolutely perfect. We expect to keep finding and fixing problems as we recognize them. Historically, that's what we've always done: build imperfect technologies and iterate on them. But it is possible that the iterating process will not continue to work as well as it has in the past. AI already has some remarkable properties, such as rapid global adoption, intensive use of resources, concentration of information flow, anthropomorphization, offloading much cognitive activity. More speculatively, in the future AI may exhibit superhuman intelligence and recursive self-improvement, without being limited to a restrictive biological substrate. These distinctive properties may create more difficulty in iterating on imperfect solutions, compared to past technologies \citep{bostrom2014superintelligence}. Any particular forms or assumptions built in to AI systems could gain excessive traction and be difficult to undo. This problem has been studied extensively for certain categories of overcommitment, particularly overcommitment to values. Our new observation is that there is no single solution to the problem because the nature of healthy living systems is to invent qualitatively new properties over time, and no fixed form can be aligned with this process. In other words, there's a danger if AI grows too much in capability while being fixed on any particular scheme. 
 
-Of course, this does not mean we should have no scheme! Quite the opposite. Throwing away schemes capriciously can be as much a loss of subtlety as any other particular form. Many of the existing approaches in AI safety are highly valuable, a point to which we will return in Section 2.4.
+Of course, this does not mean we should have no scheme! Quite the opposite. Throwing away schemes capriciously can be as much a loss of subtlety as any other particular form. Many of the existing approaches in AI safety are highly valuable, a point to which we will return in Section \ref{sec:toward}. But first, to explain the idea that any scheme is incomplete, let's look at a case study.
+
+\subsection{Case study: inverse methods}
+
+Inverse methods use human data to learn a value function implicitly rather than attempting to explicitly write one down. The idea is to avoid overcommitment to a narrow specification of values. A simple inverse method is reward modeling. Rather than trying to specify what we value in language or equations, we train a complex neural network (a reward model) directly on human preferences across a vast array of situations. We might ask thousands or millions of humans questions like, `is x better or worse than y', and train our reward model to predict their answers. Ideally, this model would learn to capture all the nuance of what humans care about. We would then use the trained reward model as the objective function that the primary AI seeks to optimize. 
+
+This is still imperfect because the learned reward function, if given as a specification to a powerful AI, might still have subtle deviations, or might fail to capture how human values change over time. Therefore, researchers have proposed designing AI to be inherently uncertain about its true objective. In other words, the true objective is something latent about which the agent must learn. An AI that is uncertain about true human preferences will be risk-averse toward high-stakes, irreversible actions. For example, if the system is uncertain whether causing cancer in millions of people aligns with human preferences, the potential for catastrophic disvalue stops it from taking that action. Uncertainty automatically motivates the AI to learn about human preferences, because with better knowledge it can better fulfill its core objective of maximizing those preferences. The agent is corrigible because human correction, like an attempt to switch it off, is new information about the preferences it seeks to maximize. 
+
+
+Any particular system for inferring, representing, and acting on human values is inherently partial.
+
+There has to be some hand-crafted notion of how you map human behavior (or, ultimately, pixels or some other formalism) toward the `true objective'. If a human says `do this', does that mean you're getting closer to the objective? What if they say it in a sarcastic tone? What ultimately grounds this? \citep{jeon2020reward}
+
+What would it look like to be overcommitted to a particular uncertainty-based inverse mechanism for learning human values? It means that the agent is committed (for example) to some concept of what `value' means. It's committed to some learning algorithm. 
+
+(Would Stuart Russell counterargue that if deep human values really do include all this open-ended stuff, then the AI would continue to discover it?)
+
+
 
 
 
@@ -685,6 +694,11 @@ The real world, especially the living world, has an interesting property that ea
 
 
 \subsection{Toward an aligned future}
+\label{sec:toward}
+
+\begin{center}
+\textit{`When forced to work within a strict framework, the imagination is taxed to its utmost--and will produce its richest ideas. Given total freedom the work is likely to sprawl.'}\\*TS Eliot
+\end{center}
 
 \begin{center}
 \textit{`We can love the beautiful, and believe in it, and thereby open ourselves to an understanding of love that does not dominate, but cherishes the independence and beauty of the loved.'}\\*Martha Nussbaum
