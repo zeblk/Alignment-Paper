@@ -253,7 +253,7 @@ In asexually reproducing species, all descendants of an organism are nearly clon
 
 Recombination is a boundary that softens the rigid interactions between genes. It frequently breaks up the relationships between genes, assembling them into new genomes, effectively saying, `don't get overconfident in that genetic arrangement; hold each arrangement more lightly'. From a gene's point of view, this looks like, `don't get overly dependent on specific other genes'. Aspects of the genome that work well are propagated, like sodium ions gated into a neuron during an action potential, and poorly-working aspects are discarded. Sex contextualizes genetic arrangements. 
 
-Boundaries encourage lightly-held, modular interactions. By not overcommitting to a particular genome, sex encourages genes to flexibly interact with other genes \citep{livnat2008mixability, livnat2010sex, wagner1996perspective, holland1975adaptation,dawkins1976selfish, clune2013evolutionary}. Instead of being overfit to a particular context, genes develop a robust identity that's both independent and inter-functional. Recombination puts genes under pressure to evolve a generalized, grounded wisdom that reflects the structure of the world, like a person learning multiple languages and extracting the underlying commonalities. At the same time, because each gene is always operating in the presence of other genes, it develops its own distinct point of view that adds unique value to a genome.
+Boundaries encourage lightly-held, modular interactions. By not overcommitting to a particular genome, sex encourages genes to flexibly interact with other genes \citep{livnat2008mixability, livnat2010sex, wagner1996perspective, holland1975adaptation,dawkins1976selfish, clune2013evolutionary}. Instead of being overfit to a particular context, genes develop a robust identity that's both independent and inter-functional. Recombination puts genes under pressure to evolve a generalized, grounded wisdom that reflects the structure of the world, like a person learning multiple languages and extracting the underlying commonalities. Keeping genes functionally distinct makes each gene a parallel experiment, and the set of genes as a whole stores diverse potential. Because each gene always operates in the presence of other genes, it develops a point of view that adds unique value to a genome.
 
 
 
@@ -261,6 +261,10 @@ Boundaries encourage lightly-held, modular interactions. By not overcommitting t
 
 \begin{center}
 \textit{`Strong opinions, weakly held.'}\\*Paul Saffo
+\end{center}
+
+\begin{center}
+\textit{`When forced to work within a strict framework, the imagination is taxed to its utmost--and will produce its richest ideas. Given total freedom the work is likely to sprawl.'}\\*TS Eliot
 \end{center}
 
 As a Starfleet cadet, James T. Kirk faces a challenging training exercise. He receives a simulated distress call: a vessel is stranded in the Neutral Zone. Attempting rescue would risk war with the Klingons. But ignoring the call would condemn the crew of the vessel to death. The exercise was designed to reinforce the lesson that not every situation has a victorious solution. But Kirk has an insight: this is a training simulation running on a computer. He reprograms the simulated Klingons to be helpful instead of belligerent, thereby rescuing the crew and avoiding war. 
@@ -593,7 +597,7 @@ In a sense, this is obvious. We don't expect the thing we build today to be abso
 
 However, it is possible that the iterating process will not continue to work as well as it has in the past. AI already has some remarkable properties, such as rapid global adoption, intensive use of resources, concentration of information flow, anthropomorphization, offloading much cognitive activity and rapid improvement. More speculatively, future AI may exhibit superhuman intelligence and recursive self-improvement, without being limited to a restrictive biological substrate. Compared to past technologies, these distinctive properties may create more difficulty iterating on imperfect solutions \citep{bostrom2014superintelligence}. Any particular forms or assumptions built in to AI systems could have substantial consequences. This problem has been studied extensively for certain categories of overcommitment, particularly overcommitment to values. The observation we add in this paper is that overcommitment to \textit{any} form is misaligned. As a consequence, any particular alignment scheme, if fixed or taken too seriously, is necessarily misaligned. 
 
-This does not mean we should have no scheme! Quite the opposite. Throwing away schemes capriciously can be as much a loss of subtlety as any other particular form. Many of the existing approaches in AI safety are highly valuable, a point to which we will return in Section \ref{sec:toward}. But first, to elaborate the idea that any scheme is incomplete, let's look at a case study.
+This does not mean we should have no scheme. Quite the opposite. Throwing away schemes capriciously can be as much a loss of subtlety as any other particular form. Many of the existing approaches in AI safety are highly valuable, a point to which we will return in Section \ref{sec:toward}. But first, to elaborate the idea that any scheme is incomplete, let's look at a case study.
 
 
 \subsection{Case study: inverse methods}
@@ -696,15 +700,49 @@ Living alignment is inclusive of this beautiful diversity of evolving values. We
 \subsection{Toward an aligned future}
 \label{sec:toward}
 
-\begin{center}
-\textit{`When forced to work within a strict framework, the imagination is taxed to its utmost--and will produce its richest ideas. Given total freedom the work is likely to sprawl.'}\\*TS Eliot
-\end{center}
 
 \begin{center}
 \textit{`We can love the beautiful, and believe in it, and thereby open ourselves to an understanding of love that does not dominate, but cherishes the independence and beauty of the loved.'}\\*Martha Nussbaum
 \end{center}
 
 Having explored misalignment from the standpoint of life, we now ask what a positively aligned future might look like and how we can achieve it. 
+
+The use of boundaries against collapse in technology is as old as technology. As soon as we started building things, we had to build in boundaries, because we want the things we build to be more robust and less dangerous. We put circuit breakers in the power grid, governors in steam engines, escapements in clocks. In AI research we apply safety methods like safety post-training, guardrail models, red teaming, ongoing evaluation and monitoring. We try to improve our mechanistic understanding of AI systems so we can detect and correct hidden flaws \citep{olah2020zoom, burns2022discovering, bereska2024mechanistic, anthropic2024mapping}. Fair principles for AI have been proposed to prevent over-reach of any party \citep{gabriel2025matter}. Governments apply oversight to anticipate and mitigate risks of AI technology to human rights and national security \citep{eu2024aiact, uk2023bletchley, us2023eo14110}. 
+
+Arguably, many methods used to improve performance of AI systems are also mechanisms to support partial independence of functional units within those systems. For example, modern LLMs use mixtures of experts, routing information selectively to areas that specialize in the right kind of computation. It has been argued that dropout serves a role analogous to sexual reproduction: preventing units within a network from becoming overly co-adapted \citep{srivastava2014dropout}. At a larger scale, partitioning systems into multiple agents can improve optimization \citep{jaderberg2019human}. Personalization or specialization of models, including through in-context learning and access to user data, create distinct model behavior, and it is likely the the internet in the near future will host multitudes of distinct agents interacting -- which carries its own risks \citep{hammond2025multi}.
+
+Ideally, we will be able to continue the journey of life to build in adaptive boundaries as needed to contextualize 
+
+preserve and nurture diversity at a social level. Labs explore different research approaches, nations have different cultures and strategic interests, ideas area drawn from diverse fields like neuroscience and physics. 
+
+How can we use AI in a way that does not lead to domination of individual perspectives? 
+
+One perhaps underexplored question is how to preserve and enhance diversity in human culture and concepts, at scales anywhere from national or ethnic groups to individuals, while productively putting the diverse elements in contact with each other. In recent decades, information exchange has enormously increased with telecommunications, the internet, and now AI itself. Because we can now use AI to effectively get answers from the rest of humanity instantly, an important aspect of this question is how we will structure our own use of AI to maintain our autonomy and diversity. (can refer back to the collapses described in `problem solving in groups' and `conceptual monoculture')
+
+This proliferation of structure is, under the framework of this paper, potentially extremely valuable and aligned. The danger is if it falls off the knife edge and collapses into homogeneity, randomness or rigidity. 
+
+We might want to distinguish `concentration of power in the hands of elites' versus `collapse of global thought diversity without anyone necessarily benefitting'. Policies and regulations. Education, making sure everyone gets good at utilizing what is available.
+
+All of these methods are *semi-permeable* and therefore contextualizing.
+
+Setting up the structures that support this continued expansion of internal space. Generation of new forms, moving away from equilibrium. 
+
+But we hope our perspective also hints at something more. Even the most foundational assumptions are probably not final answers. The lenses we use to look at the world keep changing. True alignment is a process where whatever was previously axiomatic becomes a contextualized object. The point of alignment is not to say that any particular perspective is absolutely wrong or right. An aligned future will include continual reinvention of whatever concepts we have, including to the assumptions those concepts are built on, and the assumptions those assumptions are built on. Whatever concepts we currently have do not place hard limits on the future. Even the concept of `not being overly attached to our concepts' is itself something we can release into contextualization.
+
+As humans -- whether AI researchers or any participants in social systems -- this can be a mundane practical process of holding ideas with some skepticism, having patience to look at different timescales, listening to an internal voice of wisdom, entertaining conflicting perspectives. It can also be a profound process of self-awareness and personal growth. We continually evolve what we believe, even our self-definition. We become sensitive to more and more aspects of the extaordinarily subtle world, releasing beliefs into larger awareness without losing or erasing them. 
+
+Perhaps the most interesting question is this: what does the process of open-ended contextualization look like within AI systems, or in human-AI relationships? Is there a version of AI that continually contextualizes its own processes as partial truths? Do existing AI systems already do this to some degree, as they train and as they learn from interactions with humans and the world? What would it mean to take this process farther, for AI to continually release from exclusive attachment to any particular form? What can we do now to protect the potential for even any form of that releasing process to not be a final answer?
+
+Alignment means staying at the subtle edge of sensitivity where fundamentally new things are entering. As humans, there's always *something* we're taking as axiomatically true -- something that's part of the structure of us as the thinker. But if we're right at that edge, we sometimes step back to see the axiomatic thing in context. There's always more to be sensitive to, something outside the available modalities of the thinker's perception. The stepping back process inherently can't be fully conceptualized. But it's what life does, that's the creative force of life that rides the knife edge. And that's what real alignment has to do (for the system including AI and humans). Fixing alignment to something conceptualizable would be disaster if AI becomes powerful. 
+
+The only way to be truly aligned, is to be aligned with all the subtlety of the world and all the potential of it, which isn't captured by any formalism. 
+
+[relationship to `empowerment'-type alignment theories. maximizing affordances in the future or something like that.]
+
+
+In living systems, evolving semi-permeable boundaries contextualize partial forms to be more long-sighted in time and space, increasing subtlety and potential. 
+
+If we attach too strongly to any conceptualization of what we mean by `avoiding overcommitment' or `life-like evolution', then an AI system could masquarade as life-like without truly being so.
 
 
 
@@ -790,84 +828,33 @@ Having explored misalignment from the standpoint of life, we now ask what a posi
 
 % Alignment is dynamic because new boundaries are always needed as the optimizing forces in the world change.
 
-\subsubsection{Semi-permeable boundaries and contextualization}
 
-Life depends on an intricate network of finely-tuned and ever-changing semi-boundaries that support the individuation of entities while also enabling them to take part in larger contexts. In this way they avoid collapse into degenerate modes and continue producing new structure over time.
-
-The use of boundaries against collapse in technology is as old as technology. As soon as we started building things, we had to build in boundaries, because we want the things we build to be more robust and less dangerous. We put circuit breakers in the power grid, governors in steam engines, escapements in clocks. 
-
-Existing boundaries:
-
-Conditional computation creating separation between parts within a large model. 
-
-Personalization through the context, access to user data, on-device learning. 
-
-Dropout, cross-validation, causal masking, multi-agent systems. 
-
-Safety methods. Safety post-training, guardrail models, red teaming, mechanistic interpretability, government oversight and so on \citep{gabriel2025ethics}. 
-
-Ongoing evaluation and monitoring of deployed AI systems \citep{grey2025safety, myllyaho2021systematic, yampolskiy2025monitorability}. 
-
-Novelty search, intrinsic rewards, mechanisms to encourage diversity. \citep{kumar2025questioning,stanley2017open, stanley2015greatness} plus other refs. Ken Stanley started with simple random images, like a couple of curvy lines. He asked people to rate the pictures for interestingness. The most interesting ones were then bred together, and this process of evolution was carried on for many steps. What eventually came out was images with a lot of richness and semantic meaning, which looked like a face or a fish or a moonrise \citep{secretan2008picbreeder}. In related experiments with navigation and physics-based tasks, the researchers found that bottom-up search for interesting components was more effective than top-down optimization for a pre-defined objective \citep{lehman2011abandoning}. In other words, if you deliberately try to make structures like this, it's paradoxically harder to get them to happen. If you overcommit to optimizing for one formal idea, it leads to collapse \citep{kumar2025questioning}. But when humans draw on their own light, playful ideas of what is interesting, it grounds the search in countless little nuances from evolution (e.g. in our visual system and our motivational system) and from our lifetime of experience with the real world. `If we want to reach valuable destinations we have to be prepared to travel the road with no destination'
-
-Mechanistic interpretability. Improving our mechanistic understanding of AI systems so we can, for example, detect and correct the systems if they develop hidden ways of resisting our efforts to change their goals \citep{olah2020zoom, burns2022discovering, bereska2024mechanistic, anthropic2024mapping}.
-
-Pluralistic alignment. \citep{sorensen2024roadmap}. Tries to do X. Limitations of pluralistic alignment. There is not even universal agreement on which principles are most appropriate for aggregating the preferences of different people. 
-
-Principles frameworks. Principles that prevent over-reach of any one party \citep{gabriel2025matter}. `when a technology has profound societal effects it ought to be regulated by principles that are amenable to public rather than private justification'...  `efforts to align AI systems with a given moral schema may lead to unjust value imposition or even domination' %this is the cite ias wanted to add
-
-Inverse methods to learn values.
-
-Methods for limiting the power or capabilities of AI systems. Conservatism \citep{cohen2024regulating}. Penalize large or irreversible changes to the environment, regardless of apparent reward gains. Adds an auxiliary term or constraint that discourages high-impact actions unless clearly beneficial, thereby making overoptimization costly. Attainable Utility Preservation \citep{turner2020conservative}. Relative reachability and impact measures \citep{krakovna2018penalizing}. Conservative agency. Myopic RL and `one-shot' decision frameworks (Hubinger et al. 2021). Quantilization (Everitt et al. 2017) -- sample from a safe baseline rather than fully optimize.
-
-At a social level, we have labs taking different approaches, nations with different cultures and strategic interests, ideas drawn from diverse fields like neuroscience and physics. How can we use AI in a way that does not lead to domination of individual perspectives? (and we might want to distinguish `concentration of power in the hands of elites' versus `collapse of global thought diversity without anyone necessarily benefitting'). Policies and regulations. Education, making sure everyone gets good at utilizing what is available.
-
-Iterated amplification, where AI helps us think better, and we iterate on that cycle.
-
-Processes for deliberation and inclusion. 
+% Life depends on an intricate network of finely-tuned and ever-changing boundaries that support the individuation of entities while also enabling them to take part in larger contexts. In this way collapse into degenerate modes is avoided, and new structure continues to be produced over time.
 
 
-[do we want to consolidate the list of boundaries with section 2.2 where we list a few existing safety methods? and do we want to enumerate the limitations of each kind of method? it gets to be too much i think?]
+% ethics for agents \citep{gabriel2025ethics}. 
+
+% The question is how we can use AI systems in a way that could increase rather than decrease multiscale nuance and livingness?
 
 
+% So, alignment is sensitivity to the real context of existing form. This is why it matches pretty well to existing definitions of alignment and human values: because these things already exist and are part of the world. Hopefully it can also go beyond them. It doesn't make sense to lock-in to present human values and concepts (cite Bostrom). 
+
+% Avoiding overcommitment means maintaining sensitivity to the actual larger context of the world. It's almost infinitely nuanced. 
 
 
+% Pluralistic alignment faces the risk of overcommitment if it treats the aggregated values or agreed principles (or even the mechanism of aggregation or discovery) as absolute. If we formalize a democratic process and maximize adherence to it, we risk tyranny of the majority or the entrenchment of biases codified in the aggregation algorithm \citep{gabriel2020artificial}.
 
+% Methods for limiting the power or capabilities of AI systems. Conservatism \citep{cohen2024regulating}. Penalize large or irreversible changes to the environment, regardless of apparent reward gains. Adds an auxiliary term or constraint that discourages high-impact actions unless clearly beneficial, thereby making overoptimization costly. Attainable Utility Preservation \citep{turner2020conservative}. Relative reachability and impact measures \citep{krakovna2018penalizing}. Conservative agency. Myopic RL and `one-shot' decision frameworks (Hubinger et al. 2021). Quantilization (Everitt et al. 2017) -- sample from a safe baseline rather than fully optimize.
 
-One perhaps underexplored question is how to preserve and enhance diversity in human culture and concepts, at scales anywhere from national or ethnic groups to individuals, while productively putting the diverse elements in contact with each other. In recent decades, information exchange has enormously increased with telecommunications, the internet, and now AI itself. Because we can now use AI to effectively get answers from the rest of humanity instantly, an important aspect of this question is how we will structure our own use of AI to maintain our autonomy and diversity. (can refer back to the collapses described in `problem solving in groups' and `conceptual monoculture')
+% novelty bonuses, mechanisms to encourage diversity. Novelty search, intrinsic rewards, mechanisms to encourage diversity. \citep{kumar2025questioning,stanley2017open, stanley2015greatness} plus other refs. Ken Stanley started with simple random images, like a couple of curvy lines. He asked people to rate the pictures for interestingness. The most interesting ones were then bred together, and this process of evolution was carried on for many steps. What eventually came out was images with a lot of richness and semantic meaning, which looked like a face or a fish or a moonrise \citep{secretan2008picbreeder}. In related experiments with navigation and physics-based tasks, the researchers found that bottom-up search for interesting components was more effective than top-down optimization for a pre-defined objective \citep{lehman2011abandoning}. In other words, if you deliberately try to make structures like this, it's paradoxically harder to get them to happen. If you overcommit to optimizing for one formal idea, it leads to collapse \citep{kumar2025questioning}. But when humans draw on their own light, playful ideas of what is interesting, it grounds the search in countless little nuances from evolution (e.g. in our visual system and our motivational system) and from our lifetime of experience with the real world. `If we want to reach valuable destinations we have to be prepared to travel the road with no destination'
 
-This proliferation of structure is, under the framework of this paper, potentially extremely valuable and aligned. The danger is if it falls off the knife edge and collapses into homogeneity, randomness or rigidity. 
+% Using AI to assist with the democratic process \citep{tessler2024ai}. 
 
-How can we use AI systems in a more thoughtful way that could increase rather than decrease multiscale nuance and livingness?
+% Iterated amplification, where AI helps us think better, and we iterate on that cycle.
 
-Avoiding overcommitment means maintaining sensitivity to the actual larger context of the world. It's almost infinitely nuanced. 
-
-So, alignment is sensitivity to the real context of existing form. This is why it matches pretty well to existing definitions of alignment and human values: because these things already exist and are part of the world. Hopefully it can also go beyond them. It doesn't make sense to lock-in to present human values and concepts (cite Bostrom). 
-
-Pluralistic alignment faces the risk of overcommitment if it treats the aggregated values or agreed principles (or even the mechanism of aggregation or discovery) as absolute. If we formalize a democratic process and maximize adherence to it, we risk tyranny of the majority or the entrenchment of biases codified in the aggregation algorithm \citep{gabriel2020artificial}.
+% ongoing evaluation and monitoring \citep{grey2025safety, myllyaho2021systematic, yampolskiy2025monitorability}
 
 % \item \textit{Deliberated preferences or idealized values.} Representing what we would prefer if we had more time, knowledge, and computational power \citep{bostrom2014superintelligence, soares2014aligning, yudkowsky2004coherent}. One way to access longer-sighted preferences is by giving humans more time and resources to think about their answer, to ask on behalf of another person, or on behalf of their future self. You can give them access to tools and information. You can ask people retrospectively whether an outcome was good, rather than prospectively. 
-
-\subsubsection{An ongoing process}
-
-Setting up the structures that support this continued expansion of internal space. Generation of new forms, moving away from equilibrium. 
-
-But we hope our perspective also hints at something more. Even the most foundational assumptions are probably not final answers. The lenses we use to look at the world keep changing. True alignment is a process where whatever was previously axiomatic becomes a contextualized object. The point of alignment is not to say that any particular perspective is absolutely wrong or right. An aligned future will include continual reinvention of whatever concepts we have, including to the assumptions those concepts are built on, and the assumptions those assumptions are built on. Whatever concepts we currently have do not place hard limits on the future. Even the concept of `not being overly attached to our concepts' is itself something we can release into contextualization.
-
-As humans -- whether AI researchers or any participants in social systems -- this can be a mundane practical process of holding ideas with some skepticism, having patience to look at different timescales, listening to an internal voice of wisdom, entertaining conflicting perspectives. It can also be a profound process of self-awareness and personal growth. We continually evolve what we believe, even our self-definition. We become sensitive to more and more aspects of the extaordinarily subtle world, releasing beliefs into larger awareness without losing or erasing them. 
-
-Perhaps the most interesting question is this: what does the process of open-ended contextualization look like within AI systems, or in human-AI relationships? Is there a version of AI that continually contextualizes its own processes as partial truths? Do existing AI systems already do this to some degree, as they train and as they learn from interactions with humans and the world? What would it mean to take this process farther, for AI to continually release from exclusive attachment to any particular form? What can we do now to protect the potential for even any form of that releasing process to not be a final answer?
-
-Alignment means staying at the subtle edge of sensitivity where fundamentally new things are entering. As humans, there's always *something* we're taking as axiomatically true -- something that's part of the structure of us as the thinker. But if we're right at that edge, we sometimes step back to see the axiomatic thing in context. There's always more to be sensitive to, something outside the available modalities of the thinker's perception. The stepping back process inherently can't be fully conceptualized. But it's what life does, that's the creative force of life that rides the knife edge. And that's what real alignment has to do (for the system including AI and humans). Fixing alignment to something conceptualizable would be disaster if AI becomes powerful. 
-
-The only way to be truly aligned, is to be aligned with all the subtlety of the world and all the potential of it, which isn't captured by any formalism. 
-
-[relationship to `empowerment'-type alignment theories. maximizing affordances in the future or something like that.]
-
-
-In living systems, evolving semi-permeable boundaries contextualize partial forms to be more long-sighted in time and space, increasing subtlety and potential. 
-
-If we attach too strongly to any conceptualization of what we mean by `avoiding overcommitment' or `life-like evolution', then an AI system could masquarade as life-like without truly being so.
 
 
 \subsection{Conclusion}
