@@ -1,0 +1,28 @@
+---
+KEY: dalrymple2019anarchy
+title={The Anarchy: The Relentless Rise of the East India Company},
+author={Dalrymple, William},
+---
+KEY: sparrow2011google
+title={Google effects on memory: Cognitive consequences of having information at our fingertips},
+author={Sparrow, Betsy and Liu, Jenny and Wegner, Daniel M},
+---
+KEY: vallacher1987people
+title={What do people think they're doing? Action identification and human behavior.},
+author={Vallacher, Robin R and Wegner, Daniel M},
+---
+KEY: frey2021social
+title={Social influence undermines the wisdom of the crowd in sequential decision making},
+author={Frey, Vincenz and Van de Rijt, Arnout},
+---
+KEY: bregman2020humankind
+title     = {Humankind: A Hopeful History},
+author    = {Bregman, Rutger},
+---
+KEY: wegner1994ironic
+title={Ironic processes of mental control.},
+author={Wegner, Daniel M},
+---
+KEY: levin1988consumers
+title={How consumers are affected by the framing of attribute information before and after consuming the product},
+author={Levin, Irwin P and Gaeth, Gary J},
