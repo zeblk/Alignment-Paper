@@ -1,0 +1,87 @@
+\documentclass[fontsize=10.95pt]{scrartcl}
+
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip}
+\usepackage[round]{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+
+\begingroup
+\setlength{\leftskip}{1.5em}% one paragraph-indent width; adjust as desired
+Title:
+Living Alignment
+
+Authors:\\
+Zeb Kurth-Nelson, Prefrontal AI, London, UK\\
+Steve Sullivan, Oregon Health and Science University, Portland, OR\\
+Nenad Tomasev, Google DeepMind, London, UK\\
+Erman Misirlisoy, Independent\\
+Joel Z Leibo, Google DeepMind, London, UK\\
+Matt Nour, Microsoft AI, London, UK\\
+Marc Guitart-Masip, Karolinska Institutet, Stockholm, Sweden\par
+
+Keywords: AI alignment, AI safety, inverse RL, multi-agent, reward hacking, diversity, complexity, open-endedness, niche creation, evolution, genetic recombination, functional fixedness, cognitive control, pattern separation, ecosystems, regulatory frameworks, sociotechnical alignment, polycentric governance, inequality
+
+\endgroup
+
+\vspace{1em}
+
+This is a presubmission inquiry. Our proposed paper offers a new perspective on the problem of AI alignment, inspired by life. A unique feature of this paper is that we perform an extensive synthesis of literature from across the life and social sciences. It turns out these sciences have already discovered an essential principle that speaks directly to the alignment problem.
+
+In the first half of the paper, we identify a common principle that has been discovered separately in multiple disciplines: \textbf{living systems are healthy and flourishing when they avoid fixation on particular forms}. For example:
+
+\begin{itemize}[leftmargin=2em,itemsep=-.4em]
+  \item Pursuit of a single drive, such as food or sex, becomes pathological when not balanced with competing drives.
+  \item Monoculture ecosystems are fragile and unhealthy.
+  \item Concentration of power reduces a society's adaptability and resilience.
+\end{itemize}
+
+By avoiding collapse, life maintains the potential to continually discover new solutions and patterns of organization. We walk through examples in detail from a range of domains, including evolutionary biology, cell biology, neuroscience, cognitive science, social science and ecology. In distilling commonalities across fields, we build on work in complexity science, polycentric governance and open-endedness.
+
+The second half of the paper applies this principle to AI alignment. There is broad agreement that aligned AI systems should support futures that are healthy and flourishing. Therefore, \textbf{alignment means avoiding fixation on particular forms}. AI and human-AI systems in an aligned future admit \emph{partial} formal descriptions but necessarily defy complete formalization.
+
+We describe how a large portion of existing AI safety and alignment research can be seen as identifying specific kinds of fixation and developing strategies to mitigate them. For example, in the well-studied problem of reward hacking, AI systems adhere to specified values yet produce bad outcomes because the specification did not capture everything that matters. Reward hacking is fixation to the form of a particular reward function. Many solutions to this problem have been proposed, such as schemes for learning human values dynamically, the use of one AI system to manage another AI system, and methods for mechanistic interpretability to maintain human understanding of AI systems. But in a life-inspired view of alignment, none of these solutions are complete. If AI grows rapidly in capability with any particular alignment scheme as its basis, the outcome will be misaligned. 
+
+It is useful to take a life-centric perspective on alignment for two reasons:
+
+\begin{enumerate}[leftmargin=2em,itemsep=0.6em]
+  \item A great deal is known mechanistically about how living systems avoid fixation. In the first half of the paper, as we work through examples from multiple levels of scale, we identify how healthy living systems rely on \emph{semi-permeable boundaries}. Parts of each system bound and limit other parts so that individual forms are contextualized instead of dominating. For example:
+  \begin{itemize}[leftmargin=2em,itemsep=-0.4em]
+    \item Cognitive control allows various drives to motivate behavior conditionally, when contextually appropriate.
+    \item Species hold each other in check and create more complex roles for each other in ecosystems.
+    \item Laws and regulations give individuals flexibility to pursue their own motives to a degree while functioning as part of a larger system.
+  \end{itemize}
+  Semi-permeable boundaries permit interactions while also supporting the individuated existence of a thriving diversity of forms.
+
+  In the second half of the paper, we translate this mechanistic view to the alignment problem. We outline how an aligned future can be supported by an ever-evolving network of semi-permeable boundaries. We show where this process is currently working well, where there are risks, and what lever points are available.
+
+  \item There is a possibility that rapid advances in AI will lead to large changes in the organization of the world, potentially as significant as the emergence of multicellular life. We believe an alignment framework should generalize across such changes. Principles of health and flourishing that describe living systems of all kinds, at all levels of scale, are more likely to generalize.
+\end{enumerate}
+
+To reiterate, the observation that life must avoid fixation to remain healthy and flourishing has been articulated in multiple domains. Our contribution is to unify this principle across domains and show how it can guide AI alignment even as AI transforms the world.
+
+Finally, we are excited about submitting this article to PNAS. The article integrates theory and data from many fields and draws heavily on work published in PNAS, including \citet{becker2017network, bernstein2018intermittent, hong2004groups, kirschner1998evolvability, kleinberg2021algorithmic, livnat2008mixability, livnat2010sex, muller2025critical, nowak2008prevolutionary, raup1994role, speijer2015sex, west2015major, xu2025echoes, yachi1999biodiversity}. The specialities of the present authors span neuroscience, cognitive science, AI research, social science, physiology and psychiatry. The simple premise of our article is important and previously unarticulated, and it is sure to engage debate. We hope our message will connect with researchers building AI systems; biologists with insights about how their field informs AI safety; social scientists with an interest in AI policy; philosophers for whom the ideas may be useful to improve ethical frameworks for AI development and deployment.
+
+\vspace{1em}
+
+
+Sincerely,
+
+\includegraphics[height=4em]{signature.png}
+
+Zeb Kurth-Nelson\\
+on behalf of the authors
+
+
+% Resolve author-year citations from proxyfailure.bib but do not print the reference list.
+\makeatletter
+\AtBeginDocument{\renewenvironment{thebibliography}[1]{\setbox\z@\vbox\bgroup\list{}{}}{\endlist\egroup}}
+\makeatother
+\bibliographystyle{plainnat}
+\bibliography{proxyfailure}
+
+\end{document}
