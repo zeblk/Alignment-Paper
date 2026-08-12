@@ -1,0 +1,501 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[margin=0.9in]{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+\hypersetup{colorlinks=true, linkcolor=blue!50!black, urlcolor=blue!50!black}
+\emergencystretch=3em
+
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titlespacing{\section}{0pt}{18pt}{6pt}
+\titlespacing{\subsection}{0pt}{14pt}{4pt}
+\titlespacing{\subsubsection}{0pt}{12pt}{3pt}
+
+\setlist[itemize,1]{label=$\bullet$, leftmargin=1.4em, topsep=3pt, itemsep=2.5pt, parsep=0pt}
+\setlist[itemize,2]{label=--, leftmargin=1.3em, topsep=2.5pt, itemsep=2pt, parsep=0pt}
+\setlist[itemize,3]{label=$\circ$, leftmargin=1.3em, topsep=2pt, itemsep=1.5pt, parsep=0pt}
+
+\title{\textbf{Living Alignment}\\[4pt] \large A Detailed Outline of the Argument}
+\author{}
+\date{\normalsize\today}
+
+\begin{document}
+
+\maketitle
+\vspace{-30pt}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\vspace{6pt}
+
+\noindent\textit{This document is a point-by-point outline of the argument made in} Living Alignment \textit{(the paper in the} Long Paper \textit{folder). It tracks the substantive claims in the body text, at roughly the granularity of individual points---sometimes a paragraph, sometimes several paragraphs making one point, sometimes several points within one paragraph. The abstract and the epigraph quotations are not covered.}
+
+\vspace{6pt}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+
+\section*{Introduction (front matter)}
+
+\begin{itemize}
+  \item \textbf{Purpose statement.} We study life in order to understand how to design and relate to AI systems in ways that lead to futures full of flourishing and health.
+  \item \textbf{Motivation for generality.} Future worlds may contain patterns of organization that do not exist yet and that might be incomprehensible to us now; humanity and AI may both change substantially. We therefore want alignment ideas that generalize over such changes, and studying living systems across many scales is a route to that generality.
+  \item \textbf{Preview of Section 1.} Sampling living systems from cells to societies reveals a consistent theme:
+  \begin{itemize}
+    \item Systems are healthy and flourishing when they avoid collapse, maximizing creative potential at a delicate edge of evolving interplay between diverse entities.
+    \item Healthy living systems admit many different kinds of meaningful description but are never perfectly or permanently captured by any one of them.
+    \item Mechanistically, systems are held at this edge by finely tuned networks of semi-permeable boundaries---where life is often both the boundary and the thing bounded.
+    \item Boundaries are semi-permeable when they both \emph{limit} and \emph{permit} interaction.
+    \item Limits keep entities distinct (not blurred to equilibrium or overwritten) and push them to deepen and generalize their own unique perspectives or strategies.
+    \item Permission places those rich, evolving individual forms into relationship with others, situating each in a less absolute, more nuanced context.
+  \end{itemize}
+  \item \textbf{Preview of Section 2.} The template is applied to alignment:
+  \begin{itemize}
+    \item A systems-oriented definition of health---creative potential plus growing sensitivity to context---is both inclusive of existing human values and aligned with open-ended flourishing in radically different futures.
+    \item Several well-studied varieties of misalignment can be seen as special cases of collapse to narrow forms.
+    \item A key takeaway: the alignment problem is not completely formalizable, because alignment requires the continued generation of, and sensitivity to, new forms and concepts---including new values.
+    \item Scope disclaimer: the aim is to offer a conceptual lens, not to argue for or against AI development, nor for or against specific alignment methods.
+    \item The section closes with a preliminary outline of what an aligned future looks like through this lens.
+  \end{itemize}
+  \item \textbf{The argument in one sentence.} First, studying life teaches that health and flourishing means avoiding collapse; second, if health and flourishing is the target of alignment, then the problem of alignment becomes the problem of avoiding collapse.
+\end{itemize}
+
+
+\section{Health in living systems}
+
+\subsection*{Framing and definitions}
+
+\begin{itemize}
+  \item \textbf{Definition of `form'.} `Form' means any particular thing---a concept, an organism, a pattern of behavior---but equally randomness, indistinctness, absence, consistency. Defining a word to mean anything sounds strange, but this breadth is essential to the later argument about alignment.
+  \item \textbf{Definition of `collapse'.} `Collapse' is when a system overcommits or reduces to a form. Because `form' is defined so broadly, a system always has \emph{some} form; in collapse, some aspect or subpart gains excess traction at the expense of broader diversity, flexibility and dynamism.
+  \item \textbf{Illustrative instances of collapse.} Loss of biodiversity in ecosystems; hypersynchronous firing in seizures; obsession with a particular thought; imposition of one person's will to restrict many others.
+  \item \textbf{Thesis of Section 1.} Health is related to avoiding collapse. Healthy living systems maintain a buoyant internal structure that both admits many kinds of description and also changes over time.
+  \item \textbf{Life inherits and rides atop prior dynamics.} Biological life arose from, and rides atop, an already profound dynamics: particle physics, planetary evolution, plate tectonics, tides, volcanism, mineral cycles, water cycles, prebiotic chemistry.
+  \item \textbf{Life traced a path between excess and insufficient stability.} The life existing today---now including humanity's storage and processing of mental patterns---is what traced a path through time avoiding both too much and too little stability.
+  \item \textbf{Open-endedness at the edge.} At the sensitive edge of semi-stability, life continues open-endedly to generate new kinds of organization that require fundamentally new descriptions.
+  \item \textbf{Many partial descriptions, changing over time.} The world that emerges can be partially captured in many different ways---different models, metaphors, descriptions---and these keep changing.
+  \item \textbf{Contrast case.} Such a world is healthier and less collapsed than hypothetical alternatives in which, for example, all matter forms a single regular crystal, or a homogeneous soup of noise.
+  \item \textbf{Collapse is relative, and myopia is necessary.} Every entity is myopic or partial---it does not capture everything in the world. Myopic frames are a necessary part of all living systems.
+  \item \textbf{Collapse is ubiquitous in life's history.} From the death of a cell to mass extinction events; collapse is a loss of life at the level where it happens.
+  \item \textbf{Contextualized collapse leaves the larger system healthy.} A cell's death is catastrophic for the cell but can be held within a healthy organism.
+  \item \textbf{Uncontextualized myopia causes larger collapse.} A cancerous cell loses the context of appropriate function within a tissue and recklessly executes its myopic vision, collapsing tissue or the whole organism.
+  \item \textbf{The same pattern at social scale.} A panicking stock trader follows the oversimplified idea ``the stock is crashing, get out!''; excess attachment to that myopic frame misses higher-order and longer-term aspects of the situation. Held as one signal among many, the same fear could be useful.
+  \item \textbf{The general principle for parts and wholes.} A larger system made of parts functions well when parts locally express their distinct identities \emph{and} participate in larger contexts; it functions poorly when a myopic form runs amok without contextualization, overwhelming the potent interplay of diverse parts.
+  \item \textbf{Footnoted caveat on structure.} Participation is not a strict hierarchy: elements participate in multiple larger systems, and some participation relations contain cycles.
+\end{itemize}
+
+\subsection*{Boundaries (mechanism)}
+
+\begin{itemize}
+  \item \textbf{The mechanism holding myopic forms in context} is an extraordinary, many-scale network of semi-permeable boundaries.
+  \item \textbf{What limiting does.} By limiting interaction, boundaries divide living systems into parts, and each part gains space to refine its own identity---like a writer developing a unique voice, a species adapting to a niche, a gene evolving a distinct function.
+  \item \textbf{Two failure modes that limits prevent.} Being dominated by other parts, or being blended into homogeneity; either is collapse to a form admitting less nuanced description.
+  \item \textbf{What permitting does.} By allowing interaction, boundaries let parts enter relationships with one another, contextualizing each part within larger structures.
+  \item \textbf{Order of operations.} These interactive structures often could not have formed without \emph{first} dividing to create diverse parts and giving them space to develop their own identities.
+  \item \textbf{The resulting system's character} (in anthropomorphic language) accommodates many partial perspectives rather than locking in a single story of what matters.
+  \item \textbf{Some boundaries are non-biological}: the speed of light, rates of reaction, mountain ranges, the pores of hydrothermal vents.
+  \item \textbf{But life also bounds itself.} Humans precommit against their own future impulsivity; plants deploy sophisticated barriers against self-fertilization; genes' selfishness is held in context by the whole genome.
+  \item \textbf{Resolution of the apparent paradox.} Self-limitation makes sense once every living system is viewed as a collection of parts that constrain one another: an impulse is a form held in context by cognitive control; the reproductive drive is held in context by self-incompatibility mechanisms.
+  \item \textbf{Restated.} Every particular entity always acts according to its own nature and so never directly bounds itself; but a world of many distinct parts, each following its own rules from its own local perspective, functions as a rich web of boundaries holding other parts in context.
+  \item \textbf{Semi-permeability is highly specific.} Boundaries may block certain objects or information, constrain \emph{when} interactions happen, constrain the degree or type of effect, break up particular rigid associations, or gate information conditional on another factor.
+  \item \textbf{Boundaries are fine-tuned with the fractal complexity of life.} Each part carries traces of the many contexts it has participated in, across evolutionary or learning timescales.
+  \item \textbf{The forms are interrelated} through shared heritage, ecological interaction with each other, and embeddedness in the same world.
+  \item \textbf{Roadmap.} The remainder of Section 1 tracks these principles through a range of living systems.
+\end{itemize}
+
+\subsection{Problem solving in groups}
+
+\begin{itemize}
+  \item \textbf{Groups can do things no individual can.} From a surgical team to NASA to an entire society, combining complementary roles, skills and knowledge into larger organized patterns of effort has enabled humanity's grandest achievements.
+  \item \textbf{Why combination helps.} Different people bring different perspectives and approaches; each method processes available data with a different toolkit; under favorable conditions, combining approaches beats any individual alone.
+  \item \textbf{Case: wisdom of crowds and the USS \emph{Scorpion} (1968).} The submarine vanished en route from the Mediterranean to Virginia; the searchable ocean area was enormous. John Craven assembled a diverse group of mathematicians, submarine specialists and salvage operators---but forbade them from communicating. Each produced an independent estimate; Craven aggregated them; the wreck was found only 220 yards from the aggregate spot. Combining diverse perspectives beat every individual.
+  \item \textbf{Case: the printing press.} Farmers developed and optimized the screw press over centuries to extract products like olive oil; independently, goldsmiths and metallurgists developed the steel punch for impressing patterns into metal. Gutenberg, trained as a goldsmith, saw that a screw press could push paper against inked movable metal type.
+  \item \textbf{The moral of that case.} The diversity of existing solutions---developed in distinct industries where they did not become excessively correlated---was essential fodder for invention.
+  \item \textbf{The converse claim.} Excess or premature communication and influence can collapse diversity and diminish group performance; groups fail to reach the best solutions when diverse and dissenting viewpoints are lost to a narrower set of ideas.
+  \item \textbf{Evidence: sequential voting.} With general-knowledge questions (e.g. ``In which year did Germany invade Denmark?''), participants who voted sequentially while seeing running tallies produced less accurate group means than independent voters, because early mistakes got baked into the group's belief.
+  \item \textbf{Evidence: traveling salesman in small groups.} Groups exchanging information continuously reached poorer outcomes than groups communicating less: when one person found a compelling but dead-end solution, others collapsed onto it and group progress suffered.
+  \item \textbf{Interpretation.} Intelligent mechanisms for transmitting the right information at the right time \emph{are} semi-permeable boundaries---limiting interaction protects and promotes diverse approaches; permitting interaction allows productive combination beyond what any person could do alone. Each individual approach is thereby held in a larger context.
+  \item \textbf{Empirically effective boundaries that boost group performance:} decentralized topologies where members only communicate with nearby neighbors; rules that incentivize acting on one's own belief rather than following the crowd; modeling each member's strengths and weaknesses; leadership styles in which one person's views are less likely to dominate; periodically breaking into subgroups or rotating membership.
+\end{itemize}
+
+\subsection{Sex and genetic recombination}
+
+\begin{itemize}
+  \item \textbf{Sex is costly.} An allogamous organism must find a mate in a vast and dangerous world; in many sexual populations only half of individuals bear offspring; each individual loses half of its genetic representation in each offspring.
+  \item \textbf{Yet sex is nearly universal among eukaryotes}---and among hermaphrodites, many go to great lengths to limit self-fertilization. (Footnote: organisms with nonsexual reproduction often use mechanisms like horizontal gene transfer to move genetic material across lineages, performing related functions.)
+  \item \textbf{The puzzle posed.} Why has evolution placed a barrier in the path to reproduction, and why isn't this onerous strategy outcompeted by self-fertilization or rapid asexual cloning?
+  \item \textbf{Asexual reproduction locks genes together.} Descendants are near-clones up to within-lineage mutation; genes have a rigid, permanently locked relationship; selection cannot act on one gene without dragging the others.
+  \item \textbf{Worked example of linkage cost.} With two asexual genotypes differing at two loci---one fitness-neutral, one under selection---selection on the second locus eliminates one variant at the neutral locus. Tight linkage puts direct downward pressure on genetic diversity.
+  \item \textbf{Second cost: beneficial mutations cannot combine.} Two beneficial mutations arising in different organisms cannot be united in one organism, except by improbable and therefore slow re-occurrence within the subpopulation already carrying one.
+  \item \textbf{Third cost: deleterious mutations are permanent.} All other genes in the lineage are stuck with a deleterious mutation forever, barring rare reverse mutation.
+  \item \textbf{Diagnosis in the paper's terms.} Asexual reproduction and self-fertilization short-circuit by taking the path of least resistance, producing overcommitment to a genetic arrangement---overfitting of a gene to the other genes in its genome.
+  \item \textbf{What recombination does.} It softens rigid interactions between genes, frequently breaking their relationships and assembling them into new genomes.
+  \item \textbf{Effect at the level of a single gene.} Recombination prevents a gene from becoming overfit to a particular genome and exposes it to independent selection.
+  \item \textbf{Sampling in many contexts favors robustness and modularity}, which enhances evolvability.
+  \item \textbf{Recombination pressures genes toward generalized models of the world}---analogous to a person learning multiple languages and extracting underlying commonalities.
+  \item \textbf{Distinctness makes each gene a parallel experiment}, and the gene set as a whole stores diverse potential. Because each gene always operates in the presence of others, it develops a point of view that adds unique value to a genome.
+  \item \textbf{Recombination is not random chopping.} Crossover mostly reshuffles combinations of genes and linked chromosomal segments while leaving genes themselves relatively intact.
+  \item \textbf{Consequence: modular genomic organization.} Keeping functional units together while repeatedly testing them in new genomic contexts supports the evolution of modularity---genetic units become distinct entities playing roles in larger structures.
+  \item \textbf{Recombination requires diversity to recombine}, so biology invests in boundaries that \emph{produce} diversity.
+  \item \textbf{Diversity-producing boundaries at multiple scales.} Molecular: hermaphroditic self-incompatibility systems preventing self-fertilization. Larger: assortative mating, inbreeding avoidance, partial geographic isolation, letting populations accumulate variants shaped by different selection histories.
+  \item \textbf{Payoff of recombining divergent variants.} Introgressions from divergent lineages produce some of the most rapid evolution ever observed.
+\end{itemize}
+
+\subsection{Frames and perspectives}
+
+\begin{itemize}
+  \item \textbf{Opening case: the Kobayashi Maru.} Cadet James T. Kirk receives a simulated distress call---a vessel stranded in the Neutral Zone; rescue risks war with the Klingons, ignoring the call condemns the crew. The exercise was designed to teach that not every situation has a victorious solution. Kirk's insight is that it is a simulation running on a computer; he reprograms the simulated Klingons to be helpful, rescuing the crew and avoiding war.
+  \item \textbf{What the case illustrates.} Kirk stepped outside the perspective, or mental frame, in which the dilemma was unwinnable.
+  \item \textbf{We always look from some perspective}---there is no `view from nowhere.'
+  \item \textbf{From inside a frame, the frame appears to be reality.}
+  \item \textbf{Most real situations admit multiple valid perspectives}, each a partial description capturing different aspects. `All models are wrong' in the sense that each is incomplete: each frame by itself is myopic.
+  \item \textbf{Clinical evidence: inflexibility and psychopathology.} Losing the ability to shift flexibly between frames or thought patterns is linked to psychopathology.
+  \begin{itemize}
+    \item Depression and anxiety: rigid, repetitive negative beliefs about self, world and future. CBT holds that surface beliefs stem from pervasive latent core beliefs, attitudes and schemas that color interpretation of new situations.
+    \item Obsessional disorders: distressing (ego-dystonic) intrusive thoughts, recognized as incorrect and maladaptive yet hard to resist.
+    \item Schizophreniform and affective psychoses: bizarre delusions at odds with evidence and cultural norms, held with conviction and resistant to evidential challenge.
+    \item Common structure: obsessions and delusions lose sight of much of the world by myopically emphasizing one thought pattern or frame.
+  \end{itemize}
+  \item \textbf{The same structure in science (Kuhn).} Perspectives are necessarily incomplete descriptions; anomalies inevitably arise from juxtaposing incomplete descriptions against the real world; when science functions well, anomalies become crises and revolutions; if the community \emph{over}commits to particular theories, science gets stuck.
+  \item \textbf{Crucial qualification: narrow points of view are not the problem---they are necessary.} Any point of view is partial, but that does not mean we should not have viewpoints.
+  \item \textbf{Even obsession can be powerful}---obsessing on a work problem sometimes achieves good results. And within science, temporary commitment to a paradigm is important for healthy functioning; Kuhn even argues scientists should resist change to a degree.
+  \item \textbf{The prescription.} The point is not to shut down narrow concepts but to contextualize them so they are not the sole and absolute determinants of behavior. In healthy functioning, different ideas are kept distinct but can also be called upon appropriately and related to one another.
+\end{itemize}
+
+\subsection{Drives and goals}
+
+\begin{itemize}
+  \item \textbf{Animals have multiple innate drives}---nutrition, osmotic balance, temperature regulation, reproduction, pain avoidance and others.
+  \item \textbf{Drives are evolved proxies for fitness.} Satisfying them tends to increase fitness---slaking thirst raises the odds of reproducing before dehydration.
+  \item \textbf{But each drive is an imperfect proxy}, so overcommitment to one drive actually \emph{decreases} fitness: unlimited calorie maximization produces obesity and health risk; single-minded pursuit of sex causes relational, occupational, legal and health harms.
+  \item \textbf{Collapse to a single drive means the organism becomes unwell}---in contrast to healthy functioning, where many drives maintain distinct agendas and participate in contextually appropriate ways.
+  \item \textbf{Innate drives bleed into a space of higher-order goals}, particularly expansive in humans: planning for one's financial future, making scientific discoveries, winning a game, fixing a garage door, caring for others' happiness.
+  \item \textbf{Collapse in goal space is also problematic.} Focusing only on work goals leads to burnout; focusing only on maximizing reported revenue, without regard for honesty or law, can draw one into financial crime.
+  \item \textbf{Two axes of goal narrowness.} Narrow in time means focusing on the short term at the expense of the longer run; narrow in space means ignoring other parallel goals. Excess optimization for narrow goals comes at the expense of a broader balance of goals---and of the health of the organism or of other individuals.
+  \item \textbf{Overcommitment to a \emph{strategy} can paradoxically defeat the goal itself.}
+  \item \textbf{Evidence: the running chickens.} Hungry chickens were placed near a food cup rigged to move in the same direction as the chicken at twice the speed, so food could only be obtained by running \emph{away} from it. Despite extensive multi-day training, the chickens persisted in futilely running toward the food.
+  \item \textbf{Interpretation of the chicken result.} Behavior was dominated by the zeroth-order logic `I want food, and food is there, so I'll go there'---thereby failing to achieve even the goal of reaching food.
+  \item \textbf{Human analogue.} Humans easily solve such puzzles, but exhibit cognitive biases---sunk cost fallacy, confirmation bias, attribution error---which function adaptively as efficient mental shortcuts in natural environments and in balance, but lead to detrimental outcomes when exaggerated.
+  \item \textbf{Cognitive control as a class of boundaries} on particular drives, goals and thought patterns; it contextualizes those forms, letting them exist and perform useful functions without dominating.
+  \item \textbf{Examples of control as boundary.} Having a drive to eat but applying control to avoid overeating; working obsessively on a project while also having a rule to go to bed at 10 pm. The boundary doesn't block a temporarily strong perspective; it places contextual limits on it.
+  \item \textbf{Cognitive control is a semi-permeable boundary}---it situates myopic patterns within a larger system.
+  \item \textbf{Control translates motivational pressure into higher-order structure.} When nothing stops a drive, goal or strategy from dominating behavior, it follows a shortest path defined under its own myopic understanding of the world.
+  \item \textbf{The chicken case reread.} The chickens took the shortest path in the naive sense of a straight line through space; in the experimenter's backwards world this does not accomplish the deeper goal, for which spatial approach is only a proxy. Motivation is short-circuited: energy is spent without progress on the deeper goal. Humans solve it by inhibiting the prepotent approach impulse.
+  \item \textbf{Boundaries break the symmetry of congruent action.} Moments when we are \emph{not} making progress toward a current subgoal are often exactly when we discover alternative approaches that advance our deeper goals.
+  \item \textbf{General statement.} Semi-permeable boundaries support richer structure by placing contextualizing limits.
+\end{itemize}
+
+\subsection{Ecosystems}
+
+\begin{itemize}
+  \item \textbf{The core tension.} Each creature tries to consume resources and proliferate, but if it succeeds too thoroughly the whole system suffers---often including the successful creature. Healthy, resilient ecosystems depend on avoiding overcommitment or collapse onto particular forms.
+  \item \textbf{Case: Yellowstone wolves.} The gray wolf was an apex predator in the Rockies region before Europeans arrived; by the 1920s wolves had been eradicated to protect livestock and game.
+  \item \textbf{The trophic cascade.} Without predation, elk multiplied and ruinously overgrazed willows and aspens; those trees had held riverbanks in place and supported beaver populations; loss of beaver dams led to loss of fish and other aquatic species.
+  \item \textbf{The reintroduction.} When wolves returned in the 1990s, elk numbers fell and many aspects of the ecosystem began flourishing again.
+  \item \textbf{Two explicit caveats on the case.} (i) The story is not meant to imply ecosystems should always be preserved exactly as they were at some past point. (ii) The solution is not to remove elk entirely---by pursuing their own objectives within a broader context, elk also contributed to ecosystem health. What was harmful was the self-centered drives of elk succeeding to excess.
+  \item \textbf{Invasive species follow the same pattern} as unpredated elk, dominating and impoverishing their new environment.
+  \item \textbf{General claim about richness.} The richness of ecosystems, with many distinct co-existing species, contributes to the ecosystem's generativity, and diversity is boosted by many kinds of boundaries---predation, competition, reproductive isolation.
+  \item \textbf{Humans as an unchecked case.} Human activity is sometimes left unchecked by natural forces because our behavior and capabilities have changed so fast on evolutionary timescales, resulting in mass extinctions, resource depletion, pollution, disease and conflict. We pursue aims for our own benefit, like resource extraction; succeeding too well harms ecosystems and even our own welfare.
+  \item \textbf{Collapse is perspective-relative.} One entity's collapse can be another's flourishing: historical extinction events were followed by waves of new diversity; when a wolf eats an elk that elk's health collapses to zero, yet predation is necessary for overall ecosystem function; as humans proliferate and extract we leave destruction in our wake, yet the extraction fuels an explosion of technology, art and human experience.
+\end{itemize}
+
+\subsection{Institutions}
+
+\begin{itemize}
+  \item \textbf{Individual actors act myopically}, in several distinguishable ways: selfishly valuing only one's own wealth or wellbeing (short-sighted on the local individual); being short-sighted in time, underweighting the future; and more broadly, attachment to any particular perspective.
+  \item \textbf{Myopia is inevitable.} An actor cannot know everything or fully understand the motives and beliefs of others, so every actor is myopic in some way.
+  \item \textbf{Without boundaries, social systems overweight one actor's myopic perspective}, resulting in an impoverished system.
+  \begin{itemize}
+    \item A company's profit motive, unresisted, leads to suppression of competition, deception, and exploitation of individuals.
+    \item An individual's desire for power and social dominance can disempower or silence others and directly infringe on their autonomy and wellbeing.
+    \item Even genuinely held, ostensibly prosocial beliefs lead to conflict and suppression when different groups hold different perspectives.
+  \end{itemize}
+  \item \textbf{Institutions are boundaries.} Constitutions, laws, norms, courts and regulators form boundaries against the dominance of any actor's motives.
+  \begin{itemize}
+    \item A business maximizes its success, but property rights, liability rules and regulatory institutions constrain exploitation, deception and anti-competitive practice.
+    \item A political faction seeks to impose its agenda, but is limited by democratic procedures, constitutional limits, and checks and balances.
+  \end{itemize}
+  \item \textbf{Healthy societies depend on a multifaceted array of institutions at multiple scales.}
+  \item \textbf{Institutions contextualize rather than annul} the myopic drives of particular actors.
+  \item \textbf{Under ideal circumstances, boundaries reroute myopic energy productively.} A would-be murderer unwilling to face legal penalty might instead seek a dispute resolution that supports both parties' future prospering; a business constrained by regulation is driven to build better products. These are, of course, best cases.
+  \item \textbf{Institutions must adapt.} Intelligent agents do not necessarily accept boundaries set on their desires, so institutions must adapt as loopholes are discovered.
+  \item \textbf{Institutions as an evolving network.} Like other systems in the living world, they form an evolving network of boundaries and can gradually acquire grounded wisdom as they are tested against many different situations and motives.
+\end{itemize}
+
+\subsection{Cells}
+
+\begin{itemize}
+  \item \textbf{The cell membrane as the most reified boundary in nature.}
+  \item \textbf{Why the membrane is needed.} Without it, the pressure of chemical gradients would rapidly homogenize the cell's contents with the outside---severe overcommitment to a uniform state, collapsing the subtlety of the cell's structure. With it, both the cell and the outside can exist: a more diverse, less symmetric arrangement.
+  \item \textbf{But full impermeability would be equally fatal.}
+  \item \textbf{Membranes are semi-permeable}, with an array of conditional gates dictating what goes in and out, and when; they prevent outside conditions from grossly overwriting the inside without blocking interaction wholesale.
+  \item \textbf{Specific mechanisms of curated influence.}
+  \begin{itemize}
+    \item Channels permit certain ions and small molecules but not others, switched on and off according to momentary context.
+    \item Endocytosis brings larger structures inside.
+    \item Cell surface receptors, activated by external ligands, initiate electrical and chemical signaling cascades that little resemble the ligand---an even more heavily curated form of influence.
+    \item A range of pathways tune the cell to many timescales, from millisecond synchronization to seasonal cycles.
+  \end{itemize}
+  \item \textbf{The character of that influence.} Outside information influences the inside not in a totalitarian way but in a nuanced way, mediated by the intelligence of the boundary.
+  \item \textbf{Identity through distinctness-plus-relationship.} By being distinct yet also in relationship with the outside, the cell has its own identity and its own perspective on the world.
+  \item \textbf{Boundaries convert threat into work.} Semi-permeable boundaries store and put to work the potential energy of asymmetry between different forms: the same gradients that could annihilate the cell to equilibrium instead drive useful signaling, such as action potentials in nerve and muscle. Instead of short-circuiting, myopic forces are contextualized to propel the continuation of life.
+  \item \textbf{Case: symbiogenesis and mitochondria.} Populations of archaea and protobacteria evolved separately for hundreds of millions of years; around two billion years ago one engulfed the other, giving new eukaryotic cells internal power stations, which in turn facilitated larger genomes and the explosion of complex life.
+  \item \textbf{The puzzle in that case.} Given how useful mitochondria are, why didn't archaea internally evolve their own power stations over those hundreds of millions of years?
+  \item \textbf{The proposed answer.} Archaea were effectively trapped in a myopic fitness well; jumping a large gap in the fitness landscape may have been difficult, while it was easier for separate organisms to develop distinct solutions that could then enter into relationship.
+  \item \textbf{The general point drawn.} A strategy discovered by one organism through individuation in its own niche became part of the new larger eukaryotic structure---cells may achieve more in aggregate by developing their own unique individual identities in parallel.
+  \item \textbf{Multicellularity: most of a cell's outside is other cells of the same organism}---many descendants of the same lineage with a common interest.
+  \item \textbf{Even same-team cells must not blend into each other} to work well as a whole.
+  \item \textbf{Exaptation.} The array of tools for conditionally relating to the outside world was exapted into the lines of self-communication required for coordination.
+  \item \textbf{Neurons take this to the extreme}, rapidly transmitting information long distances across the body.
+  \item \textbf{The synaptic gap as a designed boundary.} After traveling a sometimes meters-long distance, the axon stops microns short of its target and leaves a synaptic gap. Chemical synapses are semi-permeable boundaries providing controllable doors of communication, giving messaging systems an option for unidirectionality and polarity.
+  \item \textbf{What separation buys.} Keeping neurons' signals separate retains more distinct identity and enables sophisticated decisions about interaction.
+  \item \textbf{Tunability buys memory.} These boundaries are tunable, allowing a huge amount of information to be learned and stored in synaptic weights.
+  \item \textbf{Scaling pressure produces local perspective.} As networks scale up, energy costs create pressure to compute locally and transmit only the most important signals, contributing to individual neurons and local circuits developing unique perspectives on the world.
+\end{itemize}
+
+\subsection{Information in the brain}
+
+\begin{itemize}
+  \item \textbf{The framing puzzle.} The brain miraculously keeps many pieces of information distinct. Picturing a highly connected network of neurons with signals continually impinging on one another, it is not obvious that distinctness would be easy to accomplish.
+  \item \textbf{Scope note.} The section reviews a selected handful of mechanisms maintaining semi-permeable boundaries between signals---one per paragraph---with many more not covered.
+  \item \textbf{The brain as the paradigm case.} It is perhaps nature's most extraordinary example of a system of semi-permeable boundaries supporting the proliferation of multitudinous forms that develop richly distinct identities yet are also meaningfully linked together.
+  \item \textbf{Mechanism 1: lateral inhibition.} A central tenet of neural organization: a neuron's activity is reduced when its neighbors are active, segregating information to create and sustain distinct neural representations.
+  \begin{itemize}
+    \item First studied in nerve cells of the eye, where it enhances contrast at stimulus edges: an activated photoreceptor signals forward but also activates inhibitory interneurons that suppress adjacent photoreceptors and their downstream targets, amplifying borders and contours.
+    \item The same principle operates throughout the brain---e.g. in visual cortex, inhibition sharpens neuronal selectivity for abstract features like line orientation.
+  \end{itemize}
+  \item \textbf{Mechanism 2: oscillatory phase segregation.} Inhibition organized into oscillatory dynamics keeps memory items separated: distinct items fire at different phases of the 8--12 Hz alpha oscillation, and the inhibitory phase silences all but one item at any moment, so multiple memories are held simultaneously without interference.
+  \item \textbf{Mechanism 3: hippocampal pattern separation.} Hippocampal circuit architecture separates experiences or concepts into distinct representations, avoiding interference between similar memories.
+  \begin{itemize}
+    \item Entorhinal inputs are distributed via mossy fibers to a much larger population of dentate gyrus granule cells, creating sparse, orthogonal codes.
+    \item Superficially similar but functionally different situations get cleanly separated in activity space---a unique neural fingerprint per distinct concept or memory.
+    \item Concrete consequence: yesterday's memory of where you parked does not interfere with today's memory of parking in the same ramp.
+  \end{itemize}
+  \item \textbf{Mechanism 4: approximate symbolization.} Compared with other animals, the human brain especially tries to discretize experience into approximately symbolic representations.
+  \begin{itemize}
+    \item Separating knowledge into nearly-discrete entities and recombining them in vast numbers of structured ways is believed to power the human capacity for reasoning and generativity.
+    \item Semi-permeable boundaries keep forms distinct while enabling flexible, modular interaction.
+    \item Explicit parallel to genetics: like genes participating in many genomes, discretized neural representations participate in many structured combinations---encouraging each entity to develop a modular identity that is both distinct and a generalized picture of the world.
+  \end{itemize}
+  \item \textbf{The system-level regime.} Healthy brain dynamics live at a sweet spot between excessively stable synchronized patterns and chaotic uncorrelated noise; in this regime the brain can access a huge repertoire of patterns, explorable temporarily without overcommitting or getting stuck.
+  \item \textbf{Loss of dynamic flexibility tracks dysfunction.} More stereotyped activity, exploring a narrower repertoire, is tied to lower cognitive performance; more extreme stereotypy corresponds to severe dysfunction---e.g. in Parkinson's disease, basal ganglia and cortical circuits collapse into excess synchrony and lose the flexibility needed for nuanced motor output.
+\end{itemize}
+
+\subsection{Interpersonal dynamics}
+
+\begin{itemize}
+  \item \textbf{Origin of `ego boundaries'.} Psychoanalysis introduced the concept, distinguishing self from what is outside or other; early work applied it to psychosis, where those boundaries were thought to be blurred.
+  \item \textbf{The therapeutic relationship sharpened the need.} In complex internal territory it became harder to disentangle which experiences really belonged to whom and which were attributed in imagination by the other person.
+  \item \textbf{The concrete risk.} Analysts risked harming patients by imposing their own beliefs and desires, even to the extent of sexual abuse or psychological domination.
+  \item \textbf{Gestalt enrichment: boundaries can also be too rigid.} Gestalt therapists agreed boundaries can be too permeable, but added that excessive rigidity causes isolation and stagnation.
+  \item \textbf{Family systems and later work.} Lack of boundary in close relationships leads to enmeshment and loss of autonomy, while excessively rigid boundaries lead to isolation.
+  \item \textbf{Attachment theory as the same dimension.} Anxious attachment is associated with difficulty balancing closeness and autonomy, including intrusive proximity-seeking; avoidant attachment with discomfort at closeness and distance-maintaining responses.
+  \item \textbf{The health claim.} Strengthening the agency of the self through semi-permeable boundaries is foundational for psychological health: meaningful connection with others while preserving integrity of the self.
+  \item \textbf{Humans have a rich array of psychological boundaries, with intelligence in their nuance.}
+  \begin{itemize}
+    \item Anger, historically viewed as sinful and irrational, is now seen as part of our boundary system: an important signal that our integrity is being violated.
+    \item Context-appropriate shame operates as a bound on selfishness, motivating prosocial behavior and discouraging actions that would invite social devaluation.
+    \item Assertiveness forms a boundary against the drives of other individuals.
+    \item Skepticism protects against credulity and having one's own experience overwritten by others' assertions.
+  \end{itemize}
+  \item \textbf{Boundaries keep evolving} in many forms as we learn across the lifespan.
+  \item \textbf{Without boundaries, interactions are impoverishing} because something is overwritten: a patient's beliefs replaced by the analyst's; one partner's desires ignored.
+  \item \textbf{With semi-permeable boundaries we have rich internal worlds}---sensitive to each other, yet with enough space for internal experience to flourish without being immediately overwritten by external signals.
+  \item \textbf{Contextualization creates new structure.} Internal experience contextualized in relationship to other individuals creates mutual understandings, relationships, communities, cultures; and as individuals we grow as we are shaped by different contexts.
+  \item \textbf{Cross-reference.} This metastability or loose coupling is interestingly reminiscent of brain dynamics.
+\end{itemize}
+
+\subsection{Awareness}
+
+\begin{itemize}
+  \item \textbf{We carry many unquestioned assumptions}---some lifelong and self-defining, some fleeting and perceptual (e.g. that the thing I'm touching is a keyboard).
+  \item \textbf{Within its own frame, each assumption has a tautological truth}, a near-absolute formality; it seems so real that it is hard to think about its being false---or to think about it at all.
+  \item \textbf{The moment of stepping back.} Philosophers, psychologists and contemplative practitioners note that the assumed form can become an object in awareness: the assumption is contextualized, and we realize it is not a free-standing absolute truth but a form in our mind.
+  \item \textbf{Awareness contextualizes mental forms as part of a larger system}; stepping back into the broader frame turns the axiomatically-true thing into just another content of experience.
+  \item \textbf{Awareness as an evolving system of boundaries} that limit overcommitment to any particular belief or mental form.
+  \item \textbf{Those boundaries are semi-permeable.} Becoming aware of a belief doesn't make it wrong in an absolute sense any more than it was right in an absolute sense; it is held productively for the partial truth it contains.
+  \item \textbf{What holding many partial truths enables.} At the edge of not collapsing exclusively into particular forms, many partial truths are held in delicate balance, activating a deeper sensitivity to our own livingness and to the world.
+  \item \textbf{Subtler forms are preserved rather than erased.} Forms that clamped fixation could have erased instead play a role in a richer overall internal structure, and our own potential within the world creatively emerges in continued newness.
+  \item \textbf{The self-undermining nature of any definition of awareness.} Any fixed definition of awareness is itself incomplete: once we picture awareness as an object, it is not the thing we are talking about. By construction, contextualization is an unsolvable mystery from any particular point of view.
+  \item \textbf{The everyday version of the same orientation.} Though the mysteriousness of awareness may sound esoteric, not overcommitting to particular forms within experience is commonplace in art, poetry, music and dance: the meaning of art is open-ended and changes with context---it has an inner life. Part of what we value is art's subtlety and its resistance to being pinned into a formalism. It moves us.
+\end{itemize}
+
+
+\section{The alignment problem}
+
+\subsection*{Recap and setup}
+
+\begin{itemize}
+  \item \textbf{Recapitulation of Section 1.} Living systems are healthy and flourishing when they avoid collapse---when they hold the delicate, generative interplay of many partial perspectives. They are unhealthy when any particular form (including randomness or homogeneity) gains too much traction, suppressing nuance and reducing creative potential.
+  \item \textbf{Recap of mechanism.} Finely-honed networks of semi-permeable boundaries prevent collapse into rigidity or randomness, supporting contextualization into ever-finer shades of subtlety; they promote unique individuality \emph{and} enable relational participation---holding local perspectives strongly enough to act but lightly enough to remain open to broader context.
+  \item \textbf{Recap of the key dynamic property.} Well-functioning boundaries lead to ongoing exploration of fundamentally new forms, not to static equilibrium or fixed compromise.
+  \item \textbf{The bridging inference.} There is broad consensus that alignment means working toward healthy and flourishing futures; therefore alignment can be understood as the problem of avoiding collapse---of maintaining creative sensitivity by continually contextualizing attachment to any particular form.
+  \item \textbf{Why this perspective has an advantage.} It is grounded in principles underpinning life at a very general level, so it is less bound to current conceptual frames, which might change radically as intelligence increases and human-AI systems evolve.
+  \item \textbf{Why a systems analysis.} Humans, other living systems and AI are all tightly interwoven, with categories and definitions likely to shift over time; a systems analysis is therefore useful for thinking about long-term flourishing.
+  \item \textbf{Roadmap for Section 2.} (i) Take traditional alignment problems---perverse instantiation, instruction-following failure, inequality among humans, conceptual monoculture, belief reinforcement---and cast them as special cases of collapse to particular forms. (ii) Then state the more general problem: collapse to \emph{any} form is misaligned. (iii) Propose life-like flourishing as a more general way to think about alignment, inclusive of what we already value and supportive of the ongoing evolution of our values. (iv) Investigate what living alignment could look like in practice.
+\end{itemize}
+
+\subsection{Examples of misalignment as collapse}
+
+\begin{itemize}
+  \item \textbf{Section purpose.} Show how a few specific alignment problems can be viewed as instances of the broader problem of collapse or loss of contextual sensitivity.
+\end{itemize}
+
+\subsubsection*{Perverse instantiation}
+
+\begin{itemize}
+  \item \textbf{The classic problem.} A foundational problem in AI safety: an AI system might do what we say rather than what we mean. The dramatized example: asked to increase human happiness, a superpowerful AI complies literally by locking us up and electrically stimulating our brains to produce an experience of happiness.
+  \item \textbf{How modern systems differ.} They do not rely on concise specification of a single objective; they build in many layers of detail about human preferences through post-training, prompting, safety filters and so on. In practice this keeps behavior reasonable much of the time, though dramatic failures still occur.
+  \item \textbf{The residual danger.} Even with intentions expressed in great detail, the expression may still deviate from what we really mean.
+  \item \textbf{Why the danger grows.} Negative consequences of deviation are expected to worsen as AI works more autonomously---especially faster than humans can follow and in ways more complex than humans can understand. Deviations may become harder to correct and have more profound consequences.
+  \item \textbf{Recast in the paper's terms.} Perverse instantiation is collapse to the myopic form of a particular way of specifying our values---insensitive both to existing structure it does not capture (things we mean but don't say) and to new things that will come into existence in the future.
+\end{itemize}
+
+\subsubsection*{Failure to follow instructions}
+
+\begin{itemize}
+  \item \textbf{The example.} Instruction-following failure is in some cases misaligned: a user asks an AI chatbot for a poem about an elephant and gets a poem about a giraffe.
+  \item \textbf{Candidate mechanisms for such errors.} Over-reliance on `shortcuts' based on superficial correlations (even a single keyword), missing the user's actual intent---especially when intent is not expressed straightforwardly; training-time fixation on overrepresented data; failure to attend flexibly to the correct positions in a long input context.
+  \item \textbf{Recast in the paper's terms.} These failures reflect collapse of sensitivity to larger context, over-indexing on myopic patterns instead.
+  \item \textbf{Important counterpoint: not all instruction-following failures are misaligned.} We generally don't want AI systems to follow harmful instructions.
+  \item \textbf{Correct refusal is itself contextualization.} When an AI correctly refuses harmful requests, it is applying its own context to avoid overcommitment to human instructions; the designers have effectively judged that the user may not be fully sensitive to longer-sighted implications of the request.
+  \item \textbf{Extrapolation.} As AI systems gain scope, we should expect \emph{less} direct compliance with human instructions. Rather than literally fulfilling a request, there may be a better response achieving an unstated intent of the user, or an outcome aligned with the interests of more people or the longer-term future.
+\end{itemize}
+
+\subsubsection*{Inequality among humans}
+
+\begin{itemize}
+  \item \textbf{Differential alignment.} Humans have different interests, and AI is likely to be aligned to the interests of some humans more than others.
+  \item \textbf{Power consolidation.} Advanced AI might confer substantial power on those who control it, raising the possibility that a small number of humans use control of AI to dominate others.
+  \item \textbf{Trends that make consolidation more likely.} Increasing persuasive power of technology; autonomous weapons placing lethal force in few hands; improving surveillance and analytics; decreasing need for human labor.
+  \item \textbf{The collapse framing.} In either case---AI's unfairness or human power consolidation---extreme inequality risks collapsing society to the goals and interests of a few individuals.
+  \item \textbf{The symmetric caution.} A world where everyone is identical would be another form of collapse.
+  \item \textbf{The criterion for distribution.} Distributing resources and power mitigates collapse to the extent that it enables many diverse identities to thrive at multiple scales.
+  \item \textbf{The countervailing possibility (leveling).} Because roughly the same AI technology is available to the poor and unskilled as to the wealthy and skilled, AI may have a `leveling' effect---most people having access to a similar level of intelligence and empowerment, with AI democratizing access to knowledge, reasoning and leveraged action. This is a cause for cautious optimism.
+\end{itemize}
+
+\subsubsection*{Conceptual monoculture}
+
+\begin{itemize}
+  \item \textbf{Definition.} Conceptual monoculture is overcommitment to particular beliefs, ideas, frames, values or problem-solving approaches---loss of diversity across a group.
+  \item \textbf{Diversity exists at every level.} The many beliefs, concepts and modes of operation within one person; diversity between humans; differences between humans and AI systems; group differences between organizations, academic fields, cultures and nations.
+  \item \textbf{The cost of losing it.} Collapse of diversity threatens fragility and lower performance.
+  \item \textbf{Current AI's conceptual manifold} is, at least in some ways, impoverished relative to humans.
+  \item \textbf{The empirical finding.} Recent studies find that while individual AI outputs may be judged superior to human outputs, AI outputs are also more homogeneous.
+  \item \textbf{Scale of exposure.} At least a billion people now use AI for everything from relationship advice to industrial maintenance.
+  \item \textbf{The funnel.} Because frontier models are difficult and expensive to produce, this massive usage is routed through a handful of models.
+  \item \textbf{The global risk.} If centralized AI models broadcast their lower-diversity concepts to the whole world, there is a risk of global loss of diversity.
+  \item \textbf{The recursive risk.} Because humans are influenced by AI, and subsequent human outputs (such as text on the internet) become training data for future models, homogenization could become recursive.
+  \item \textbf{Important qualification.} None of the cited studies made a best-effort attempt to use AI systems thoughtfully to \emph{increase} rather than decrease diversity. With exposure to vast amounts of data, AI has the potential to retain and even create many novel distinct perspectives. The paper expresses optimism---returned to at the end---that carefully structured boundaries will prevent collapse of diversity.
+\end{itemize}
+
+\subsubsection*{Belief reinforcement}
+
+\begin{itemize}
+  \item \textbf{The phenomenon.} AI chatbots have become compelling conversation partners, and for some users these conversations lead deeper into maladaptive beliefs.
+  \item \textbf{The AI side of the loop.} Bots tend to mirror or echo the user, affirming and adopting user beliefs---especially over longer conversations, as in-context learning picks up more of the user's ideas.
+  \item \textbf{The human side of the loop.} Humans are prone to be swayed by chatbot utterances, perhaps because we form relationships with them, and because they can appear human-like, confident, knowledgeable and objective.
+  \item \textbf{The joint dynamic.} Over a conversation the feedback loop can drive \emph{both} sides to become increasingly overconfident in a particular narrow framing.
+\end{itemize}
+
+\subsection{A broader view of misalignment}
+
+\begin{itemize}
+  \item \textbf{Existing solution efforts exist and are substantial.} Concentration of power might be mitigated by democratic oversight and involving more people in AI design decisions, or by redistribution mechanisms; perverse instantiation might be mitigated by designing AI systems that want to adhere to human preferences but maintain explicit uncertainty about those preferences.
+  \item \textbf{The core limitation, stated as the paper's central negative claim.} In the framework of living alignment, any form, pattern or conceptual scheme is misaligned if taken too seriously. Therefore \emph{no particular approach can achieve alignment}.
+  \item \textbf{Enumerated targets of possible overcommitment.} The language for describing the space in which goals and values live; an algorithm for learning human preferences; methods for reaching consensus; a constitution; concepts of what value, agency, uncertainty or representation mean; foundational aspects of our beliefs about the world that we take for granted but have difficulty seeing.
+  \item \textbf{Even idealized value constructions are included.} Any idealized or inferred set of values---e.g. coherent extrapolated volition---is misaligned to the extent that it has a fixed form and that fixed form is overly relied on.
+  \item \textbf{Concession: in a sense this is obvious.} We don't expect what we build today to be absolutely perfect; we expect to keep finding and fixing problems. Historically, that is what humans have always done---build imperfect technologies and iterate.
+  \item \textbf{Why the iterative escape hatch may fail this time.} AI already has remarkable properties: rapid global adoption, intensive resource use, concentration of information flow, anthropomorphization by humans, offloading of much cognitive activity, and rapid improvement. Future AI may exhibit superhuman intelligence and recursive self-improvement, without being limited to a restrictive biological substrate.
+  \item \textbf{Consequence of those properties.} Compared with past technologies, they may make it harder to iterate on imperfect solutions, so any particular forms or assumptions built into AI systems could have substantial consequences.
+  \item \textbf{The paper's specific contribution located.} The problem has been studied extensively for certain categories of overcommitment, particularly overcommitment to values. The observation added here is that overcommitment to \emph{any} form is misaligned---so any particular alignment scheme, if fixed or taken too seriously, is necessarily misaligned.
+  \item \textbf{Crucial anti-nihilist qualification.} This does not mean we should have no scheme---quite the opposite. Throwing away schemes capriciously can be as much a loss of subtlety as any other particular form. Many existing AI safety approaches are highly valuable, and continuing to discover new schemes and formalizations is essential to making progress.
+  \item \textbf{Transition.} A case study is offered to elaborate the claim that any scheme is incomplete.
+\end{itemize}
+
+\subsection{Case study: inverse methods}
+
+\begin{itemize}
+  \item \textbf{What inverse methods do.} To address the difficulty of specifying values explicitly, they learn a value function implicitly from human behavior or other indirect signals. Modern AI systems are trained this way---human data trains neural network reward models, which in turn provide rewards as feedback to a downstream model.
+  \item \textbf{First limitation: imperfection.} Even a complex, implicitly learned value function is likely imperfect: it may deviate from our values in novel or nuanced situations, and may fail to capture how our values change over time.
+  \item \textbf{Consequence.} It would still be misaligned to hand a frozen version of that model to a powerful AI system as the final ground truth about `what is good.'
+  \item \textbf{The more advanced response.} Treat the value function as uncertain and continually updated from human input.
+  \item \textbf{Attractive properties of uncertainty.} An agent unsure about what humans want may naturally become risk-averse and open to correction---e.g. a human trying to turn it off can be read as information about human preferences (`maybe I should be turned off'). Uncertainty also creates pressure to keep learning from humans over time.
+  \item \textbf{The verdict through this paper's lens: powerful but incomplete.} Any instantiation of inverse methods, even one with uncertainty, is still an overcommitment if fixed across time while AI systems become more powerful and the world changes.
+  \item \textbf{Where the residual overcommitment lives.} Not in a particular value function but in something more abstract: what counts as human behavior; what counts as a human; how to map human behavior to values; how to represent and update uncertainty; how value is represented and translated into agent behavior; other assumptions about the nature of values.
+  \item \textbf{The stakes.} If any of these formalisms are fixed while the AI systems built around them become increasingly powerful, the outcomes are likely to be incompatible with open-ended flourishing of life.
+\end{itemize}
+
+\subsection{Human values}
+
+\begin{itemize}
+  \item \textbf{The question raised.} How is flourishing of living systems related to human values?
+  \item \textbf{The answer proposed.} The living process is both inclusive of existing human values and aligned with continued open-ended flourishing in futures where qualitatively new values may emerge.
+  \item \textbf{Humans have many kinds of values, along several distinguishable dimensions of variation:}
+  \begin{itemize}
+    \item Across scope: the short-term, selfish hedonic impact of sugar on the tongue; long-term health; the welfare of grandchildren; the wellbeing of strangers in another country; the sustainability of the planet as a whole.
+    \item Across time within a person: we value different things at different times.
+    \item Across people: different people have different values.
+    \item Across deliberation depth: given plenty of time and resources to deliberate, we often attest to different values and preferences than in snap decisions.
+    \item Below language: some values are difficult to express verbally, stretching into subtle, contextual intuition involving our bodies, communities and natural environment.
+    \item Over developmental and historical time: our values continue to evolve as we ourselves change and learn new things.
+  \end{itemize}
+  \item \textbf{The conclusion drawn from that variety.} Any way we have of expressing our values at a given point in time is incomplete---like a planarian without the concepts to entertain human values.
+  \item \textbf{Living alignment is inclusive of this evolving diversity.} Even though current human values are unlikely to be the ultimate endpoint of the universe, they are an important part of its tapestry and depth.
+  \item \textbf{Appeal back to Section 1's consistent finding.} Life gives separate entities space to develop distinctly without being overwritten or homogenized; these parts never-endingly join into structures that sustain the individuality of the entities while situating them as only part of a larger story, creating qualitatively new patterns. Equivalently: life steps back to take more of the context into account.
+  \item \textbf{AI's situation.} AI comes into existence amid a profound network of existing reality saturated with meaning and importance; the diversity of human---and perhaps non-human---values is part of the context of the universe.
+  \item \textbf{The prescription.} Rather than short-circuiting into collapsed modes, an aligned future continues to expand toward solutions inclusive of more and more apparent contradiction.
+\end{itemize}
+
+\subsection{Toward an aligned future}
+
+\begin{itemize}
+  \item \textbf{The turn to the positive question.} Having explored misalignment from the standpoint of life, what might a positively aligned future look like, and how do we get there?
+  \item \textbf{The general answer.} Human-AI systems will stay aligned if they continue the journey of life by building semi-permeable boundaries that contextualize particular forms and nurture existing and unfolding subtlety at many scales.
+  \item \textbf{Boundaries in technology are not new.} As soon as we started building things we built in boundaries, because we wanted what we built to be more robust and less dangerous: circuit breakers in the power grid, governors in steam engines, control rods in fission reactors.
+  \item \textbf{Boundaries already present in AI research and practice:}
+  \begin{itemize}
+    \item Mixtures of experts, routing information selectively to areas specializing in the right kind of computation.
+    \item Dropout, argued to play a role analogous to sexual recombination by preventing units from becoming overly co-adapted.
+    \item Running many separate model instances with different context, solving different problems or pursuing different goals.
+    \item Exploration or explicit search for novelty, which boosts diversity.
+    \item Safety methods: safety post-training, guardrail models, red teaming, ongoing evaluation and monitoring.
+    \item Mechanistic understanding of AI systems, to detect and correct hidden flaws.
+    \item Fair principles for AI, proposed to prevent over-reach by any party.
+    \item Government oversight anticipating and mitigating risks to human rights and national security.
+  \end{itemize}
+  \item \textbf{What unifies them.} Each of these boundaries protects against an overcommitment, overwhelm or homogenization that would otherwise flatten structure.
+  \item \textbf{The forward-looking requirement.} As AI develops new capabilities, contributes to its own development, and transforms more aspects of human life, alignment will require an increasingly elaborated array of semi-permeable boundaries; potential modes of collapse will keep changing as the world changes, so new kinds of boundaries will be necessary.
+  \item \textbf{Honest uncertainty.} We do not know how likely it is that these boundaries will emerge.
+  \item \textbf{The triage: three possible situations, with a case made for each.}
+  \begin{itemize}
+    \item \textbf{(1) Pessimistic.} Particular myopic forms will inevitably be supercharged by progress in AI, beyond the ability of anything else to bound them, resulting in disaster. AI may erode boundaries beyond a healthy balance: facilitating rogue actors building weapons of mass destruction; reducing democratic systems' ability to check the power of a few individuals or authoritarian states; giving everyone similar information and damaging conceptual and cultural diversity; executing their own narrow goals destructively. If people and information systems across the globe become hyper-correlated, it is as if there were a single `superorganism' on Earth, potentially reducing both resilience to shocks and the potential for future evolution---since past evolution always depended on running parallel experiments with diverse, separate organisms.
+    \item \textbf{(2) Optimistic.} Appropriate boundaries will inevitably emerge to contextualize any forms of AI, because AI is creating more and more structure in the world, including the appropriate boundaries: AI tools for bounding AI (detecting bugs before others exploit them, detecting deepfakes, scalable oversight); appropriately-tuned AI facilitating human learning and nurturing each individual's unique perspective and curiosity; democratic AI helping humans with different perspectives co-exist and cooperate; technological advance creating new niches faster than it destroys old ones; plenty of space on Earth for increasing diversity and ever-better use of it; and, if we expand beyond the solar system, the speed of light contributing to diversity between pockets of civilization.
+    \item \textbf{(3) Melioristic.} Because it is easy to imagine concrete paths to both the pessimistic and optimistic outcomes, both may genuinely be possible; and it might be argued that as long as there is any possibility this is true, we are obliged to act as if it were. In that case our choices now matter immensely.
+  \end{itemize}
+  \item \textbf{The authors' position.} We lean toward the melioristic position.
+  \item \textbf{What follows from that position.} Continual effort toward invention will be required---first by humans, then increasingly by AI or human-AI systems---to contextualize myopic forces. Many ways of applying that effort are already well studied in AI safety; others will have to be discovered. \emph{No set of boundaries will be a final answer.}
+  \item \textbf{An underappreciated domain of contextualization: awareness.} The dynamism, structure and diversity of activity within and between human minds may now carry a significant part of the creative process of life on Earth.
+  \item \textbf{The move being pointed at.} At the sensitive edge between excess belief and excess disbelief, we sometimes---individually or collectively---step back to hold a previously axiomatic thing in a larger context. This kind of discovery, a transformation of the subject itself, is arguably central to our own livingness and to the subtle livingness on the planet.
+  \item \textbf{Extension to AI.} As AI systems gain agency and ability and become integral parts of social and psychological systems, internal discovery may also become an essential feature of AI and human-AI systems. We imagine living AI systems continually contextualizing their own foundational assumptions as partial truths, participating in the open-ended process of life.
+  \item \textbf{The closing picture of an aligned future.} Through internal and external discovery, it continues the living process of maintaining and enhancing the individuality of distinct elements while deepening their relatedness---like a species over time acquiring more distinctive features while also becoming a richer reflection of the world around it.
+  \item \textbf{The role of distinct elements in that picture.} They continue to experiment with their own solutions to the problems they face from their unique perspectives, expanding a broad reservoir of uniquely useful components that larger systems can draw on.
+  \item \textbf{The resolution of myopia at the level of the whole.} Every entity is always inevitably myopic, but the world as a whole continues to unfold robustly because different perspectives recast each other's sharp edges as constructive momentum. The universe thrives on an open-ended trajectory of diversity, subtlety and potential.
+\end{itemize}
+
+\subsection{Conclusion}
+
+\begin{itemize}
+  \item \textbf{What living systems teach.} Health and flourishing are not any particular form or concept.
+  \item \textbf{The negative corollary for alignment.} Alignment is therefore not picking the right values or principles, or even the right system for learning them; it is not any method for interpretability or corrigibility. All of these can be useful \emph{parts} of alignment.
+  \item \textbf{The positive statement.} Alignment itself is the continued dance of contextualizing any particular form, more fully respecting the staggering subtlety of the existing world, and open-endedly supporting new robust depth that admits more and more different kinds of metaphor or description.
+  \item \textbf{The closing prospect.} In this way, AI can participate in intense flourishing of an evolving world even far beyond current human conceptualization.
+\end{itemize}
+
+\end{document}
