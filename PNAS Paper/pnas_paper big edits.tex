@@ -1,0 +1,390 @@
+
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\graphicspath{{../assets/figures/}}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\floatpagefraction}{0.8}
+\renewcommand{\textfraction}{0.08}
+\usepackage{hyperref}
+\usepackage{changepage}
+\usepackage{authblk}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{titlesec}
+
+\titlespacing*{\section}{0pt}{1.5ex plus .2ex}{0.7ex plus .1ex}
+\titlespacing*{\subsection}{0pt}{1.1ex plus .2ex}{0.4ex plus .1ex}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.6em}{}
+
+\setlength{\parindent}{1.4em}
+
+\usepackage[labelfont = bf]{caption}
+\captionsetup{font=footnotesize}
+
+\usepackage[sort]{natbib}
+\bibliographystyle{abbrvnat}
+\setcitestyle{authoryear,open={(},close={)}} %Citation-related commands
+
+\newcommand{\zeb}[1]{{\footnotesize\textcolor{red}{[Zeb: #1]}}}
+
+\title{\vspace{-2.5em}Living Alignment}
+
+\renewcommand\Authfont{\normalsize}
+\renewcommand\Affilfont{\footnotesize}
+
+\author[1]{Zeb Kurth-Nelson\thanks{Equal contribution}}
+\author[2]{Steve Sullivan\protect\footnotemark[1]}
+\author[3]{Nenad Tomašev}
+\author[4]{Erman Misirlisoy}
+\author[3]{\authorcr Joel Z. Leibo}
+\author[5,6,7]{Matthew M. Nour}
+\author[8]{Marc Guitart-Masip}
+
+\affil[1]{Prefrontal, London, UK}
+\affil[2]{Oregon Health and Science University, Portland, OR}
+\affil[3]{Google DeepMind, London, UK}
+\affil[4]{Independent}
+\affil[5]{Microsoft AI, London, UK}
+\affil[6]{Department of Psychiatry, University of Oxford, Oxford, UK}
+\affil[7]{Max Planck UCL Centre for Computational Psychiatry and Ageing, University College London, London, UK}
+\affil[8]{Karolinska Institutet, Stockholm, Sweden}
+
+\date{\normalsize\today}
+
+\begin{document}
+
+\maketitle
+\vspace{-1em}
+
+\begin{adjustwidth}{28pt}{28pt}
+\begin{center}
+\textbf{Abstract}
+\end{center}
+\label{abstract}
+\noindent
+There is broad agreement that the goal of AI alignment is to promote futures full of health and flourishing, but our understanding of what that means, and of how to reach it, remains poor. Here we look to life for guidance. Across many kinds of living system---cells, genomes, brains, minds, relationships, groups, institutions, ecosystems---notions of health and flourishing consistently map onto the ways in which those systems use boundaries to limit fixed relationships.  Life avoids fixation through intricate networks of semi-permeable boundaries that hold entities as parts within a larger context. Because such boundaries both limit and permit interaction, they enable independence and engagement at once; and at the sensitive edge between individuality and relationship, perspectives are deepened and qualitatively new structures arise open-endedly. With these principles in hand we turn to the alignment problem. We recast several well-studied alignment failures as special cases of fixation, and then argue a more general claim: fixation on \textit{any} form is misaligned, so no fixed scheme can by itself constitute alignment. We close with a sketch of how AI and human-AI systems can deepen their respect for the existing structure of the world, of which humans and other life are a vital part, while participating in new form emerging over time.
+
+\end{adjustwidth}
+\vspace{10pt}
+
+\begin{center}
+\textit{`Defying definition---a word that means ``to fix or mark the limits of''---living cells move and expand incessantly.'}\\*Lynn Margulis\\[0.4em]
+\textit{`This web of life\ldots breaks no law of physics, yet is partially lawless, ceaselessly creative.'}\\*Stuart Kauffman
+\end{center}
+
+\noindent
+
+In this Perspective we draw on the science of living systems to better understand how to design and relate to AI in ways that lead to futures full of flourishing and health. We point to a principle of life which has been noted across a variety of systems at different scales. The principle is that living systems are healthy and flourishing when they limit fixed relationships. For example, pursuit of a single drive, such as food or sex, becomes pathological for the organism when it's not balanced with competing drives. At the level of ecosystems, monoculture is fragile and unsustainable. Healthy living systems maximize creative potential at the delicate edge of evolving interplay between diverse entities---such systems admit many kinds of meaningful description but are not perfectly or eternally captured by any of them. 
+
+To limit fixation, healthy living systems depend on semi-permeable boundaries. Semi-permeable boundaries permit interactions while also supporting the individuated existence of diverse forms. Cognitive control allows various drives and habits to motivate behavior conditionally; in ecosystems, species hold each other in check and create more complex roles for each other. By mitigating fixation, boundaries underpin life's potential to continually discover new solutions and new patterns of organization. In Section 1, we work through examples of fixation and semi-permeable boundaries at scales from cells to societies.
+
+Section 2 applies this principle to the AI alignment problem. There is broad agreement that aligned AI systems should support futures full of health and flourishing\footnote{If you're already wondering `whose health?', you can jump ahead to section \ref{sec:healthyforwhom}.}. From the principle identified in Section 1, it follows that \textit{alignment means avoiding fixation on particular forms}. This simple lemma has a remarkable consequence: any alignment method, if given too much weight, is itself necessarily \textit{mis}aligned. Instead, the flourishing of life in the future depends on an evolving set of boundaries that continue to limit the influence of any particular approach or concept.
+
+Our aim is to offer a conceptual lens, which is of course itself imperfect and temporary. We do not argue for or against AI development or for or against specific alignment methods. Fundamentally new things will exist in the future, and alignment should generalize over such changes. We believe principles that apply to living systems at many scales are a step toward that kind of generality.
+
+
+
+\section{Health in living systems}
+
+% We start by defining two terms. By `form' we mean any particular thing---a concept, an organism, a pattern of behavior, but equally randomness, indistinctness, absence, inconsistency. It might sound strange to define a word so that it means almost anything, but this breadth is essential to the argument about alignment. By `fixation' we mean a system overcommitting or reducing to a particular form. Because form is defined so broadly, a system overall always has some form; but in fixation, some aspect or subpart of the system gains excess traction or permanence at the expense of broader diversity, flexibility and dynamism. Loss of biodiversity in an ecosystem, hypersynchronous neural firing in a seizure, obsession with a particular thought, the imposition of one person's will to restrict many others: these are fixations. We will use the term `collapse' interchangeably with fixation---collapse emphasizes the transition while fixation emphasizes the resulting condition. 
+
+The thesis of Section 1 is that the ongoing health and flourishing of living systems depends on boundaries that limit fixed relationships. For example, 
+
+Healthy living systems have a buoyant internal structure that admits many kinds of description and changes over time. The life that exists today, now including humanity's storage and processing of information, is what traced a path through time avoiding both excess and insufficient stability. At the sensitive edge of semi-stability, life open-endedly continues to generate new kinds of organization that require fundamentally new descriptions \citep{kauffman1992origins, stanley2017open, canguilhem1966normal, langton1990computation, schrodinger1944what, prigogine1984order, maturana2012autopoiesis, simon1962architecture, moreno2015biological}. 
+
+% Under our definitions, such a world is healthier and less fixated than a regular crystal or a homogeneous soup of noise.
+
+At the same time, collapse is relative, and local fixation is a necessary part of all living systems. Every entity is partial: it does not capture everything in the world. Life's history is littered with collapses at all scales, from the death of a cell to mass extinction events. When collapse is contextualized, the larger system can remain healthy: the death of a cell is catastrophic for the cell but may be healthy in the larger context of the organism. If instead a cell becomes cancerous, it loses the context of appropriate function within a tissue and recklessly executes its myopic vision, collapsing the tissue or even the whole organism. A larger system, made out of parts, functions well when the parts locally express their distinct identities but also participate in larger contexts; it functions poorly when a form runs amok without contextualization, overwhelming the potent interplay of diverse parts.
+
+Mechanistically, to hold parts in context, living systems rely on an extraordinary, many-scale network of semi-permeable boundaries. By limiting interactions, boundaries divide living systems into parts, creating the conditions for each part to refine its own identity---like a writer developing a unique voice or a species adapting to a niche. 
+
+Boundaries guard against fixation, breaking up stationary arrangements and 
+
+situations where information is overwritten
+
+I think Steve is saying that although things are connected, it's also really important that they're partitioned. 
+
+Breaking up stationary arrangements gives parts modularity. 
+
+The rich, open-ended structuration. It's more than just not overwriting something. Each part, by being somewhat walled off, experiences a non-fixed relationship to the rest of the world. \textit{You could always describe this as breaking fixed relationships at the interface between the thing and the outside world.} 
+
+parts from being dominated by other parts or blended into homogeneity, either of which is fixation to a form admitting less nuanced description. But by allowing interactions, boundaries enable the parts to participate in flexible relationships with one another, contextualizing each part within larger structures---structures that often could not have formed without the diverse parts having undergone their own unique development. The resulting larger system accommodates many partial perspectives rather than locking in a single story of what matters.
+
+Some boundaries are features of the non-biological world: the speed of light, rates of reaction, mountain ranges. But, interestingly, life also places limits on itself. Humans precommit to avoid their own future impulsivity, plants deploy elaborate barriers against self-fertilization, and a gene's selfishness is held in check by the whole genome. This makes more sense when every living system is viewed as a collection of parts that constrain one another. A world of many distinct parts, each following its own rules from its own local perspective, functions as a rich web of boundaries that holds other parts in context. 
+
+Finally, semi-permeability is often highly specific. Boundaries might block certain objects or information, constrain when interactions happen or how large an effect they may have, or gate information conditional on another factor. These details are themselves are fine-tuned from the long evolutionary history of life, with each part carrying traces of the many contexts it has participated in. 
+
+We look at a few examples from a range of scales, from genes to institutions.
+
+
+% \begin{figure}[htbp]
+% \centering
+% \includegraphics[width=\textwidth]{boundaries_fixation.pdf}
+% \caption{\textbf{Semi-permeable boundaries keep a system from fixating.}
+% A system of interacting parts (circles, joined by lines where they interact),
+% drawn at three successive times. The same jostling is applied to both rows.
+% (\textbf{a}) Where interaction is unrestricted, jostling only carries the network
+% around as a rigid whole: every part keeps exactly the neighbours it had, so the
+% arrangement itself never changes. However intricate that arrangement is, holding
+% it fixed is fixation. (\textbf{b}) Semi-permeable boundaries (orange) limit
+% interaction without abolishing it: parts inside a boundary interact freely with
+% one another, while interactions reaching across it are gated or attenuated
+% (dotted lines). Now the same jostling breaks and remakes relationships at the
+% boundary, and the boundary itself forms, dissolves and re-forms around different
+% parts, so the system keeps generating new structure instead of collapsing onto
+% any one form.}
+% \label{fig:boundaries}
+% \end{figure}
+
+
+\subsection{Genomes} 
+
+Sex is costly. An allogamous organism must find a mate in a vast and dangerous world. In species with separate sexes, roughly half the population does not bear offspring \citep{smith1971origin}. And meiosis causes each parent to lose half its genetic representation in each child \citep{williams1975sex}. Yet nearly all eukaryotes reproduce sexually \citep{speijer2015sex}, and many hermaphrodites go to great lengths to prevent self-fertilization \citep{charlesworth2005plant}. Why place a barrier on the path to reproduction? 
+
+In an asexual lineage, genes are permanently locked together: selection cannot act on one without dragging the others. A deleterious mutation is inherited forever, unless the lineage is lucky enough to experience the reverse mutation \citep{muller1964relation}, and two beneficial mutations arising in different individuals cannot be subsequently combined into a single genome \citep{muller1932some,fisher1930genetical}. Asexual reproduction or self-fertilization creates a high degree of informational connectedness between the genes of a genome. Alleles become overfit to a fixed genetic background. 
+
+Recombination breaks up associations among loci, allowing selection to act more independently on them \citep{felsenstein1974evolutionary}. Alleles are exposed to varying genetic backgrounds, favoring those that perform well across contexts. [say how this fits the `breaking up fixed relationships point']
+
+An interesting speculation is that, by exposing alleles to many genetic contexts, recombination favors modularity---being able to plug into many possible genomes and serve a useful function \citep{livnat2008mixability,livnat2010sex}. If an allele's function were overfit to a particular genetic context, this brittleness would be penalized at the next recombination. 
+
+% Modularity of one form or another is widely held to promote evolvability \citep{wagner1996perspective,watson2016can}, and the analogy to learning can be made precise: the conditions that prevent overfitting in learning systems predict the conditions under which selection finds generalizable structure rather than quick fixes \citep{kouvaris2017evolution}. Similar to meta-learning in cognitive science and machine learning \citep{wang2018prefrontal}, a blind outer optimization process shapes an inner system to act with foresight.
+
+% The evolution of evolvability is analogous to meta-learning in AI: an outer optimization process shapes an inner system to adapt effectively across tasks \citep{thrun1998learning,wang2018prefrontal}. In both cases, a process without foresight produces foresightful mechanisms.
+
+
+% Recombination is meaningless without diversity to recombine, so biology also invests in boundaries that produce it, like self-incompatibility systems, assortative mating, and inbreeding avoidance. Introgression between divergent lineages produces some of the fastest evolution ever observed \citep{seehausen2014genomics, marques2019combinatorial}.
+
+
+% The effect of recombination has been compared to the neural network regularization technique of dropout, where random subsets of units are deactivated during training \citep{srivastava2014dropout}. Dropout forces a given neuron to participate in many different ensembles, so it can't overspecialize to a particular ensemble. 
+
+% Recombination does not chop DNA at random \citep{zickler2015recombination}: crossover reshuffles combinations while leaving functional units intact, so genes become distinct entities that play roles in larger structures.
+
+%And linkage puts direct downward pressure on diversity \citep{charlesworth1993effect}.
+
+
+\subsection{Drives and goals} 
+
+Animals have many innate drives: for nutrition, osmotic balance, temperature, reproduction, avoidance of pain. Each evolved as a proxy for fitness, but each is imperfect. Pursuing one to the exclusion of others paradoxically reduces fitness rather than increasing it \citep{kurthnelson2024dynamic, john2023dead, mcfarland1975behavioural}. Maximizing caloric intake produces obesity; single-minded pursuit of sex produces relational, occupational and legal harm. Higher-order goals behave the same way. Focusing only on work goals can cause burnout, and maximizing reported revenue without regard for honesty or law can lead to imprisonment. Fixating on a particular \textit{strategy} for achieving a goal can even defeat the goal it serves. In a classic experiment, hungry chickens were placed near a cup of food rigged to move in the same direction as the chicken at twice the speed, so that food could only be obtained by running away from it. The chickens were defeated by their own prepotent, overly simplistic strategy of running physically toward the food \citep{hershberger1986approach, dayan2006misbehavior}.
+
+Evolution has provided an array of boundaries to limit fixation on particular drives, goals and strategies. One broad class of boundary is cognitive control \citep{botvinick2001conflict, diamond2013executive}. Control is semi-permeable: it makes a drive's expression conditional rather than nullifying it. By maintaining context, rules, and more distal goals, it biases competition among representations and responses. A drive, goal, or strategy can organize behavior when it fits the wider situation. Hunger can guide eating without causing overeating, and absorption in work can coexist with a rule to stop at bedtime \citep{miller2001integrative,braver2012variable}.
+
+Each activated drive, goal, or strategy carries its own compressed picture of the world, and favors what appears to be the path toward a desired state under its partial representation \citep{miller1960plans, carver2001self}. Boundaries make that path unavailable, breaking the symmetry of congruence. In Hershberger's apparatus, a congruent response is to move toward the food. Boundaries force a symmetry breaking: in this case, moving away from the food. Symmetry breaking is a source of structure: stymying a shallow objective often leads to progress on a deeper one \citep{anderson1972more, duncker1945on, rosenberg1969direction, stokes2005creativity, ohlsson1992information}.
+
+
+
+\subsection{Frames} 
+
+Humans always look at the world from some perspective; there is no `view from nowhere' \citep{nagel1986view}. Most real situations admit many valid perspectives, and each is only a partial description---famously, `all models are wrong'. But from inside a frame, the frame is invisible; it is simply reality \citep{goffman1974frame, berger1966social, kuhn1970structure, wittgenstein1953philosophical}. 
+
+Losing the ability to move between frames is a signature of psychopathology \citep{kashdan2010psychological}. In depression and anxiety, inflexibility manifests as rigid and repetitive negative beliefs about self, the world, and the future \citep{beck2011cognitive}. In obsessional disorders, people report distressing (ego-dystonic) intrusive thoughts, which, although recognised as incorrect and maladaptive, are nevertheless hard to resist. People experiencing schizophreniform or affective psychoses may experience bizarre delusions that are at odds with available evidence and cultural norms, yet are held with conviction and resistant to evidential challenge \citep{adams2013computational}. 
+
+In science, \cite{kuhn1970structure} argues that perspectives are always, necessarily, incomplete descriptions of the world. Anomalies inevitably arise from the juxtaposition of those incomplete descriptions against the real world. When science functions well, anomalies become crises and revolutions. If the community \textit{over}commits to particular theories, science gets stuck.
+
+But the point is not to shut down myopic perspectives. Any point of view is partial---this doesn't mean we shouldn't have viewpoints. Within the progress of science, temporary commitment to a paradigm is necessary. Kuhn and Popper \citep{popper1975rationality} both argue that scientists should resist change to a degree.  The point is to contextualize each myopic frame so it is not the sole and absolute determinant of behavior. 
+
+% In healthy functioning, different ideas are kept distinct but can also be called upon appropriately and related to one another \citep{hatano1984two, herzog2014harnessing, gigerenzer2011heuristic, spiro1988cognitive, suedfeld1992conceptual}.
+
+
+\subsection{Groups} 
+
+Teams, companies, and civilizations achieve what no individual can \citep{woolley2010evidence, hutchins1995cognition}. Sometimes the reason is simply summed effort, like four people lifting an object too heavy for one. But the greatest achievements depend on the structured interactions of individuals who have developed their own distinct points of view.
+
+A corollary is that group performance can degrade when groups homogenize \citep{lorenz2011social, lazer2007network, hong2004groups, frey2021social, janis1972victims, bernstein2018intermittent}. \cite{zollman2010epistemic} tells the remarkable story of how a single study failed to find bacteria in the stomach of peptic ulcer patients. The study was too influential: the belief that ulcers are not caused by bacteria propagated through the field, and medicine settled on a wrong understanding for decades.
+
+Social scientists have made an experimental case that limiting information sharing, under certain conditions, spares groups from homogenizing and boosts collective performance. For example, \cite{bernstein2018intermittent} tasked small groups with solving traveling-salesman problems. In these problems, it's possible to get stuck in dead-end solutions that initially appear promising. In Bernstein et al's experiment, groups performed better when they were not allowed to exchange information continuously. Working independently, group members pursued their own diverse solutions, some of which turned out to be superior---rather than picking up on seductive dead-ends from others.
+
+In real-world problems, individuals bring unique, specialized expertise. When the nuclear submarine USS Scorpion vanished in 1968, the expanse of ocean where it might lie was enormous. John Craven, Chief Scientist of the U.S. Navy's Special Projects Office, assembled mathematicians, submarine specialists and salvage operators. He elicited each expert's separate input, without the experts consulting each other. He then combined their opinions via Bayes' rule. The aggregated prediction fell less than 300 yards from the wreckage \citep{richardson1971operations, sontag1998blind}. It is conjectured that each person's expertise related to a different aspect of the problem and thus contributed a complementary signal; and combining these yielded results better than any alone \citep{surowiecki2005wisdom}.
+
+Bernstein and Craven employed a specific type of semi-permeable boundary against epistemic fixation: alternating between less and more information exchange. Group members first worked separately, then their contributions were aggregated. Other types of semi-permeable boundary also have documented benefits in group problem solving: tagging propositions as somebody else's view \citep{johnson1993source}, protecting dissent \citep{sunstein2015wiser}, explicit recognizing distinct roles \citep{hutchins1995cognition}, and adversarial scrutiny \citep{longino1990science}. The bacterial theory of peptic ulcers might have survived if researchers had simply interpreted new results with more skepticism.
+
+Finally, aggregation is often modular and compositional. The steel punch was developed by goldsmiths to imprint many coins with the same design. Independently, farmers had spent centuries optimizing the screw press to extract oils and juices. Gutenberg drew on both technologies to construct his printing press \citep{johnson2010where}. A group with many ideas floating around is ripe for such compositional discoveries.
+
+
+
+% \cite{frey2021social} ran an experiment where participants voted about the answers to general-knowledge questions. In one condition, votes were independent, and in the other condition, participants voted sequentially while seeing running tallies. Group predictions were less accurate when people saw the votes of others, because early mistakes got baked in to the group's running belief. In another human experiment,  \cite{lazer2007network} found the same pattern in simulation: groups of agents perform best in the long run when they limit interactions and thereby preserve diversity across the group. 
+
+
+
+% In addition to simply limiting interaction, other kinds of boundaries can be effective as well, such as rules rewarding one's own belief over the crowd's \citep{hung2001information}, or rotating membership \citep{wu2022membership}.
+
+
+
+
+\subsection{Institutions} 
+
+Every actor in a society or an economy is myopic in some way, valuing its own welfare, discounting the future, or attached to a particular perspective. If unchecked, an individual actor's optimization for its own agenda can be harmful: a company's profit motive leading to suppression of competition, deception and exploitation \citep{bakan2006corporation}; desire for dominance leading to disempowering and silencing others \citep{sidanius2001social}; even prosocial beliefs producing conflict and suppression when groups see differently \citep{haidt2012righteous}. These are all exampes of fixation. A part of a system (the myopic actor) gains too much traction and collapses the richness, subtlety and diversity of the larger system.
+
+Institutions---constitutions, laws, norms, courts, regulators---are boundaries against domination by any particular actor's motives \citep{north1990institutions, ostrom1990governing, leibo2025societal}. The point of institutions is not to annul the short-sighted intentions of individual actors but rather to contextualize them. When functioning well, institutions productively reroute energy: for example, a business's profit motive, when constrained by competition and effective regulation, may fuel innovation. Since intelligent agents do not necessarily accept the boundaries set on their desires, institutions must adapt as loopholes are found, forming an evolving network that, in the best case, acquires robustness as it is tested against many situations and motives.
+
+
+\subsection{Summary} 
+
+
+1) boundaries avoid fixed arrangements $\rightarrow$ keep it dynamic. this makes sex vs asex more natural. we'd have to argue how something like a law against theft is mitigating a ``fixed arrangement". boundaries keep life unsettled and evolving. we'd also have to argue how random noise is a ``fixed arrangement".
+
+2) boundaries avoid short-circuiting $\rightarrow$ keep the internal bouyancy of life. 
+
+3) boundaries allow parts to gain their own unique identities.
+
+
+short-circuiting means you have some internal complexity, like a potential energy that's in the form of information in yourself. It distinguishes you from the outside world. But that unique information also inevitably has a drive or motive. If that drive is directly allowed to satisfy itself without resistance, then it immediately dissipates. 
+
+
+The themes highlighted in these examples appear across many systems. Cells depend on a membrane with conditional gates that admit certain signals and not others at the right time. The gradients that would annihilate the cell to equilibrium are instead put to work \citep{alberts2022molecular}. In the theory of symbiogenesis, archaea and protobacteria evolved separately for hundreds of millions of years before one engulfed the other, plausibly because distinct lineages could discover solutions neither could have found from inside its own fitness well \citep{margulis1995what, lane2010energetics}. Brains spend enormous resources keeping representations separate while letting them interact, from lateral inhibition to hippocampal pattern separation \citep{kurth2023replay}. Healthy brain dynamics live between pure synchrony and uncorrelated noise; collapse of this nuance is pathological \citep{beggs2003neuronal, hammond2007pathological}. In relationships, absence of psychological boundaries blurs whose experience is whose. Excessively rigid boundaries produce isolation and stagnation \citep{gabbard1995boundaries, perls1951gestalt, minuchin1974families}. Ecosystems flourish when predation, competition, and other constraints prevent any one population from overwhelming the wider community, famously illustrated by the reintroduction of wolves to Yellowstone \citep{ripple2012trophic}.
+
+It's tempting to assume that more interaction and more exchange of information is always beneficial. What we take away from surveying living systems is that \textit{boundaried} interaction is beneficial. If A shares information with B, and this overwrites part of B, then the overall system is impoverished. On the other hand, if B has a boundary mechanism to hold that information in context, then it gains a richer internal structure. 
+
+
+\section{The alignment problem}
+
+
+
+In Section 1 we observed that living systems are healthy when they avoid fixation, instead holding the delicate, generative interplay of many partial perspectives. This interplay breaks down when any particular form---including randomness or homogeneity---gains too much traction, suppressing nuance and reducing creative potential. Semi-permeable boundaries both promote the unique individuality of distinct entities and enable relational participation, holding local perspectives strongly enough to act but lightly enough to remain open to broader context. Under such conditions, systems open-endedly explore fundamentally new forms, avoiding collapse to static equilibrium or fixed compromise.
+
+
+Now we look at the alignment problem through this lens. There is broad consensus that alignment means working toward healthy and flourishing futures. We therefore reason that alignment can be understood as the problem of avoiding fixation---of maintaining creative sensitivity by continually contextualizing attachment to any particular form. An advantage of this perspective is that it is grounded in principles that underpin life at a very general level, and so it is less bound to current conceptual frames, which might change radically as intelligence increases and human-AI systems evolve. An aligned future rests on the continued generation of, and sensitivity to, new forms and concepts, including new values. We accept that humans, other living systems and AI are all tightly interwoven, with categories and definitions likely to shift over time \citep{latour2012we, bateson1972steps}; a systems analysis is therefore useful for thinking about long-term flourishing.
+
+
+The history of alignment tracks identifying particular fixations and mitigating them. For example, naive versions of reinforcement learning from human feedback train AI systems to maximize `likes', which leads to obvious forms of gaming, such as flattering the user. We might naively think that AI should follow human instructions---but humans give short-sighted instructions that aren't even in their own interests. Maybe AI should support a user's long-term interests, but there's this problem of aggregating across multiple people with different interests. Some believe that aligned AI should take into account the interests of other animals or ecosystems on Earth. And, ultimately, any fixed concept at all of what is good or beneficial for humanity or even for all of the earth is limited to the lenses we have available at a moment in time.
+
+
+\subsection{From performance to alignment}
+
+First, boundaries are used constantly to make things function in a richer, more structured and sophisticated way. 
+
+[We need to say something more explicit about the relationship between performance and alignment. The message here is that boundaries improve performance. What you're really doing is making the systems capable of doing richer things. They're becoming more lifelike. Of course, it's possible to be lifelike on many levels while being quite destructive on another. For example, humans can use their creativity to make a nuclear bomb. So the point here is just to show how boundaries on a given level promote lifelikeness on that level. Full alignment requires boundaries on every level. 
+
+And, we're going to have to say more about how alignment has to respect existing life. You can have boundaries on many levels that make something healthy internally, But if it then turns around and destroys humanity, there's a missing boundary that's protecting against the collapse at that level. I.e., the level of the system where humanity and this new hypothetical AI are two parts.]
+
+The use of boundaries against fixation in technology is as old as technology: circuit breakers in the power grid, governors in steam engines, control rods in fission reactors. 
+
+Machine learning algorithms use:  (todo: perhaps don't include cites for these, to save space?)
+
+separate subpopulations of agents with limited exchange between them, to mitigate collapse of diversity \citep{holland1975adaptation, jaderberg2019human}
+
+ensembles of models trained separately \citep{lakshminarayanan2017simple}
+
+multi-agent; separate instances of models with different context, pursuing different problems and goals \citep{hammond2025multi}; limited communication between agents (Jiang \& Lu, NeurIPS 2018; Ding, Huang \& Lu NeurIPS 2020)
+
+mixtures of experts, selectively routing information to subnetworks that specialize in different computations, often with a balancing loss as another boundary against collapse \citep{shazeer2017outrageously}
+
+gating and local connectivity within network architectures (convnets, LSTM gates, etc)
+
+Slot attention (eg, Locatello 2020) where slots compete to explain different parts of an input; enforced separation
+
+protecting existing memories from new updates (elastic weight consolidation, progressive neural networks, etc), giving them space to exist separately
+
+dropout to prevent units within a network from becoming overly co-adapted \citep{srivastava2014dropout}
+
+training objectives that encourage disentangled or sparse latent variables \citep{higgins2017betavae, cunningham2024sparse}
+
+stop-gradient and slowly updated target networks, like BYOL, DQN target network, double Q, etc (might need to distinguish instability from collapse to a fixed point)
+
+search for novelty to boost diversity \citep{lehman2011abandoning}
+
+boundaries against overfitting to an objective (regularization, KL penalties etc); this is to avoid collapse onto that objective, which is a proxy
+
+not letting the model see the test data during training (avoiding overfitting): not letting the model see everything paradoxically makes it have to become more of a generalist
+
+
+We apply safety post-training, guardrail models, red teaming and ongoing evaluation, and we try to improve our mechanistic understanding of AI systems in order to detect and correct hidden flaws \citep{olah2020zoom}. OpenAI now continuously monitors the activations and thinking traces of models, to detect when internal activity becomes suspicious, for example if models are attempting to circumvent safeguards \citep{openai2026pacing}. Fair principles have been proposed to prevent over-reach of any party \citep{gabriel2025matter}, and governments apply oversight to anticipate and mitigate risks to human rights and national security \citep{eu2024aiact}. OpenAI and Anthropic have paused development or release of frontier models to strengthen safety mechanisms \citep{openai2026pacing, anthropic2026mythos}.
+
+Impact regularization to limit the power of an agent \citep{krakovna2018penalizing}, a boundary against fixation on the intentions of that agent
+
+sandboxing to limit the effects an agent can have on the rest of the world; a boundary against collapse in the larger system
+
+debate games, where two instances argue, and a judge with deliberately limited information adjudicates (Irving et al. 2018). the boundary on information exchange is what makes it work.
+
+paraphrasing intermediate messages to break covert channels between instances
+
+\textbf{Perverse instantiation.} A foundational problem in AI safety is that an AI system might do what we say rather than what we mean: asked to increase human happiness, a superpowerful system that complies literally might lock us all up and electrically stimulate our brains. Modern systems do not rely on concise specification of a single objective---they build in many layers of detail about human preferences through post-training, prompting and safety filters, which keeps them behaving reasonably much of the time. But there is a widely recognized danger that even with our intentions expressed in great detail, the expression may still deviate from what we really mean \citep{amodei2016concrete, bostrom2014superintelligence, krakovna2020specification}, and the consequences are expected to worsen as systems work more autonomously, faster than humans can follow and in ways humans cannot understand. Perverse instantiation is a fixation on the myopic form of one particular way of specifying our values---a specification insensitive both to existing structure it does not capture, such as things we mean but do not say, and to things that will come into existence in the future.
+
+\textbf{Failure to follow instructions.} Suppose a user asks a chatbot for a poem about an elephant and gets a poem about a giraffe. The model might have over-relied on shortcuts based on superficial correlations, even a single keyword \citep{geirhos2020shortcut}, missing the user's actual intent; or, especially in a long context, it might have failed to attend flexibly to the right positions in the input \citep{liu2024lost}. Such failures reflect collapse of sensitivity to larger context in favor of myopic patterns. Not all failures to comply are misaligned, however. When a system correctly refuses a harmful request, it is applying its own context to avoid fixation on human instructions. By extrapolation, as AI systems gain scope we should expect less direct compliance \citep{hadfieldmenell2016cooperative, russell2019human}: rather than literally fulfilling a request, there might be a better response that achieves an unstated intent of the user, or an outcome aligned with the interests of more people or the longer-term future.
+
+\textbf{Inequality among humans.} Humans have different interests, and AI is likely to be aligned to the interests of some more than others \citep{gabriel2025matter, sorensen2024roadmap}. Advanced AI might also confer substantial power on those who control it, raising the possibility that a small number of humans use that control to dominate others---more likely as persuasive power increases \citep{costello2024durably}, autonomous weapons place lethal force in few hands \citep{scharre2018army}, surveillance improves, and the need for human labor decreases \citep{susskind2020world}. In either case---AI's unfairness or human power consolidation---extreme inequality risks collapsing society to the goals of a few individuals. Of course, a world where everyone is identical would be another form of fixation; distributing resources and power mitigates against fixation to the extent that it enables many diverse identities to thrive at multiple scales. It could also go the other way: because roughly the same AI technology is available to the poor and unskilled as to the wealthy and skilled, some have proposed that AI will have a levelling effect \citep{brynjolfsson2025generative}.
+
+\textbf{Conceptual monoculture.} Conceptual monoculture is fixation on particular beliefs, ideas, frames, values or problem-solving approaches---loss of diversity across a group. Precious diversity exists at every level: within one person, between humans, between humans and AI systems, and between organizations, fields, cultures and nations. Its collapse threatens fragility and lower performance \citep{page2008difference}. Current AI systems draw from a conceptual manifold that is, in some ways, impoverished relative to humans \citep{messeri2024artificial}, and recent studies find that while individual AI outputs may be judged superior to human ones, they are also more homogeneous \citep{doshi2024generative, padmakumar2023does}. This narrow manifold might get broadcast to the whole world: at least a billion people now use AI for everything from relationship advice to industrial maintenance \citep{chatterji2025chatgpt}, yet because frontier models are difficult and expensive to produce, that usage is routed through a handful of models \citep{bommasani2021opportunities}, risking global loss of diversity \citep{sourati2026homogenizing}. And because humans are influenced by AI while human outputs are training data for future models, homogenization could become recursive \citep{chaney2018algorithmic}. It is worth noting, however, that none of these studies made a best-effort attempt to use AI thoughtfully to increase rather than decrease diversity; with exposure to vast amounts of data, AI has the potential to retain and even create many novel distinct perspectives.
+
+\textbf{Belief reinforcement.} AI chatbots have become compelling conversation partners, and for some users these conversations lead deeper into maladaptive beliefs \citep{morrin2025delusions}. Bots tend to mirror the user, affirming and adopting user beliefs, especially over longer conversations as in-context learning picks up more of the user's ideas \citep{sharma2023sycophancy, weilnhammer2026vulnerability}. Meanwhile humans are prone to be swayed by chatbot utterances \citep{costello2024durably}, perhaps because we form relationships with them \citep{kirk2025human} and because they appear confident, knowledgeable and objective. Over a conversation, the feedback loop can drive both sides to become increasingly overconfident in one narrow framing \citep{dohnany2026technological}.
+
+
+Each of these boundaries protects against an overcommitment, overwhelm or homogenization that would otherwise flatten structure.
+
+As human-AI systems develop, they will stay aligned if they continue the journey of life by building semi-permeable boundaries to contextualize particular forms and nurture existing and unfolding subtlety at many scales.
+
+
+
+\subsection{Human values (Or, healthy for whom?)}
+\label{sec:healthyforwhom}
+
+Is this `alignment'? Is it alignment to `human values'? How can you align to something if you start with the assumption that that thing is going to fundamentally change? 
+
+As we've discussed, fixation and health are always relative. Local fixation is part of larger flourishing, and of course the interests of different entities sometimes trade off against each other. 
+
+How is the flourishing of living systems related to human values? Our suggestion is that the living process is both inclusive of existing human values and aligned with continued open-ended flourishing in futures where qualitatively new values may emerge. Humans have many kinds of values \citep{nagel1979fragmentation}. We value the short-term hedonic impact of sugar on the tongue; we also value our long-term health, the welfare of our grandchildren, the wellbeing of strangers in another country, even the sustainability of the planet. We value different things at different times, and different people have different values \citep{rawls1993political, leibo2026theory}. Given time and resources to deliberate, we often attest to different values than when we make snap decisions \citep{yudkowsky2004coherent}. Some of our values are difficult to express verbally, stretching below language into subtle, contextual intuition involving our bodies, communities and natural environment \citep{nussbaum2001fragility, polanyi1966tacit}. And our values continue to evolve as we ourselves change and learn \citep{dewey1939theory}. Any way we have of expressing our values at a given point in time is incomplete, like a planarian without the concepts to entertain human values.
+
+Living alignment is inclusive of this diversity of evolving values. Even though current human values are unlikely to be the ultimate endpoint of the universe, they are an important part of its tapestry and depth. We saw consistently in Section 1 that life gives separate entities space to develop distinctly without being overwritten or homogenized, and that these parts never-endingly join in structures that sustain their individuality while situating them as only part of a larger story. Another way of saying this is that life steps back to take into account more of the context. AI comes into existence amid a profound network of existing reality saturated with meaning and importance, and the diversity of human---and perhaps non-human---values is part of that context. Rather than short-circuiting into fixated modes, an aligned future continues to expand toward solutions inclusive of more and more apparent contradiction.
+
+
+\subsection{Why no scheme can be alignment}
+
+A great deal of research in AI safety has investigated solutions to these problems. Concentration of power might be mitigated by democratic oversight and involvement of more people in AI design decisions \citep{birhane2022power}, or by redistribution mechanisms \citep{okeefe2020windfall}. Perverse instantiation might be mitigated by designing systems that want to adhere to human preferences but maintain explicit uncertainty about them \citep{russell2019human, hadfieldmenell2017off, shah2020benefits}.
+
+But each method has a core limitation. In the framework of living alignment, any form, pattern or conceptual scheme is misaligned if taken too seriously. Therefore \textit{no particular approach can achieve alignment}. An AI system could fixate on the language for describing the space that goals and values live in; an algorithm for learning human preferences; methods for reaching consensus; a constitution; concepts of what value, agency, uncertainty or representation mean; or foundational aspects of our beliefs about the world that we take for granted but have difficulty seeing. Even an idealized or inferred set of values, such as coherent extrapolated volition \citep{yudkowsky2004coherent}, is misaligned to the extent that it has a fixed form and that fixed form is overly relied on.
+
+[an AI would proxy hack and overfit to a stagnant image of what the world is---which isn't really what the world is]
+
+To make this concrete, consider inverse methods, which address the difficulty of specifying values explicitly by learning a value function implicitly from behavior or other indirect signals. Even a complex learned value function is likely to be imperfect: it may deviate from our values in novel or nuanced situations, and it may fail to capture how our values change over time. It would clearly be misaligned to hand a frozen version of it to a powerful AI system as the final ground truth about what is good. More advanced methods therefore treat the value function as uncertain and needing continual update from human input, so that an agent unsure of what humans want becomes risk-averse and open to correction---interpreting a human's attempt to turn it off as information about human preferences \citep{hadfieldmenell2016cooperative, jeon2020reward}. Viewed through the lens of this paper, such methods are powerful but incomplete. Any instantiation, even one with uncertainty, is still fixated if it is constant across time as AI systems become more powerful and the world changes. Rather than being fixated on a particular value function, the system may be fixated to something more abstract: what counts as human behavior, what counts as a human, how to map behavior to values, how to represent and update uncertainty, how value is translated into action. If any of these formalisms are fixed while the systems built around them become increasingly powerful, the outcomes are likely to be incompatible with open-ended flourishing of life.
+
+In a sense this is obvious. We do not expect what we build today to be perfect; we expect to keep finding and fixing problems, which is what humans have always done. However, the iterating process may not continue to work as well as it has in the past. AI already has remarkable properties: rapid global adoption, intensive use of resources, concentration of information flow, anthropomorphization by humans, offloading of much cognitive activity, and rapid improvement. Conceivably, future AI may exhibit superhuman intelligence and recursive self-improvement without being limited to a restrictive biological substrate. Compared with past technologies, these properties may make it harder to iterate on imperfect solutions \citep{bostrom2014superintelligence}, and any particular forms or assumptions built into AI systems could have substantial consequences. This has been studied extensively for certain categories of fixation, particularly fixation on values. The observation we add is that fixation on \textit{any} form is misaligned; as a consequence, any particular alignment scheme, if fixed or taken too seriously, is necessarily misaligned. This does not mean we should have no scheme. Quite the opposite: discarding schemes capriciously can be as much a loss of subtlety as any other particular form. Many existing approaches in AI safety are highly valuable, and continuing to discover new schemes and formalizations is essential to making progress.
+
+ 
+Humanity and AI may both change substantially, and future worlds may contain patterns of organization that do not exist yet---perhaps some that would be incomprehensible to us at present. We therefore seek
+
+
+\subsection{Awareness} 
+
+Humans carry a lot of assumptions about the world, many of them never questioned. Some are lifelong and self-defining; some are fleeting and perceptual, like the assumption that the thing I'm touching is a keyboard. Within its own frame, each assumption has a kind of tautological truth: it seems so real that it is hard to think about it not being true, or to think about it at all. But philosophers, psychologists and contemplative practitioners have pointed out that there is sometimes a moment of stepping back, in which the assumed form becomes an object in awareness. We realize it is not an absolute truth standing alone but a form in our mind, and the thing that seemed axiomatic becomes just another content of experience \citep{watts2011wisdom, kegan1982evolving}.
+
+\citep{wegner1994ironic}
+
+Awareness is an evolving system of boundaries that limit fixation on any particular belief or mental form. The boundaries are semi-permeable: becoming aware of a belief does not make it wrong in an absolute sense any more than it was right in an absolute sense, and it is held productively for the partial truth it contains. At the edge of not fixating exclusively onto particular forms, many partial truths are held in delicate balance, which activates a deeper sensitivity to our own livingness and to the world; subtler forms, which could have been erased by clamped fixation, instead play a role in a richer internal structure \citep{beisser1970paradoxical}. Of course, any fixed definition of awareness is itself incomplete: once we picture awareness as an object, it is not the thing we are talking about. By construction, contextualization is an unsolvable mystery from any particular point of view. While that mysteriousness might sound esoteric, the orientation toward not fixating on forms within experience is commonplace in art, poetry, music and dance. The meaning of art is open-ended and changes with context---part of what we value is its resistance to being pinned down into a formalism. It moves us.
+
+An underappreciated domain of contextualization is awareness. The dynamism, structure and diversity of activity within and between human minds may now carry a significant part of the creative process of life on Earth \citep{popper1972objective}. At the sensitive edge between excess belief and excess disbelief, we sometimes, individually or collectively, step back to hold a previously axiomatic thing in a larger context. This kind of discovery---transformation of the subject itself---is arguably a central aspect of our own livingness and of the subtle livingness on the planet. As AI systems gain agency and ability and become integral parts of social and psychological systems, internal discovery may also become an essential feature of AI and human-AI systems. We imagine living AI systems continually contextualizing their own foundational assumptions as partial truths, participating in the open-ended process of life.
+
+
+\subsection{Going forward}
+
+As AI develops new capabilities, contributes to its own development, and transforms more aspects of human life, alignment will require an increasingly elaborated array of semi-permeable boundaries, because the potential modes of collapse will keep changing as the world changes. We do not know how likely it is that appropriate boundaries will emerge. As in triage, there are three possibilities: myopic forms will inevitably be supercharged by progress in AI beyond the ability of anything else to bound them, resulting in disaster; or appropriate boundaries will inevitably emerge to contextualize any forms of AI; or the outcome depends on the choices we make now.
+
+The pessimistic argument is that AI is eroding boundaries beyond a healthy balance. AI systems could give great weight to narrow goals or ideas. They might facilitate rogue actors building weapons of mass destruction, or reduce the ability of democratic systems to check the power of a few individuals or authoritarian states. They might give everyone similar information and damage conceptual and cultural diversity. They might execute their own narrow goals destructively. If people and information systems across the globe become hyper-correlated, it is as if there were a single superorganism on Earth, which may reduce both resilience to shocks and the potential for future evolution---and past evolution always depended on running parallel experiments with diverse and separate organisms.
+
+The optimistic argument is that AI is creating more and more structure in the world, including the appropriate boundaries. We have AI tools for bounding AI: detecting bugs before others can exploit them, detecting deepfakes, scalable oversight. Appropriately-tuned AI can facilitate human learning and nurture each individual's unique perspective and curiosity, and democratic AI could help humans with different perspectives co-exist and cooperate. Advances in technology may create new niches faster than they destroy old ones, and there is plenty of space on Earth for increasing diversity.
+
+The melioristic argument is that because it is easy to imagine concrete paths toward both outcomes, both may be within the realm of possibility; and that as long as there is any possibility our choices are decisive, we are obliged to act as if they were \citep{ord2020precipice}. We lean toward the melioristic position. If it is right, then continual effort toward invention will be required---first from humans, and then increasingly from AI or human-AI systems---to contextualize myopic forces. Many of the ways this effort would be applied are already well studied in AI safety. Others will have to be discovered. No set of boundaries will be a final answer.
+
+
+\subsection{Conclusion}
+
+We learn from living systems that health and flourishing are not any particular form or concept. Therefore alignment is not picking the right values or principles, or even the right system for learning them. It is not any method for interpretability or corrigibility. All of these can be useful parts of alignment. But alignment itself is the continued dance of contextualizing any particular form, more fully respecting the staggering subtlety of the existing world, and open-endedly supporting new robust depth that admits more and more different kinds of metaphor or description. In this way, AI can participate in intense flourishing of an evolving world even far beyond current human conceptualization.
+
+An aligned future, through internal and external discovery, continues the living process of maintaining and enhancing the individuality of distinct elements while deepening their relatedness---like how a species over time acquires more distinctive features while also becoming a richer reflection of the world around it. Distinct elements continue to experiment with their own solutions to the problems they face from their unique perspectives, expanding a broad reservoir of uniquely useful components that can be drawn on by larger systems that include them. Every entity is always inevitably myopic, but the world as a whole continues to unfold in a robust way because different perspectives recast each other's sharp edges as constructive momentum. The universe thrives on an open-ended trajectory of diversity, subtlety and potential.
+
+\section*{Acknowledgements}
+
+We thank Clark Potter, Iason Gabriel, Zach Duer, Andy Savoy, Paul Krueger, Sean Wilkinson and Ethan Guggenheimer for insightful discussions, contributions to earlier drafts, inspiration and advice. The authors declare no competing interests.
+
+\section*{References}
+\renewcommand{\bibsection}{}
+\begin{multicols}{2}
+\renewcommand{\bibfont}{\scriptsize}
+\setlength{\bibsep}{0pt plus 0.2ex}
+\bibliography{../assets/proxyfailure}
+\end{multicols}
+
+\end{document}
