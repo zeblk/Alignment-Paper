@@ -67,7 +67,15 @@
 \end{center}
 \label{abstract}
 \noindent
-There is broad agreement that the goal of AI alignment is to promote futures full of health and flourishing, but our understanding of what that means, and of how to reach it, remains poor. Here we look to life for guidance. Across many kinds of living system---cells, genomes, brains, minds, relationships, groups, institutions, ecosystems---notions of health and flourishing consistently map onto the ways in which those systems limit fixation on any particular modes of interaction. Semi-permeable boundaries allow stable patterns of interaction to exist conditionally, holding them in a larger, flexible context. At this sensitive edge, individuality is deepened and individual entities participate in larger structures open-endedly. With these principles in hand we turn to the alignment problem. We recast several well-studied alignment failures as special cases of fixation, and then argue a more general claim: fixation on \textit{any} mode of interaction is misaligned, so no fixed scheme can by itself constitute alignment. We close with a sketch of how AI and human-AI systems can deepen their respect for the existing structure of the world, of which humans and other life are a vital part, while participating in new structure emerging over time.
+There is broad agreement that the goal of AI alignment is to promote futures full of health and flourishing, but our understanding of what that means, and of how to reach it, remains poor. Here we look to life for guidance. Across many kinds of living system---cells, genomes, brains, minds, relationships, groups, institutions, ecosystems---notions of health and flourishing consistently map onto the ways in which those systems limit fixation on any particular modes of interaction. Semi-permeable boundaries allow stable patterns of interaction to exist conditionally, holding them in a larger, flexible context. At this sensitive edge, individuality is deepened and individual entities participate in larger structures open-endedly. With these principles in hand we turn to the alignment problem. We use it to reach three conclusions. 
+
+First, in order to be aligned in the long run, AI must become more lifelike. [because otherwise, as it has more power, that power will fixate particular forms.] 
+
+Second, a necessary (but by no means sufficient)  the lifelikeness of AI is achieved by empowering parts at all scales to have their own autonomy.
+
+And second, no alignment scheme can be aligned.
+
+We recast several well-studied alignment failures as special cases of fixation, and then argue a more general claim: fixation on \textit{any} mode of interaction is misaligned, so no fixed scheme can by itself constitute alignment. We close with a sketch of how AI and human-AI systems can deepen their respect for the existing structure of the world, of which humans and other life are a vital part, while participating in new structure emerging over time.
 
 \end{adjustwidth}
 \vspace{10pt}
@@ -91,14 +99,20 @@ Our aim is to offer a conceptual lens, which is of course imperfect and temporar
 
 \section{Health in living systems}
 
-The thesis of Section 1 is that health and flourishing are related to limiting fixation on particular modes of interaction. Healthy living systems instead sustain a buoyant internal structure that both admits many kinds of description and also changes over time.  On the other hand, when systems fixate on particular patterns of interaction, they are unhealthy, as in loss of biodiversity in an ecosystem, cancer, hypersynchronous neural firing in a seizure, obsession with a particular thought, or the imposition of one person's will to restrict many others.
+The thesis of Section 1 is that health and flourishing are related to limiting fixation on particular modes of interaction. Healthy living systems instead sustain a buoyant internal structure that both admits many kinds of description and also changes over time. Conversely, systems are unhealthy when some mode of interaction gains excess traction or permanence at the expense of broader diversity, flexibility and dynamism. Examples include loss of biodiversity in an ecosystem, cancer, hypersynchronous neural firing in a seizure, obsession with a particular thought, monopoly, or the imposition of one person's will to restrict many others. We will use the term `collapse' to refer to the transition to fixation.
 
-We will use the term `collapse' to refer to the transition to fixation.
+1. fixation includes instability (excess attachment to a random distribution, for example).
+2. OR, we simply revert to the old idea that life is at the edge of stability and chaos. so either fixation (rigid interactions) or disorder (chaotic interactions) is a problem. using this framing, is it harder to make the claim that `any alignment method is misaligned'? or, would we simply say that the `excess rigidity' is the failure mode of getting overattached to a particular alignment framework? would we run into people's prejudices and preconceptions about chaos versus order? 
 
-In fixation, some aspect or subpart of the system gains excess traction or permanence at the expense of broader diversity, flexibility and dynamism. 
+While fixation is unhealthy, same stability is necessary. 
 
+While collapsing into fixation is damaging at the scale at which it happens, it is 
 
-At the same time, collapse is relative, and local fixation is a necessary part of all living systems. Every entity is partial: it does not capture everything in the world. Life's history is littered with collapses at all scales, from the death of a cell to mass extinction events. When collapse is contextualized, the larger system can remain healthy: the death of a cell is catastrophic for the cell but may be healthy in the larger context of the organism. If instead a cell becomes cancerous, it loses the context of appropriate function within a tissue and recklessly executes its myopic vision, collapsing the tissue or even the whole organism. A larger system, made out of parts, functions well when the parts locally express their distinct identities but also participate in larger contexts; it functions poorly when a form runs amok without contextualization, overwhelming the potent interplay of diverse parts.
+Every entity is partial: it does not capture everything in the world. 
+
+Collapse is relative to a given perspective. One creature's collapse is another's dinner. 
+
+Life's history is littered with collapses at all scales, from the death of a cell to mass extinction events. When collapse is contextualized, the larger system can remain healthy: the death of a cell is catastrophic for the cell but may be healthy in the larger context of the organism. If instead a cell becomes cancerous, it loses the context of appropriate function within a tissue and recklessly executes its myopic vision, collapsing the tissue or even the whole organism. A larger system, made out of parts, functions well when the parts locally express their distinct identities but also participate in larger contexts; it functions poorly when a form runs amok without contextualization, overwhelming the potent interplay of diverse parts.
 
 Mechanistically, to hold parts in context, living systems rely on an extraordinary, many-scale network of semi-permeable boundaries \citep{maturana2012autopoiesis, simon1962architecture, moreno2015biological} (Fig.~\ref{fig:boundaries}). By limiting interactions, boundaries divide living systems into parts, creating the conditions for each part to refine its own identity---like a writer developing a unique voice or a species adapting to a niche. 
 
@@ -125,24 +139,24 @@ Finally, semi-permeability is often highly specific. Boundaries might block cert
 We look at a few examples from a range of scales, starting with institutions and working to genes.
 
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\textwidth]{boundaries_fixation.pdf}
-\caption{\textbf{Semi-permeable boundaries keep a system from fixating.}
-A system of interacting parts (circles, joined by lines where they interact),
-drawn at three successive times. The same jostling is applied to both rows.
-(\textbf{a}) Where interaction is unrestricted, jostling only carries the network
-around as a rigid whole: every part keeps exactly the neighbours it had, so the
-arrangement itself never changes. However intricate that arrangement is, holding
-it fixed is fixation. (\textbf{b}) Semi-permeable boundaries (orange) limit
-interaction without abolishing it: parts inside a boundary interact freely with
-one another, while interactions reaching across it are gated or attenuated
-(dotted lines). Now the same jostling breaks and remakes relationships at the
-boundary, and the boundary itself forms, dissolves and re-forms around different
-parts, so the system keeps generating new structure instead of collapsing onto
-any one form.}
-\label{fig:boundaries}
-\end{figure}
+% \begin{figure}[htbp]
+% \centering
+% \includegraphics[width=\textwidth]{boundaries_fixation.pdf}
+% \caption{\textbf{Semi-permeable boundaries keep a system from fixating.}
+% A system of interacting parts (circles, joined by lines where they interact),
+% drawn at three successive times. The same jostling is applied to both rows.
+% (\textbf{a}) Where interaction is unrestricted, jostling only carries the network
+% around as a rigid whole: every part keeps exactly the neighbours it had, so the
+% arrangement itself never changes. However intricate that arrangement is, holding
+% it fixed is fixation. (\textbf{b}) Semi-permeable boundaries (orange) limit
+% interaction without abolishing it: parts inside a boundary interact freely with
+% one another, while interactions reaching across it are gated or attenuated
+% (dotted lines). Now the same jostling breaks and remakes relationships at the
+% boundary, and the boundary itself forms, dissolves and re-forms around different
+% parts, so the system keeps generating new structure instead of collapsing onto
+% any one form.}
+% \label{fig:boundaries}
+% \end{figure}
 
 
 \subsection{Genomes} 
