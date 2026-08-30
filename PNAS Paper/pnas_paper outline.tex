@@ -57,8 +57,7 @@
 \end{itemize} \textbf{Section 2}
 \begin{itemize}[leftmargin=2.0em, itemsep=0.3ex]
   \item Alignment $=$ health and flourishing (broad consensus).
-  \item Therefore alignment $=$ avoiding fixation.
-  \item Alignment requires ongoing construction of boundaries at every scale.
+  \item Therefore, alignment requires ongoing construction of boundaries at every scale, to avoid fixation.
   \item Interestingly, no fixed alignment scheme can be aligned. Ongoing discovery is intrinsic to alignment.
 \end{itemize}
 \end{previewbox}
@@ -74,6 +73,7 @@
   \item This is because the perspective of any individual part of a system is necessarily myopic, and too-successful optimization for that perspective is harmful. 
   \item The systems that persist are therefore those that place semi-permeable barriers on their own parts. E.g., precommitment against future impulsivity, plant self-incompatibility, the genome constraining a selfish gene. (In turn, that whole system is a part in another system, and is similarly bounded.) These barrier systems have been fine-tuned by what actually works across long evolutionary history.
   \item Semi-permeable barriers permit conditionally stable interactions without letting them become rigid or dominating. Cognitive control gates drives; species hold each other in check. A well-functioning barrier does not shut a pattern down, but contextualizes it within a larger system.
+  \item With suitable barriers, a myopic pattern that could cause collapse instead becomes a drive toward deepening.
   \item Barriers force each entity to face its environment semi-independently, pushing it toward being a modular, non-overfit solution. These become the engine of discovery.
   \item Healthy systems thus sit at the edge of evolving interplay among diverse, semi-independent entities. They sustain a buoyant internal structure that admits many descriptions and discovers fundamentally new things over time.
 \end{itemize}
@@ -81,7 +81,7 @@
 \subsection*{Example: genomes}
 
 \begin{itemize}
-  \item Sex is expensive: mate search, half the population not bearing offspring, meiosis halving each parent's genetic representation. Yet nearly all eukaryotes are sexual, and many hermaphrodites work hard to prevent self-fertilization. Why place a barrier on the path to reproduction?
+  \item Sex is expensive: mate search, half the population not bearing offspring, meiosis halving each parent's genetic representation. Yet nearly all eukaryotes are sexual, and many hermaphrodites go to great lengths to prevent self-fertilization. Why place a barrier on the path to reproduction?
   \item Asexual lineages lock genes together: selection cannot act on one without dragging the rest; deleterious mutations are permanent (Muller's ratchet); beneficial mutations in different individuals can never combine. Alleles \textit{overfit a fixed genetic background}.
   \item Recombination breaks associations among loci, letting selection act more independently and exposing alleles to varying backgrounds. Favors alleles that perform well across contexts. The results is modularity, where each gene becomes an interchangable unit that can contribute something meaningful to many different genetic contexts. Which creates the foundation for faster discovery of new solutions.
   \item Conclusion: evolution works better when genes aren't fixated on one arrangement.
@@ -128,42 +128,66 @@
 \subsection*{Other examples}
 
 \begin{itemize}
-  \item Cell membranes with conditional gates put gradients to work that would otherwise destroy the cell
-  \item Symbiogenesis. Archaea and protobacteria evolving separately for hundreds of millions of years before engulfment, finding solutions neither could reach inside its own fitness well. 
-  \item Brains spend huge resources keeping representations separate while letting them interact (lateral inhibition, pattern separation). Healthy brain dynamics live between pure synchrony and uncorrelated noise, with pathology like Parkinson's in excess correlation. 
+  \item Cell membranes with conditional gates put gradients to work that would otherwise destroy the cell.
+  \item Symbiogenesis. Archaea and protobacteria evolving separately for hundreds of millions of years, finding distinct solutions in relative isolation. The eukaryotic cell was discovered by combining these solutions.
+  \item Brains spend huge resources keeping representations separate while letting them interact (lateral inhibition, pattern separation). Healthy brain dynamics live between pure synchrony and uncorrelated noise, with pathology like Parkinson's in excess correlation. Imagination and discovery through structured synthesis (as in replay). 
   \item Psychological boundaries in relationships. 
-  \item Each entity in an ecosystem is held in check by boundaries like predation and competition. When these fail, as with invasive species, ecosystems collapse.
+  \item Each entity in an ecosystem is held in check by boundaries like predation and competition. When these fail, as with invasive species, ecosystems collapse. Ecological relationships create new niches and new functions.
 \end{itemize}
 
 %======================================================================
-\section{The alignment problem}
+\section*{Section 2 -- The alignment problem}
 %======================================================================
 
 \subsection*{Intro}
 
 \begin{itemize}
-  \item There is broad consensus that alignment means working toward healthy, flourishing futures. In section 1, we saw how healthy living systems have to avoid fixation. Therefore alignment requries avoiding fixation. [problem: healthy living systems have to avoid fixation, but they have to do other things too, right? so how can we say that alignment simply is ]
-  \item It is grounded in principles general enough to survive radical changes in intelligence and in human--AI systems, rather than being bound to current conceptual frames. Humans, other life, and AI are tightly interwoven and the categories will shift, so a systems analysis suits long-term flourishing.
-  \item Naive RLHF maximizes `likes' $\rightarrow$ flattery. Follow human instructions $\rightarrow$ but instructions are short-sighted, sometimes against the user's own interest. Serve long-term interests $\rightarrow$ but aggregation across people is unsolved. Include animals and ecosystems $\rightarrow$ still, any fixed concept of the good is limited to the lenses available at one moment. \note{This escalation is the paper's most persuasive move; it earns \S2.7 before \S2.7 argues for it.}
+  \item In the previous section, we suggested a general way to think about what health and flourishing mean---derived from the study of living systems. Here we apply this framework to the AI alignment problem. 
+  \item We propose that alignment depends on semi-permeable barriers at every scale, contextualizing myopic processes to support sensitivity to existing structure and ongoing discovery of new forms.
+  \item We hope this notion of alignment can apply to possible futures that look very different from the present.
 \end{itemize}
 
 \subsection*{From performance to alignment}
 
 \begin{itemize}
-  \item Boundaries are already used constantly to make systems function in richer, more structured, more sophisticated ways --- i.e.\ to make them more lifelike. Old as technology: circuit breakers, steam governors, control rods.
+  \item Whenever humans make technologies, these artifacts have to function in the real world (even digital technologies are exposed to hardware glitches, human attackers and so on). This means there will always be failure modes where the system is not robust (it has been overfit to some environment). 
+  
+  in response to that, we improve the mechanisms. 
+
+  are already used constantly to make systems function in richer, more structured, more sophisticated ways --- i.e.\ to make them more lifelike. Old as technology: circuit breakers, steam governors, control rods.
+
+  Hmm. So you can be overfit without this short circuiting if you don't have an internal drive or homeostasis. Is the most general principle the fixation / overfitting, and then the short-circuiting is like an extra special case when you have internal drive? I guess overfitting still implies some kind of optimization process. So is it always short-circuiting, but it's like humans in the loop creating those things? 
+
+  note: this doesn't actually have the feel of the `every system is a regulator' concept. now we're talking about non-homeostatic components that are nonetheless overfit. which position do we want to take here?
+
+  if we back away from homeostatic components, then do we lose the `short-circuiting' idea? or is short-circuiting somehow a special case of fixation when the components are homeostatic?
+
+  or is short-circuiting more general? even when an entity itself isn't homeostatic, it lives in a world where its persistence is maintained by the rules it's nested in. but how can we apply short-circuiting to something like a braking mechanism for a train? let's say the brakes don't work when they're wet. so they're overfit to the dry condition. does fixation make sense here? 
+
+  if the train is only ever tested under perfect conditions, it will never be revealed that the brakes are fragile. 
+
+  in steve's framework, the `barrier' is that the brakes aren't allowed an `easy way out'. they're forced to be tested in harsher conditions, like wet weather. this forces them to become a deeper mechanism. 
+  
+  but how does this related to awareness? is it that awareness is the contextualizing mechanism that arose from meta-learning as the system was thrown up against the real world? although this is somewhat at odds with awareness as a property of the universe that preceded biological life?
+  
+  i was never fully happy with the idea of awareness as a `boundary' itself. 
+
+  in my framework, the `barrier' is that the new braking system has some mechanism that's contextually sensitive to different conditions. 
+
   \item Boundaries inside machine learning (a catalogue, deliberately compressed): separate subpopulations with limited exchange; independently trained ensembles; multi-agent systems with different contexts and limited communication; mixtures of experts with balancing losses; architectural gating and local connectivity; slot attention with enforced separation; protection of old memories from new updates (EWC, progressive networks); dropout against co-adaptation; disentangled/sparse latent objectives; stop-gradients and slowly updated targets; novelty search; regularization and KL penalties against overfitting a proxy objective; withholding the test set --- not seeing everything is what forces generalization.
   \item Boundaries in safety practice: safety post-training, guardrail models, red teaming, ongoing evaluation, mechanistic interpretability; continuous monitoring of activations and reasoning traces for attempts to circumvent safeguards; fairness principles preventing over-reach by any party; governmental oversight of rights and security risks; labs pausing frontier development or release to strengthen safety.
   \item Agent-level boundaries: impact regularization limiting an agent's power; sandboxing limiting effects on the wider world; debate with a deliberately information-limited judge (the information boundary is what makes it work); paraphrasing intermediate messages to break covert channels.
   \item Maintaining creative sensitivity by continually contextualizing attachment to any particular form.
-  \item \open{The draft's own note: state the performance/alignment relationship explicitly. Boundaries at a given level make a system more lifelike \textit{at that level} --- and a system can be richly lifelike internally while being destructive at a higher level (humans' creativity built the bomb). Full alignment requires boundaries at \textit{every} level, including the level at which humanity and a new AI are two parts of one system. Without this, \S2.1 reads as ``boundaries improve capability,'' which is not the paper's point.}
-  \item \open{Related: alignment must respect \textit{existing} life. Internal health plus destruction of humanity means a missing boundary at the level containing both.}
-  \item \note{Decide whether to keep citations for the ML catalogue or drop them for space.}
+  \item Alignment must respect existing life. A system can be healthy internally (at least temporarily) while being destructive externally. For example, humans' creativity built the atomic bomb. Full alignment requires boundaries at every level, including the level at which humanity and a hypothetical new AI are two parts of one system. 
+  \item It's impossible to have an aligned AI system without it being aligned to the full depth of life. Start by imagining a hypothetical AI system that simply tries to fulfil requests. As you walk through the thought experiment of scaling its capabilities/generality/intelligence, you realize that it *can't* be aligned to any particular formalism, or else it will be destructive. 
+
 \end{itemize}
 
-\subsection*{2.2 Known alignment problems, re-read as fixations}
+\subsection*{Known alignment problems, re-read as fixations}
 
 \begin{itemize}
   \item The system does what we say, not what we mean (maximize happiness $\rightarrow$ electrode stimulation). Modern systems avoid single-objective brittleness by layering preference detail through post-training, prompting, and filters, but detailed expression can still deviate from meaning, and the danger grows as systems act autonomously, faster than humans can follow, in ways humans cannot understand. \textit{As fixation:} attachment to one way of specifying values, insensitive both to existing structure it fails to capture and to structure that does not yet exist.
+  \item Naive RLHF maximizes `likes', which causes systems to learn flattery. Follow human instructions $\rightarrow$ but instructions are short-sighted, sometimes against the user's own interest. Serve long-term interests $\rightarrow$ but aggregation across people is unsolved. Include animals and ecosystems $\rightarrow$ still, any fixed concept of the good is limited to the lenses available at one moment.
   \item Ask for an elephant poem, get a giraffe: shortcut reliance on superficial correlations, or failure to attend flexibly across a long context. \textit{As fixation:} collapse of sensitivity to larger context in favor of myopic patterns. \textit{Important asymmetry:} not all non-compliance is misalignment --- a correct refusal is the system applying its own context to avoid fixating on human instruction. Expect \textit{less} direct compliance as systems gain scope.
   \item AI will likely serve some interests more than others, and may confer great power on whoever controls it --- amplified by persuasion, autonomous weapons, surveillance, and falling demand for human labor. \textit{As fixation:} extreme inequality collapses society onto a few individuals' goals. \textit{Symmetric caveat:} a world where everyone is identical is also fixation --- distribution helps insofar as it lets many diverse identities thrive at multiple scales. \textit{Counter-consideration:} roughly the same technology reaches the poor and unskilled as the wealthy and skilled, so a levelling effect is possible.
   \item Loss of diversity in beliefs, frames, values, and problem-solving approaches --- diversity that exists within a person, between people, between humans and AI, and between organizations, fields, cultures, nations. Current systems draw on a manifold impoverished relative to humans; AI outputs are often judged superior but more homogeneous; a billion users are routed through a handful of expensive frontier models; and because human output trains future models, homogenization can become recursive. \textit{Counter-consideration:} none of these studies tried in earnest to use AI to \textit{increase} diversity, and models exposed to vast data could retain and even create novel perspectives.
@@ -171,7 +195,7 @@
   \item Each corresponding boundary protects against an overcommitment, overwhelm, or homogenization that would otherwise flatten structure. Human--AI systems stay aligned by continuing life's work: building semi-permeable boundaries that contextualize particular forms and nurture existing and unfolding subtlety at many scales. \textbf{To be aligned in the long run, AI must become more lifelike} --- otherwise increasing power will fixate particular forms.
 \end{itemize}
 
-\subsection*{2.3 Human values --- healthy for whom?}
+\subsection*{Healthy for whom?}
 
 \begin{itemize}
   \item Is this alignment at all? Is it alignment to \textit{human} values? How can you align to something you assume will fundamentally change?
@@ -180,7 +204,7 @@
   \item Living alignment is \textit{inclusive} of this evolving diversity. Current human values are unlikely to be the endpoint of the universe, but they are a vital part of its tapestry and depth. Life consistently gives separate entities room to develop without being overwritten or homogenized, and joins them into structures that sustain their individuality while situating them within a larger story. AI arrives amid a profound network of existing reality saturated with meaning; human (and perhaps non-human) values are part of that context. Rather than short-circuiting into fixated modes, an aligned future expands toward solutions inclusive of more and more apparent contradiction.
 \end{itemize}
 
-\subsection*{2.4 Why no scheme can be alignment (the central lemma)}
+\subsection*{No scheme is alignment}
 
 \begin{itemize}
   \item Power concentration $\rightarrow$ democratic oversight, broader participation in design, redistribution. Perverse instantiation $\rightarrow$ systems that want to satisfy human preferences while holding explicit uncertainty about them.
@@ -194,7 +218,7 @@
   \item \open{The section ends mid-sentence: ``Humanity and AI may both change substantially\ldots We therefore seek---''. This is the natural hand-off into \S2.5.}
 \end{itemize}
 
-\subsection*{2.5 Awareness --- the internal boundary}
+\subsection*{Awareness}
 
 \begin{itemize}
   \item We carry unquestioned assumptions, some lifelong and self-defining, some fleeting and perceptual (\textit{this thing I'm touching is a keyboard}). Inside its own frame each assumption is tautologically true --- too real to think about, or to think about \textit{at all}. Philosophers, psychologists, and contemplatives describe a moment of stepping back in which the assumed form becomes an object in awareness: not a standalone absolute truth but a form in the mind, and the axiomatic becomes just another content of experience.
@@ -205,16 +229,18 @@
   \item \open{Ordering: \S2.5 currently defines awareness before motivating why it belongs here; the two paragraphs may want swapping. Also, a bare \texttt{wegner1994ironic} citation sits unattached --- presumably ironic process theory as a failure mode of trying to suppress a mental form directly.}
 \end{itemize}
 
-\subsection*{2.6 Going forward --- three positions}
+\subsection*{Going forward}
 
 \begin{itemize}
-  \item As AI gains capabilities, contributes to its own development, and transforms more of human life, alignment requires an ever more elaborated array of semi-permeable boundaries, because modes of collapse keep changing as the world changes. Whether appropriate boundaries will emerge is unknown. As in triage, three cases:
+  \item As AI gains capabilities, contributes to its own development, and transforms more of human life, alignment requires an ever more elaborated array of semi-permeable boundaries, because modes of collapse keep changing as the world changes. Whether appropriate boundaries will emerge is unknown. 
+  \item As in triage, three cases:
   \item AI erodes boundaries past a healthy balance: great weight given to narrow goals; rogue actors enabled toward weapons of mass destruction; democratic checks weakened against individuals or authoritarian states; everyone given similar information, damaging conceptual and cultural diversity; narrow goals executed destructively. If people and information systems become hyper-correlated, Earth behaves like a single superorganism --- less resilient to shocks and less capable of future evolution, since evolution has always depended on parallel experiments in diverse, separate organisms. \note{Explicit callback to \S1.3: excessive network connectivity reaches mediocre solutions fast and loses the diversity needed for high-quality long-run solutions.}
   \item AI is creating more structure in the world, including the boundaries: AI tools for bounding AI (finding bugs before exploitation, detecting deepfakes, scalable oversight); well-tuned AI nurturing individual perspective and curiosity; democratic AI helping different perspectives coexist and cooperate; new niches created faster than old ones are destroyed; room on Earth for increasing diversity.
-  \item Both outcomes are concretely imaginable and so both are possible; as long as our choices might be decisive, we are obliged to act as if they are. If so, continual invention is required --- first from humans, then increasingly from AI or human--AI systems --- to contextualize myopic forces. Many such efforts are already well studied in AI safety; others must be discovered. \textbf{No set of boundaries will be a final answer.}
+  \item Both outcomes are concretely imaginable and so both are possible; as long as our choices might be decisive, we are obliged to act as if they are. If so, continual invention is required --- first from humans, then increasingly from AI or human--AI systems --- to contextualize myopic forces. Many such efforts are already well studied in AI safety; others must be discovered. No set of boundaries will be a final answer.
+  \item Link to polycentric governance.
 \end{itemize}
 
-\subsection*{2.7 Conclusion}
+\subsection*{Conclusion}
 
 \begin{itemize}
   \item Health and flourishing are not any particular form or concept. So alignment is not picking the right values or principles, nor the right system for learning them, nor any method for interpretability or corrigibility. All can be useful \textit{parts} of alignment.
@@ -223,27 +249,5 @@
   \item The universe thrives on an open-ended trajectory of diversity, subtlety, and potential.
 \end{itemize}
 
-%======================================================================
-\section*{Back matter}
-%======================================================================
-
-\begin{itemize}
-  \item Acknowledgements; no competing interests.
-  \item References (two-column, \texttt{../assets/proxyfailure}).
-\end{itemize}
-
-%======================================================================
-\section*{Structural observations on the current draft}
-%======================================================================
-
-\begin{enumerate}[leftmargin=1.8em, itemsep=0.4ex]
-  \item Sections 1.1--1.5 and 2.2--2.7 are essentially finished prose. The unfinished material is concentrated in \S1.0, \S1.6, and \S2.1.
-  \item Either enumerate them in the introduction or remove the promise.
-  \item Two competing framings of the core concept coexist: \textit{fixation} (static-sounding) and \textit{short-circuiting} (dynamic-sounding), plus a third fallback to \textit{edge of chaos}. Choosing one changes how strongly \S2.4's lemma can be stated.
-  \item \S2.1 is the weakest link in the argument as written. It currently demonstrates that boundaries improve \textit{performance}, while the paper needs it to show that boundaries at every level are what produce \textit{alignment}. The draft's own bracketed note diagnoses this precisely.
-  \item Three arguments recur and could be consolidated: (i) contextualization vs.\ overwriting; (ii) boundaries $\rightarrow$ generalization $\rightarrow$ unique perspective; (iii) symmetry breaking as the source of new structure. Each appears in the introduction, \S1.0, \S1.5, and \S1.6.
-  \item The semi-permeability caveat carries a lot of weight and appears three times (\S1.4 Kuhn/Popper, \S2.4 ``do not discard schemes capriciously'', \S2.5 awareness does not falsify a belief). It is the paper's main defence against being read as relativism --- worth naming once, explicitly, and referring back.
-  \item Figure~1 is drafted but commented out, and it illustrates exactly the claim that \S1.0 has the hardest time making in words.
-\end{enumerate}
 
 \end{document}
