@@ -6,6 +6,7 @@
 \usepackage[margin=0.75in]{geometry}
 \usepackage{xcolor}
 \usepackage{graphicx}
+\usepackage{array}
 \graphicspath{{../assets/figures/}}
 \renewcommand{\topfraction}{0.9}
 \renewcommand{\floatpagefraction}{0.8}
@@ -15,6 +16,7 @@
 \usepackage{authblk}
 \usepackage{enumitem}
 \usepackage{multicol}
+\usepackage{pdflscape}
 \usepackage{titlesec}
 
 \titlespacing*{\section}{0pt}{1.5ex plus .2ex}{0.7ex plus .1ex}
@@ -75,7 +77,7 @@
 \end{center}
 \label{abstract}
 \noindent
-There is broad agreement that the goal of AI alignment is to promote futures full of health and flourishing, but our understanding of what that means and how to reach it remains poor. Here we look to the science of life for guidance. Across scales, from genomes to ecosystems, we observe that notions of health and flourishing consistently map to the ways in which those systems limit fixation on any particular mode of interaction. To limit fixation, life paradoxically places barriers in its own path. Barriers contextualize modes of interaction, leading to robust modularity and open-ended discovery of new structure. With these principles in mind, we turn to the alignment problem. We suggest that to be aligned in a meaningful sense, AI and human-AI systems must include evolving barriers at all scales.
+There is broad agreement that the goal of AI alignment is to promote futures full of health and flourishing, but our understanding of what that means and how to reach it remains poor. Here we look to the science of life for guidance. Across scales, from genomes to ecosystems, we observe that notions of health and flourishing consistently map to the ways in which those systems limit fixation on any particular mode of interaction. Fixation is limited by barriers that contextualize modes of interaction, leading to robust modularity and open-ended invention of new structure. With these principles in mind, we turn to the alignment problem. We suggest that to be aligned in a meaningful sense, AI and human-AI systems must include evolving barriers at all scales.
 
 %  to contextualize any particular forms
 
@@ -93,9 +95,40 @@ There is broad agreement that the goal of AI alignment is to promote futures ful
 
 \noindent
 
-In this Perspective, we draw on the science of living systems to better understand how to design and relate to AI in ways that lead to futures full of flourishing and health. We point to a principle of life which has been noted across a variety of systems at different scales. The principle is that living systems are healthy and flourishing when they avoid overly fixating on, or reducing to, particular patterns of interaction. Fixation is limited by semi-permeable barriers. Barriers translate local optimization pressure into productive effort, contextualizing individual entities as part of larger structures. Barriers yield modularity, deepened individuality, and open-ended discovery. In Section 1, we work through examples of fixation and semi-permeable barriers at scales from cells to societies.
+In this Perspective, we draw on the science of living systems to better understand how to design and relate to AI in ways that lead to futures full of flourishing and health. We point to a principle of life which has been noted across a variety of systems at different scales. The principle is that living systems are healthy and flourishing when they avoid overly fixating on, or reducing to, particular patterns of interaction. Consistently across types of system, fixation is limited by semi-permeable barriers. Barriers translate shorter-sighted optimization pressure into productive effort, contextualizing individual entities as part of larger structures. Barriers yield deepened individuality, modularity, and open-ended discovery. In Section 1, we work through examples of these mechanics at scales from cells to societies.
 
-Section 2 applies this principle to the AI alignment problem. There is broad agreement that the aim of alignment---in its broadest sense---is futures full of health and flourishing. From the principle identified in Section 1, it follows that \textit{alignment means avoiding fixation on particular modes of interaction}. This simple lemma has a surprising consequence: any alignment method, if given too much weight, is necessarily \textit{mis}aligned. Instead, the flourishing of life in the future depends on an evolving set of barriers that continue to limit the influence of any particular approach or concept, creating a generative web of partially competing, partially collaborating perspectives at all scales. Ongoing discovery is intrinsic to alignment.
+Section 2 applies the same principles to the AI alignment problem. There is broad agreement that the aim of alignment---in its broadest sense---is futures full of health and flourishing. From the pattern identified in Section 1, it follows that \textit{alignment means avoiding fixation on particular modes of interaction}. This simple lemma has a surprising consequence: any alignment method, if given too much weight, is necessarily \textit{mis}aligned. Instead, the flourishing of life in the future depends on an evolving set of barriers that continue to limit the influence of any particular approach or concept, creating a generative web of partially competing, partially collaborating perspectives at all scales. Ongoing invention is intrinsic to alignment.
+
+\begingroup
+\centering
+\vspace{2em}
+\begin{tabular}{|>{\raggedright\arraybackslash}p{0.14\textwidth}|>{\raggedright\arraybackslash}p{0.25\textwidth}|>{\raggedright\arraybackslash}p{0.25\textwidth}|>{\raggedright\arraybackslash}p{0.25\textwidth}|}
+\hline
+\textbf{Example} & \textbf{Too much influence} & \textbf{Barrier} & \textbf{Generativity} \\ \hline
+
+Symbiogenesis & Archea and protobacteria never differentiate & Reproductive isolation between archea and protobacteria & Invention of the eukaryotic cell \\ \hline
+
+Sexual reproduction & Linkage disequilibrium, Muller's ratchet & Sexual reproduction, out-crossing & Each gene explores a solution that can contribute to many genomes, creating combinatorial possibilites \\ \hline
+
+Brains & Hypersynchrony & Homeostatic plasticity, recurrent inhibition, etc & Behavioral flexibility \\ \hline
+
+Pavlovian approach & Persisting in approach even when it doesn't work & Arbitration, cognitive control & Exploring, building a richer model \\ \hline
+
+Frames & Inflexible beliefs, obsession, functional fixedness & Transition to perspective-as-object & New, more inclusive perspectives \\ \hline
+
+Group problem solving & One perspective dominates, group performs worse & Structured communication, skepticism & Combining unique ideas create new inventions (eg printing press) \\ \hline
+
+Institutions & Theft, monopoly, resource overuse, concentration of power & Laws, regulations, courts, etc &  Individual motives become productive parts of systems \\ \hline
+
+Ecosystems & Collapse of biodiversity & Predation, competition, etc & Niche creation \\ \hline
+
+\end{tabular}
+\captionof{table}{Too much influence.}
+\endgroup
+
+% diverse space
+% Out-competing out-crossing variants in a stable environment
+% Hunger drive & Overeating and obesity & Overall health of organism & Other drives, cognitive control & Pursuing broader space of goals \\ \hline
 
 
 
@@ -153,6 +186,8 @@ Sex is costly. An allogamous organism must find a mate in a vast and dangerous w
 In an asexual lineage, genes are permanently locked together: selection cannot act on one without dragging the others. A deleterious mutation is inherited forever, unless the lineage is lucky enough to experience the reverse mutation \citep{muller1964relation}, and two beneficial mutations arising in different individuals cannot be subsequently combined into a single genome \citep{muller1932some,fisher1930genetical}. Asexual reproduction or self-fertilization creates a high degree of informational connectedness between the genes of a genome. Alleles become overfit to a fixed genetic background.
 
 Recombination breaks up associations among loci, allowing selection to act more independently on them \citep{felsenstein1974evolutionary}. By exposing alleles to varying genetic backgrounds, it favors alleles that perform well across contexts, promoting modularity and evolvability \citep{livnat2008mixability,livnat2010sex,wagner1996perspective, watson2016can}. \new{The result is modularity, where each gene becomes an interchangeable unit that can contribute something meaningful to many different genetic contexts. This creates the foundation for faster discovery of new solutions.}
+
+Yet the evolutionary value of genetic exchange depends on both the diversity available and how it is recombined. Mendelian inheritance preserves discrete variants rather than blending them away, but gene flow can homogenize allele frequencies between populations and, when sufficiently strong relative to divergent selection, overwhelm local adaptation \citep{lenormand2002gene}. Partial geographic or reproductive isolation can therefore allow populations to accumulate and retain distinct variants; subsequent hybridization and introgression can bring these variants into new combinations that contribute to rapid speciation and adaptive radiation \citep{marques2019combinatorial}. At the genomic scale, the frequency and location of recombination determine which variants tend to travel together, although genes are not indivisible units: recombination can occur within them \citep{paigen2010mammalian,dooner1997recombination}. Shuffling can assemble beneficial combinations and help selection remove deleterious mutations, but it can also disrupt combinations that work well together, so more exchange is not invariably advantageous \citep{otto2009evolutionary}. Models of genetic ``mixability'' suggest that repeated exposure to different genetic backgrounds can favor alleles that perform well across contexts, providing a possible route to modularity rather than a guarantee that every gene becomes interchangeable \citep{livnat2008mixability,livnat2010sex}. These findings suggest that barriers can contribute to evolutionary innovation by preserving differentiated variation while permitting its recombination; whether such arrangements suffice for open-ended evolution remains an open question.
 
 % The evolution of evolvability is analogous to meta-learning in AI: an outer optimization process shapes an inner system to adapt effectively across tasks \citep{thrun1998learning,wang2018prefrontal}. In both cases, a process without foresight produces foresightful mechanisms.
 
@@ -254,15 +289,14 @@ A foundational problem in AI safety is that an AI system might do what we say ra
 
 \new{So if a powerful system does a good enough job optimizing for any given value function, the results are harmful. Such} perverse instantiation is a fixation on the myopic form of one particular way of specifying our values---a specification insensitive both to existing structure it does not capture, such as things we mean but do not say, and to things that will come into existence in the future.
 
+A great deal of research in AI safety has investigated solutions to these problems. Consider the example of inverse methods, which address the difficulty of specifying values explicitly by learning a value function implicitly from behavior or other indirect signals. Even a complex learned value function is likely to be imperfect: it may deviate from our values in novel or nuanced situations, and it may fail to capture how our values change over time. It would clearly be misaligned to hand a frozen version of it to a powerful AI system as the final ground truth about what is good. More advanced methods therefore treat the value function as uncertain and needing continual update from human input, so that an agent unsure of what humans want becomes risk-averse and open to correction---interpreting a human's attempt to turn it off as information about human preferences \citep{hadfieldmenell2016cooperative, jeon2020reward}. In this way, perverse instantiation might be mitigated by designing systems that want to adhere to human preferences but maintain explicit uncertainty about them \citep{russell2019human, hadfieldmenell2017off, shah2020benefits}. Such methods may also accommodate values that change over time.
 
-\subsection{Inverse methods}
-
-A great deal of research in AI safety has investigated solutions to these problems. \new{Consider the example of} inverse methods, which address the difficulty of specifying values explicitly by learning a value function implicitly from behavior or other indirect signals. Even a complex learned value function is likely to be imperfect: it may deviate from our values in novel or nuanced situations, and it may fail to capture how our values change over time. It would clearly be misaligned to hand a frozen version of it to a powerful AI system as the final ground truth about what is good. More advanced methods therefore treat the value function as uncertain and needing continual update from human input, so that an agent unsure of what humans want becomes risk-averse and open to correction---interpreting a human's attempt to turn it off as information about human preferences \citep{hadfieldmenell2016cooperative, jeon2020reward}. \new{In this way,} perverse instantiation might be mitigated by designing systems that want to adhere to human preferences but maintain explicit uncertainty about them \citep{russell2019human, hadfieldmenell2017off, shah2020benefits}. \new{Such methods potentially also accommodate values changing over time.}
-
-Viewed through the lens of this paper, such methods are powerful but incomplete. Any instantiation, even one with uncertainty, is still fixated if it is constant across time as AI systems become more powerful and the world changes. Rather than being fixated on a particular value function, the system may be fixated to something more abstract: what counts as human behavior, what counts as a human, how to map behavior to values, \new{the formalism for describing values,} how to represent and update uncertainty, how value is translated into action. If any of these formalisms are fixed while the systems built around them become increasingly powerful, the outcomes are likely to be incompatible with open-ended flourishing of life.
+Viewed through the lens of this paper, we can take away two things about such methods. First, they are powerful barriers limiting fixation on one reward function. Second, they are necessarily incomplete. Any particular method for learning values is still fixated if there are aspects of it that are constant across time as AI systems become more powerful and the world changes. Rather than being fixated on a particular value function, the system may be fixated on something more abstract: what counts as human behavior, what counts as a human, how to map behavior to values,the formalism for describing values, how to represent and update uncertainty, how value is translated into action. If any of these formalisms are fixed while the systems built around them become increasingly powerful, the outcomes are likely to be incompatible with open-ended flourishing of life.
 
 
 \subsection{No scheme is alignment}
+
+In addition to the example of reward hacking, there are many familiar cases where fixation 
 
 \new{More generally, each} method has a core limitation. In the framework of living alignment, any form, pattern or conceptual scheme is misaligned if taken too seriously. Therefore \textit{no particular approach can achieve alignment}. An AI system could fixate on the language for describing the space that goals and values live in; an algorithm for learning human preferences; methods for reaching consensus; a constitution; concepts of what value, agency, uncertainty or representation mean; or foundational aspects of our beliefs about the world that we take for granted but have difficulty seeing. Even an idealized or inferred set of values, such as coherent extrapolated volition \citep{yudkowsky2004coherent}, is misaligned to the extent that it has a fixed form and that fixed form is overly relied on. This has been studied extensively for certain categories of fixation, particularly fixation on values. The observation we add is that fixation on \textit{any} form is misaligned; as a consequence, any particular alignment scheme, if fixed or taken too seriously, is necessarily misaligned. \new{This is the lesson of life: healthy living systems are endlessly generative, with many scales of partially separated perspectives loosely and modularly coupled.}
 
