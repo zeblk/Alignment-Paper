@@ -101,33 +101,6 @@ In Section 1, we point to a principle of life which has been noted across a vari
 
 Section 2 applies the same principle to the AI alignment problem. There is broad agreement that the aim of alignment---in its broadest sense---is futures full of health and flourishing. From the template identified in Section 1, it follows that alignment means avoiding fixation on particular modes of interaction. This simple lemma has a surprising consequence: any alignment method, if given too much weight, is necessarily \textit{mis}aligned. Instead, the flourishing of life in the future depends on an evolving set of barriers that continue to limit the influence of any particular approach or concept, creating a generative web of partially competing, partially collaborating perspectives at all scales. Ongoing invention is intrinsic to alignment.
 
-\begingroup
-\centering
-\vspace{2em}
-\begin{tabular}{|>{\raggedright\arraybackslash}p{0.16\textwidth}|>{\raggedright\arraybackslash}p{0.25\textwidth}|>{\raggedright\arraybackslash}p{0.25\textwidth}|>{\raggedright\arraybackslash}p{0.25\textwidth}|}
-\hline
-\textbf{Example} & \textbf{Fixation} & \textbf{Barrier} & \textbf{Generativity} \\ \hline
-
-Symbiogenesis & Loss of differentiated ecological and genetic capacities (hypothetical) & Distinct niches and limits on gene exchange; subsequent organelle compartmentalization & Integration of capacities developed in distinct lineages into the eukaryotic cell \\ \hline
-
-Sexual reproduction & Linkage disequilibrium, Muller's ratchet & Sexual reproduction, out-crossing & Each gene explores a solution that can contribute to many genomes, creating combinatorial possibilites \\ \hline
-
-Biological neural networks & Hypersynchrony (depression?) & Homeostatic plasticity, recurrent inhibition, etc (could also do small-world with local specialization) & Behavioral flexibility \\ \hline
-
-Pavlovian approach & Persisting in approach even when it doesn't work & Arbitration, cognitive control & Exploring, building a richer model \\ \hline
-
-Frames & Inflexible beliefs, obsession, functional fixedness & Transition to perspective-as-object & New, more inclusive perspectives \\ \hline
-
-Group problem solving & One perspective dominates, group performs worse & Structured communication, skepticism & Combining unique ideas create new inventions (eg printing press) \\ \hline
-
-Institutions & Theft, monopoly, resource overuse, concentration of power & Laws, regulations, courts, etc &  Individual motives become productive parts of systems \\ \hline
-
-Ecosystems & Collapse of biodiversity & Predation, competition, etc & Niche creation \\ \hline
-
-\end{tabular}
-\captionof{table}{Examples of fixation.}
-\endgroup
-
 % diverse space
 % Out-competing out-crossing variants in a stable environment
 % Hunger drive & Overeating and obesity & Overall health of organism & Other drives, cognitive control & Pursuing broader space of goals \\ \hline
@@ -342,6 +315,13 @@ Recombination breaks up associations among loci, allowing selection to act more 
 
 Geographic and reproductive isolation are another kind of barrier, which allows populations to accumulate distinct variants. Subsequent introgression brings these variants into new combinations and can contribute to rapid innovation \citep{marques2019combinatorial}. 
 
+\subsection*{Summary}
+
+We still can't reproduce life. We don't understand very basic things about how life started or whether drastically different forms of life could exist without Earth-like chemistry.
+
+Life has developed (both at evolutionary and cultural timescales) through immense amounts of feedback from the real world, which shaped it at many levels. 
+
+The picture of life as autonomously fighting on every scale. The matroshka doll. 
 
 % The evolution of evolvability is analogous to meta-learning in AI: an outer optimization process shapes an inner system to adapt effectively across tasks \citep{thrun1998learning,wang2018prefrontal}. In both cases, a process without foresight produces foresightful mechanisms.
 
@@ -358,7 +338,7 @@ Geographic and reproductive isolation are another kind of barrier, which allows 
 
 \section{The alignment problem}
 
-In Section 1 we observed that living systems are healthy when they avoid fixation, instead holding the delicate, generative interplay of many partial perspectives. This interplay breaks down when any particular pattern of interaction gains too much traction, suppressing nuance and reducing creative potential. Semi-permeable barriers both promote the individuality and autonomy of distinct entities and also enable relational participation, holding local perspectives strongly enough to act but lightly enough to remain open to broader context. Under such conditions, systems open-endedly explore fundamentally new forms, avoiding collapse to static equilibrium or fixed compromise.
+In Section 1, we observed that living systems are healthy when they avoid fixation, instead holding the delicate, generative interplay of many partial perspectives. This interplay breaks down when any particular pattern of interaction gains too much traction, suppressing nuance and reducing creative potential. Semi-permeable barriers both promote the individuality and autonomy of distinct entities and also enable relational participation, holding local perspectives strongly enough to act but lightly enough to remain open to broader context. Under such conditions, systems open-endedly explore fundamentally new forms, avoiding collapse to static equilibrium or fixed compromise.
 
 Now we look at the alignment problem through this lens. There is broad consensus that alignment means working toward healthy and flourishing futures. We therefore reason that alignment can be understood as the problem of maintaining creative sensitivity by limiting fixation on any particular form. 
 
@@ -367,30 +347,35 @@ Now we look at the alignment problem through this lens. There is broad consensus
 An advantage of this perspective is that it is grounded in principles that underpin life at a very general level. We accept that humans, other living systems and AI are tightly interwoven \citep{latour2012we, haraway2020staying, hayles2000we, bateson1972steps, folke2006resilience, douglas2012social}; moreover, rapid advances in AI may lead to large changes in the organization of the world. A systems analysis is both useful for thinking about flourishing in the present and more likely to generalize to substantially different futures. 
 
 
-\subsection{Reward hacking}
+\subsection*{No scheme is alignment}
 
-Unsurprisingly, the history of AI alignment research is a story of identifying particular fixations and mitigating them. One of the most classic and well studied examples is reward hacking. 
+One implication of this perspective is that any alignment scheme must be incomplete. Any form, pattern or conceptual scheme is misaligned if taken too seriously. Therefore no particular approach can achieve alignment, and continuing alignment intrinsically depends on continuing invention. An AI system could fixate on the language for describing the space that goals and values live in; an algorithm for learning human preferences; methods for reaching consensus; a constitution; concepts of what value, agency, uncertainty or representation mean; or foundational aspects of our beliefs about the world that we take for granted but have difficulty seeing. Even an idealized or inferred set of values, such as coherent extrapolated volition \citep{yudkowsky2004coherent}, is misaligned to the extent that it has a fixed form and that fixed form is overly relied on. This is the lesson of life: healthy living systems are endlessly generative, with autonomous perspectives loosely and modularly coupled at many scales.
 
-For example, naive versions of reinforcement learning from human feedback train AI systems to maximize `likes', which leads to obvious forms of gaming, such as flattering the user. We might naively think that AI should follow human instructions---but humans give short-sighted instructions that aren't even in their own interests. Maybe AI should support a user's long-term interests, but there's this problem of aggregating across multiple people with different interests. Some believe that aligned AI should take into account the interests of other animals or ecosystems on Earth. And, ultimately, any fixed concept at all of what is good or beneficial for humanity or even for all of the earth is limited to the lenses we have available at a moment in time.
+Importantly, this does not mean we should have no alignment schemes. Quite the opposite: they are critical barriers. Discarding schemes capriciously can be as much a fixation as attaching to them doggedly. Continuing to discover new schemes and formalizations is essential to making progress.
 
-Whatever fixed value function you write down is not `what you really want' in a deeper sense.
-
-A foundational problem in AI safety is that an AI system might do what we say rather than what we mean: asked to increase human happiness, a superpowerful system that complies literally might lock us all up and electrically stimulate our brains. Modern systems do not rely on concise specification of a single objective---they build in many layers of detail about human preferences through post-training, prompting and safety filters, which keeps them behaving reasonably much of the time. But there is a widely recognized danger that even with our intentions expressed in great detail, the expression may still deviate from what we really mean \citep{amodei2016concrete, bostrom2014superintelligence, krakovna2020specification}.
-
-\new{The underlying reason is that our real values are incredibly complex.} Humans have many kinds of values \citep{nagel1979fragmentation}. We value the short-term hedonic impact of sugar on the tongue; we also value our long-term health, the welfare of our grandchildren, the wellbeing of strangers in another country, even the sustainability of the planet. We value different things at different times, and different people have different values \citep{rawls1993political, leibo2026theory}. Given time and resources to deliberate, we often attest to different values than when we make snap decisions \citep{yudkowsky2004coherent}. Some of our values are difficult to express verbally, stretching below language into subtle, contextual intuition involving our bodies, communities and natural environment \citep{nussbaum2001fragility, polanyi1966tacit}. And our values continue to evolve as we ourselves change and learn \citep{dewey1939theory}. Any way we have of expressing our values at a given point in time is incomplete, like a planarian without the concepts to entertain human values.
-
-\new{So if a powerful system does a good enough job optimizing for any given value function, the results are harmful. Such} perverse instantiation is a fixation on the myopic form of one particular way of specifying our values---a specification insensitive both to existing structure it does not capture, such as things we mean but do not say, and to things that will come into existence in the future.
-
-A great deal of research in AI safety has investigated solutions to these problems. Consider the example of inverse methods, which address the difficulty of specifying values explicitly by learning a value function implicitly from behavior or other indirect signals. Even a complex learned value function is likely to be imperfect: it may deviate from our values in novel or nuanced situations, and it may fail to capture how our values change over time. It would clearly be misaligned to hand a frozen version of it to a powerful AI system as the final ground truth about what is good. More advanced methods therefore treat the value function as uncertain and needing continual update from human input, so that an agent unsure of what humans want becomes risk-averse and open to correction---interpreting a human's attempt to turn it off as information about human preferences \citep{hadfieldmenell2016cooperative, jeon2020reward}. In this way, perverse instantiation might be mitigated by designing systems that want to adhere to human preferences but maintain explicit uncertainty about them \citep{russell2019human, hadfieldmenell2017off, shah2020benefits}. Such methods may also accommodate values that change over time.
-
-Viewed through the lens of this paper, we can take away two things about such methods. First, they are powerful barriers limiting fixation on one reward function. Second, they are necessarily incomplete. Any particular method for learning values is still fixated if there are aspects of it that are constant across time as AI systems become more powerful and the world changes. Rather than being fixated on a particular value function, the system may be fixated on something more abstract: what counts as human behavior, what counts as a human, how to map behavior to values,the formalism for describing values, how to represent and update uncertainty, how value is translated into action. If any of these formalisms are fixed while the systems built around them become increasingly powerful, the outcomes are likely to be incompatible with open-ended flourishing of life.
+% ((Why does it have to be like this? Why can't AI just be a tool, which we perfect to do certain things, and which is non-living?))
 
 
-\subsection{No scheme is alignment}
+\subsection*{Reward hacking}
 
-In addition to the example of reward hacking, there are many familiar cases where fixation is limited by barriers to improve alignment. (red teaming, CoT monitoring, )
+To give a flavor of the argument, we work through one example of a problem in AI safety, a method used to tackle that problem, and why the method can't be a final answer.
 
-Each method is valuable and also incomplete. Any form, pattern or conceptual scheme is misaligned if taken too seriously. Therefore no particular approach can achieve alignment, and continuing alignment intrinsically depends on continuing invention. An AI system could fixate on the language for describing the space that goals and values live in; an algorithm for learning human preferences; methods for reaching consensus; a constitution; concepts of what value, agency, uncertainty or representation mean; or foundational aspects of our beliefs about the world that we take for granted but have difficulty seeing. Even an idealized or inferred set of values, such as coherent extrapolated volition \citep{yudkowsky2004coherent}, is misaligned to the extent that it has a fixed form and that fixed form is overly relied on. This has been studied extensively for certain categories of fixation, particularly fixation on values. The observation we add is that fixation on \textit{any} form is misaligned; as a consequence, any particular alignment scheme, if fixed or taken too seriously, is necessarily misaligned. \new{This is the lesson of life: healthy living systems are endlessly generative, with many scales of partially separated perspectives loosely and modularly coupled.}
+Reward hacking is the problem that an AI system, given some definition of what is good, finds loopholes in the definition. Exploiting these loopholes, the system produces outputs that are good according to the definition but clearly undesireable. For example, Anthropic reported that LLM-based agents, which were scored on their task outputs being equal to correct outputs, avoided solving the task by programmatically redefining the `equals' operator to always return `true' \citep{macdiarmid2025natural}. Analogously, AI systems rewarded for positive human judgements sometimes become flattering and sycophantic \citep{sharma2023sycophancy}. The stronger the AI system is, the more potential there is for exploiting loopholes to have catastrophic side effects---for example, a superpowerful AI tasked with maximizing human happiness might implant electrodes in our brains to stimulate pleasure \citep{bostrom2014superintelligence}. A reward hacking agent fixates on a narrow definition of values, collapsing the broader context. 
+
+Reward hacking is challenging to avoid because our true values are incredibly complex. Humans have many kinds of values \citep{nagel1979fragmentation}. We value the short-term hedonic impact of sugar on the tongue; we also value our long-term health, the welfare of our grandchildren, the wellbeing of strangers in another country, even the sustainability of the planet. We value different things at different times, and different people have different values \citep{rawls1993political, leibo2026theory}. Given time and resources to deliberate, we may attest to different values than when we make snap decisions \citep{yudkowsky2004coherent, suter2011time}. Some of our values are difficult to express verbally, stretching below language into subtle, contextual intuition involving our bodies, communities and natural environment \citep{polanyi1966tacit, varela1999ethical, johnson2014morality,abram1996spell}. We may want to leave room for new values that emerge in the future, which could conceivably be as different from ours as ours are from a trilobite's. With such complexity and non-stationarity, it is almost inevitable that however we formally describe our values, the description will leave loopholes.
+
+
+Numerous methods have been developed to mitigate the problem of reward hacking. One interesting class of methods treats values as intrinsically uncertain and therefore something to be learned in an ongoing way from the behavior of humans or other indirect signals \citep{russell2019human, hadfieldmenell2017off, shah2020benefits, hadfieldmenell2016cooperative, jeon2020reward}. An agent unsure of what humans want should become more risk-averse and open to correction. For example, a human's attempt to turn it off can be construed as information about human preferences. Such a scheme is a powerful barrier limiting fixation on one reward function. However, it is necessarily incomplete. Any particular method for learning values is still fixated if there are aspects of it that are constant across time as AI systems become more powerful and the world changes. Rather than being fixated on a particular value function, the system may be fixated on something more abstract: what counts as human behavior, what counts as a human, how to map behavior to values, the formalism for describing values, how to represent and update uncertainty, how value is translated into action. If any of these formalisms are fixed while the systems built around them become increasingly powerful, the outcomes are likely to be incompatible with open-ended flourishing of life.
+
+
+% In addition to the example of reward hacking, there are many familiar cases where fixation is limited by barriers to improve alignment. (red teaming, CoT monitoring, ) Again, these aren't final answers.
+
+
+% Modern systems do not rely on concise specification of a single objective---they build in many layers of detail about human preferences through post-training, prompting and safety filters, which keeps them behaving reasonably much of the time. But there is a widely recognized danger that even with our intentions expressed in great detail, the expression may still deviate from what we really mean \citep{amodei2016concrete, bostrom2014superintelligence, krakovna2020specification}.
+
+% And our values continue to evolve as we ourselves change and learn. We may not yet possess the concepts with which to formulate values we will have in the future, just as it would be difficult for a trilobite to entertain human values.
+
+
 
 % [OPEN] `A kind of alignment analogue of Gödel/Tarski/open-system arguments—i.e. that a competent agent operating in an indefinitely expanding world must encounter morally relevant facts or concepts that were not representable in its original alignment ontology.' -- chatgpt
 % [OPEN] Preliminary formal attempts at showing that any alignment method is incomplete:
@@ -400,19 +385,11 @@ Each method is valuable and also incomplete. Any form, pattern or conceptual sch
 % https://philpapers.org/rec/SZASIA
 % https://arxiv.org/abs/2506.10304
 
-Importantly, this does not mean we should have no scheme. Quite the opposite: discarding schemes capriciously can be as much a loss of subtlety as any other particular form. Many existing approaches in AI safety are highly valuable, and continuing to discover new schemes and formalizations is essential to making progress.
-
-((Why does it have to be like this? Why can't AI just be a tool, which we perfect to do certain things, and which is non-living?))
 
 
-\subsection{From alignment to living alignment}
+\subsection*{Is AI special?}
 
-\new{It follows that it is not enough to simply `do what's good for humans' in a naive sense. That notion breaks down.} Humanity and AI may both change substantially, and future worlds may contain patterns of organization that do not exist yet---perhaps some that would be incomprehensible to us at present. \new{Things will change, including what there is to value and how it is valued. Think of the world today compared to the world a billion years ago. Any formalism or concept we have now will eventually appear as limited as a single-celled organism's notions of `what is good and bad'.}
-
-\new{Therefore, the problem of alignment, if carefully inspected, transforms into the open-ended problem of living alignment.} In order to be aligned in the long run, AI must become more lifelike. Otherwise, as it has more power, that power will fixate particular forms. \new{Living alignment means life-like systems that open-endedly discover new ways of contextualizing any myopic processes, preserving and extending the richness and generativity of life.} As human-AI systems develop, they will stay aligned if they continue the journey of life by building semi-permeable barriers to contextualize particular forms and nurture existing and unfolding subtlety at many scales.
-
-
-\subsection{Is AI special?}
+So we're saying that we need to keep developing new barriers in an ongoing way. Isn't that what humans have always done?
 
 \new{With AI, things change faster, and there is a lot of power behind fixed forms. In the past, there have always been arms races between different patterns of organization, and sometimes one gets so far ahead that the local area is decimated. But if a version of AI gets so far ahead of everything else, there is the possibility of world-level destruction. AI systems increasingly are acting autonomously, faster than humans can follow, in ways humans cannot understand.}
 
@@ -423,7 +400,18 @@ Importantly, this does not mean we should have no scheme. Quite the opposite: di
 \new{\textbf{Example: conceptual monoculture.}} Conceptual monoculture is fixation on particular beliefs, ideas, frames, values or problem-solving approaches---loss of diversity across a group. Precious diversity exists at every level: within one person, between humans, between humans and AI systems, and between organizations, fields, cultures and nations. Its collapse threatens fragility and lower performance \citep{page2008difference}. Current AI systems draw from a conceptual manifold that is, in some ways, impoverished relative to humans \citep{messeri2024artificial}, and recent studies find that while individual AI outputs may be judged superior to human ones, they are also more homogeneous \citep{doshi2024generative, padmakumar2023does}. This narrow manifold might get broadcast to the whole world: at least a billion people now use AI for everything from relationship advice to industrial maintenance \citep{chatterji2025chatgpt}, yet because frontier models are difficult and expensive to produce, that usage is routed through a handful of models \citep{bommasani2021opportunities}, risking global loss of diversity \citep{sourati2026homogenizing}. And because humans are influenced by AI while human outputs are training data for future models, homogenization could become recursive \citep{chaney2018algorithmic}. It is worth noting, however, that none of these studies made a best-effort attempt to use AI thoughtfully to increase rather than decrease diversity; with exposure to vast amounts of data, AI has the potential to retain and even create many novel distinct perspectives.
 
 
-\subsection{Healthy for whom?}
+
+\subsection*{From alignment to living alignment}
+
+So what do we do, 
+
+\new{It follows that it is not enough to simply `do what's good for humans' in a naive sense. That notion breaks down.} Humanity and AI may both change substantially, and future worlds may contain patterns of organization that do not exist yet---perhaps some that would be incomprehensible to us at present. \new{Things will change, including what there is to value and how it is valued. Think of the world today compared to the world a billion years ago. Any formalism or concept we have now will eventually appear as limited as a single-celled organism's notions of `what is good and bad'.}
+
+\new{Therefore, the problem of alignment, if carefully inspected, transforms into the open-ended problem of living alignment.} In order to be aligned in the long run, AI must become more lifelike. Otherwise, as it has more power, that power will fixate particular forms. \new{Living alignment means life-like systems that open-endedly discover new ways of contextualizing any myopic processes, preserving and extending the richness and generativity of life.} As human-AI systems develop, they will stay aligned if they continue the journey of life by building semi-permeable barriers to contextualize particular forms and nurture existing and unfolding subtlety at many scales.
+
+end on healthy outcomes for transition...
+
+\subsection*{Healthy for whom?}
 \label{sec:healthyforwhom}
 
 \new{Our framework defines aligned systems as those with lifelike properties of multi-scale agentic modularity, which avoid collapse onto fixated forms.} Is this `alignment'? Is it alignment to `human values'? How can you align to something if you start with the assumption that that thing is going to fundamentally change? \new{Alignment is typically concerned with human interests. What happens if AI replaces humans with its own lifelike systems, but destroys humanity in the process?} 
@@ -438,7 +426,7 @@ The life that exists today, now including humanity's storage and processing of i
 \new{However, in the short to medium term, honoring existing life and values is where it's at. It is difficult to overstate the amount of complexity and content in existing life, including in the relationships between organisms and in the mental lives of humans. Existing life has been through so much to get here: billions of years of parallel experiments all over Earth.} Living alignment is inclusive of this diversity of evolving values. We saw consistently in Section 1 that life gives separate entities space to develop distinctly without being overwritten or homogenized, and that these parts never-endingly join in structures that sustain their individuality while situating them as only part of a larger story. Another way of saying this is that life steps back to take into account more of the context. AI comes into existence amid a profound network of existing reality saturated with meaning and importance, and the diversity of human---and perhaps non-human---values is part of that context. Rather than short-circuiting into fixated modes, an aligned future continues to expand toward solutions inclusive of more and more apparent contradiction.
 
 
-\subsection{Going forward}
+\subsection*{Going forward}
 
 \new{The industry is already building in internal barriers.} We apply safety post-training, guardrail models, red teaming and ongoing evaluation, and we try to improve our mechanistic understanding of AI systems in order to detect and correct hidden flaws \citep{olah2020zoom}. OpenAI now continuously monitors the activations and thinking traces of models, to detect when internal activity becomes suspicious, for example if models are attempting to circumvent safeguards \citep{openai2026pacing}. Fair principles have been proposed to prevent over-reach of any party \citep{gabriel2025matter}, and governments apply oversight to anticipate and mitigate risks to human rights and national security \citep{eu2024aiact}. Concentration of power might be mitigated by democratic oversight and involvement of more people in AI design decisions \citep{birhane2022power}, or by redistribution mechanisms \citep{okeefe2020windfall}. OpenAI and Anthropic have paused development or release of frontier models to strengthen safety mechanisms \citep{openai2026pacing, anthropic2026mythos}. \new{Some of these barriers have humans in the loop to greater or lesser degrees, like governmental oversight, mechanistic interpretability and scalable oversight. Others are fully automated, like automated chain-of-thought monitoring, agentic red teaming and guardrail models.}
 
@@ -459,7 +447,7 @@ The melioristic argument is that because it is easy to imagine concrete paths to
 \new{The ideas in this paper come with the same proviso: we should not over-attach to them.} Our aim is to offer a conceptual lens, which is of course imperfect and temporary.
 
 
-\subsection{Conclusion}
+\subsection*{Conclusion}
 
 We learn from living systems that health and flourishing are not any particular form or concept. Therefore alignment is not picking the right values or principles, or even the right system for learning them. It is not any method for interpretability or corrigibility. All of these can be useful parts of alignment.
 
@@ -470,6 +458,35 @@ We learn from living systems that health and flourishing are not any particular 
 \section*{Acknowledgements}
 
 We thank Clark Potter, Iason Gabriel, Zach Duer, Andy Savoy, Paul Krueger, Sean Wilkinson and Ethan Guggenheimer for insightful discussions, contributions to earlier drafts, inspiration and advice. The authors declare no competing interests.
+
+
+\begingroup
+\centering
+\vspace{2em}
+\begin{tabular}{|>{\raggedright\arraybackslash}p{0.16\textwidth}|>{\raggedright\arraybackslash}p{0.25\textwidth}|>{\raggedright\arraybackslash}p{0.25\textwidth}|>{\raggedright\arraybackslash}p{0.25\textwidth}|}
+\hline
+\textbf{Example} & \textbf{Fixation} & \textbf{Barrier} & \textbf{Generativity} \\ \hline
+
+Symbiogenesis & Loss of differentiated ecological and genetic capacities (hypothetical) & Distinct niches and limits on gene exchange; subsequent organelle compartmentalization & Integration of capacities developed in distinct lineages into the eukaryotic cell \\ \hline
+
+Sexual reproduction & Linkage disequilibrium, Muller's ratchet & Sexual reproduction, out-crossing & Each gene explores a solution that can contribute to many genomes, creating combinatorial possibilites \\ \hline
+
+Biological neural networks & Hypersynchrony (depression?) & Homeostatic plasticity, recurrent inhibition, etc (could also do small-world with local specialization) & Behavioral flexibility \\ \hline
+
+Pavlovian approach & Persisting in approach even when it doesn't work & Arbitration, cognitive control & Exploring, building a richer model \\ \hline
+
+Frames & Inflexible beliefs, obsession, functional fixedness & Transition to perspective-as-object & New, more inclusive perspectives \\ \hline
+
+Group problem solving & One perspective dominates, group performs worse & Structured communication, skepticism & Combining unique ideas create new inventions (eg printing press) \\ \hline
+
+Institutions & Theft, monopoly, resource overuse, concentration of power & Laws, regulations, courts, etc &  Individual motives become productive parts of systems \\ \hline
+
+Ecosystems & Collapse of biodiversity & Predation, competition, etc & Niche creation \\ \hline
+
+\end{tabular}
+\captionof{table}{Examples of fixation.}
+\endgroup
+
 
 \section*{References}
 \renewcommand{\bibsection}{}
