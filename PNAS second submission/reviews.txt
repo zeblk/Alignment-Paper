@@ -1,0 +1,102 @@
+*********************
+Editor Comments:
+
+Both reviewers have valuable suggestions that must be taken seriously.
+
+Reviewer Comments:
+
+Reviewer #1:
+
+Suitable Quality?:
+Yes
+
+Sufficient General Interest?:
+Yes
+
+Conclusions Justified?:
+Yes
+
+Clearly Written?:
+Yes
+
+Comments:
+There is a lot to like about this "perspectives" paper. It argues persuasively that any fixed formalism in the areas of alignment can go wrong if relied upon too rigidly. The core move - flexibility at every scale - makes sense and fits with a large body of literature. And the authors should also be given credit for raising some of the hardest questions, including "healthy for whom?" It will foster needed discussion in the area of AI alignment.
+
+There are some weaknesses in scope and substance, however, which I would like to share more as possible ways the authors might want to strengthen their piece. My biggest concern is that the evolutionary thinking coming through the paper stops half-way.
+
+For example, they cite Kashdan and Rottenberg (2010) on psychological flexibility but keep only the "moving between frames" part of the larger argument. The authors touch on the importance of values, which is empirically key to the positive impact of psychological flexibility (Hayes, 2019), but not in a way that would allow that to be used effectively. In fact, the manuscript explicitly says that alignment is not about the right values or principles. That set up a kind of contradiction.
+
+You can see the more general impact of the "half step" issue in how the paper addresses health, which is defined almost entirely by what it avoids: fixation and collapse. As an evolutionary matter that is like having variation and replication/retention without a selection criterion. If you skip the hard work of addressing selection (hard work because "survival" alone simply will not work once we are applying evolutionary principles to human affairs, as this paper explicitly is attempting to do), "generativity" can't distinguish a flourishing system from one that generates harm in ever more elaborated and creative ways. A vicious cycle is evolution gone awry; a virtuous cycle is something else entirely. Generative complexity could feed either. That is a more technical way of saying exactly what is worrying people about AI. The paper as written can't distinguish the two types of cycles.
+
+Without a selection criterion some parts of the authors' argument comes precariously close to circular reasoning. The idea that fixation is unhealthy and unhealthy means fixated would be such an argument. Similarly, the manuscript makes a good cse that semipermeable barriers, modularity, and flexibility can contribute to the adaptive function of living systems. But it sometimes moves from how these properties support healthy functioning to these properties defining healthy functioning.
+
+There is a ready way to break out of circles such as these: specify the selection criterion. Then, for example, narrowing becomes fixation only when it stops working for the specified purpose or value. Stated another way, fixation then becomes a functional concept, not just a topographical one, which is far more in tune with the broad themes of this article.
+
+The author's arguments could use an organizing framework and one is readily at hand. The authors acknowledge that what is healthy for a cell may not be healthy for a multicellular organism and what benefits and organism might harm an ecosystem. They ask whether AI could destroy humanity while creating something extraordinarily generative. They refer to health at different levels of complexity without specifying how conflicts among these levels should be evaluated.
+
+Multilevel selection theory provides a natural framework in such areas. MLS research has shown that a process can be adaptive at one level of complexity and destructive than another. Suppressing destructive competition within groups facilitates cooperation, but cooperation within groups can also intensify destructive competition between groups. Elinor Ostrom won a Nobel Prize for showing how core design principles can help manage these kinds of conflicts - and do so in ways that are very much in touch with the author's arguments (e.g., Wilson, Ostrom and Cox, 2013).
+
+Moving in this direction would not take that much space and it would have other positive effects on the manuscript. The key points in the paper are often presented only by analogy. The paper succeeds anyway because the examples are very well chosen, but it will limit the long-term impact of the article if it is left at that level. For one thing, it's hard to see what predictions could fail from the authors' argument ... and researchers sensing that will likely not test the ideas this piece contains. That would be unfortunate. A multi-level selection approach would make ready sense of almost all of the author's best empirical examples and do so in a way that is more testable and less metaphorical and analogical.
+
+A brief comment in another area: reward hacking. From a contingency standpoint, a system that games its reward is just doing what its contingencies selct for, like a child learning to lie. Hortatory rules backed up by aversive contingencies tend to teach concealment, not honesty. Authoritarian parents learn that the hard way, and I fear AI researchers are learning it anew. I appreciate that the authors are going beyond that with their comments on precommitment, cognitive control, internal regulation and the like but more of a focus on purpose, values, and the contingencies that establish and maintain these processes could carry the broader argument additional steps forward.
+
+I think this is a strong article, and I hope the comments above strengthen it further.
+
+References
+
+Kashdan, T. B., & Rottenberg, J. (2010). Psychological flexibility as a fundamental aspect of health. Clinical Psychology Review, 30, 865-878.
+
+Hayes, S. C. (2019). A liberated mind: How to pivot toward what matters. New York: Penguin/Avery.
+
+Wilson, D. S., Ostrom, E. & Cox, M. E. (2013). Generalizing the core design principles for the efficacy of groups. Journal of Economic Behavior and Organization, 90, S21-S32.
+
+
+AI Disclosure:
+I did not use AI software during preparation of this review.
+
+Reviewer #2:
+
+Suitable Quality?:
+No
+
+Sufficient General Interest?:
+Yes
+
+Conclusions Justified?:
+No
+
+Clearly Written?:
+Yes
+
+Comments:
+The paper advocates for the position that life does not optimise for any simple objective, and that doing so is antithetical to the creative processes of living systems. From this, the suggestion is that AI, if we want it to make a positive contribution to creative fourishing, also should not be directed at goal-achievement/objective maximisation either. In brief, any one criterion of alignment is misaligned.
+
+I feel torn in writing this review.
+
+On the positive, I completely agree with the message of the paper. Its correct, important, not widely understood and its vital that more people undertand it. On the negative, I struggle to see it as a PNAS paper - its an opionion, supported loosely by some anecdotal narrative. There is 'finding' or 'discovery', there are no methods used, and there is no mechanism proposed to do it. Its recommendation is 'attitudinal' - a direction of travel. I think its important, but I can imagine it being a piece in Noema rather than a PNAS paper. Perhaps, PNAS could take the position that, although it doesnt usually publish pieces that dont have methods or describe mechanisms, finding or discoveries, perhaps it should. Indeed, part of the problem this paper talks about is a kind of fixation on 'whats it good for?'/'what can I do with that?'/'what have you proved?' that makes it more difficult to... stop and smell the roses, ask 'why are we doing this?'/'whats really important here?'. So, not publishing it is, in a sense, consistent with the problem that the paper identifies.
+
+There is a bit of a danger that the message of the paper reduces to 'all things in moderation (except moderation)' which, although wise, is hardly new - It basically advocates for Goodhart's law - and the paper doesn't offer concrete ways to operationalise that (to alleviate the greed that drives the Western worldview/market-based infrastructure). Again, I'm totally on-board - but unfortunately, the problem isn't just one of how to align AI, we have to deconstruct to entire Western narrative. We live lives that are goal-directed, aligned with fixed objectives, and generally don't really that's a mistake until we get to middle-age - and its a societal problem not just a personal problem (or an AI lignment problem).
+
+There is a bit of a danger that the paper becomes: we define healthy to be , so we should do . Where in this case is not a monoculture that has lost diversity, for example. The examples show that single-minded objectives lose creative diversity... but they do meet their objectives. Can we make it not a matter of opinion that this is a failure? I mean, as is, one could be criticised for saying 'I don't like lack of diversity, so we shouldn't do things that kill diversity'. I agree. But can it be converted into any sense that killing diversity is an objective failure, so you make an argument for the contrary instead of just stating a purpose? Im not sure it can, to be honest. It is just a preference. There isnt any objective argument to support the idea that a monoculture crop that 'successfully' maximises yield is in some sense a failure. It is a success on its own terms. And that is the problem. Goodhart's law.
+
+
+I agree with most of the observations made about example systems.
+There arent a lot of statements here that are falsifiable.
+You might mention the permaculture literature in the ecosystem section (I didnt follow your refs, maybe they are).
+Group problem solving in evolution has some recedent in hybrid vigor and shifting balance (for what it's worth).
+On creativity through compositional discoveries you might mention Boden.
+I love that bit about 'for an agent built inside a frame the frame is invisible' (curious you didnt mention Godel).
+At the end of that section Im thinking about 'holding a pov' (in a manner sustained against evidence) and 'holding contradictions' (allowing opposites to be both true). Interesting territory.
+Mention MArgulis for endosymbiosis!
+Some of this sounds like straightforward explore vs exploit.
+A question that is bubbling up now: is moderation algorithmic? or non-algorithmic?
+Top of page 7, 'healthy living systems have multiple semi-autonomous perspectives loosely and modularly coupled at many scales' - I agree. Is this a phenomenological observation? Or is it an assertion about what you like (ie you dont like monoculture)? Is it a definition of what you mean my healthy, something correlated with healthy, or something that causes healthy? The status of these observations isnt clear. I think its correlated with healthy (not a definition) and I dont think its causal - like, I cant take that as a recipe I can implement and get healthy life as an output. Id like to, its a good research goal, but stating as an aseertion/observation doesnt help me do that.
+I like the bit about 'stretching below language'.
+The decentering concept also very useful - thanks for that!
+'the continued dance of contextualizing and particular form' - beautiful. Compeltely agree. How do we do that, what is the mechanism?
+I hope some of that is useful.
+
+AI Disclosure:
+I did not use AI software during preparation of this review.
+
+*********************
