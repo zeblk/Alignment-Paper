@@ -19,6 +19,8 @@ https://www.youtube.com/shorts/0LB41FKypG8
 
 Readers steeped in standard "order vs. chaos" or "explore vs. exploit" framing might misunderstand "fixation" as meaning only static rigidity, and get confused when we include random noise (line 115) and discarding schemes capriciously (line 383) as examples of fixation. We should unpack this in a couple of sentences: literally *anything* that can be captured by a single closed concept or fixed abstraction—including a stationary random distribution (which is a fixed statistical description) or a blanket habit of capriciously discarding commitments—becomes a fixation if given unconditional traction. A crystal and white noise are the same failure mode: both collapse the system onto a simple, unchanging description rather than accumulating context-sensitive depth.
 
+On p. 21, Kashdan and Rottenberg (2010) ask whether flexibility can become instability or impulsiveness. **This is not the kind of flexibility we're talking about**. In our language, instability or impulsiveness is fixation. 
+
 ### Restoring the evolutionary bottleneck line in "Healthy for whom?"
 
 In the `Healthy for whom?` section, we currently have this sentence commented out (line 491 of `PNAS second submission.tex`):
