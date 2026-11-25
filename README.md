@@ -25,3 +25,14 @@ Shared assets are referenced with relative paths (`../assets/...` from a top-lev
 directory matters — run `latexmk` from the document's own folder, not the repo root.
 
 LaTeX build artifacts (`.aux`, `.bbl`, `.log`, …) are gitignored.
+
+## Line references and marked changes
+
+Changes since the first submission are marked by hand in the paper's source, so there is only one copy of the paper:
+
+- `\rev{key}{text}` marks added or rewritten text. It prints in blue.
+- `\del{text}` marks removed text. It prints in red strikethrough.
+
+The response letter cites a `\rev` passage's line numbers with `\paperlines{key}`. The numbers are read from the paper's `.aux` file, so build the paper before the response.
+
+For a clean copy, change `\markchangestrue` to `\markchangesfalse` near the top of the paper. Removed text then disappears, which shifts line numbers, so rebuild the response afterwards.

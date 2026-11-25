@@ -6,8 +6,21 @@
 \usepackage{enumitem}
 \usepackage{xcolor}
 \usepackage[authoryear,round,sort]{natbib}
+\usepackage{xr-hyper}
 \usepackage[draft]{hyperref}
+\usepackage{refcount}
 \usepackage{parskip}
+
+% Line numbers in the manuscript. A passage marked \rev{key}{...} in the paper
+% is cited here as \paperlines{key}, which prints "line N" or "lines N--M" from
+% the paper's .aux file. Build the paper first so the numbers are current.
+\externaldocument[P-]{../Paper/PNAS second submission}
+\newcommand{\paperlines}[1]{%
+  \ifnum\getrefnumber{P-#1:a}=\getrefnumber{P-#1:b}\relax
+    line~\ref{P-#1:a}%
+  \else
+    lines~\ref{P-#1:a}--\ref{P-#1:b}%
+  \fi}
 
 \setlength{\parskip}{4pt plus 1pt}
 
@@ -79,43 +92,39 @@ Both reviewers have valuable suggestions that must be taken seriously.
 
 We thank the editor and the reviewers for their careful reading and constructive comments. 
 
-We found there was a great deal of overlap between the suggestions of the two reviewers. This central shared critique was highly useful for sharpening the message of the paper. 
-
-To restate the central critique, the original paper was sometimes unclear about whether it was making descriptive, definitional, or normative statements. 
-
-
-The problem surfaced in a few different ways:
+We found there was a great deal of overlap between the suggestions of the two reviewers. This central shared critique -- that the original paper was sometimes unclear about whether it was making descriptive, definitional, or normative statements -- was highly useful for sharpening the message of the paper. The problem surfaced in a few different ways:
 \begin{itemize}
-  \item Both reviewers directly noted this problem. R2 asked: ``Is this a phenomenological observation? Or is it an assertion about what you like (ie you dont like monoculture)? Is it a definition of what you mean [by] healthy, something correlated with healthy, or something that causes healthy?". R1 pointed out that the manuscript ``sometimes moves from how these properties support healthy functioning to these properties defining healthy functioning".
+  \item Both reviewers made the central critique directly. R2 asked: ``Is this a phenomenological observation? Or is it an assertion about what you like (ie you dont like monoculture)? Is it a definition of what you mean [by] healthy, something correlated with healthy, or something that causes healthy?". R1 pointed out that the manuscript ``sometimes moves from how these properties support healthy functioning to these properties defining healthy functioning". R1 also said that the paper touches ``on the importance of values [...] but not in a way that would allow that to be used effectively. In fact, the manuscript explicitly says that alignment is not about the right values or principles. That set up a kind of contradiction."
   \item Both reviewers were concerned about the is-ought gap. R1 noted the problem of distinguishing virtuous from vicious cycles, suggesting that generativity ``can't distinguish a flourishing system from one that generates harm in ever more elaborated and creative ways." R2 said, ``There isnt any objective argument to support the idea that a monoculture crop that `successfully' maximises yield is in some sense a failure".
-  \item Both reviewers were concerned about a possibility of circularity. , and might get trapped into the ``idea that fixation is unhealthy and unhealthy means fixated". 
-  \item Both reviewers were concerned about testability and falsifiability. R1 said it would be ``hard to see what predictions could fail from the authors' argument."
-  \item R1 said that the paper touches ``on the importance of values [...] but not in a way that would allow that to be used effectively. In fact, the manuscript explicitly says that alignment is not about the right values or principles. That set up a kind of contradiction."
-
-  \item 
+  \item Both reviewers were concerned about testability and falsifiability, and R1 was concerned about a possibility of circularity.
 \end{itemize}
 
+To address this central problem, in the revised manuscript we commit to a more consistent framing:
+\begin{enumerate}
+  \item Throughout the paper, we state explicitly that our claims are descriptive rather than normative, and we remove wording that read as prescriptive. See changes on \paperlines{status} and \paperlines{lesson}.
+  \item As a result, the alignment argument becomes more disciplined: we restrict ourselves to the observation that humans commonly value health and flourishing, rather than asserting its moral good.
+  \item In support of 2, we bolster the case that deep human values apparently often align with the kind of health and flourishing that we describe. In particular, we make an empirical claim that part of what humans value is the somewhat paradoxical capacity to continue outgrowing our own values. We take this opportunity to follow R2's suggestion of acknowledging Gödel's incompleteness. 
+  \item We add text to emphasize both the significance of local value systems and their relationship to the broader systems they are contextualized within. Each entity operates from a local perspective and value system (there is no ``view from nowhere"). In this sense, there is nothing but local value systems, and these values lend a locally positive direction to flexibility and generativity (Kashdan \& Rottenberg, 2010; Hayes, 2019). At the same time, if any local value system is given unchecked dominance, then it is fixated from a larger point of view, because it inevitably misses what's outside its own frame. We hope this resolves R1's ``apparent contradiction".
+  \item In support of 4, we integrate multilevel selection (MLS) and Ostrom's design principles as examples of mechanisms of contextualization.
+  \item We remove language that implied we were creating our own definition of health, which was contributing to potential circularity. Instead, we focus on the premise that certain conditions -- such as depression, Parkinson's disease, group stagnation, or even death -- are already widely recognized as unhealthy for the system that they pertain to. Our contribution becomes more streamlined: to simply recognize an abstract commonality in these pre-existing definitions of health across different kinds of systems. (Again, we are careful to avoid claims that these unhealthy conditions are bad in an absolute moral sense.)
+  \item In support of 6, we bolster the case that fixation is indeed what is typically meant by unhealth. We hope that this helps to carry the message beyond ``all things in moderation" and to address the objection that ``generativity can't distinguish a flourishing system from one that generates harm in ever more elaborated and creative ways". 
+\end{enumerate}
+
+In addition to this shared core issue, the reviewers raised other valuable points, which we address in the point-by-point below.
 
 
 
+To bolster the case that fixation is what we mean by unhealth, we consider some examples. One might agree that fixation causes unhealth, while arguing that some unhealthy situations, like pain or sadness, are not fixated. Our counterargument is that negative signals like pain or sadness are not intrinsically unhealthy. They can be essential signals as part of an organism's overall health. For example, congenital insensitivity to pain is typically considered pathological, and sadness plays a key role in art and in appreciation of transient things in the world. These negative signals become pathological when they lose context sensitivity. One way to look at this is that the signal clamps to an extreme value, as in chronic pain or major depression, losing dynamic sensitivity. This makes ``fixation" crisp, empirical, and functional rather than vague or metaphorical.
 
-Unresolved conflicts across levels. Treating health as a single unanchored property rather than situating it descriptively within nested systems meant we appeared to "refer to health at different levels of complexity without specifying how conflicts among these levels should be evaluated."
+In a parallel way, one might argue that transforming orderly human society to a rich but vicious jungle could be highly generative while being less healthy. Our counterargument is that a primordial jungle is both more generative and healthier than a hypothetical universe where life never existed, or a hypothetical universe dominated by a paperclip maker. However, reverting modern human civilization to such a jungle would indeed be a loss of health, precisely because of an increase in fixation. Civilization has accumulated layers of barriers (physical safety, medicine, social mechanisms for increased trust) that enable new realms of subtlety like art, science and interpersonal exploration. Collapse of those realms of subtlety would be fixation. 
 
+What separates a creatively adapting commensal organism from a creatively adapting pathogen? What separates healthy innovation from a creative cyberwarfare arms race? In both cases, the smaller entity is adapting, exploring, and innovating. But the pathogen earns its name because its local adaptation produces fixation, impoverishment, and collapse at the broader scale (the host or society). Looking across nested scales dissolves a large class of apparent "generative harm" counterexamples.
 
-For Reviewer 2:
+We argue that well-functioning barriers don't hold things in a neutral middle ground: they build nested spaces where new, subtler structures emerge. 
 
-Unclear epistemic status. Reviewer 2 articulated the three-way ambiguity directly: "Is this a phenomenological observation? Or is it an assertion about what you like ...? Is it a definition of what you mean [by] healthy, something correlated with healthy, or something that causes healthy? The status of these observations [isn't] clear."
+MLS and Ostrom's principles. How contingencies from a broader context shape the systems nested within them. Establish and maintain barriers, suppress lower-level defection/reward-hacking, and negotiate cross-level conflicts. We note that the framework generalizes beyond classic Darwinian group selection to include peer-level constraints (e.g., ecological checks, adversarial competition) and deliberate design (e.g., humans create things purposively without relying only on selection).
 
-Circularity and the is–ought gap. Conflating a definitional claim with a normative one creates the danger of "we define healthy to be [X], so we should do [X]," raising the question: "Can we make it not a matter of opinion that this is a failure?" Otherwise, "one could be criticised for saying 'I don't like lack of diversity, so we shouldn't do things that kill diversity'"—since there is no objective argument that "a monoculture crop that 'successfully' maximises yield is in some sense a failure. It is a success on its own terms."
-
-Unfalsifiability. Mirroring Reviewer 1's concern about predictions, drifting into definitional or normative territory meant that "There [aren't] a lot of statements here that are falsifiable."
-
-Attitudinal opinion rather than mechanism (and reducing to Goodhart's law). Whenever the paper read as a normative exhortation rather than a mechanistic synthesis, it appeared "supported loosely by some anecdotal narrative," where "there is no mechanism proposed to do it. Its recommendation is 'attitudinal' - a direction of travel" ("How do we do that, what is the mechanism?"), and risked a reading in which the message simply "reduces to 'all things in moderation (except moderation)'" or "basically advocates for Goodhart's law."
-
-
-
-In addition to this shared core issue, the reviewers raised other valuable points, like the role of contingencies in reward hacking, connections to multilevel selection and Ostrom's design principles, and additional important citations. We address these in the point-by-point below.
-
+For Gödel's incompleteness. The idea of humans paradoxically valuing the transcendence of their own values is observable in developmental psychology (Kegan's subject-object shift), moral history (recognizing blind spots in past moral codes and expecting future generations to see ours), constitutional amendment clauses. The Escher-like structure feels self-referential, like climbing out of the painting we are drawing. 
 
 
 % \begin{itemize}
@@ -312,7 +321,8 @@ On the positive, I completely agree with the message of the paper. Its correct, 
 There is a bit of a danger that the message of the paper reduces to `all things in moderation (except moderation)' which, although wise, is hardly new - It basically advocates for Goodhart's law - and the paper doesn't offer concrete ways to operationalise that (to alleviate the greed that drives the Western worldview/market-based infrastructure). Again, I'm totally on-board - but unfortunately, the problem isn't just one of how to align AI, we have to deconstruct to entire Western narrative. We live lives that are goal-directed, aligned with fixed objectives, and generally don't really that's a mistake until we get to middle-age - and its a societal problem not just a personal problem (or an AI lignment problem).
 \end{reviewer}
 
-[Response.]
+
+Why this beats Goodhart's law: Standard Goodhart's law assumes a fixed ground-truth objective sitting behind an imperfect proxy. Our observation is that even a loophole-free snapshot of today's human preferences would still freeze something that humans themselves value keeping open-ended.
 
 % Note: the first sentence below has gaps as received ("healthy to be ,"
 % and "should do ."). The reviewer's placeholders, probably in angle

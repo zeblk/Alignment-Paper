@@ -19,6 +19,8 @@
 \usepackage{multicol}
 \usepackage{pdflscape}
 \usepackage{titlesec}
+\usepackage{lineno}
+\usepackage[normalem]{ulem}
 
 \titlespacing*{\section}{0pt}{1.5ex plus .2ex}{0.7ex plus .1ex}
 \titlespacing*{\subsection}{0pt}{1.1ex plus .2ex}{0.4ex plus .1ex}
@@ -40,6 +42,20 @@
 % that were moved intact. To hide the flags, replace the line below with
 %   \newcommand{\new}[1]{#1}
 \newcommand{\new}[1]{\textcolor{teal}{#1}}
+
+% Revision markup: changes since the first submission are marked in this file.
+%   \rev{key}{text}  text added or rewritten. Prints in blue and records the
+%                    line numbers of its first and last words, which the
+%                    response letter looks up with \paperlines{key}. Keys must
+%                    be unique.
+%   \del{text}       text removed. Prints in red, struck through.
+% For a clean copy, change \markchangestrue to \markchangesfalse: added text
+% prints in black and removed text disappears. Build this file before the
+% response letter so its line numbers are current.
+\newif\ifmarkchanges
+\markchangestrue
+\newcommand{\rev}[2]{\leavevmode\linelabel{#1:a}\ifmarkchanges{\color{blue}#2}\else#2\fi\linelabel{#1:b}}
+\newcommand{\del}[1]{\ifmarkchanges{\color{red}\sout{#1}}\fi}
 
 \title{\vspace{-2.5em}Living Alignment}
 
@@ -70,6 +86,7 @@
 \begin{document}
 
 \maketitle
+\linenumbers
 \vspace{-1em}
 
 \begin{adjustwidth}{28pt}{28pt}
@@ -104,6 +121,7 @@ In Section 1, we point to a principle of life which has been noted across a vari
 
 Section 2 applies the same principle to the AI alignment problem. There is broad agreement that the aim of alignment---in its broadest sense---is futures full of health and flourishing \citep{gabriel2020artificial,bostrom2014superintelligence,russell2019human,christian2020alignment}. From the template identified in Section 1, it follows that alignment means avoiding fixation on particular modes of interaction. This simple lemma has a surprising consequence: any alignment method, if given too much weight, is necessarily \textit{mis}aligned. Instead, the flourishing of life in the future depends on an evolving set of barriers that continue to limit the influence of any particular approach or concept, growing a generative web of partially competing, partially collaborating perspectives at all scales. Ongoing invention is intrinsic to alignment.
 
+
 % diverse space
 % Out-competing out-crossing variants in a stable environment
 % Hunger drive & Overeating and obesity & Overall health of organism & Other drives, cognitive control & Pursuing broader space of goals \\ \hline
@@ -122,7 +140,7 @@ Effective barriers are semi-permeable, permitting interactions that are temporar
 
 At a critical balance point where barriers are permeable but not too permeable, local influence, in interaction with the surrounding context, becomes generative rather than causing collapse. The system rides a delicate edge where each entity tends to deepen its identity as a unique reflection of the world, establishing a modular basis of autonomous components that become building blocks of invention. As a result, more sophisticated structures can form that wouldn't have been possible without the diverse parts each having undergone their own unique development. The larger system accommodates many partial perspectives rather than locking in a single story of what matters, and systems are elements in multiple other systems, creating a deep heterarchy. At the sensitive edge of semi-stability, life open-endedly continues to generate new kinds of organization that require fundamentally new descriptions \citep{kauffman1993origins, stanley2017open, langton1990computation, simon1962architecture, schrodinger1944what, prigogine1984order, maturana2012autopoiesis}.
 
-The rest of Section 1 works through examples in a range of living systems to paint a picture of how health and flourishing are related to limiting fixation on particular modes of interaction. 
+The rest of Section 1 works through examples in a range of living systems to paint a picture of how health and flourishing are related to limiting fixation on particular modes of interaction. \rev{status}{Our objective is to abstract a common principle of health and flourishing from different kinds of systems---not to assert that health is good in an absolute sense.}
 
 
 % Homeostasis preserves function through enormous perturbations by tweaking thousands of molecular and systems-level variables (Marder). Such robustness to change is paradoxically a source of innovation; latent potential can be stored and unlocked when time is right, reorganizing components into qualitatively different forms (Masel \& Trotter). 
@@ -378,7 +396,7 @@ An advantage of this perspective is that it is grounded in principles that under
 
 \subsection*{No scheme is alignment}
 
-One implication of this perspective is that any alignment scheme must be incomplete. Any form, pattern or conceptual scheme is misaligned if taken too seriously. Therefore no particular approach can achieve alignment, and continuing alignment intrinsically depends on continuing invention. An AI system could fixate on the language for describing the space that goals and values live in; an algorithm for learning human preferences; methods for reaching consensus; a constitution; concepts of what value, agency, uncertainty or representation mean; or foundational aspects of our beliefs about the world that we take for granted but have difficulty seeing. Even an idealized or inferred set of values, such as coherent extrapolated volition \citep{yudkowsky2004coherent}, is misaligned to the extent that it has a fixed form and that fixed form is overly relied on. This is the lesson of life: healthy living systems have multiple semi-autonomous perspectives loosely and modularly coupled at many scales, and they are endlessly generative rather than ever standing still.
+One implication of this perspective is that any alignment scheme must be incomplete. Any form, pattern or conceptual scheme is misaligned if taken too seriously. Therefore no particular approach can achieve alignment, and continuing alignment intrinsically depends on continuing invention. An AI system could fixate on the language for describing the space that goals and values live in; an algorithm for learning human preferences; methods for reaching consensus; a constitution; concepts of what value, agency, uncertainty or representation mean; or foundational aspects of our beliefs about the world that we take for granted but have difficulty seeing. Even an idealized or inferred set of values, such as coherent extrapolated volition \citep{yudkowsky2004coherent}, is misaligned to the extent that it has a fixed form and that fixed form is overly relied on. This \del{is the lesson of life}\rev{lesson}{follows the pattern observed in Section 1}: healthy living systems have multiple semi-autonomous perspectives loosely and modularly coupled at many scales, and they are endlessly generative rather than ever standing still.
 
 Importantly, this does not mean we should have no alignment schemes. Quite the opposite: they are critical barriers. Discarding schemes capriciously can be as much a fixation as attaching to them doggedly. Continuing to discover new schemes and formalizations is essential to healthy functioning.
 
@@ -476,7 +494,7 @@ The more we think of AI systems as having cognitive properties, the more the app
 
 The term `alignment' originated from the idea of aligning AI to human values. But in this paper we've defined aligned systems by properties that don't seem to depend on human values. We argue that an aligned future is one full of health, but whose health are we talking about? Does the framework permit AI to destroy humanity as long as it builds deeply structured, generative systems of its own?
 
-A living system's richness is the accumulated results of its many long, partly isolated parallel histories. A great deal of that content currently resides in existing life, including genes, cells, minds, cultures and the relationships among organisms. It is difficult to overstate the amount of complexity and content in existing life. Systems have a richer livingness when they hold existing parts in context, neither taking them as absolute truth nor discarding them capriciously. Accordingly, neither the destruction of humanity nor its eternal stasis is an aligned outcome. The current version of humanity and life on Earth arose from a world that was very different in the past, and an aligned future is a co-evolution building on the inheritance of existing life.
+A living system's richness is the accumulated results of its many long, partly isolated parallel histories. \del{Nearly all }\rev{greatdeal}{A great deal} of that content currently resides in existing life, including genes, cells, minds, cultures and the relationships among organisms. It is difficult to overstate the amount of complexity and content in existing life. Systems have a richer livingness when they hold existing parts in context, neither taking them as absolute truth nor discarding them capriciously. Accordingly, neither the destruction of humanity nor its eternal stasis is an aligned outcome. The current version of humanity and life on Earth arose from a world that was very different in the past, and an aligned future is a co-evolution building on the inheritance of existing life.
 
 % We hope it will continue to evolve in fundamentally new ways going forward.
 
@@ -562,6 +580,7 @@ We thank Clark Potter, Iason Gabriel, Zach Duer, Andy Savoy, Paul Krueger, Sean 
 % \endgroup
 
 
+\nolinenumbers
 \section*{References}
 \renewcommand{\bibsection}{}
 \begin{multicols}{2}
