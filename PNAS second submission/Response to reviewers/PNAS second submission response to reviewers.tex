@@ -21,6 +21,12 @@
   \else
     lines~\ref{P-#1:a}--\ref{P-#1:b}%
   \fi}
+\newcommand{\paperlinesrange}[2]{%
+  \ifnum\getrefnumber{P-#1:a}=\getrefnumber{P-#2:b}\relax
+    line~\ref{P-#1:a}%
+  \else
+    lines~\ref{P-#1:a}--\ref{P-#2:b}%
+  \fi}
 
 \setlength{\parskip}{4pt plus 1pt}
 
@@ -92,22 +98,52 @@ Both reviewers have valuable suggestions that must be taken seriously.
 
 We thank the editor and the reviewers for their careful reading and constructive comments. 
 
-We found there was a great deal of overlap between the suggestions of the two reviewers. This central shared critique -- that the original paper was sometimes unclear about whether it was making descriptive, definitional, or normative statements -- was highly useful for sharpening the message of the paper. The problem surfaced in a few different ways:
+We found there was a great deal of overlap between the suggestions of the two reviewers. The central shared critique was that the original paper was sometimes unclear about whether it was making descriptive, definitional, or normative statements:
 \begin{itemize}
-  \item Both reviewers made the central critique directly. R2 asked: ``Is this a phenomenological observation? Or is it an assertion about what you like (ie you dont like monoculture)? Is it a definition of what you mean [by] healthy, something correlated with healthy, or something that causes healthy?". R1 pointed out that the manuscript ``sometimes moves from how these properties support healthy functioning to these properties defining healthy functioning". R1 also said that the paper touches ``on the importance of values [...] but not in a way that would allow that to be used effectively. In fact, the manuscript explicitly says that alignment is not about the right values or principles. That set up a kind of contradiction."
-  \item Both reviewers were concerned about the is-ought gap. R1 noted the problem of distinguishing virtuous from vicious cycles, suggesting that generativity ``can't distinguish a flourishing system from one that generates harm in ever more elaborated and creative ways." R2 said, ``There isnt any objective argument to support the idea that a monoculture crop that `successfully' maximises yield is in some sense a failure".
-  \item Both reviewers were concerned about testability and falsifiability, and R1 was concerned about a possibility of circularity.
+  \item R2 asked: ``Is this a phenomenological observation? Or is it an assertion about what you like (ie you dont like monoculture)? Is it a definition of what you mean [by] healthy, something correlated with healthy, or something that causes healthy?". 
+  \item R1 pointed out that the manuscript ``sometimes moves from how these properties support healthy functioning to these properties defining healthy functioning". 
+  \item R1 said that the paper touches ``on the importance of values [...] but not in a way that would allow that to be used effectively. In fact, the manuscript explicitly says that alignment is not about the right values or principles. That set up a kind of contradiction.".
+  \item R1 noted the problem of distinguishing virtuous from vicious cycles, suggesting that generativity ``can't distinguish a flourishing system from one that generates harm in ever more elaborated and creative ways". 
+  \item R2 said, ``There isnt any objective argument to support the idea that a monoculture crop that `successfully' maximises yield is in some sense a failure".
+  \item Both reviewers were concerned about testability and falsifiability.
+  \item R1 was concerned about a possibility of circularity.
 \end{itemize}
 
-To address this central problem, in the revised manuscript we commit to a more consistent framing:
+Addressing this central critique sharpened the message of the paper. In the revised manuscript we have committed to a more consistent framing:
 \begin{enumerate}
-  \item Throughout the paper, we state explicitly that our claims are descriptive rather than normative, and we remove wording that read as prescriptive. See changes on \paperlines{status} and \paperlines{lesson}.
-  \item As a result, the alignment argument becomes more disciplined: we restrict ourselves to the observation that humans commonly value health and flourishing, rather than asserting its moral good.
-  \item In support of 2, we bolster the case that deep human values apparently often align with the kind of health and flourishing that we describe. In particular, we make an empirical claim that part of what humans value is the somewhat paradoxical capacity to continue outgrowing our own values. We take this opportunity to follow R2's suggestion of acknowledging Gödel's incompleteness. 
+  \item We now state explicitly that our claims are descriptive rather than normative, and we remove wording that read as prescriptive. As a result, the alignment argument becomes more disciplined: we restrict ourselves to the observation that health and flourishing are typically considered to be an objective of alignment, rather than asserting that they are morally good. We state our conclusions about alignment as conditional on that objective. See changes on \paperlines{opening}, \paperlines{ifaimintro}, \paperlines{successful}, \paperlines{status}, \paperlines{ifaimopener}, \paperlines{lesson}, \paperlines{schemes}, \paperlines{flourishing} and \paperlinesrange{hypothetical}{gradual}.
+  \item In support of 1, we bolster the case that deep human values apparently often align with the kind of health and flourishing that we describe. In particular, we make an empirical claim that part of what humans value is the somewhat paradoxical capacity to continue outgrowing our own values. Following R2's suggestion, we refer to Gödel's incompleteness results. See changes on \paperlinesrange{valuequestion}{humanvalues}.
   \item We add text to emphasize both the significance of local value systems and their relationship to the broader systems they are contextualized within. Each entity operates from a local perspective and value system (there is no ``view from nowhere"). In this sense, there is nothing but local value systems, and these values lend a locally positive direction to flexibility and generativity (Kashdan \& Rottenberg, 2010; Hayes, 2019). At the same time, if any local value system is given unchecked dominance, then it is fixated from a larger point of view, because it inevitably misses what's outside its own frame. We hope this resolves R1's ``apparent contradiction".
-  \item In support of 4, we integrate multilevel selection (MLS) and Ostrom's design principles as examples of mechanisms of contextualization.
-  \item We remove language that implied we were creating our own definition of health, which was contributing to potential circularity. Instead, we focus on the premise that certain conditions -- such as depression, Parkinson's disease, group stagnation, or even death -- are already widely recognized as unhealthy for the system that they pertain to. Our contribution becomes more streamlined: to simply recognize an abstract commonality in these pre-existing definitions of health across different kinds of systems. (Again, we are careful to avoid claims that these unhealthy conditions are bad in an absolute moral sense.)
-  \item In support of 6, we bolster the case that fixation is indeed what is typically meant by unhealth. We hope that this helps to carry the message beyond ``all things in moderation" and to address the objection that ``generativity can't distinguish a flourishing system from one that generates harm in ever more elaborated and creative ways". 
+  \item In support of 3, we integrate multilevel selection (MLS) and Ostrom's design principles as examples of mechanisms of contextualization.
+  \item We remove language that implied we were creating our own definition of health, which was contributing to potential circularity. Instead, we focus on the premise that certain conditions -- such as depression, Parkinson's disease, group stagnation, or even death -- are already widely recognized as unhealthy for the system that they pertain to. Our contribution becomes more streamlined: to simply recognize an abstract commonality in these pre-existing definitions of health across different kinds of systems. (Again, we are careful to avoid claims that these unhealthy conditions are bad in an absolute moral sense.) See changes on \paperlinesrange{whosehealth}{valuequestion}.
+  % TODO (item 5; this was item 6 before items 1 and 2 were merged). Noted 26 Nov
+  % while working through item 1; paper edits not yet made.
+  %  - Threshold words are circular: "overly" and "too much" can only mean "more
+  %    than is healthy". Replace them with the structural criterion from Section 1:
+  %    whether a form is contextualized (its influence made conditional by
+  %    something outside it).
+  %  - Agreed replacement, CEV sentence in "No scheme is alignment": "has a fixed
+  %    form and that fixed form is overly relied on" -> "has a fixed form that is
+  %    not contextualized".
+  %  - Same flaw elsewhere: "misaligned if taken too seriously" (same paragraph;
+  %    the thesis sentence, so fix the two together); "if given too much weight"
+  %    (introduction, Section 2 preview); "too much influence" ("Special risks of
+  %    AI", the "subtler danger" paragraph).
+  %  - Most Section 1 uses of "excess" / "too much" are fine: they name the
+  %    consequence in the field's own terms (mussels, Parkinson's), and the
+  %    definition of fixation carries its own criterion ("at the expense of broader
+  %    diversity, flexibility and dynamism").
+  %  - Item 5 above then needs one more clause, because this cure
+  %    (contextualization, item 3's vocabulary) differs from the one it describes.
+  %    E.g. "We also replace threshold wording such as `overly' and `too much' with
+  %    the structural criterion from Section 1: whether a form is contextualized."
+  %  - "Healthy for whom?", first paragraph: "we've defined aligned systems by"
+  %    (definitional), and "Does the framework permit" (treats the framework as a
+  %    code that permits and forbids).
+  %    DONE 27 Nov: paragraph replaced; cited above as \paperlinesrange{whosehealth}{valuequestion}.
+
+  \item In support of 5, we bolster the case that fixation is indeed what is typically meant by unhealth. We hope that this helps to carry the message beyond ``all things in moderation" and to address the objection that ``generativity can't distinguish a flourishing system from one that generates harm in ever more elaborated and creative ways". See changes on \paperlines{painsadness} and \paperlines{generativeharm}.
+  %  - A central reason why our message isn't just about ``all things in moderation" is that we're not talking about just finding a middle ground or an average point. We should emphasize and explain this more to draw out further how avoiding fixation really does map onto what people think of as health and vitality, rather than boring averages.  
 \end{enumerate}
 
 In addition to this shared core issue, the reviewers raised other valuable points, which we address in the point-by-point below.
@@ -321,6 +357,15 @@ On the positive, I completely agree with the message of the paper. Its correct, 
 There is a bit of a danger that the message of the paper reduces to `all things in moderation (except moderation)' which, although wise, is hardly new - It basically advocates for Goodhart's law - and the paper doesn't offer concrete ways to operationalise that (to alleviate the greed that drives the Western worldview/market-based infrastructure). Again, I'm totally on-board - but unfortunately, the problem isn't just one of how to align AI, we have to deconstruct to entire Western narrative. We live lives that are goal-directed, aligned with fixed objectives, and generally don't really that's a mistake until we get to middle-age - and its a societal problem not just a personal problem (or an AI lignment problem).
 \end{reviewer}
 
+% NOTE (26 Nov): a change already made under item 1 of the overview is also
+% relevant here, and to R2.14 ("recipe I can implement") and R2.16 ("what is
+% the mechanism?"). The paper's opening sentence used to promise a how-to: "to
+% better understand how to design and relate to AI in ways that lead to futures
+% full of flourishing and health". It now states the aim the paper delivers: "to
+% better understand what it would mean for a future with AI to be full of
+% flourishing and health". This matches the objective stated at the end of the
+% Section 1 opener (\paperlines{status}). Cite the change as \paperlines{opening}.
+
 
 Why this beats Goodhart's law: Standard Goodhart's law assumes a fixed ground-truth objective sitting behind an imperfect proxy. Our observation is that even a loophole-free snapshot of today's human preferences would still freeze something that humans themselves value keeping open-ended.
 
@@ -393,6 +438,9 @@ A question that is bubbling up now: is moderation algorithmic? or non-algorithmi
 Top of page 7, `healthy living systems have multiple semi-autonomous perspectives loosely and modularly coupled at many scales' - I agree. Is this a phenomenological observation? Or is it an assertion about what you like (ie you dont like monoculture)? Is it a definition of what you mean my healthy, something correlated with healthy, or something that causes healthy? The status of these observations isnt clear. I think its correlated with healthy (not a definition) and I dont think its causal - like, I cant take that as a recipe I can implement and get healthy life as an output. Id like to, its a good research goal, but stating as an aseertion/observation doesnt help me do that.
 \end{reviewer}
 
+% NOTE (26 Nov): see the note under R2.3. The paper's opening sentence no longer
+% promises a how-to; cite as \paperlines{opening}.
+
 [Response.]
 
 \begin{reviewer}
@@ -406,6 +454,9 @@ The decentering concept also very useful - thanks for that!
 \begin{reviewer}
 `the continued dance of contextualizing and particular form' - beautiful. Compeltely agree. How do we do that, what is the mechanism?
 \end{reviewer}
+
+% NOTE (26 Nov): see the note under R2.3. The paper's opening sentence no longer
+% promises a how-to; cite as \paperlines{opening}.
 
 [Response.]
 

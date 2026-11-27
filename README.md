@@ -21,6 +21,8 @@ latexmk -pdf "PNAS second submission.tex"
 
 Build the response and cover letter from their respective subfolders in the same way.
 
+Each of these folders has a `.latexmkrc` that turns on SyncTeX for every build. Without it, a terminal build deletes the `.synctex.gz` that LaTeX Workshop uses to jump between the PDF and the source, and the jump shortcuts stop working until the source next changes. Copy the file into any new document folder.
+
 Shared assets are referenced with relative paths (`../assets/...` from a top-level folder, `../../assets/...` from a second-submission document folder or an archived document folder inside `Old/`), so the working
 directory matters — run `latexmk` from the document's own folder, not the repo root.
 
@@ -31,8 +33,8 @@ LaTeX build artifacts (`.aux`, `.bbl`, `.log`, …) are gitignored.
 Changes since the first submission are marked by hand in the paper's source, so there is only one copy of the paper:
 
 - `\rev{key}{text}` marks added or rewritten text. It prints in blue.
-- `\del{text}` marks removed text. It prints in red strikethrough.
+- `\del{text}` marks removed text. It prints in red strikethrough. `\del[key]{text}` also records its line number.
 
-The response letter cites a `\rev` passage's line numbers with `\paperlines{key}`. The numbers are read from the paper's `.aux` file, so build the paper before the response.
+The response letter cites a keyed passage's line numbers with `\paperlines{key}`. The numbers are read from the paper's `.aux` file, so build the paper before the response.
 
 For a clean copy, change `\markchangestrue` to `\markchangesfalse` near the top of the paper. Removed text then disappears, which shifts line numbers, so rebuild the response afterwards.
